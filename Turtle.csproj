@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Turtle</RootNamespace>
+    <AssemblyName>Turtle</AssemblyName>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <!-- 跨平台：不要加 -windows 后缀，不要用 UseWindowsForms / UseWPF -->
+    <Description>Turtle - personal Rhino 8 toolkit</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- RhinoCommon 8 官方 NuGet 包，restore 时自动下载 -->
+    <PackageReference Include="RhinoCommon" Version="8.*" />
+    <!-- Grasshopper 8 组件库，让插件程序集里可以直接写 GH 组件 -->
+    <PackageReference Include="Grasshopper" Version="8.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 把 Scripts 文件夹里的 .py 全部嵌入到 .rhp 里 -->
+    <EmbeddedResource Include="Scripts\**\*.py" />
+  </ItemGroup>
+
+  <!-- 编译后自动把 dll 复制成 .rhp，方便加载/分发 -->
+  <Target Name="MakeRhp" AfterTargets="Build">
+    <Copy SourceFiles="$(OutDir)$(AssemblyName).dll"
+          DestinationFiles="$(OutDir)$(AssemblyName).rhp" />
+    <Message Text="RHP -> $(OutDir)$(AssemblyName).rhp" Importance="high" />
+  </Target>
+
+  <!-- Windows 下调试：F5 直接启动 Rhino 8 -->
+  <PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Rhino 8\System\Rhino.exe</StartProgram>
+  </PropertyGroup>
+
+</Project>

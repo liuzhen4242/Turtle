@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RhinoUI MajorVersion="2" MinorVersion="0">
+  <Toolbars>
+    <Toolbar guid="A5F31FFE-C045-4396-9781-E82D28B54ECC" name="Turtle" alias="Turtle" bitmap_resolution="1">
+      <left>100</left>
+      <top>100</top>
+      <right>200</right>
+      <bottom>160</bottom>
+      <dock_status>0</dock_status>
+      <items>
+        <item guid="DD7399DA-8C49-49DE-AA76-545D56103C36" macro_guid="F0640968-EFD5-4ECA-904A-67751F99E472" />
+        <item guid="2606EF60-FEC5-4ABB-A531-0FB5F2A10080" macro_guid="A4FD117C-1A6B-46F2-B8F6-C8088262B62C" />
+      </items>
+    </Toolbar>
+  </Toolbars>
+  <macros>
+    <macro guid="F0640968-EFD5-4ECA-904A-67751F99E472" name="TurtleHello" button_text="Hello" menu_text="TurtleHello" tooltip="测试插件是否加载" help_text="测试插件是否加载">
+      <script>_TurtleHello</script>
+    </macro>
+    <macro guid="A4FD117C-1A6B-46F2-B8F6-C8088262B62C" name="TurtleRun" button_text="Run Py" menu_text="TurtleRun" tooltip="运行 Python 示例脚本" help_text="运行 Python 示例脚本">
+      <script>_TurtleRun</script>
+    </macro>
+  </macros>
+</RhinoUI>
