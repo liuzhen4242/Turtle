@@ -12,7 +12,7 @@ namespace Turtle.Grasshopper
     public class TurtleHelloComponent : GH_Component
     {
         public TurtleHelloComponent()
-            : base("TurtleHello", "THello", "测试 Turtle GH 工具集", "Turtle", "测试")
+            : base("TurtleHello", "THello", "测试 Turtle GH 工具集", TurtleInfo.Category, "测试")
         {
         }
 

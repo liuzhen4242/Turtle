@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using Rhino.PlugIns;
 
 namespace Turtle
@@ -12,6 +13,9 @@ namespace Turtle
     public class TurtlePlugin : PlugIn
     {
         public static string ScriptDir { get; private set; }
+
+        /// <summary>已释放到 GH 用户对象目录的 .ghuser 完整路径，供 _TurtleClean 删除。</summary>
+        public static string InstalledGhUserPath { get; private set; }
 
         public TurtlePlugin()
         {
@@ -25,10 +29,11 @@ namespace Turtle
             try
             {
                 ExtractEmbeddedScripts();
+                InstallUserObjects();
             }
             catch (Exception ex)
             {
-                errorMessage = "脚本解压失败: " + ex.Message;
+                errorMessage = "资源解压失败: " + ex.Message;
                 return LoadReturnCode.ErrorShowDialog;
             }
             return LoadReturnCode.Success;
@@ -70,6 +75,61 @@ namespace Turtle
                 {
                     stream.CopyTo(fs);
                 }
+            }
+        }
+
+        /// <summary>
+        /// 把嵌入的 GH 用户对象（.ghuser）释放到 Grasshopper 的用户对象目录，
+        /// 使 arrows 电池出现在 GH 面板的 turtle 分类下（与 GHA 组件合并成同一标签页）。
+        /// 版本校验：用 SHA-256 对比嵌入资源与已安装文件，内容不一致才覆盖（插件升级后自动更新）。
+        /// 已存在且一致的旧文件不触碰，避免每次启动无谓写盘。
+        /// </summary>
+        private static void InstallUserObjects()
+        {
+            var asm = Assembly.GetExecutingAssembly();
+            string resName = asm.GetManifestResourceNames()
+                .FirstOrDefault(n => n.EndsWith(".ghuser", StringComparison.OrdinalIgnoreCase));
+            if (resName == null)
+                return;
+
+            byte[] embedded;
+            using (var stream = asm.GetManifestResourceStream(resName))
+            using (var ms = new MemoryStream())
+            {
+                stream.CopyTo(ms);
+                embedded = ms.ToArray();
+            }
+
+            string ghDir;
+            try
+            {
+                ghDir = global::Grasshopper.Folders.DefaultUserObjectFolder;
+            }
+            catch
+            {
+                // 退化：按平台找标准 GH 用户对象目录
+                string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                ghDir = Path.Combine(appData, "Grasshopper", "UserObjects");
+            }
+            Directory.CreateDirectory(ghDir);
+
+            string dest = Path.Combine(ghDir, "Arrows.ghuser");   // 固定目标名，与 GH 面板显示名 arrows 对应
+            InstalledGhUserPath = dest;
+
+            // 版本校验：哈希不同才覆盖
+            if (File.Exists(dest) && HashEquals(File.ReadAllBytes(dest), embedded))
+                return;   // 已是最新，不动
+
+            File.WriteAllBytes(dest, embedded);
+        }
+
+        private static bool HashEquals(byte[] a, byte[] b)
+        {
+            using (var sha = SHA256.Create())
+            {
+                byte[] ha = sha.ComputeHash(a);
+                byte[] hb = sha.ComputeHash(b);
+                return ha.SequenceEqual(hb);
             }
         }
     }

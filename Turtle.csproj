@@ -21,6 +21,8 @@
   <ItemGroup>
     <!-- 把 Scripts 文件夹里的 .py 全部嵌入到 .rhp 里 -->
     <EmbeddedResource Include="Scripts\**\*.py" />
+    <!-- 改造后的 GH 用户对象（Category=Turtle），安装时写入 GH 用户对象目录 -->
+    <EmbeddedResource Include="Grasshopper\Arrows.ghuser" />
   </ItemGroup>
 
   <!-- 编译后自动把 dll 复制成 .rhp，方便加载/分发 -->
