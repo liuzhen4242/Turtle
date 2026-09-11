@@ -19,8 +19,8 @@ Turtle/
 │   ├── BlockToSU.py       ← SketchUp 导出脚本
 │   └── Outline.py         ← 轮廓线脚本
 ├── Grasshopper/
-│   ├── TurtleInfo.cs      ← GH 库信息 + 统一分类常量（Category = "turtle"）
-│   ├── TurtleHelloComponent.cs ← 示例 GH 组件（出现在 turtle 标签页）
+│   ├── TurtleInfo.cs      ← GH 库信息 + 统一分类常量（Category = "Turtle"）
+│   ├── TurtleHelloComponent.cs ← 示例 GH 组件（出现在 Turtle 标签页）
 │   └── Arrows.ghuser      ← 用户对象（画箭头 cluster），安装时释放到 GH
 ├── Turtle.rui            ← 工具栏（按钮已绑好命令）
 ├── build.ps1              ← Windows 一键编译
@@ -29,13 +29,13 @@ Turtle/
 
 ## Grasshopper 工具集（视觉合并方案）
 
-插件的 GH 电池由两部分组成，**统一使用 `Category = "turtle"`**（小写），
-在 GH 面板里合并成同一个 turtle 标签页：
+插件的 GH 电池由两部分组成，**统一使用 `Category = "Turtle"`**（大写），
+在 GH 面板里合并成同一个 Turtle 标签页：
 
 | 来源 | 示例 | 分类 |
 |---|---|---|
-| 代码内 GH 组件（随 .rhp 加载） | TurtleHelloComponent | `turtle`（TurtleInfo.Category 常量） |
-| 释放的 ghuser 用户对象 | arrows（画箭头 cluster） | 文件内 Category 字段 = `turtle` |
+| 代码内 GH 组件（随 .rhp 加载） | TurtleHelloComponent | `Turtle`（TurtleInfo.Category 常量） |
+| 释放的 ghuser 用户对象 | arrows（画箭头 cluster） | 文件内 Category 字段 = `Turtle` |
 
 - **GHA 组件**：写在 `Grasshopper/` 下，构造时传 `TurtleInfo.Category` 即可。
 - **ghuser 用户对象**：放在 `Grasshopper/Arrows.ghuser`，嵌入 .rhp。
@@ -47,7 +47,7 @@ Turtle/
   拖进画布后右键 Explode 即可看到并修改内部电池参数——与原来方案 B 完全一致。
 
 > 制作/修改 ghuser：在 GH 里做好 cluster 后 `File > Create User Object`，
-> 属性窗口的 Category 填 `turtle`，SubCategory 填 `箭头`，保存进 `Grasshopper/` 替换即可。
+> 属性窗口的 Category 填 `Turtle`，SubCategory 填 `箭头`，保存进 `Grasshopper/` 替换即可。
 > 如需改文件内字段，可参考 `/tmp/ghapi/patch.py` 的 deflate 补丁思路。
 
 ## 卸载 / 清理
@@ -82,7 +82,7 @@ Turtle/
 - `TurtleRun` → 弹出 Python 脚本的 MessageBox
 - `TurtleClean` → 清理释放的 ghuser
 
-Grasshopper 里打开组件面板，能看到 **turtle** 标签页：
+Grasshopper 里打开组件面板，能看到 **Turtle** 标签页：
 - `TurtleHello`（代码组件）
 - `Arrows`（ghuser 用户对象，可炸开编辑）
 
