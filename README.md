@@ -5,7 +5,7 @@
 ## 目录结构
 
 ```
-Turtle/
+rhinoPluging/
 ├── Turtle.sln            ← 双击用 Visual Studio 打开
 ├── Turtle.csproj         ← 项目文件（net7.0，跨平台）
 ├── TurtlePlugin.cs       ← 插件入口：解压 Python 脚本 + 释放 GH 用户对象（带版本校验）
@@ -16,13 +16,22 @@ Turtle/
 │   ├── TurtleOutline.cs   ← 轮廓线（调用 Outline.py）
 │   └── TurtleClean.cs     ← 清理：删除释放到 GH 的 ghuser
 ├── Scripts/
-│   ├── BlockToSU.py       ← SketchUp 导出脚本
+│   ├── BlockToSU.py       ← 嵌入 .rhp 分发的脚本
 │   └── Outline.py         ← 轮廓线脚本
 ├── Grasshopper/
 │   ├── TurtleInfo.cs      ← GH 库信息 + 统一分类常量（Category = "Turtle"）
 │   ├── TurtleHelloComponent.cs ← 示例 GH 组件（出现在 Turtle 标签页）
-│   └── Arrows.ghuser      ← 用户对象（画箭头 cluster），安装时释放到 GH
-├── Turtle.rui            ← 工具栏（按钮已绑好命令）
+│   └── Arrows.ghuser      ← 分发用用户对象（Category=Turtle），嵌入 .rhp
+├── Resources/
+│   ├── Turtle.rui         ← 分发工具栏（从旧 OpenLink.rui 迁移改名，随插件一起发布）
+│   └── DisplayStyles/     ← ini 显示样式（可选，随插件分发）
+├── assets/                ← 原始素材/源文件存档（不参与编译、不随插件分发）
+│   ├── ghuser/arrows.ghuser      ← 原始 ghuser
+│   ├── py/                        ← 原始 py（BlockToSU/Outline）
+│   ├── rui/Turtle.rui             ← 骨架示例工具栏（可删）
+│   └── startup/                   ← Rhino 启动类脚本（个人环境用）
+├── tools/
+│   └── patch_ghuser.py    ← ghuser 属性补丁工具
 ├── build.ps1              ← Windows 一键编译
 └── build.command          ← Mac 双击编译
 ```
@@ -73,7 +82,7 @@ Turtle/
 ## 加载到 Rhino
 
 1. 编译产物在 `bin/Release/net7.0/Turtle.rhp`
-2. 把 **Turtle.rhp 和 Turtle.rui 放在同一文件夹**
+2. 把 **Turtle.rhp 和 Resources/Turtle.rui 放在同一文件夹**（工具栏随插件一起发布）
 3. 方式 A：直接把 .rhp 拖进 Rhino 窗口
 4. 方式 B：Rhino 里输入 `_PluginManager` → Install
 
@@ -88,7 +97,7 @@ Grasshopper 里打开组件面板，能看到 **Turtle** 标签页：
 
 ## 加载工具栏
 
-Rhino 里输入 `_Toolbar`，找到 Turtle.rui 打开，
+Rhino 里输入 `_Toolbar`，找到 Resources/Turtle.rui 打开，
 把 Turtle 工具栏拖到界面上即可。
 
 ## 添加新功能（四步）
@@ -96,7 +105,7 @@ Rhino 里输入 `_Toolbar`，找到 Turtle.rui 打开，
 1. 把 `xxx.py` 放进 `Scripts/` 文件夹（自动嵌入 .rhp）
 2. 复制 `Commands/TurtleRun.cs`，改名 + 改脚本名 + 改命令名（如 `TurtleBox`）
 3. 重新编译
-4. 在 Turtle.rui 里加一个按钮（或在 Rhino 里 `_Toolbar` 编辑，更直观）
+4. 在 Resources/Turtle.rui 里加一个按钮（或在 Rhino 里 `_Toolbar` 编辑，更直观）
 
 > 提示：脚本首次运行会解压到 `%APPDATA%\Turtle\Scripts`
 > （Mac: `~/.config/Turtle/Scripts`）。已存在则跳过，
