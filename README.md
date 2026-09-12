@@ -24,12 +24,12 @@ rhinoPluging/
 │   └── Arrows.ghuser      ← 分发用用户对象（Category=Turtle），嵌入 .rhp
 ├── Resources/
 │   ├── Turtle.rui         ← 分发工具栏（从旧 OpenLink.rui 迁移改名，随插件一起发布）
-│   └── DisplayStyles/     ← ini 显示样式（可选，随插件分发）
+│   ├── DisplayStyles/     ← ini 显示样式（可选，随插件分发）
+│   └── Materials/         ← 材质文件（可选，随插件分发）
 ├── assets/                ← 原始素材/源文件存档（不参与编译、不随插件分发）
 │   ├── ghuser/arrows.ghuser      ← 原始 ghuser
 │   ├── py/                        ← 原始 py（BlockToSU/Outline）
-│   ├── rui/Turtle.rui             ← 骨架示例工具栏（可删）
-│   └── startup/                   ← Rhino 启动类脚本（个人环境用）
+│   └── rui/Turtle.rui             ← 骨架示例工具栏（可删）
 ├── tools/
 │   └── patch_ghuser.py    ← ghuser 属性补丁工具
 ├── build.ps1              ← Windows 一键编译
@@ -110,6 +110,15 @@ Rhino 里输入 `_Toolbar`，找到 Resources/Turtle.rui 打开，
 > 提示：脚本首次运行会解压到 `%APPDATA%\Turtle\Scripts`
 > （Mac: `~/.config/Turtle/Scripts`）。已存在则跳过，
 > 你可以直接编辑那里面的脚本调试，改完重启 Rhino 生效。
+
+## 归类原则（以后新增文件照此放）
+
+| 文件 | 放哪里 | 原因 |
+|---|---|---|
+| 插件要用的 `.py` | `Scripts/` | csproj 自动嵌入 .rhp |
+| 分发用的 `.ghuser` | `Grasshopper/` | 嵌入 + 启动时释放到 GH |
+| 分发用的 `.rui` / `.ini` / 材质 | `Resources/`（或子目录） | 随插件独立分发，不嵌入 |
+| 原始素材 / 旧版本 | `assets/` | 只存档，不参与构建、不随插件分发 |
 
 ## 常见问题
 
