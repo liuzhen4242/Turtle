@@ -1,0 +1,104 @@
+﻿<xml>
+	<material type-name="rcm-basic-material" render-engine-id="99999999-9999-9999-9999-999999999999" plug-in-id="16592D58-4A2F-401D-BF5E-3B87741C1B1B" type-id="BA51C000-BA51-C000-BA51-C0BA51C00000" notes="" tags="" hidden="false" reference="false" auto-delete="false">
+		<parameters-v8>
+			<parameter name="version" type="int">2</parameter>
+			<parameter name="diffuse" type="color">0,0.662745118141174,1,1</parameter>
+			<parameter name="specular" type="color">1,1,1,1</parameter>
+			<parameter name="shine" type="double">0</parameter>
+			<parameter name="transparency" type="double">0</parameter>
+			<parameter name="reflectivity" type="double">0</parameter>
+			<parameter name="ior" type="double">1</parameter>
+			<parameter name="transparency-color" type="color">1,1,1,1</parameter>
+			<parameter name="reflectivity-color" type="color">1,1,1,1</parameter>
+			<parameter name="emission" type="color">0,0,0,1</parameter>
+			<parameter name="ambient" type="color">0,0,0,1</parameter>
+			<parameter name="flamingo-library" type="string"/>
+			<parameter name="disable-lighting" type="bool">false</parameter>
+			<parameter name="fresnel-enabled" type="bool">false</parameter>
+			<parameter name="polish-amount" type="double">1</parameter>
+			<parameter name="clarity-amount" type="double">1</parameter>
+			<parameter name="alpha-transparency" type="bool">true</parameter>
+			<parameter name="bitmap-texture" type=""/>
+			<parameter name="bitmap-texture-on" type="bool">false</parameter>
+			<parameter name="bitmap-texture-double-amount" type="double">1</parameter>
+			<parameter name="bitmap-texture-amount" type="double">1</parameter>
+			<parameter name="bump-texture" type=""/>
+			<parameter name="bump-texture-on" type="bool">false</parameter>
+			<parameter name="bump-texture-double-amount" type="double">0.3</parameter>
+			<parameter name="bump-texture-amount" type="double">0.3</parameter>
+			<parameter name="transparency-texture" type=""/>
+			<parameter name="transparency-texture-on" type="bool">false</parameter>
+			<parameter name="transparency-texture-double-amount" type="double">1</parameter>
+			<parameter name="transparency-texture-amount" type="double">1</parameter>
+			<parameter name="environment-texture" type=""/>
+			<parameter name="environment-texture-on" type="bool">false</parameter>
+			<parameter name="environment-texture-double-amount" type="double">1</parameter>
+			<parameter name="environment-texture-amount" type="double">1</parameter>
+		</parameters-v8>
+		<parameters>
+			<version type="int">2</version>
+			<diffuse type="color">0,0.662745118141174,1,1</diffuse>
+			<specular type="color">1,1,1,1</specular>
+			<shine type="double">0</shine>
+			<transparency type="double">0</transparency>
+			<reflectivity type="double">0</reflectivity>
+			<ior type="double">1</ior>
+			<transparency-color type="color">1,1,1,1</transparency-color>
+			<reflectivity-color type="color">1,1,1,1</reflectivity-color>
+			<emission type="color">0,0,0,1</emission>
+			<ambient type="color">0,0,0,1</ambient>
+			<flamingo-library type="string"/>
+			<disable-lighting type="bool">false</disable-lighting>
+			<fresnel-enabled type="bool">false</fresnel-enabled>
+			<polish-amount type="double">1</polish-amount>
+			<clarity-amount type="double">1</clarity-amount>
+			<alpha-transparency type="bool">true</alpha-transparency>
+			<bitmap-texture type=""/>
+			<bitmap-texture-on type="bool">false</bitmap-texture-on>
+			<bitmap-texture-double-amount type="double">1</bitmap-texture-double-amount>
+			<bitmap-texture-amount type="double">1</bitmap-texture-amount>
+			<bump-texture type=""/>
+			<bump-texture-on type="bool">false</bump-texture-on>
+			<bump-texture-double-amount type="double">0.3</bump-texture-double-amount>
+			<bump-texture-amount type="double">0.3</bump-texture-amount>
+			<transparency-texture type=""/>
+			<transparency-texture-on type="bool">false</transparency-texture-on>
+			<transparency-texture-double-amount type="double">1</transparency-texture-double-amount>
+			<transparency-texture-amount type="double">1</transparency-texture-amount>
+			<environment-texture type=""/>
+			<environment-texture-on type="bool">false</environment-texture-on>
+			<environment-texture-double-amount type="double">1</environment-texture-double-amount>
+			<environment-texture-amount type="double">1</environment-texture-amount>
+		</parameters>
+		<simulation>
+			<ambient type="color">0,0,0,1</ambient>
+			<diffuse type="color">0,0.662745118141174,1,1</diffuse>
+			<emission type="color">0,0,0,1</emission>
+			<specular type="color">1,1,1,1</specular>
+			<shine type="double">0</shine>
+			<transparency type="double">0</transparency>
+			<reflectivity type="double">0</reflectivity>
+			<ior type="double">1</ior>
+			<fresnel-enabled type="bool">false</fresnel-enabled>
+			<polish-amount type="double">1</polish-amount>
+			<clarity-amount type="double">1</clarity-amount>
+			<reflection type="color">1,1,1,1</reflection>
+			<transparent type="color">1,1,1,1</transparent>
+			<is-physically-based type="bool">false</is-physically-based>
+		</simulation>
+		<preview>
+			<scene-scale type="double">1</scene-scale>
+			<angle-x type="double">38.6746511713306</angle-x>
+			<angle-y type="double">35.2369044005456</angle-y>
+			<rotation-type type="string">camera</rotation-type>
+			<geometry type="string">material-scene</geometry>
+			<background type="string">material-scene</background>
+			<lighting type="string">skylighting</lighting>
+		</preview>
+	</material>
+	<meta-data>
+		<renderer-name>Generic</renderer-name>
+		<type-name>Custom</type-name>
+	</meta-data>
+	<thumbnail width="256" height="256" format="jpeg" original-size="4695" compressed-size="4695" compression="none" encoding="base64">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</thumbnail>
+</xml>

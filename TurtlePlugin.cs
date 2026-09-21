@@ -29,7 +29,9 @@ namespace Turtle
             try
             {
                 ExtractEmbeddedScripts();
+                InstallAliases();
                 InstallUserObjects();
+                InstallToolbar();
             }
             catch (Exception ex)
             {
@@ -76,6 +78,140 @@ namespace Turtle
                     stream.CopyTo(fs);
                 }
             }
+        }
+
+        /// <summary>
+        /// 把嵌入的命令别名表（KeyTurtle.txt）逐条注册到 Rhino 的别名系统。
+        /// 别名表每行格式："别名 宏"（Rhino 选项 > 别名 页面的导出格式）。
+        /// 关键点：
+        /// 1. KeyTurtle.txt 里的 "别名" 是命令别名（CommandAliasList），不是键盘快捷键
+        ///    （ShortcutKeySettings 只支持 Ctrl+字母/F键 等固定组合，装不下 ZE/ZEA/ttc 这类多字符别名）；
+        /// 2. 别名宏里的 {RHINO_SCRIPTS} 占位符在注册时替换为脚本缓存目录
+        ///    （%AppData%\Turtle\Scripts），使 ttc/wa/NewAlias/stop 等脚本别名开箱即用；
+        /// 3. 幂等：已存在且宏相同的别名跳过，宏不同的覆盖（插件升级后自动对齐），
+        ///    不重复添加。
+        /// </summary>
+        private static void InstallAliases()
+        {
+            var asm = Assembly.GetExecutingAssembly();
+            string resName = asm.GetManifestResourceNames()
+                .FirstOrDefault(n => n.EndsWith("KeyTurtle.txt", StringComparison.OrdinalIgnoreCase));
+            if (resName == null)
+                return;
+
+            string content;
+            using (var stream = asm.GetManifestResourceStream(resName))
+            using (var reader = new StreamReader(stream))
+                content = reader.ReadToEnd();
+
+            int added = 0, updated = 0, skipped = 0;
+            foreach (string rawLine in content.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None))
+            {
+                string line = rawLine.Trim();
+                if (line.Length == 0)
+                    continue;
+
+                int sp = line.IndexOf(' ');
+                if (sp <= 0 || sp == line.Length - 1)
+                    continue;   // 无别名或无宏的异常行，跳过
+
+                string alias = line.Substring(0, sp).Trim();
+                string macro = line.Substring(sp + 1).Trim();
+                macro = macro.Replace("{RHINO_SCRIPTS}", ScriptDir);
+
+                try
+                {
+                    if (global::Rhino.ApplicationSettings.CommandAliasList.IsAlias(alias))
+                    {
+                        string existing = global::Rhino.ApplicationSettings.CommandAliasList.GetMacro(alias);
+                        if (existing == macro)
+                        {
+                            skipped++;
+                            continue;
+                        }
+                        global::Rhino.ApplicationSettings.CommandAliasList.SetMacro(alias, macro);
+                        updated++;
+                    }
+                    else
+                    {
+                        global::Rhino.ApplicationSettings.CommandAliasList.Add(alias, macro);
+                        added++;
+                    }
+                }
+                catch
+                {
+                    // 单条别名注册失败不阻断整体，继续注册其余条目
+                }
+            }
+        }
+
+        /// <summary>
+        /// 加载 Turtle.rui 工具栏文件，使工具列出现在 Rhino 界面。
+        /// 关键点：
+        /// 1. yak 安装只负责把 .rui 放进包目录，不会自动加载；
+        ///    拖拽安装时 .rui 与 .rhp 同目录。这里按两种部署形态定位 rui：
+        ///    - 拖拽/调试：rui 在 rhp 同目录（bin\Release\net7.0\Turtle.rui）
+        ///    - yak 安装：rui 在包目录（%AppData%\McNeel\Rhinoceros\8.0\Packages\Turtle\<version>\Turtle.rui）
+        /// 2. 用 RhinoApp.ToolbarFiles.Open() 打开 rui，已打开则跳过（幂等）；
+        /// 3. 打开后把 rui 内的工具栏组设为可见（首次打开时组默认可能收起）。
+        /// </summary>
+        private static void InstallToolbar()
+        {
+            try
+            {
+                // 1) 定位 rui：先看 rhp 同目录（拖拽安装 / bin 调试），再看 yak 包目录
+                string rhpDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                string ruiPath = rhpDir != null ? Path.Combine(rhpDir, "Turtle.rui") : null;
+                if (ruiPath == null || !File.Exists(ruiPath))
+                    ruiPath = FindYakRuiPath();
+                if (ruiPath == null || !File.Exists(ruiPath))
+                    return;   // 找不到 rui，静默跳过（不阻断插件加载）
+
+                // 2) 幂等打开：已打开则不动
+                var toolbars = Rhino.RhinoApp.ToolbarFiles;
+                bool alreadyOpen = false;
+                for (int i = 0; i < toolbars.Count; i++)
+                {
+                    if (string.Equals(toolbars[i].Path, ruiPath, StringComparison.OrdinalIgnoreCase))
+                    {
+                        alreadyOpen = true;
+                        break;
+                    }
+                }
+                if (!alreadyOpen)
+                    toolbars.Open(ruiPath);
+
+                // 3) 找到同名工具栏组并设为可见（首次加载默认可能不显示）
+                for (int i = 0; i < toolbars.Count; i++)
+                {
+                    var tf = toolbars[i];
+                    if (!string.Equals(tf.Path, ruiPath, StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    for (int g = 0; g < tf.GroupCount; g++)
+                    {
+                        var group = tf.GetGroup(g);
+                        if (group != null && group.Name.IndexOf("Turtle", StringComparison.OrdinalIgnoreCase) >= 0)
+                            group.Visible = true;
+                    }
+                }
+            }
+            catch
+            {
+                // 工具栏加载失败不影响插件主体功能
+            }
+        }
+
+        /// <summary>在 yak 包安装目录下查找 Turtle.rui。
+        /// yak 的实际安装路径：%APPDATA%\McNeel\Rhinoceros\packages\8.0\Turtle\<version>\（注意是 packages\8.0，不是 Rhinoceros\8.0\Packages）。</summary>
+        private static string FindYakRuiPath()
+        {
+            string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string yakRoot = Path.Combine(appData, "McNeel", "Rhinoceros", "packages", "8.0", "Turtle");
+            if (!Directory.Exists(yakRoot))
+                return null;
+            var found = Directory.GetFiles(yakRoot, "Turtle.rui", SearchOption.AllDirectories)
+                .FirstOrDefault();
+            return found;
         }
 
         /// <summary>

@@ -1,0 +1,268 @@
+﻿Z '_Zoom
+ZE '_Zoom _Extents
+ZT '_Zoom _Target
+ZEA '_Zoom _All _Extents
+ZS '_Zoom _Selected
+ZSA '_Zoom _All _Selected
+s _SelectionFilterEdges
+O Offset
+PP ! _ExtrudeSrf _Pause _NoEcho _DeleteInput=_Yes _Solid=_Yes _BothSides=_No _Pause _Enter _SelLast _MergeAllFaces
+M ! _Move
+U ! _DisableClippingPlane
+POn ! _PointsOn
+POff ! _PointsOff
+c ! _Curve
+w '_SetDisplayMode _m _c
+COn '_CurvatureGraph
+COff '_CurvatureGraphOff
+插件管理器 ! _OptionsPage _PlugIns
+高级显示 ! _OptionsPage _DisplayModes
+DisplayAttrsMgr ! _OptionsPage _AdvancedSettings
+Break ! _DeleteSubCrv
+uu ! _EnableClippingPlane
+rr '_plane
+PlugInManager ! _OptionsPage _PlugIns
+AdvancedDisplay ! _OptionsPage _AdvancedSettings
+SelPolysurface '_SelPolysrf
+Oc Offset
+Bk ! _DeleteSubCrv
+EF ! _ExtrudeSrf _Pause _Solid=_Yes
+ex '_Extend
+e '_Delete
+TR '_Trim
+Or '_Orient
+CC ! _InterpCrv
+DI ! _Distance
+L '_Polyline
+LL ! _JALayersLock
+T ! _HighlightObjectLayers
+RO '_Rotate
+Ar ! _ArrayLinear
+Re '_Rebuild
+F '_Fillet
+H '_Hide
+X '_Explode
+LO '_lock
+Mp ! _moveproject
+d '_Copy
+Bl '_Block
+AL ! _Align
+DQ '_SetLayerToObject
+TF '_OneLayerOff
+TD '_-Layer _On * _Enter
+TG ! _JALayersOnSelected
+MAc -_Properties _Pause _Material _Match _Pause _Color=Yes _GlossFinish=Yes _Transparency=Yes _TextureMap=Yes _TransparencyMap=Yes _BumpMap=Yes _EnvironmentMap=Yes _Enter _Enter _Enter _Enter
+A _SelectionFilterVertices
+Zz '_Zoom _Extents
+R ! _Rectangle
+DL '_Dim
+DA '_DimAligned
+TQ ! _ChangeToCurrentLayer
+EC _ExtrudeCrv
+MS ! _MergeSrf
+ME ! _MergeEdge
+Tc -LayerStateManager s pause enterend
+Exf ! _ExtendSrf
+MA -_MatchProperties Pause Pause m
+Sh '_Show
+TT ! _Split
+tgg ! _Invert _Hide
+q '_SetDisplayMode _Viewport=_Active _Mode=_Shaded
+qq '_SetDisplayMode _Viewport=_Active _Mode=_Wireframe
+v ! _-ViewportProperties _Projection _Toggle _enter
+qa '_SetView _CPlane _Top
+boo ! _CurveBoolean _Pause D  Enter A  Enter
+wc ! _wirecut
+mh ! _makehole
+ch ! _copyhole
+uh ! _UntrimHoles
+ip _InsertControlPoint
+zd ! _Dim _Continue=_Yes n
+bh ! _Hatch
+DC ! _DeleteSubCrv
+fg SplitFace _Pause c
+rrr ! _Circle _Pause 50
+bz ! _Dim _Continue=_Yes n
+Rk _RemoveKnot
+IK _InsertKnot
+TS ! _Lock
+TY ! _Isolate
+TYY ! _Unisolate
+v2 ! _-ViewportProperties _Projection _TwoPointPerspective _Enter
+ttc -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" r
+as _SelectionFilterNone
+xk '_SetDisplayMode _Viewport=_Active _Mode=_Wireframe
+jd '_SetDisplayMode _m _c
+cs -_Properties m o r c c m o r e o f enterend
+xr '_SetDisplayMode _Viewport=_Active _Mode=_Rendered
+pr _Properties
+g '_CPlane _Object
+sj '_CPlane _World _Top
+op ! _Options
+dd ! _DeleteSubCrv
+by ! _DupEdge
+dg ! _SetPt
+hj ! _BlendCrv
+bj ! _DimRadius
+bzys ! _DocumentPropertiesPage  _AnnotationStyles
+js ! _SetCurrentAnnotationStyle
+ys ! _DocumentPropertiesPage  _AnnotationStyles
+jdbz ! _DimAngle
+bzd ! _Dot
+yx ! _RevCloud
+tyx ! _Project
+mi mirror
+j Join
+le Length
+pm ! _PlanarSrf
+bt '_SetDisplayMode _Viewport=_Active _Mode=_Ghosted
+ul unlock
+ol '_unlock
+www -_SetDisplayMode Raytraced
+hh '_Show
+bvv ! _Leader
+vv ! _PerspectiveAngle
+qw '_SetDisplayMode _Viewport=_Active _Mode=_Rendered
+cr !_Crease
+ww '_SetDisplayMode _Viewport=_Active _Mode=_Ghosted
+i ! _Isolate
+iii ! _ShowSelected
+sd '_SelSrf
+sq ! _SelDup
+ss '_SelCrv
+fs '_Invert
+gy '_GumballRelocate _pause _pause _enter
+gu ! _Gumball _Toggle
+guu '_GumballReset
+gi ! _GumballAlignment _CPlane
+go ! _GumballAlignment _Object
+gp ! _GumballAlignment _World
+hi '_History _Record _Enter
+bx ! _DimAligned _Continue=_Yes n
+bc ! _DimAngle
+bv ! _DimRadius
+bcv ! _DimCurveLength
+ba ! _DimArea a
+efp '_ExtrudeSrfToPoint
+ecc '_ExtrudeCrvAlongCrv
+OF OffsetSrf
+ON OffsetNormal
+OD OffsetSubD
+OCF OffsetCrvOnSrf
+OcM OffsetMultiple
+om OffsetMesh
+ect ExtrudeCrvTapered
+ecp ExtrudeCrvToPoint
+em ExtrudeMesh
+ed ExtrudeSubD
+bla ! _ArcBlend
+blc ! _BlendCrv
+blf ! _BlendSrf
+MFf ! _MergeFace
+mm Merge2MeshFaces
+mf ! _MergeAllFaces
+MC ! _MergeCrv
+sp '_Split
+mj ! _DimArea
+ble ! _BlendEdge
+bld ! _Bridge
+spf ! _SplitFace
+FF ! -_ConnectSrf
+SeP -_SetPt
+s1 '_Scale1D
+fe ! _FilletEdge
+ps ! _PlanarSrf
+gf '_CPlane _World _Front
+gt '_CPlane _World _Top
+ie ! _InsertEdge
+sf ! _SplitFace
+inp !_InsertPoint
+incp !_InsertControlPoint
+rc !_RemoveCrease
+rf !_Reflect
+st '_SelLast
+sl !_Slide
+fi !_fill
+fd !_Bevel
+ren !_RebuildCrvNonUniform
+req !_QuadRemesh
+fr !_Reflect _Pause _RemoveExistingReflectSymmetry
+c2 !_Crv2View
+lf !_loft
+lfd !_SubDLoft
+il invert lock
+de ! _DupEdge
+db ! _DupBorder
+s2 Scale2D
+TX ! _TextObject
+sb -SelBlockInstanceNamed s
+se ! _SplitFace pause c
+exc ! _ExtractControlPolygon
+trm ! _MeshTrim
+sm selnone -SelMaterialName S
+sla -_SelLayer  p
+at _Align _Pause _Top
+ab _Align _Pause _Bottom
+edf ! _EdgeSrf
+sy -_SetPt -_SetPt Xset=Yes Yset=Yes  Zset=Yes Xset=No Yset=Yes Zset=No
+jb ! _BooleanUnion
+bo ! _CurveBoolean
+ct '_CPlane _World _Top
+sw1 '_Sweep1
+sw2 '_Sweep2
+alb _Align _Pause _Bottom
+alt _Align _Pause _Top
+arc ! _ArrayCrv
+tz -Properties t a b  multipause y 1 enterend
+tzz -Properties t s 1 enterend
+sv SelPrev
+df dir  pause f enter
+ds -dir _SwapUV enter
+czt -_Properties m l enterend
+cp ! _ClippingPlane
+cpc ! _DisableClippingPlane
+cpo ! _EnableClippingPlane
+sht ! _ShrinkTrimmedSrf
+oo OffsetSrf
+sfc ! _SoftEditCrv
+o3 Orient3Pt
+cf ! _ExtractSrf
+orc OrientCameraToSrf
+shf '_ShrinkTrimmedSrf
+m2 '_Make2D
+cuv ! _ExtractIsoCurve
+4v '_4View
+bod ! _BooleanDifference
+MoveProject ! _noEcho _-Runscript MoveProject
+MoveProjectEach _noEcho _-Runscript MoveProjectEach
+ac ! _Align o pause enter
+cz -_Properties m o r e i b o o enterend
+per _Perspective
+ws -_Properties o c o c enterend
+wst -_Properties o c l enterend
+sz -_SetPt -_SetPt Xset=Yes Yset=Yes  Zset=Yes Xset=No Yset=No Zset=Yes
+b box
+wq -'_SetDisplayMode m b
+hhh -_ChangeLayer n hide
+xt SelNone -sellayer p '_SelPrev enter
+xc '_SelColor
+sa -NamedView s pause enter
+arr Curve MultiPause -ArrayCrv sellast i pause
+dr ! _BringtoFront
+vtf ViewCaptureToFile
+GV '_CPlane _View
+sc Scale
+dzs -_Properties m o r r pause c c enterend
+czs -_Properties  m o r r pause m o r c c enterend
+ii ! _Unisolate
+po ! _Project
+P ! _PushPull
+gtt ! _HighlightObjectLayers
+maa -_MatchProperties  pause pause Layer=no enter
+ttt ! _Split _Pause _Isocurve
+y ! _Circle
+mz m pause v
+sx -_SetPt -_SetPt Xset=Yes Yset=Yes  Zset=Yes Xset=Yes Yset=No Zset=No
+wa -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" w
+NewAlias -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" s
+stop -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" s

@@ -11,3 +11,7 @@ obj/
 
 # 备份文件
 *.bak
+
+# yak 构建产物
+yak_build/
+

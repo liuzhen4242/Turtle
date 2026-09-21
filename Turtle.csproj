@@ -23,13 +23,19 @@
     <EmbeddedResource Include="Scripts\**\*.py" />
     <!-- 改造后的 GH 用户对象（Category=Turtle），安装时写入 GH 用户对象目录 -->
     <EmbeddedResource Include="Grasshopper\Arrows.ghuser" />
+    <!-- 命令别名表（KeyTurtle.txt），安装时逐条注册到 Rhino -->
+    <EmbeddedResource Include="Resources\KeyTurtle.txt" />
   </ItemGroup>
 
-  <!-- 编译后自动把 dll 复制成 .rhp，方便加载/分发 -->
+  <!-- 编译后自动把 dll 复制成 .rhp，并带上 rui，形成完整可分发文件夹 -->
   <Target Name="MakeRhp" AfterTargets="Build">
     <Copy SourceFiles="$(OutDir)$(AssemblyName).dll"
           DestinationFiles="$(OutDir)$(AssemblyName).rhp" />
+    <Copy SourceFiles="Resources\$(AssemblyName).rui"
+          DestinationFolder="$(OutDir)"
+          Condition="Exists('Resources\$(AssemblyName).rui')" />
     <Message Text="RHP -> $(OutDir)$(AssemblyName).rhp" Importance="high" />
+    <Message Text="RUI -> $(OutDir)$(AssemblyName).rui" Importance="high" />
   </Target>
 
   <!-- Windows 下调试：F5 直接启动 Rhino 8 -->

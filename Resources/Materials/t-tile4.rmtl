@@ -1,0 +1,210 @@
+﻿<xml>
+	<material type-name="rcm-basic-material" render-engine-id="99999999-9999-9999-9999-999999999999" plug-in-id="16592D58-4A2F-401D-BF5E-3B87741C1B1B" type-id="BA51C000-BA51-C000-BA51-C0BA51C00000" notes="" tags="" hidden="false" reference="false" auto-delete="false">
+		<parameters-v8>
+			<parameter name="version" type="int">2</parameter>
+			<parameter name="diffuse" type="color">0,1,0,1</parameter>
+			<parameter name="specular" type="color">1,1,1,1</parameter>
+			<parameter name="shine" type="double">0</parameter>
+			<parameter name="transparency" type="double">0</parameter>
+			<parameter name="reflectivity" type="double">0</parameter>
+			<parameter name="ior" type="double">1.52</parameter>
+			<parameter name="transparency-color" type="color">1,1,1,1</parameter>
+			<parameter name="reflectivity-color" type="color">1,1,1,1</parameter>
+			<parameter name="emission" type="color">0,0,0,1</parameter>
+			<parameter name="ambient" type="color">0,0,0,1</parameter>
+			<parameter name="flamingo-library" type="string"/>
+			<parameter name="disable-lighting" type="bool">false</parameter>
+			<parameter name="fresnel-enabled" type="bool">false</parameter>
+			<parameter name="polish-amount" type="double">1</parameter>
+			<parameter name="clarity-amount" type="double">1</parameter>
+			<parameter name="alpha-transparency" type="bool">false</parameter>
+			<parameter name="bitmap-texture" type=""/>
+			<parameter name="bitmap-texture-on" type="bool">true</parameter>
+			<parameter name="bitmap-texture-double-amount" type="double">1</parameter>
+			<parameter name="bitmap-texture-amount" type="double">1</parameter>
+			<parameter name="bump-texture" type=""/>
+			<parameter name="bump-texture-on" type="bool">false</parameter>
+			<parameter name="bump-texture-double-amount" type="double">0.3</parameter>
+			<parameter name="bump-texture-amount" type="double">0.3</parameter>
+			<parameter name="transparency-texture" type=""/>
+			<parameter name="transparency-texture-on" type="bool">false</parameter>
+			<parameter name="transparency-texture-double-amount" type="double">1</parameter>
+			<parameter name="transparency-texture-amount" type="double">1</parameter>
+			<parameter name="environment-texture" type=""/>
+			<parameter name="environment-texture-on" type="bool">false</parameter>
+			<parameter name="environment-texture-double-amount" type="double">1</parameter>
+			<parameter name="environment-texture-amount" type="double">1</parameter>
+		</parameters-v8>
+		<parameters>
+			<version type="int">2</version>
+			<diffuse type="color">0,1,0,1</diffuse>
+			<specular type="color">1,1,1,1</specular>
+			<shine type="double">0</shine>
+			<transparency type="double">0</transparency>
+			<reflectivity type="double">0</reflectivity>
+			<ior type="double">1.52</ior>
+			<transparency-color type="color">1,1,1,1</transparency-color>
+			<reflectivity-color type="color">1,1,1,1</reflectivity-color>
+			<emission type="color">0,0,0,1</emission>
+			<ambient type="color">0,0,0,1</ambient>
+			<flamingo-library type="string"/>
+			<disable-lighting type="bool">false</disable-lighting>
+			<fresnel-enabled type="bool">false</fresnel-enabled>
+			<polish-amount type="double">1</polish-amount>
+			<clarity-amount type="double">1</clarity-amount>
+			<alpha-transparency type="bool">false</alpha-transparency>
+			<bitmap-texture type=""/>
+			<bitmap-texture-on type="bool">true</bitmap-texture-on>
+			<bitmap-texture-double-amount type="double">1</bitmap-texture-double-amount>
+			<bitmap-texture-amount type="double">1</bitmap-texture-amount>
+			<bump-texture type=""/>
+			<bump-texture-on type="bool">false</bump-texture-on>
+			<bump-texture-double-amount type="double">0.3</bump-texture-double-amount>
+			<bump-texture-amount type="double">0.3</bump-texture-amount>
+			<transparency-texture type=""/>
+			<transparency-texture-on type="bool">false</transparency-texture-on>
+			<transparency-texture-double-amount type="double">1</transparency-texture-double-amount>
+			<transparency-texture-amount type="double">1</transparency-texture-amount>
+			<environment-texture type=""/>
+			<environment-texture-on type="bool">false</environment-texture-on>
+			<environment-texture-double-amount type="double">1</environment-texture-double-amount>
+			<environment-texture-amount type="double">1</environment-texture-amount>
+		</parameters>
+		<simulation>
+			<ambient type="color">0,0,0,1</ambient>
+			<diffuse type="color">0,1,0,1</diffuse>
+			<emission type="color">0,0,0,1</emission>
+			<specular type="color">1,1,1,1</specular>
+			<shine type="double">0</shine>
+			<transparency type="double">0</transparency>
+			<reflectivity type="double">0</reflectivity>
+			<ior type="double">1.52</ior>
+			<fresnel-enabled type="bool">false</fresnel-enabled>
+			<polish-amount type="double">1</polish-amount>
+			<clarity-amount type="double">1</clarity-amount>
+			<reflection type="color">1,1,1,1</reflection>
+			<transparent type="color">1,1,1,1</transparent>
+			<Texture-1-filename type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\White Square Tile.jpg</Texture-1-filename>
+			<Texture-1-on type="bool">true</Texture-1-on>
+			<Texture-1-amount type="double">1</Texture-1-amount>
+			<Texture-1-filter type="int">1</Texture-1-filter>
+			<Texture-1-mode type="int">2</Texture-1-mode>
+			<Texture-1-uvw type="matrix">1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1</Texture-1-uvw>
+			<Texture-1-type type="int">1</Texture-1-type>
+			<Texture-1-wrap-u type="int">0</Texture-1-wrap-u>
+			<Texture-1-wrap-v type="int">0</Texture-1-wrap-v>
+			<is-physically-based type="bool">false</is-physically-based>
+		</simulation>
+		<texture type-name="rcm-basic-texture" render-engine-id="99999999-9999-9999-9999-999999999999" plug-in-id="16592D58-4A2F-401D-BF5E-3B87741C1B1B" type-id="57E0ED08-1907-4529-B01B-0C4A242455FD" instance-name="White Square Tile" notes="" tags="" hidden="false" reference="false" auto-delete="false" child-slot-name="bitmap-texture">
+			<parameters-v8>
+				<parameter name="simulation-bump-scale-m_t_0" type="double">0</parameter>
+				<parameter name="simulation-bump-scale-m_t_1" type="double">1</parameter>
+				<parameter name="rdk-texture-preview-in-3D" type="bool">false</parameter>
+				<parameter name="rdk-texture-preview-local-mapping" type="bool">false</parameter>
+				<parameter name="rdk-texture-display-in-viewport" type="bool">false</parameter>
+				<parameter name="rdk-texture-repeat-locked" type="bool">true</parameter>
+				<parameter name="rdk-texture-offset-locked" type="bool">false</parameter>
+				<parameter name="rdk-texture-mapping-channel" type="int">1</parameter>
+				<parameter name="rdk-texture-wrap-type" type="int">1</parameter>
+				<parameter name="rdk-texture-projection-mode" type="int">4</parameter>
+				<parameter name="rdk-texture-environment-mapping-mode" type="int">0</parameter>
+				<parameter name="rdk-texture-repeat" type="vector3d">1,1,1</parameter>
+				<parameter name="rdk-texture-size" type="vector3d">1,1,0.001</parameter>
+				<parameter name="rdk-texture-offset" type="vector3d">0,0,0</parameter>
+				<parameter name="rdk-texture-rotation" type="vector3d">0,0,0</parameter>
+				<parameter name="rdk-texture-adjust-invert" type="bool">false</parameter>
+				<parameter name="rdk-texture-adjust-grayscale" type="bool">false</parameter>
+				<parameter name="rdk-texture-adjust-clamp" type="bool">false</parameter>
+				<parameter name="rdk-texture-adjust-scale-to-clamp" type="bool">false</parameter>
+				<parameter name="rdk-texture-adjust-multiplier" type="double">1</parameter>
+				<parameter name="rdk-texture-adjust-clamp-min" type="double">0</parameter>
+				<parameter name="rdk-texture-adjust-clamp-max" type="double">1</parameter>
+				<parameter name="rdk-texture-adjust-gain" type="double">0.5</parameter>
+				<parameter name="rdk-texture-adjust-gamma" type="double">1</parameter>
+				<parameter name="rdk-texture-adjust-saturation" type="double">1</parameter>
+				<parameter name="rdk-texture-adjust-hue-shift" type="double">0</parameter>
+				<parameter name="filename" type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\White Square Tile.jpg</parameter>
+				<parameter name="has-transparent-color" type="bool">false</parameter>
+				<parameter name="use-alpha-channel" type="bool">true</parameter>
+				<parameter name="transparent-color" type="color">0,0,0,1</parameter>
+				<parameter name="transparent-color-sensitivity" type="double">0</parameter>
+				<parameter name="filter" type="bool">true</parameter>
+				<parameter name="mirror-alternate-tiles" type="bool">false</parameter>
+				<parameter name="treat-as-linear" type="bool">false</parameter>
+			</parameters-v8>
+			<parameters>
+				<simulation-bump-scale-m_t_0 type="double">0</simulation-bump-scale-m_t_0>
+				<simulation-bump-scale-m_t_1 type="double">1</simulation-bump-scale-m_t_1>
+				<rdk-texture-preview-in-3D type="bool">false</rdk-texture-preview-in-3D>
+				<rdk-texture-preview-local-mapping type="bool">false</rdk-texture-preview-local-mapping>
+				<rdk-texture-display-in-viewport type="bool">false</rdk-texture-display-in-viewport>
+				<rdk-texture-repeat-locked type="bool">true</rdk-texture-repeat-locked>
+				<rdk-texture-offset-locked type="bool">false</rdk-texture-offset-locked>
+				<rdk-texture-mapping-channel type="int">1</rdk-texture-mapping-channel>
+				<rdk-texture-wrap-type type="int">1</rdk-texture-wrap-type>
+				<rdk-texture-projection-mode type="int">4</rdk-texture-projection-mode>
+				<rdk-texture-environment-mapping-mode type="int">0</rdk-texture-environment-mapping-mode>
+				<rdk-texture-repeat type="vector3d">1,1,1</rdk-texture-repeat>
+				<rdk-texture-size type="vector3d">1,1,0.001</rdk-texture-size>
+				<rdk-texture-offset type="vector3d">0,0,0</rdk-texture-offset>
+				<rdk-texture-rotation type="vector3d">0,0,0</rdk-texture-rotation>
+				<rdk-texture-adjust-invert type="bool">false</rdk-texture-adjust-invert>
+				<rdk-texture-adjust-grayscale type="bool">false</rdk-texture-adjust-grayscale>
+				<rdk-texture-adjust-clamp type="bool">false</rdk-texture-adjust-clamp>
+				<rdk-texture-adjust-scale-to-clamp type="bool">false</rdk-texture-adjust-scale-to-clamp>
+				<rdk-texture-adjust-multiplier type="double">1</rdk-texture-adjust-multiplier>
+				<rdk-texture-adjust-clamp-min type="double">0</rdk-texture-adjust-clamp-min>
+				<rdk-texture-adjust-clamp-max type="double">1</rdk-texture-adjust-clamp-max>
+				<rdk-texture-adjust-gain type="double">0.5</rdk-texture-adjust-gain>
+				<rdk-texture-adjust-gamma type="double">1</rdk-texture-adjust-gamma>
+				<rdk-texture-adjust-saturation type="double">1</rdk-texture-adjust-saturation>
+				<rdk-texture-adjust-hue-shift type="double">0</rdk-texture-adjust-hue-shift>
+				<filename type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\White Square Tile.jpg</filename>
+				<has-transparent-color type="bool">false</has-transparent-color>
+				<use-alpha-channel type="bool">true</use-alpha-channel>
+				<transparent-color type="color">0,0,0,1</transparent-color>
+				<transparent-color-sensitivity type="double">0</transparent-color-sensitivity>
+				<filter type="bool">true</filter>
+				<mirror-alternate-tiles type="bool">false</mirror-alternate-tiles>
+				<treat-as-linear type="bool">false</treat-as-linear>
+			</parameters>
+			<simulation>
+				<filename type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\White Square Tile.jpg</filename>
+				<offset type="vector2d">0,0</offset>
+				<repeat type="vector2d">1,1</repeat>
+				<rotation type="double">0</rotation>
+				<wrap-type type="int">1</wrap-type>
+				<mapping-channel type="int">-13</mapping-channel>
+				<projection-mode type="int">4</projection-mode>
+				<has-trans-color type="bool">false</has-trans-color>
+				<trans-color type="color">0,0,0,1</trans-color>
+				<trans-color-sensitivity type="double">0</trans-color-sensitivity>
+				<on type="bool">true</on>
+				<treat-as-linear type="bool">false</treat-as-linear>
+				<blend-constant-a type="double">1</blend-constant-a>
+				<transparency-texture-id type="uuid">00000000-0000-0000-0000-000000000000</transparency-texture-id>
+				<type type="int">1</type>
+				<mode type="int">1</mode>
+				<min-filter type="int">1</min-filter>
+				<mag-filter type="int">1</mag-filter>
+			</simulation>
+		</texture>
+		<preview>
+			<scene-scale type="double">1</scene-scale>
+			<angle-x type="double">38.6746511713306</angle-x>
+			<angle-y type="double">35.2369044005456</angle-y>
+			<rotation-type type="string">camera</rotation-type>
+			<geometry type="string">material-scene</geometry>
+			<background type="string">material-scene</background>
+			<lighting type="string">skylighting</lighting>
+		</preview>
+	</material>
+	<meta-data>
+		<renderer-name>Generic</renderer-name>
+		<type-name>Custom</type-name>
+	</meta-data>
+	<embedded-files>
+		<file name="D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\White Square Tile.jpg" original-size="1030" compressed-size="700" compression="zlib" encoding="base64">eJz7f+P/AwYBLzdPNwZGJgaGFCBk+P+GQdClNDm7koGRgYWBgUEEKPSOgc8xJT8plSHlAFCE8f9thhYGIT4+PgE+UQEBUTlhQWE5ZSlRUSllJQkJKQkJJXU5JUVFJTl1dT0DYwM9dTs7R0cQRgGMIsLCYpJi0uLi0lJiQKgoJSsrpWioqKiiqGhop6sOBLp2FtbGxsbWFli0Ozr+P8AgyMEwjWEaM6MSA5MgI7Mg4/8jDDkMjGDAgABsjEys7GhiIG8wCTACCSYuJiZmRrgYsxCrYWDhpcmbWUJETQUVHYU3KhUZC6IbycAoaBj4/xYDD1AnkyCzIIM9wxZGEZCEZFin75N771feLJ7J5bXFK1/te63f6TknvG9snurFtADJBGati5p7Zt/9aq1XrOiJ0MRZLVa00iEE2a7UKFXzydX7lqeeS9FE0qSfdC5Ug6sBSSHPapdln/LLr7zZeaZVFaFJ9U3kqaWMARB3z1h5LWl5VP6h57VXCvXy5olbv1vcWVxq9mOnbVDS8siuuZn7ued+Dzyyc1dFzPtdfapnL+e3+Ydg1VRy++Hkq2papUDJ2R923i+V8Z69vPXc7xWPYu6a/Uj5+r5U1ne12KqdRWtMguWLNXOWr9uabbzu6/2Xvn8CP/9Ylr1K63fptZSba8X+M+TeWvQncJnSqtWrZvw5/62j0iQwtNRVxOVqaPBHkeN3zpwKWzLjl0i4z98/20WtLottsnk2u+So+aIrmQd/a/fY2z+zk/0BcevV248tqe0Nz665STAdbfd55kHjhi10UbCk7eriufd+/WeY/maWkt0idTH5RyFfM6bc8333a+50ywnTN6ZrTWF1QE6IQE2V5rtflcU8c5q0Vmj2yb33gzc9NxL6pvM0qGEFcpSfQqScICRNcUfnrAoQRVZITnJTQLHw/00AM8RyOA==</file>
+	</embedded-files>
+	<thumbnail width="256" height="256" format="jpeg" original-size="5034" compressed-size="5034" compression="none" encoding="base64">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</thumbnail>
+</xml>
