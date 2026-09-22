@@ -31,6 +31,7 @@ namespace Turtle
                 ExtractEmbeddedScripts();
                 InstallAliases();
                 InstallUserObjects();
+                InstallDisplayModes();
                 InstallToolbar();
             }
             catch (Exception ex)
@@ -198,6 +199,48 @@ namespace Turtle
             catch
             {
                 // 工具栏加载失败不影响插件主体功能
+            }
+        }
+
+        /// <summary>
+        /// 把嵌入的自定义显示模式 ini（Resources/DisplayStyles/*.ini）释放到 Rhino 的
+        /// DisplayModes 目录，使 Arctic / OutLine / Shaded 等显示模式出现在 Rhino 视图面板。
+        /// 关键点：
+        /// 1. Rhino 启动时扫描 %APPDATA%\McNeel\Rhinoceros\8.0\DisplayModes\*.ini 自动加载；
+        /// 2. 版本校验：SHA-256 不一致才覆盖，避免每次启动无谓写盘；
+        /// 3. 释放后需要重启 Rhino 才会出现在显示模式下拉列表（首次安装场景）。
+        /// </summary>
+        private static void InstallDisplayModes()
+        {
+            var asm = Assembly.GetExecutingAssembly();
+            string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string destDir = Path.Combine(appData, "McNeel", "Rhinoceros", "8.0", "DisplayModes");
+            Directory.CreateDirectory(destDir);
+
+            foreach (string resName in asm.GetManifestResourceNames()
+                .Where(n => n.EndsWith(".ini", StringComparison.OrdinalIgnoreCase)))
+            {
+                // 资源名形如 Turtle.Resources.DisplayStyles.OutLine.ini -> 取最后一段做文件名
+                string fileName = resName.Substring(resName.LastIndexOf('.') + 1);
+                string ext = ".ini";
+                // 上面的 Substring 只拿到 "ini"，需要拼回完整文件名
+                int lastDot = resName.LastIndexOf('.');
+                int prevDot = resName.LastIndexOf('.', lastDot - 1);
+                fileName = resName.Substring(prevDot + 1);
+
+                byte[] embedded;
+                using (var stream = asm.GetManifestResourceStream(resName))
+                using (var ms = new MemoryStream())
+                {
+                    stream.CopyTo(ms);
+                    embedded = ms.ToArray();
+                }
+
+                string dest = Path.Combine(destDir, fileName);
+                if (File.Exists(dest) && HashEquals(File.ReadAllBytes(dest), embedded))
+                    continue;   // 已存在且内容一致，跳过
+
+                File.WriteAllBytes(dest, embedded);
             }
         }
 

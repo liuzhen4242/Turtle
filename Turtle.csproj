@@ -25,6 +25,8 @@
     <EmbeddedResource Include="Grasshopper\Arrows.ghuser" />
     <!-- 命令别名表（KeyTurtle.txt），安装时逐条注册到 Rhino -->
     <EmbeddedResource Include="Resources\KeyTurtle.txt" />
+    <!-- 自定义显示模式 ini，安装时释放到 Rhino DisplayModes 目录 -->
+    <EmbeddedResource Include="Resources\DisplayStyles\*.ini" />
   </ItemGroup>
 
   <!-- 编译后自动把 dll 复制成 .rhp，并带上 rui，形成完整可分发文件夹 -->
