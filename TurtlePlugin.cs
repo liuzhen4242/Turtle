@@ -258,9 +258,9 @@ namespace Turtle
         {
             var asm = Assembly.GetExecutingAssembly();
             string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            // Rhino 8 中文环境渲染内容目录
+            // Rhino 8 英文环境渲染内容目录（和默认材质库同位置）
             string destDir = Path.Combine(appData, "McNeel", "Rhinoceros", "8.0",
-                "Localization", "zh-CN", "Render Content", "Misc", "Turtle");
+                "Localization", "en-US", "Render Content", "Misc", "Turtle");
             Directory.CreateDirectory(destDir);
 
             foreach (string resName in asm.GetManifestResourceNames()
