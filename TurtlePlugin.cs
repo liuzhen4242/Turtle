@@ -252,16 +252,20 @@ namespace Turtle
         /// <summary>
         /// 把嵌入的材质库文件（Resources/Materials/*.rmtl）释放到 Rhino 的
         /// Render Content 目录下的 Misc/Turtle 子目录，使材质出现在 Rhino 材质编辑器。
+        /// 中英文两个目录都放（en-US + zh-CN），不管用户 Rhino 用什么语言都能识别。
         /// 版本校验：SHA-256 不一致才覆盖，避免每次启动无谓写盘。
         /// </summary>
         private static void InstallMaterials()
         {
             var asm = Assembly.GetExecutingAssembly();
             string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            // Rhino 8 英文环境渲染内容目录（和默认材质库同位置）
-            string destDir = Path.Combine(appData, "McNeel", "Rhinoceros", "8.0",
-                "Localization", "en-US", "Render Content", "Misc", "Turtle");
-            Directory.CreateDirectory(destDir);
+
+            // 中英文两个语言目录都放
+            string[] locales = { "en-US", "zh-CN" };
+            var destDirs = locales.Select(locale => Path.Combine(appData, "McNeel", "Rhinoceros", "8.0",
+                "Localization", locale, "Render Content", "Misc", "Turtle")).ToArray();
+            foreach (var dir in destDirs)
+                Directory.CreateDirectory(dir);
 
             foreach (string resName in asm.GetManifestResourceNames()
                 .Where(n => n.EndsWith(".rmtl", StringComparison.OrdinalIgnoreCase)))
@@ -278,11 +282,13 @@ namespace Turtle
                     embedded = ms.ToArray();
                 }
 
-                string dest = Path.Combine(destDir, fileName);
-                if (File.Exists(dest) && HashEquals(File.ReadAllBytes(dest), embedded))
-                    continue;
-
-                File.WriteAllBytes(dest, embedded);
+                foreach (var destDir in destDirs)
+                {
+                    string dest = Path.Combine(destDir, fileName);
+                    if (File.Exists(dest) && HashEquals(File.ReadAllBytes(dest), embedded))
+                        continue;
+                    File.WriteAllBytes(dest, embedded);
+                }
             }
         }
 
