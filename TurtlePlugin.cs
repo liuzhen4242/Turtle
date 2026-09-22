@@ -84,13 +84,19 @@ namespace Turtle
         }
 
         /// <summary>
-        /// 把嵌入的 Turtle 模板 3dm 释放到本地缓存目录，供 _TurtleNew 命令调用。
+        /// 把嵌入的 Turtle 模板 3dm 释放到 Rhino 的模板目录（中英文都放），
+        /// 新建文件时就能在模板列表里选 Turtle.3dm。
         /// </summary>
         private static void ExtractTemplates()
         {
             string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string templatesDir = Path.Combine(appData, "Turtle", "Templates");
-            Directory.CreateDirectory(templatesDir);
+
+            // 中英文两个语言目录都放
+            string[] locales = { "en-US", "zh-CN" };
+            var destDirs = locales.Select(locale => Path.Combine(appData, "McNeel", "Rhinoceros", "8.0",
+                "Localization", locale, "Template Files")).ToArray();
+            foreach (var dir in destDirs)
+                Directory.CreateDirectory(dir);
 
             var asm = Assembly.GetExecutingAssembly();
             string resName = asm.GetManifestResourceNames()
@@ -98,11 +104,20 @@ namespace Turtle
             if (resName == null)
                 return;
 
-            string dest = Path.Combine(templatesDir, "Turtle.3dm");
+            byte[] embedded;
             using (var stream = asm.GetManifestResourceStream(resName))
-            using (var fs = new FileStream(dest, FileMode.Create, FileAccess.Write))
+            using (var ms = new MemoryStream())
             {
-                stream.CopyTo(fs);
+                stream.CopyTo(ms);
+                embedded = ms.ToArray();
+            }
+
+            foreach (var destDir in destDirs)
+            {
+                string dest = Path.Combine(destDir, "Turtle.3dm");
+                if (File.Exists(dest) && HashEquals(File.ReadAllBytes(dest), embedded))
+                    continue;
+                File.WriteAllBytes(dest, embedded);
             }
         }
 
