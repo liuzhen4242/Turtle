@@ -29,6 +29,8 @@
     <EmbeddedResource Include="Resources\DisplayStyles\*.ini" />
     <!-- 材质库 rmtl，安装时释放到 Rhino Render Content 目录 -->
     <EmbeddedResource Include="Resources\Materials\*.rmtl" />
+    <!-- Turtle 模板 3dm，安装时释放到本地缓存目录 -->
+    <EmbeddedResource Include="Resources\Turtle.3dm" />
   </ItemGroup>
 
   <!-- 编译后自动把 dll 复制成 .rhp，并带上 rui，形成完整可分发文件夹 -->

@@ -29,6 +29,7 @@ namespace Turtle
             try
             {
                 ExtractEmbeddedScripts();
+                ExtractTemplates();
                 InstallAliases();
                 InstallUserObjects();
                 InstallDisplayModes();
@@ -79,6 +80,29 @@ namespace Turtle
                 {
                     stream.CopyTo(fs);
                 }
+            }
+        }
+
+        /// <summary>
+        /// 把嵌入的 Turtle 模板 3dm 释放到本地缓存目录，供 _TurtleNew 命令调用。
+        /// </summary>
+        private static void ExtractTemplates()
+        {
+            string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string templatesDir = Path.Combine(appData, "Turtle", "Templates");
+            Directory.CreateDirectory(templatesDir);
+
+            var asm = Assembly.GetExecutingAssembly();
+            string resName = asm.GetManifestResourceNames()
+                .FirstOrDefault(n => n.EndsWith("Turtle.3dm", StringComparison.OrdinalIgnoreCase));
+            if (resName == null)
+                return;
+
+            string dest = Path.Combine(templatesDir, "Turtle.3dm");
+            using (var stream = asm.GetManifestResourceStream(resName))
+            using (var fs = new FileStream(dest, FileMode.Create, FileAccess.Write))
+            {
+                stream.CopyTo(fs);
             }
         }
 
