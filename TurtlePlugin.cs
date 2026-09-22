@@ -233,30 +233,18 @@ namespace Turtle
                 }
 
                 string dest = Path.Combine(destDir, fileName);
-                bool changed = true;
-                if (File.Exists(dest))
-                {
-                    if (HashEquals(File.ReadAllBytes(dest), embedded))
-                        changed = false;
-                    else
-                        File.WriteAllBytes(dest, embedded);
-                }
-                else
-                {
+                // 文件不存在或内容变了才重新写入
+                if (!File.Exists(dest) || !HashEquals(File.ReadAllBytes(dest), embedded))
                     File.WriteAllBytes(dest, embedded);
-                }
 
-                // 导入到 Rhino 显示模式系统（interactive=false 静默导入，冲突自动替换）
-                if (changed)
+                // 每次启动都导入（幂等），确保即使第一次导入失败的文件也能重试
+                try
                 {
-                    try
-                    {
-                        global::Rhino.Display.DisplayModeDescription.ImportFromFile(dest, false);
-                    }
-                    catch
-                    {
-                        // 导入失败不影响插件主体功能
-                    }
+                    global::Rhino.Display.DisplayModeDescription.ImportFromFile(dest, false);
+                }
+                catch
+                {
+                    // 导入失败不影响插件主体功能
                 }
             }
         }
