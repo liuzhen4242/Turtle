@@ -27,6 +27,8 @@
     <EmbeddedResource Include="Resources\KeyTurtle.txt" />
     <!-- 自定义显示模式 ini，安装时释放到 Rhino DisplayModes 目录 -->
     <EmbeddedResource Include="Resources\DisplayStyles\*.ini" />
+    <!-- 材质库 rmtl，安装时释放到 Rhino Render Content 目录 -->
+    <EmbeddedResource Include="Resources\Materials\*.rmtl" />
   </ItemGroup>
 
   <!-- 编译后自动把 dll 复制成 .rhp，并带上 rui，形成完整可分发文件夹 -->

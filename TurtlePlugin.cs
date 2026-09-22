@@ -32,6 +32,7 @@ namespace Turtle
                 InstallAliases();
                 InstallUserObjects();
                 InstallDisplayModes();
+                InstallMaterials();
                 InstallToolbar();
             }
             catch (Exception ex)
@@ -239,6 +240,43 @@ namespace Turtle
                 string dest = Path.Combine(destDir, fileName);
                 if (File.Exists(dest) && HashEquals(File.ReadAllBytes(dest), embedded))
                     continue;   // 已存在且内容一致，跳过
+
+                File.WriteAllBytes(dest, embedded);
+            }
+        }
+
+        /// <summary>
+        /// 把嵌入的材质库文件（Resources/Materials/*.rmtl）释放到 Rhino 的
+        /// Render Content 目录下的 Misc/Turtle 子目录，使材质出现在 Rhino 材质编辑器。
+        /// 版本校验：SHA-256 不一致才覆盖，避免每次启动无谓写盘。
+        /// </summary>
+        private static void InstallMaterials()
+        {
+            var asm = Assembly.GetExecutingAssembly();
+            string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            // Rhino 8 中文环境渲染内容目录
+            string destDir = Path.Combine(appData, "McNeel", "Rhinoceros", "8.0",
+                "Localization", "zh-CN", "Render Content", "Misc", "Turtle");
+            Directory.CreateDirectory(destDir);
+
+            foreach (string resName in asm.GetManifestResourceNames()
+                .Where(n => n.EndsWith(".rmtl", StringComparison.OrdinalIgnoreCase)))
+            {
+                int lastDot = resName.LastIndexOf('.');
+                int prevDot = resName.LastIndexOf('.', lastDot - 1);
+                string fileName = resName.Substring(prevDot + 1);
+
+                byte[] embedded;
+                using (var stream = asm.GetManifestResourceStream(resName))
+                using (var ms = new MemoryStream())
+                {
+                    stream.CopyTo(ms);
+                    embedded = ms.ToArray();
+                }
+
+                string dest = Path.Combine(destDir, fileName);
+                if (File.Exists(dest) && HashEquals(File.ReadAllBytes(dest), embedded))
+                    continue;
 
                 File.WriteAllBytes(dest, embedded);
             }
