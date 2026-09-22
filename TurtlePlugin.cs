@@ -251,7 +251,8 @@ namespace Turtle
 
         /// <summary>
         /// 把嵌入的材质库文件（Resources/Materials/*.rmtl）释放到 Rhino 的
-        /// Render Content 目录下的 Misc/Turtle 子目录，使材质出现在 Rhino 材质编辑器。
+        /// Render Content 目录下的 Turtle 子目录（和 Architectural/Metal/Wood 等官方分类平级），
+        /// 使材质出现在 Rhino 材质编辑器的 Turtle 分类下。
         /// 中英文两个目录都放（en-US + zh-CN），不管用户 Rhino 用什么语言都能识别。
         /// 版本校验：SHA-256 不一致才覆盖，避免每次启动无谓写盘。
         /// </summary>
@@ -263,7 +264,7 @@ namespace Turtle
             // 中英文两个语言目录都放
             string[] locales = { "en-US", "zh-CN" };
             var destDirs = locales.Select(locale => Path.Combine(appData, "McNeel", "Rhinoceros", "8.0",
-                "Localization", locale, "Render Content", "Misc", "Turtle")).ToArray();
+                "Localization", locale, "Render Content", "Turtle")).ToArray();
             foreach (var dir in destDirs)
                 Directory.CreateDirectory(dir);
 
