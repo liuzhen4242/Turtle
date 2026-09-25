@@ -24,17 +24,33 @@ namespace Turtle
 
         public static TurtlePlugin Instance { get; private set; }
 
+
         protected override LoadReturnCode OnLoad(ref string errorMessage)
         {
             try
             {
+                WriteOnLoadLog("OnLoad 开始");
                 ExtractEmbeddedScripts();
                 ExtractTemplates();
                 InstallAliases();
                 InstallUserObjects();
                 InstallDisplayModes();
                 InstallMaterials();
-                InstallToolbar();
+                WriteOnLoadLog("资源安装完成");
+                // Mac Rhino 8.7 的 RhinoCommon 缺少 CRhinoUiFile_* 入口点：调用 ToolbarFileCollection
+                // 会抛 EntryPointNotFoundException，且会导致 Rhino 启动卡在 Initializing。
+                // Mac 上工具栏改由 yak 包机制加载（包内 Turtle.rui 与 Turtle.rhp 同名，Rhino 自动加载），
+                // 因此这里跳过 API 调用。
+                if (Environment.OSVersion.Platform == PlatformID.Win32NT)
+                {
+                    WriteOnLoadLog("Windows：同步加载工具栏");
+                    InstallToolbar();
+                    WriteOnLoadLog("工具栏加载结束");
+                }
+                else
+                {
+                    WriteOnLoadLog("Mac：跳过 ToolbarFiles API，由 yak 同名 rui 自动加载");
+                }
             }
             catch (Exception ex)
             {
@@ -43,6 +59,7 @@ namespace Turtle
             }
             return LoadReturnCode.Success;
         }
+
 
         /// <summary>
         /// 把嵌入在 .rhp 里的 .py 脚本解压到本地缓存目录。
@@ -186,6 +203,18 @@ namespace Turtle
             }
         }
 
+        /// <summary>OnLoad 诊断日志。</summary>
+        private static void WriteOnLoadLog(string msg)
+        {
+            try
+            {
+                string logDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Turtle");
+                Directory.CreateDirectory(logDir);
+                File.AppendAllText(Path.Combine(logDir, "onload.log"), DateTime.Now.ToString("HH:mm:ss") + " " + msg + Environment.NewLine);
+            }
+            catch { }
+        }
+
         /// <summary>
         /// 加载 Turtle.rui 工具栏文件，使工具列出现在 Rhino 界面。
         /// 关键点：
@@ -198,18 +227,26 @@ namespace Turtle
         /// </summary>
         private static void InstallToolbar()
         {
+            string logDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Turtle");
+            string logPath = Path.Combine(logDir, "toolbar.log");
             try
             {
+                Directory.CreateDirectory(logDir);
+                File.WriteAllText(logPath, DateTime.Now.ToString("HH:mm:ss") + " 开始\n");
+
                 // 1) 定位 rui：先看 rhp 同目录（拖拽安装 / bin 调试），再看 yak 包目录
                 string rhpDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 string ruiPath = rhpDir != null ? Path.Combine(rhpDir, "Turtle.rui") : null;
+                File.AppendAllText(logPath, "rhpDir=" + rhpDir + "\n");
                 if (ruiPath == null || !File.Exists(ruiPath))
                     ruiPath = FindYakRuiPath();
+                File.AppendAllText(logPath, "ruiPath=" + ruiPath + " exists=" + (ruiPath != null && File.Exists(ruiPath)) + "\n");
                 if (ruiPath == null || !File.Exists(ruiPath))
                     return;   // 找不到 rui，静默跳过（不阻断插件加载）
 
                 // 2) 幂等打开：已打开则不动
                 var toolbars = Rhino.RhinoApp.ToolbarFiles;
+                File.AppendAllText(logPath, "ToolbarFiles count=" + toolbars.Count + "\n");
                 bool alreadyOpen = false;
                 for (int i = 0; i < toolbars.Count; i++)
                 {
@@ -219,8 +256,16 @@ namespace Turtle
                         break;
                     }
                 }
+                File.AppendAllText(logPath, "alreadyOpen=" + alreadyOpen + "\n");
                 if (!alreadyOpen)
-                    toolbars.Open(ruiPath);
+                {
+                    var opened = toolbars.Open(ruiPath);
+                    File.AppendAllText(logPath, "Open() 返回=" + (opened != null) + "\n");
+                }
+                else
+                {
+                    File.AppendAllText(logPath, "已打开，跳过 Open()\n");
+                }
 
                 // 3) 找到同名工具栏组并设为可见（首次加载默认可能不显示）
                 for (int i = 0; i < toolbars.Count; i++)
@@ -228,17 +273,22 @@ namespace Turtle
                     var tf = toolbars[i];
                     if (!string.Equals(tf.Path, ruiPath, StringComparison.OrdinalIgnoreCase))
                         continue;
+                    File.AppendAllText(logPath, "匹配工具栏文件: groups=" + tf.GroupCount + "\n");
                     for (int g = 0; g < tf.GroupCount; g++)
                     {
                         var group = tf.GetGroup(g);
                         if (group != null && group.Name.IndexOf("Turtle", StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
                             group.Visible = true;
+                            File.AppendAllText(logPath, "组可见: " + group.Name + "\n");
+                        }
                     }
                 }
+                File.AppendAllText(logPath, "完成\n");
             }
-            catch
+            catch (Exception ex)
             {
-                // 工具栏加载失败不影响插件主体功能
+                try { File.AppendAllText(logPath, "异常: " + ex.ToString() + "\n"); } catch { }
             }
         }
 

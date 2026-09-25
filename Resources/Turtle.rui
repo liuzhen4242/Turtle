@@ -5,6 +5,34 @@
       <text>
         <locale_1033>color-turtle</locale_1033>
       </text>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="e242ee91-af6d-407e-af4c-0c8530355102"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="7663ebdc-b81b-49e8-a67f-f83e4e4b5e9f"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="bdffc206-d14b-4148-b797-c342c98591e5"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="609e6fcc-67d9-4822-b3e2-f9597cf35c1d"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="94a312ff-d9e2-49b3-ab87-b83da0034d50"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="c479780d-9ee4-4ab2-8d20-a7a37a356c74"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="97eb5b7a-db48-4cf8-abe0-c06216ace898"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
     </tool_bar_group>
   </tool_bar_groups>
   <tool_bars>
@@ -683,7 +711,7 @@
         <left_macro_id>47eadcbc-aea8-489d-b948-d7307566177b</left_macro_id>
       </tool_bar_item>
     </tool_bar>
-      <tool_bar guid="97eb5b7a-db48-4cf8-abe0-c06216ace898">
+    <tool_bar guid="97eb5b7a-db48-4cf8-abe0-c06216ace898">
       <text>
         <locale_1033>color-material-turtle</locale_1033>
         <locale_2052>Color-material-turtle</locale_2052>
@@ -782,7 +810,7 @@
         <left_macro_id>7a531bb1-5aab-4d29-9971-54fa2ac55bfd</left_macro_id>
       </tool_bar_item>
     </tool_bar>
-  </tool_bars>
+</tool_bars>
   <macros>
     <macro_item guid="d32b6e52-3082-4160-95ce-d5b360d61db1" bitmap_id="e8e6c9d1-c715-4ce3-9473-f670f4adcb34">
       <tooltip>
@@ -2417,20 +2445,24 @@ enter</script>
       <script>! _SelDupAll</script>
     </macro_item>
     <macro_item guid="cdb3958c-fe35-4d3b-af00-4e3f8838a3bc" bitmap_id="10823f6a-cb8a-4190-b342-821d6ffc6951">
-      <text>
-        <locale_1033>64-64-64</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>64-64-64</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>64-64-64</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-64-64-64
-enterend</script>
+c-gray3
+enterend
+</script>
     </macro_item>
     <macro_item guid="d0b2302d-3e36-4b59-a834-8ea54513c7fb" bitmap_id="c4914646-bb38-456f-8251-9f1c9001b66f">
       <tooltip>
@@ -2463,36 +2495,44 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="d2934d74-11ba-4409-b054-08a8943eb40c" bitmap_id="a961193f-be2a-4f2f-99e6-c5ac2260c9ee">
-      <text>
-        <locale_1033>176-176-176-56</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>176-176-176-56</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>176-176-176-56</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-176-176-176-56
-enterend</script>
+g-gray1
+enterend
+</script>
     </macro_item>
     <macro_item guid="604f3903-fd0b-4555-b20b-4527558e0baa" bitmap_id="b5848ec2-747e-462f-8ff8-07da3789df94">
-      <text>
-        <locale_1033>128-128-128</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>128-128-128</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>128-128-128</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-128-128-128
-enterend</script>
+c-gray2
+enterend
+</script>
     </macro_item>
     <macro_item guid="eb8b5dbe-f1ca-4ee3-80c6-4f840c430892" bitmap_id="6ec188b6-b8e7-4ca6-9e56-8b5196dc7883">
       <tooltip>
@@ -2510,20 +2550,24 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="d63e57f6-256d-4ef6-a2d9-d9fff02ca36f" bitmap_id="1cad2e1d-859f-4174-b612-61a19f9cbb60">
-      <text>
-        <locale_1033>0-169-255</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>0-169-255</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>0-169-255</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-0-169-255
-enterend</script>
+c-blue2
+enterend
+</script>
     </macro_item>
     <macro_item guid="7ca0a665-8498-4d89-8ead-15670ce37445" bitmap_id="3f495785-f654-4288-b7c5-004325edacb4">
       <tooltip>
@@ -2556,36 +2600,44 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="fe4b4bfa-be8c-4c14-b310-334080dbf9a7" bitmap_id="d9b4623f-58fb-4b47-8a5a-78912904dcfe">
-      <text>
-        <locale_1033>255-138-8</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-138-8</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-138-8</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-138-8
-enterend</script>
+c-orenge1
+enterend
+</script>
     </macro_item>
     <macro_item guid="34a8ccce-f182-4679-9cc1-5af20a52e2f6" bitmap_id="f3ad1fdc-7248-4562-a017-927adae0c210">
-      <text>
-        <locale_1033>112-0-15</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>112-0-15</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>112-0-15</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-112-0-15
-enterend</script>
+C-red
+enterend
+</script>
     </macro_item>
     <macro_item guid="d9d748db-6cf5-42fb-b2bc-9d033d24f6b7" bitmap_id="adbc902e-e4ee-41c6-95f9-a0f421f2c154">
       <tooltip>
@@ -2678,36 +2730,44 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="b5d2ed70-46d5-4d8f-8b64-bfea18e5f4ec" bitmap_id="515d16b2-2c51-4c68-a596-b2e2eff68642">
-      <text>
-        <locale_1033>255-101-0</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-101-0</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-101-0</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-101-0
-enterend</script>
+c-orenge
+enterend
+</script>
     </macro_item>
     <macro_item guid="65549fc4-dd5c-49fe-9b17-6accdd2dbf4f" bitmap_id="42bf8a41-53a2-4922-a85e-9a57f5852d64">
-      <text>
-        <locale_1033>160-233-255</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>160-233-255</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>160-233-255</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-160-233-255
-enterend</script>
+c-blue4
+enterend
+</script>
     </macro_item>
     <macro_item guid="00355449-3978-413a-be85-6780df0ae63c" bitmap_id="840cfe9e-b10e-4022-8bbd-15f6c56384b3">
       <tooltip>
@@ -2740,36 +2800,44 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="768d4064-c5a8-489a-b338-e9f97714fcc2" bitmap_id="7819d3fb-08cf-4696-9ec5-01c60fb19ead">
-      <text>
-        <locale_1033>155-236-0-51</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>155-236-0-51</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>155-236-0-51</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-155-236-0-51
-enterend</script>
+g-green1
+enterend
+</script>
     </macro_item>
     <macro_item guid="9da8a83c-19ac-41dc-8619-f0c899d4f617" bitmap_id="f2522bad-883b-49e3-9547-2a08f6418784">
-      <text>
-        <locale_1033>255-131-131-44</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-131-131-44</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-131-131-44</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-131-131-44
-enterend</script>
+g-red1
+enterend
+</script>
     </macro_item>
     <macro_item guid="5ee27c3f-2856-44e4-a87f-c5d06f66c5b5" bitmap_id="96bef9be-b059-499a-8ce4-d98877441607">
       <tooltip>
@@ -2787,20 +2855,24 @@ enterend</script>
       <script>-Layer f 000-C-Gray1</script>
     </macro_item>
     <macro_item guid="4fcc2b89-b6ce-43a1-912c-796fb719c0fc" bitmap_id="fa27ba1d-b771-477c-97bd-4c273650c3f8">
-      <text>
-        <locale_1033>250-250-250-97</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>250-250-250-97</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>250-250-250-97</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-250-250-250-97
-enterend</script>
+g-white
+enterend
+</script>
     </macro_item>
     <macro_item guid="33db23ec-2b45-4f29-b928-6be724a2f5c3" bitmap_id="65ed97cb-6303-4427-90d5-bf3082121322">
       <tooltip>
@@ -2833,52 +2905,64 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="234d36a1-3f5f-460b-902b-3e1179b91dea" bitmap_id="55780322-5511-4b6d-a703-2e5bce80abf5">
-      <text>
-        <locale_1033>0-0-0</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>0-0-0</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>0-0-0</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-0-0-0
-enterend</script>
+c-black
+enterend
+</script>
     </macro_item>
     <macro_item guid="a8bae0e1-3e13-4e49-9640-9697dded1f1e" bitmap_id="2fa0449b-ee92-427d-a73d-2a409d39810e">
-      <text>
-        <locale_1033>255-255-255</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-255-255</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-255-255</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-255-255
-enterend</script>
+c-wite
+enterend
+</script>
     </macro_item>
     <macro_item guid="b68c5dce-e2f1-4d1d-be12-b84dd764a340" bitmap_id="f88403e2-a542-4497-96f7-0f5ed2420849">
-      <text>
-        <locale_1033>254-116-139</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>254-116-139</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>254-116-139</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-254-116-139
-enterend</script>
+c-red4
+enterend
+</script>
     </macro_item>
     <macro_item guid="5a2a9bdb-e31f-4c42-bb63-dcfc5442271b" bitmap_id="0a7b3691-b73d-4ec2-afd5-1f0935862c0d">
       <tooltip>
@@ -2896,36 +2980,44 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="472b0df8-c754-4e84-80bb-929705c2a7b1" bitmap_id="9386770a-672b-4567-b9ea-a70d629d5900">
-      <text>
-        <locale_1033>155-236-0</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>155-236-0</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>155-236-0</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-155-236-0
-enterend</script>
+c-green3
+enterend
+</script>
     </macro_item>
     <macro_item guid="cdf08f19-9b32-4028-8bc9-89e2f83a26e7" bitmap_id="ca85c45e-9cbd-424b-a67e-2ae9f675292a">
-      <text>
-        <locale_1033>247-44-92</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>247-44-92</locale_1033>
+        <locale_1033>red</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>247-44-92</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-247-44-92
-enterend</script>
+c-red3
+enterend
+</script>
     </macro_item>
     <macro_item guid="f0007c1b-4266-488d-a44d-1edde96991f5" bitmap_id="62742880-8571-4a2b-b486-685c818ef148">
       <tooltip>
@@ -3018,20 +3110,24 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="bba1e4b9-1d3e-4b2a-af97-170abf259616" bitmap_id="df091094-0fca-400d-b83a-92a98a8207af">
-      <text>
-        <locale_1033>192-192-192</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>192-192-192</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>192-192-192</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-192-192-192
-enterend</script>
+c-gray1
+enterend
+</script>
     </macro_item>
     <macro_item guid="6ab1c552-9a35-4313-b412-f5384e5590f2" bitmap_id="e96ec6ac-1c35-409e-80eb-2279ef99e55e">
       <tooltip>
@@ -3049,52 +3145,64 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="7eb048d8-ce4f-4a88-86e9-5a9b802cc6b2" bitmap_id="2bcb3d02-c870-4486-a610-1e695bc650a3">
-      <text>
-        <locale_1033>74-74-74-49</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>74-74-74-49</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>74-74-74-49</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-74-74-74-49
-enterend</script>
+g-gray2
+enterend
+</script>
     </macro_item>
     <macro_item guid="d37c0933-2989-4abb-a907-4d480d14a9ec" bitmap_id="d6ce9278-0629-425f-ba49-0270adcdb379">
-      <text>
-        <locale_1033>214-239-216</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>214-239-216</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>214-239-216</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-214-239-216
-enterend</script>
+c-green1
+enterend
+</script>
     </macro_item>
     <macro_item guid="b5f63084-c4a5-4dab-8b44-9af717593668" bitmap_id="a4440a93-856d-4eeb-a84e-5a679e410256">
-      <text>
-        <locale_1033>255-255-128</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-255-128</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-255-128</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-255-128
-enterend</script>
+c-yellow
+enterend
+</script>
     </macro_item>
     <macro_item guid="21ee6037-b6e6-4206-8f67-8e2c7f3e5130" bitmap_id="b1600817-8bcb-4d3b-9ef5-1b0abc53a107">
       <tooltip>
@@ -3112,52 +3220,64 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="17f62aa4-a721-4b9f-b008-170f2af98651" bitmap_id="104cbb47-740d-4c23-8880-0ccadcc607b4">
-      <text>
-        <locale_1033>255-170-128</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-170-128</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-170-128</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-170-128
-enterend</script>
+c-red5
+enterend
+</script>
     </macro_item>
     <macro_item guid="f20bbfcb-6271-49d1-b8f5-55a2749d4233" bitmap_id="3ac852c2-c32e-4b05-ab0c-707e9dd98fdd">
-      <text>
-        <locale_1033>255-255-128-50</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-255-128-50</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-255-128-50</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-255-128-50
-enterend</script>
+g-yellow
+enterend
+</script>
     </macro_item>
     <macro_item guid="d3892326-b205-4b3a-b89c-e2ca9a1cca4e" bitmap_id="876f152e-6db0-44ce-a34b-4d6a1cb3a331">
-      <text>
-        <locale_1033>31-64-41</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>31-64-41</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>31-64-41</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-31-64-41
-enterend</script>
+c-green5
+enterend
+</script>
     </macro_item>
     <macro_item guid="b7b7767b-664f-4bd5-a872-ae9633156609" bitmap_id="15a7963b-f6c6-4f12-9384-7e66b8b2d52b">
       <tooltip>
@@ -3175,20 +3295,24 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="59e9caab-67c9-4559-82f2-189faf6751ec" bitmap_id="8bbdb013-69d6-4b04-a28e-6cff773246d7">
-      <text>
-        <locale_1033>6-208-1</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>6-208-1</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>6-208-1</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-6-208-1
-enterend</script>
+c-green4
+enterend
+</script>
     </macro_item>
     <macro_item guid="3db7ee38-8901-480f-97c2-02fdcae37dbb" bitmap_id="d51712b3-050f-4178-a2ce-94ee5f28f4d7">
       <tooltip>
@@ -3206,20 +3330,24 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="f816b992-95eb-4134-98f9-ace2552c4bb4" bitmap_id="5f4cfbd8-01e3-4f83-850c-be1585c31b4a">
-      <text>
-        <locale_1033>87-213-255-61</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>87-213-255-61</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>87-213-255-61</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-87-213-255-61
-enterend</script>
+g-blue
+enterend
+</script>
     </macro_item>
     <macro_item guid="256e76c6-2f59-4c7c-b935-3ac92b39be4d" bitmap_id="b41e984b-422c-4dff-ba30-85a47661703a">
       <tooltip>
@@ -3237,20 +3365,24 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="018cdc4b-2221-4fab-8bbf-cbe845a11f44" bitmap_id="f1667dec-9aa7-47a1-9068-4348367dba08">
-      <text>
-        <locale_1033>0-103-105</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>0-103-105</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>0-103-105</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-0-103-105
-enterend</script>
+c-green6
+enterend
+</script>
     </macro_item>
     <macro_item guid="ba93fb59-6489-480b-b8e8-2ecbba4c74d1" bitmap_id="f2b3b38a-0b9e-44f3-80cc-eec32df3ad35">
       <tooltip>
@@ -3268,52 +3400,64 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="4c28de23-3c2a-4c2f-a636-716cf2a6e22d" bitmap_id="1c32f212-8bfb-473c-a8b6-90661e71e0dd">
-      <text>
-        <locale_1033>254-42-42</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>254-42-42</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>254-42-42</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-254-42-42
-enterend</script>
+C-red2
+enterend
+</script>
     </macro_item>
     <macro_item guid="9ca8165a-b1df-458f-af81-b73c26db3373" bitmap_id="2890e796-21fa-4ad0-8ed7-44395831ef85">
-      <text>
-        <locale_1033>137-207-243</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>137-207-243</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>137-207-243</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-137-207-243
-enterend</script>
+c-blue3
+enterend
+</script>
     </macro_item>
     <macro_item guid="9a8150ee-8dfb-40fb-aefb-310621fdd3c5" bitmap_id="d40b38c3-0412-4fa5-9063-9bf2223d52b3">
-      <text>
-        <locale_1033>128-175-129</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>128-175-129</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>128-175-129</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-128-175-129
-enterend</script>
+c-green2
+enterend
+</script>
     </macro_item>
     <macro_item guid="29567215-904e-4d70-8469-41e0fbf4adb2" bitmap_id="78f576b2-54c8-4eab-b305-677793a62941">
       <tooltip>
@@ -3331,36 +3475,44 @@ enterend</script>
       <script>-Layer f 000-木材</script>
     </macro_item>
     <macro_item guid="03522e41-bc3c-4f55-b03e-852eec48a972" bitmap_id="a69cb5a3-4c3a-4321-9bcc-d2320650508b">
-      <text>
-        <locale_1033>29-93-155</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>29-93-155</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>29-93-155</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-29-93-155
-enterend</script>
+c-blue1
+enterend
+</script>
     </macro_item>
     <macro_item guid="ef78e8e1-fee3-4f88-8c1a-63425402b1b8" bitmap_id="5f457d41-b00b-4511-aa88-5731158d0e88">
-      <text>
-        <locale_1033>255-201-14</locale_1033>
-      </text>
       <tooltip>
-        <locale_1033>255-201-14</locale_1033>
+        <locale_1033>绿色1</locale_1033>
       </tooltip>
+      <help_text>
+        <locale_1033>巨集 01</locale_1033>
+      </help_text>
       <button_text>
-        <locale_1033>255-201-14</locale_1033>
+        <locale_1033>巨集 01</locale_1033>
       </button_text>
+      <menu_text>
+        <locale_1033>巨集 01</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
-255-201-14
-enterend</script>
+c-orenge3
+enterend
+</script>
     </macro_item>
     <macro_item guid="8b681a19-ffbc-4aeb-aec4-4d2ca47f3143" bitmap_id="8f72926e-26c7-4292-adf7-2a311c9bcc4d">
       <tooltip>
@@ -4587,7 +4739,7 @@ color_to_material()
         <locale_1033>灰 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,255,255,0
+255,255,255,100
 Enter
 Enter
 _SelNone</script>
@@ -4603,7 +4755,7 @@ _SelNone</script>
         <locale_1033>灰 | L75</locale_1033>
       </button_text>
       <script>-Properties O C O
-192,192,192,0
+192,192,192,100
 Enter
 Enter
 _SelNone</script>
@@ -4619,7 +4771,7 @@ _SelNone</script>
         <locale_1033>灰 | L50</locale_1033>
       </button_text>
       <script>-Properties O C O
-127,127,127,0
+127,127,127,100
 Enter
 Enter
 _SelNone</script>
@@ -4635,7 +4787,7 @@ _SelNone</script>
         <locale_1033>灰 | L25</locale_1033>
       </button_text>
       <script>-Properties O C O
-64,64,64,0
+64,64,64,100
 Enter
 Enter
 _SelNone</script>
@@ -4651,7 +4803,7 @@ _SelNone</script>
         <locale_1033>灰 | L0</locale_1033>
       </button_text>
       <script>-Properties O C O
-1,1,1,0
+1,1,1,100
 Enter
 Enter
 _SelNone</script>
@@ -4667,7 +4819,7 @@ _SelNone</script>
         <locale_1033>R-B13 | L44</locale_1033>
       </button_text>
       <script>-Properties O C O
-112,0,15,0
+112,0,15,100
 Enter
 Enter
 _SelNone</script>
@@ -4683,7 +4835,7 @@ _SelNone</script>
         <locale_1033>R-B16-G16 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,41,41,0
+255,41,41,100
 Enter
 Enter
 _SelNone</script>
@@ -4699,7 +4851,7 @@ _SelNone</script>
         <locale_1033>R-B37-G18 | L97</locale_1033>
       </button_text>
       <script>-Properties O C O
-247,44,92,0
+247,44,92,100
 Enter
 Enter
 _SelNone</script>
@@ -4715,7 +4867,7 @@ _SelNone</script>
         <locale_1033>R-B55-G45 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,116,139,0
+255,116,139,100
 Enter
 Enter
 _SelNone</script>
@@ -4731,7 +4883,7 @@ _SelNone</script>
         <locale_1033>R-G67-B50 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,170,128,0
+255,170,128,100
 Enter
 Enter
 _SelNone</script>
@@ -4747,7 +4899,7 @@ _SelNone</script>
         <locale_1033>R-G40 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,101,0,0
+255,101,0,100
 Enter
 Enter
 _SelNone</script>
@@ -4763,7 +4915,7 @@ _SelNone</script>
         <locale_1033>R-G54 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,138,8,0
+255,138,8,100
 Enter
 Enter
 _SelNone</script>
@@ -4779,7 +4931,7 @@ _SelNone</script>
         <locale_1033>R-G79 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,201,14,0
+255,201,14,100
 Enter
 Enter
 _SelNone</script>
@@ -4795,7 +4947,7 @@ _SelNone</script>
         <locale_1033>R-G100-B50 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,255,128,0
+255,255,128,100
 Enter
 Enter
 _SelNone</script>
@@ -4811,7 +4963,7 @@ _SelNone</script>
         <locale_1033>灰 | L94</locale_1033>
       </button_text>
       <script>-Properties O C O
-214,239,216,0
+214,239,216,100
 Enter
 Enter
 _SelNone</script>
@@ -4827,7 +4979,7 @@ _SelNone</script>
         <locale_1033>G-B74-R73 | L69</locale_1033>
       </button_text>
       <script>-Properties O C O
-128,175,129,0
+128,175,129,100
 Enter
 Enter
 _SelNone</script>
@@ -4843,7 +4995,7 @@ _SelNone</script>
         <locale_1033>G-R66 | L93</locale_1033>
       </button_text>
       <script>-Properties O C O
-155,236,0,0
+155,236,0,100
 Enter
 Enter
 _SelNone</script>
@@ -4859,7 +5011,7 @@ _SelNone</script>
         <locale_1033>G | L82</locale_1033>
       </button_text>
       <script>-Properties O C O
-6,208,1,0
+6,208,1,100
 Enter
 Enter
 _SelNone</script>
@@ -4875,7 +5027,7 @@ _SelNone</script>
         <locale_1033>G-B64-R48 | L25</locale_1033>
       </button_text>
       <script>-Properties O C O
-31,64,41,0
+31,64,41,100
 Enter
 Enter
 _SelNone</script>
@@ -4891,7 +5043,7 @@ _SelNone</script>
         <locale_1033>B-G98 | L41</locale_1033>
       </button_text>
       <script>-Properties O C O
-0,103,105,0
+0,103,105,100
 Enter
 Enter
 _SelNone</script>
@@ -4907,7 +5059,7 @@ _SelNone</script>
         <locale_1033>B-G60-R19 | L61</locale_1033>
       </button_text>
       <script>-Properties O C O
-29,93,155,0
+29,93,155,100
 Enter
 Enter
 _SelNone</script>
@@ -4923,7 +5075,7 @@ _SelNone</script>
         <locale_1033>B-G66 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-0,169,255,0
+0,169,255,100
 Enter
 Enter
 _SelNone</script>
@@ -4939,7 +5091,7 @@ _SelNone</script>
         <locale_1033>B-G85-R56 | L95</locale_1033>
       </button_text>
       <script>-Properties O C O
-137,207,243,0
+137,207,243,100
 Enter
 Enter
 _SelNone</script>
@@ -4955,7 +5107,7 @@ _SelNone</script>
         <locale_1033>B-G91-R63 | L100</locale_1033>
       </button_text>
       <script>-Properties O C O
-160,233,255,0
+160,233,255,100
 Enter
 Enter
 _SelNone</script>
@@ -4971,7 +5123,7 @@ _SelNone</script>
         <locale_1033>灰 | L100 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,255,255,120
+255,255,255,50
 Enter
 Enter
 _SelNone</script>
@@ -4987,7 +5139,7 @@ _SelNone</script>
         <locale_1033>灰 | L29 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-74,74,74,120
+74,74,74,50
 Enter
 Enter
 _SelNone</script>
@@ -5003,7 +5155,7 @@ _SelNone</script>
         <locale_1033>灰 | L69 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-176,176,176,120
+176,176,176,50
 Enter
 Enter
 _SelNone</script>
@@ -5019,7 +5171,7 @@ _SelNone</script>
         <locale_1033>R-B51-G51 | L100 / A80</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,131,131,120
+255,131,131,80
 Enter
 Enter
 _SelNone</script>
@@ -5035,7 +5187,7 @@ _SelNone</script>
         <locale_1033>R-G100-B50 | L100 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,255,128,120
+255,255,128,50
 Enter
 Enter
 _SelNone</script>
@@ -5051,7 +5203,7 @@ _SelNone</script>
         <locale_1033>G-R66 | L93 / A55</locale_1033>
       </button_text>
       <script>-Properties O C O
-155,236,0,120
+155,236,0,55
 Enter
 Enter
 _SelNone</script>
@@ -5067,166 +5219,727 @@ _SelNone</script>
         <locale_1033>B-G84-R34 | L100 / A55</locale_1033>
       </button_text>
       <script>-Properties O C O
-87,213,255,120
+87,213,255,55
 Enter
 Enter
 _SelNone</script>
     </macro_item>
+<macro_item guid="173454db-1c67-4fb2-9f83-a11d21492505" bitmap_id="48902951-c2da-4329-9511-4b5f4b641d27">
+      <text>
+        <locale_1033>Macro colorToMat</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>colorToMat</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>颜色转材质</locale_1033>
+      </button_text>
+      <script>_-RunPythonScript (# -*- coding: utf-8 -*-
+"""
+Rhino 脚本：将对象颜色一键转换为材质（RenderMaterial 版）
+用法：
+  1. 在 Rhino 命令行输入 EditPythonScript (Rhino 6/7) 或 ScriptEditor (Rhino 8)
+  2. 粘贴本脚本并运行 (F5)
+  3. 若有选中的对象，只处理选中对象；若没有选中任何对象，则处理场景中所有对象
+
+功能：
+  - 读取每个对象的"实际显示颜色"（若图层颜色继承，也会正确取到）
+  - 相同颜色的对象自动共用同一个材质，不会重复创建（仅本次运行内合并）
+  - 材质使用 Rhino.Render.RenderMaterial（Basic Material），
+    也就是材质库同款机制：无论从"材质面板"改材质球，
+    还是从"属性面板"改选中物体的材质，其他共用该材质的物体都会联动
+"""
+
+import rhinoscriptsyntax as rs
+import scriptcontext as sc
+import Rhino
+
+
+def color_to_material():
+    doc = sc.doc
+
+    # 优先使用选中对象，没有选中则处理全部对象
+    selected = rs.SelectedObjects()
+    obj_ids = selected if selected else rs.AllObjects()
+
+    if not obj_ids:
+        print("场景中没有找到任何对象。")
+        return
+
+    color_material_map = {}  # {(R,G,B): RenderMaterial}
+    count = 0
+
+    for obj_id in obj_ids:
+        rhobj = rs.coercerhinoobject(obj_id)
+        if rhobj is None:
+            continue
+
+        # 获取对象的实际显示颜色（若按图层显示颜色，会自动取图层颜色）
+        color = rhobj.Attributes.DrawColor(doc)
+        key = (color.R, color.G, color.B)
+
+        if key in color_material_map:
+            mat = color_material_map[key]
+        else:
+            # 创建 Basic Material（材质库同款的 RenderContent 对象）
+            mat = Rhino.Render.RenderContentType.NewContentFromTypeId(
+                Rhino.Render.ContentUuids.BasicMaterialType, doc)
+            mat.BeginChange(Rhino.Render.RenderContent.ChangeContexts.Program)
+            mat.Fields.Set("diffuse", color)
+            mat.EndChange()
+            mat.Name = "Color_{}_{}_{}".format(color.R, color.G, color.B)
+
+            doc.RenderMaterials.Add(mat)
+            color_material_map[key] = mat
+
+        # 赋值给物体（RenderMaterial 属性走的是渲染内容系统，天然支持联动）
+        rhobj.RenderMaterial = mat
+        rhobj.CommitChanges()
+        count += 1
+
+    doc.Views.Redraw()
+    print("完成：共处理 {} 个对象，生成 {} 个材质（相同颜色已合并）。".format(
+        count, len(color_material_map)))
+
+
+color_to_material()
+)</script>
+    </macro_item>
+<macro_item guid="e96a0264-792d-43a4-a01c-98bde93dc661" bitmap_id="d818d82b-8315-4f68-ad57-14fdc3dd4ac1">
+      <tooltip>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </menu_text>
       <script>_-Materials
 o
 i
 Color_255_255_255_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="1a318a90-eddc-4e45-82e6-a8ebb1d199a1" bitmap_id="1a518337-9831-45a3-8016-9147f6dc6851">
+      <tooltip>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_192_192_192_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="b175d13c-5b14-4525-b851-dc44f73ba005" bitmap_id="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb">
+      <tooltip>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_127_127_127_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="d70b48af-0d9a-4e22-a0fc-17b4c10fcd7d" bitmap_id="21b8eff4-b98c-4eff-86a2-37dc5cd4f003">
+      <tooltip>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_64_64_64_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="cacb0814-a8c8-48d2-ad42-41e756ce393e" bitmap_id="08b41939-cbd8-4875-bf9c-2cb6c67af095">
+      <tooltip>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_1_1_1_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="f6423c66-fc91-40e3-a204-6418a216acfd" bitmap_id="d8976973-a54a-434a-aac7-ceb8106976ce">
+      <tooltip>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_112_0_15_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="89d83555-e458-4efc-8929-e29499969c7f" bitmap_id="64981adf-a4b7-4455-929a-7d309bc3502b">
+      <tooltip>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_41_41_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="7b9b12e9-d799-4931-9619-6d7a905a6741" bitmap_id="15de458e-87eb-41e0-951e-50567ab1e529">
+      <tooltip>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_247_44_92_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="e1ce3278-4f5a-4a0f-93bf-9e6a76f376bc" bitmap_id="09626706-610f-4b8c-93c4-ed7dac6943fa">
+      <tooltip>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_116_139_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="f28e4167-8602-458a-a6d8-299a697ab093" bitmap_id="f0e6a2d5-3751-4b42-90a7-e2cb8544d139">
+      <tooltip>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_170_128_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="37d78324-a3e5-4a3c-be18-ffeb5a5290ce" bitmap_id="31a1333d-2162-49a3-a6e8-26a9f6bdc386">
+      <tooltip>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_101_0_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="e721aa96-ee4b-47d4-a90d-e6ab9e339756" bitmap_id="126818c9-1cbb-47be-813c-2f0f8b368714">
+      <tooltip>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_138_8_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="2f9f245c-7207-4ac0-851f-4020660e7045" bitmap_id="b475c56f-0dd3-43b7-89c9-aa47b9949e14">
+      <tooltip>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_201_14_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="55f68b8b-3e67-4898-b38f-195189feacf0" bitmap_id="986286bf-dad3-4582-8545-671e5869d9b1">
+      <tooltip>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_255_128_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="db784c4b-1c37-4476-a20b-58d328b90277" bitmap_id="5eab660c-fe64-47c4-a355-620b356aacc8">
+      <tooltip>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_214_239_216_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="76b30f69-ddc6-4959-ae41-ee71f0436e39" bitmap_id="c222cb24-fe8b-4ee8-b00e-1b2af00efa70">
+      <tooltip>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_128_175_129_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="4e4d3dcb-41ab-4c39-91f6-623ec693af1f" bitmap_id="1a132ad6-b926-4b37-b6d5-97f6ee4890ba">
+      <tooltip>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_155_236_0_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="84d9c005-ce3f-4f82-b140-ec269289343d" bitmap_id="4d49ea8f-4b12-4576-aca3-33013869c22e">
+      <tooltip>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_6_208_1_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="99be31f8-7485-4914-9ff8-0181ea5d70d9" bitmap_id="7972dfa5-9cf9-4ac9-a633-10a427101039">
+      <tooltip>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_31_64_41_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="0573c7c5-9462-481f-8b19-6a0130d8746b" bitmap_id="dbb70c40-b2cc-45c6-b86d-ccbb8a561946">
+      <tooltip>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_0_103_105_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="28d25d37-f71d-4ef7-90a9-49e17d79d169" bitmap_id="31874537-887b-4355-a0b5-14c88228605f">
+      <tooltip>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_29_93_155_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="46b5f112-00e7-4269-96fa-6056d6728da1" bitmap_id="99eeee57-2c9e-4659-8b72-e679476cab72">
+      <tooltip>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_0_169_255_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="d76683d2-9a18-4b0c-84f2-b51e05a3672d" bitmap_id="2d43dd28-3477-41cd-89a7-b2dc5249dee2">
+      <tooltip>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_137_207_243_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="2c6d3c9e-35cc-45f3-b64c-bd44de313733" bitmap_id="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8">
+      <tooltip>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_160_233_255_A0
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="59581e4e-26bc-462d-8e55-94083dc9da73" bitmap_id="c41fcaa5-e260-4e4d-b509-155eb6e663bd">
+      <tooltip>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_255_255_A120
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="55126172-1d3c-43c4-904b-a45a6e53551f" bitmap_id="5c4b5043-fe14-4006-ab82-f5fb9f0d470b">
+      <tooltip>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_74_74_74_A120
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="918a3a57-02bb-441a-a233-720623667f3b" bitmap_id="a409b6d2-2b93-4afc-93fa-840ff45c2667">
+      <tooltip>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_176_176_176_A120
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="278607a9-776d-4cc4-a1ce-ae463584f748" bitmap_id="eeb9e952-9bd9-429e-abf8-566591ec37a2">
+      <tooltip>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_131_131_A120
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="9ce98c11-b7ed-462d-bcce-7e1c5304e69b" bitmap_id="3a882179-2f47-4194-9601-a0229dc36455">
+      <tooltip>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_255_255_128_A120
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="732e664d-f4e1-4992-b5aa-e58b85c3a264" bitmap_id="6dde172c-49a1-4703-8bcb-16fcd1a54775">
+      <tooltip>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_155_236_0_A120
-enterend</script>
-    <script>_-Materials
+enterend
+</script>
+    </macro_item>
+<macro_item guid="7a531bb1-5aab-4d29-9971-54fa2ac55bfd" bitmap_id="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3">
+      <tooltip>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
 o
 i
 Color_87_213_255_A120
-enterend</script>
+enterend
+</script>
+    </macro_item>
+<macro_item guid="e97ea14e-f703-420c-8752-3c2bf258e11a" bitmap_id="062c780b-0d8a-4467-9a5c-d7ed49569d4e">
+      <tooltip>
+        <locale_1033>物体下降至地面</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>巨集 03</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>物体下降至地面</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>巨集 03</locale_1033>
+      </menu_text>
+      <script>MoveProjectEach</script>
+    </macro_item>
   </macros>
   <icons>
     <icon guid="a15b58ca-8eac-419a-b49a-18ec2ac698c8" name="be6272d0-b977-46bc-a1a4-7e723fb0f5c3.svg">
@@ -13954,99 +14667,6 @@ PbcqB1At1QAEAH+qF/qNP2431zG1scu/AAAAAElFTkSuQmCC</png>
     </icon>
     <icon guid="abc1eb1b-e71e-49f2-a20d-de92693d80a0" name="abc1eb1b-e71e-49f2-a20d-de92693d80a0.png">
       <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7VdNSFRRFD7z7n1v7n2vZ5NYjZBiWTESZBhYhEER1tDC6GdIiAokSIgojKighQsJpILARAipaNMPRUV/SFa6KCfdZFSuolxUFFELV20qvmkm5h1lHKf3gqAPvsXlnb9777nnnEf0H1NHjIgOS+3cE8pJZog1EbUS0RKu4AeUIWWLYYXfm+70d3PWbBqoPtB+o7at+3KGWJevb3xiRUpGDdP8HDLDbdDjhgpBXGj7bbRu3UD9pcEzW19+PzEZ47dedJXFE/3CUh8M02ziBvOGVPZBt3z+q3wdcyKQ4sXLhkzH7eK2JwWUZq+of8yNFsJ5iV09wnb7874S7Nwv5xku2LbnrnSKznNf4yC03lxUWTXMDfhBbAqb4z6zoZA4uDuu7Ac3Jr+eEsr+SERR7jgFPDVkO1f0k5WJ3b1C2Z3cdwp4v0HtPkOcgmGFvxBRhPtfrktKX3OFIDijquYZETV6vIfM8PG5G3b2ceEguGhv622pnOueAIR2+mqOnr7KhYPgys6bF4TSI94AlB7BBy4cBBsejnaEhBzzBPA3EjCbRPTDE4Cw9JtV53rPcsEgiJcQMoxv3gCUk0Rb5cJBEBvFhr0BWKp74Y5997lwEESyI+k9AaDvo/Vy4SA4q3b1EBE18wAw9YzhfriC35Ta+UREFTwAQo1GreYKfhKjW3p+nBBRdKsgTwEzY87BVWjnWNnaLY+4oh+MNR26I+1pF7nPcZCO21Pd0n6NG/gTospK232e71imILz0SMcVbqgQwnm4eObwhImXAxEMkhUN2x9wg1Phr2NP7XxKzn9DaPskfkaQvdx4LqKqIuHSd57XsedCDE8H7xdFBJUMHS3bIdZwWloXf4qAUdpzZnuBwDE2o4ym2yk6WopYp53uT/8//hv4CWsWTeqzNgwcAAAAAElFTkSuQmCC</png>
-    </icon>
-      <icon guid="d818d82b-8315-4f68-ad57-14fdc3dd4ac1" name="d818d82b-8315-4f68-ad57-14fdc3dd4ac1.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAX0lEQVR4nO2WMQ7AMAgDjf//Z7pWakiWghXJtyJxFl4AjJioBpmZv8siPj5Oyau9nJJX+zkpX3kIMXQAuAIxdAC4AjF0ALgCMXQAuILD397B28PdsFu+DNAZYurCuIoHCaAcNn5MMecAAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="1a518337-9831-45a3-8016-9147f6dc6851" name="1a518337-9831-45a3-8016-9147f6dc6851.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYklEQVR4nO2WQQrAQAgD07zMp/uz9rrQtb1UQyFzFZxgLgJGzFENMvP8WhYRNx+n5NVeTsmr/ZyU7zyEGDoAXIEYOgBcgRg6AFyBGDoAXMHL397B6uHTsFu+DdAZYurC+BUXca4cNsfnSsoAAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb" name="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYElEQVR4nO2WQQqAQAwDY16en+tVcKsX27CQuRY6obkUCGaOaiDp/Fsm6eHjlLzayyl5tZ+T8pWHMMMEQCowwwRAKjDDBEAqMMMEQCr4+Ns7uHv4NuyWLwN0hpi6MLbiAggiHDY3h0MCAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="21b8eff4-b98c-4eff-86a2-37dc5cd4f003" name="21b8eff4-b98c-4eff-86a2-37dc5cd4f003.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYklEQVR4nO2WQQrAQAgD07zMp/uz9rrQtb1UQyFzFZxgLgJGzFENIuL8WpaZNx+n5NVeTsmr/ZyU7zyEGDoAXIEYOgBcgRg6AFyBGDoAXMHL397B6uHTsFu+DdAZYurC+BUXnoccNlad4DYAAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="08b41939-cbd8-4875-bf9c-2cb6c67af095" name="08b41939-cbd8-4875-bf9c-2cb6c67af095.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWUlEQVR4nO2XwQ2AMBDDctl/ZxiAUvGAREj2t1JtNa9KUGY2Z0fC56B8ea+D8uX9DssvHquMCRATlDEBYoIyJkBMUMYEiAme/xPeZHYTTEp+F/BlROqF9R9O/5YHNkaZ9bMAAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="d8976973-a54a-434a-aac7-ceb8106976ce" name="d8976973-a54a-434a-aac7-ceb8106976ce.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZUlEQVR4nO2WsQ2AQAwDDy/AqozCqkwALRIfaD6JkHxtpJwVNwHTzBINNtZztmznePhUJY/2qkoe7VelfOQRzcgBcAXNyAFwBc3IAXAFzcgBcAUff3sGd4/ehtnyYYDMEFUX5ldcI7MVNiJrVEQAAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="64981adf-a4b7-4455-929a-7d309bc3502b" name="64981adf-a4b7-4455-929a-7d309bc3502b.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZElEQVR4nO2WsQ2AQAwDzY3z+8/y4wAtEh9oSCIkXxspZ8VNJNPMFg32MY6vZcx581Elj/ZSJY/2UylfeVAzOIBcQTM4gFxBMziAXEEzOIBcwcvfnsHVw9MwW74MkBmi6sL6FSd5exw2HIH7ywAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="15de458e-87eb-41e0-951e-50567ab1e529" name="15de458e-87eb-41e0-951e-50567ab1e529.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjTt2YSTGYyR2+RJaJD5P84mF5Gsj5ay4CWDELNGgbfs1W7aex8vHKnm0l1XyaD8r5T0PIYYOAFcghg4AVyCGDgBXIIYOAFfw8bdn8PRwNMyWdwNkhqi6MH7FDcI1HDbiVvkEAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="09626706-610f-4b8c-93c4-ed7dac6943fa" name="09626706-610f-4b8c-93c4-ed7dac6943fa.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAY0lEQVR4nO2WQQ6AQAgD67xZX6FvVq8mLnoRiEnnSsI09IJkmpmiwT6vx9cytuXmo0oe7aVKHu2nUj7yoGZwALmCZnAAuYJmcAC5gmZwALmCl789g6uHp2G2fBggM0TVhfUrTieGHDYJdJXuAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="f0e6a2d5-3751-4b42-90a7-e2cb8544d139" name="f0e6a2d5-3751-4b42-90a7-e2cb8544d139.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZElEQVR4nO2WwQnAMAwDVQ3ZeTJPlky/hcbNJ7YI6L4Gn7A+BoyYKxqM3sZ22d0+PlbJo72skkf7WSmfeQgxdAC4AjF0ALgCMXQAuAIxdAC4gsXfnsHbw79htnwaIDNE1YVxFA8qYhw2k5UsVAAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="31a1333d-2162-49a3-a6e8-26a9f6bdc386" name="31a1333d-2162-49a3-a6e8-26a9f6bdc386.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYUlEQVR4nO2WMQrAMAwDFf01r8pjk7XQOF1ii4JuNfiEtRgwYlo0mB3zumy8faySR3tZJY/2s1K+8xBi6ABwBWLoAHAFYugAcAVi6ABwBR9/ewZPD0/DbPk2QGaIqgvjVyyt6xU2mDN6NAAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="126818c9-1cbb-47be-813c-2f0f8b368714" name="126818c9-1cbb-47be-813c-2f0f8b368714.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZUlEQVR4nO2WMQrAMAwDFU19cR+RF2dL10LjZqktCrrV4BPWYsCIadFg9mN+LjvHw8cqebSXVfJoPyvlKw8hhg4AVyCGDgBXIIYOAFcghg4AV7D52zO4e/g2zJYvA2SGqLowfsUFrBwcNkv+FPEAAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="b475c56f-0dd3-43b7-89c9-aa47b9949e14" name="b475c56f-0dd3-43b7-89c9-aa47b9949e14.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZ0lEQVR4nO2WwQ2AMAwDXQ/AOuz/7DpdoHyRaOiHxELyfSPlrPgTwIhp0WD2Y34uO8fDxyp5tJdV8mg/K+UrDyGGDgBXIIYOAFcghg4AVyCGDgBXsPnbM7h7+DbMli8DZIaoujB+xQWCDxw2pawN1wAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="986286bf-dad3-4582-8545-671e5869d9b1" name="986286bf-dad3-4582-8545-671e5869d9b1.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYElEQVR4nO2WMQrAMAwDFb08P3fXQuNmiS0CutXgE9ZiwIgZ2SBixnHZmB8fu+TZXnbJs/3slK88hBg6AFyBGDoAXIEYOgBcgRg6AFzB5m+v4O3h37BavgxQGaLrwriKB15xHDb64ox6AAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="5eab660c-fe64-47c4-a355-620b356aacc8" name="5eab660c-fe64-47c4-a355-620b356aacc8.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WwQ2AMAwDjTdgC8T+syC26AjwRaIpnyYWku8bKWfFnwBGzBINjnZes2X7ur18rJJHe1klj/azUt7zEGLoAHAFYugAcAVi6ABwBWLoAHAFH397Bk8PR8NseTdAZoiqC+NX3NTLHDavtZXBAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="c222cb24-fe8b-4ee8-b00e-1b2af00efa70" name="c222cb24-fe8b-4ee8-b00e-1b2af00efa70.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZklEQVR4nO2WwQ2AMAwDjTfsRJSJGLF8kWjoh8RC8n0j5az4E8CI2aJBP4/xtay3/eFjlTzayyp5tJ+V8pmHEEMHgCsQQweAKxBDB4ArEEMHgCtY/O0Z3D18G2bLpwEyQ1RdGL/iAiKFHDZ6ATUiAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="1a132ad6-b926-4b37-b6d5-97f6ee4890ba" name="1a132ad6-b926-4b37-b6d5-97f6ee4890ba.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZklEQVR4nO2WwQ2AMAwDXc/AikzVFdmh/SLRwKeJheT7RspZ8SeAEdOiQb8wdsvO4+ljlTzayyp5tJ+V8pWHEEMHgCsQQweAKxBDB4ArEEMHgCv4+NszuHv4NsyWLwNkhqi6MH7FBDvbFTZntKPBAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="4d49ea8f-4b12-4576-aca3-33013869c22e" name="4d49ea8f-4b12-4576-aca3-33013869c22e.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZ0lEQVR4nO2WMQrAMAwDFQ19T///ir6nS7oGErdLbFHQrQafsBYDRkyLBsfV+m7ZffbJxyp5tJdV8mg/K+UrDyGGDgBXIIYOAFcghg4AVyCGDgBX8PG3ZzB6+DbMli8DZIaoujB+xQPl0xw2Hc5KhQAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="7972dfa5-9cf9-4ac9-a633-10a427101039" name="7972dfa5-9cf9-4ac9-a633-10a427101039.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjRehZgtGZwvqnwRaJD5P84mF5Gsj5ay4CWDELNFg3bdrtqwd58vHKnm0l1XyaD8r5T0PIYYOAFcghg4AVyCGDgBXIIYOAFfw8bdn8PRwNMyWdwNkhqi6MH7FDVUWHDZZ557NAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="dbb70c40-b2cc-45c6-b86d-ccbb8a561946" name="dbb70c40-b2cc-45c6-b86d-ccbb8a561946.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAY0lEQVR4nO2WMQrAMAwDFX229EWhr03WQuN2iS0KutXgE9ZiwIhp4eQ4x3bb1R8+lsmDvSyTB/tZKl94CDF0ALgCMXQAuAIxdAC4AjF0ALiCj789hZuHb8Ns+TpAZoiqC+NPTDk7FTYyuloVAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="31874537-887b-4355-a0b5-14c88228605f" name="31874537-887b-4355-a0b5-14c88228605f.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjfdgNEqmomS0HwRaJD5P84mF5Gsj5ay4CWDELNFg3Y5rtqyd+8vHKnm0l1XyaD8r5T0PIYYOAFcghg4AVyCGDgBXIIYOAFfw8bdn8PRwNMyWdwNkhqi6MH7FDdKWHDbpyXJnAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="99eeee57-2c9e-4659-8b72-e679476cab72" name="99eeee57-2c9e-4659-8b72-e679476cab72.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYklEQVR4nO2WMQrAMAwDFX2yb+wrkzXQuFlii4BuNfiEtRgwYlo4eXs/bnvax8cyebCXZfJgP0vlCw8hhg4AVyCGDgBXIIYOAFcghg4AV7D521OYPPwbZsvXATJDVF0YNzEAMAAVNmPbqbUAAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="2d43dd28-3477-41cd-89a7-b2dc5249dee2" name="2d43dd28-3477-41cd-89a7-b2dc5249dee2.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjXuGYTpmYDqG+QGgReLzNJ9YSL42Us6KmwBGzBINjrNds2X7tr58rJJHe1klj/azUt7zEGLoAHAFYugAcAVi6ABwBWLoAHAFH397Bk8PR8NseTdAZoiqC+NX3HJlHDZri5npAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8" name="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZ0lEQVR4nO2WwQ2AMAwDXS/BeozGekxRvpXawKeJheT7RspZ8SeAEdOiwXX3vlt2Hm3ysUoe7WWVPNrPSvnKQ4ihA8AViKEDwBWIoQPAFYihA8AVfPztGYwevg2z5csAmSGqLoxf8QAZShw221OSEwAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="c41fcaa5-e260-4e4d-b509-155eb6e663bd" name="c41fcaa5-e260-4e4d-b509-155eb6e663bd.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAdUlEQVR4nO2XMQ6AMAwDHQ/9MO/gw1mKWCEEhpIs9lY18ln1kgJSsyy5mxU8FsJDX8uG3H1fRR5jbBGXFfDAb6YV+GJ45ks0iwoAVdAsKgBUQbOoAFAFzaIC4H2BXKbIl5ez/RXiaSu24n/BjckvQ3/BpfMFDiF5GzR7Rp7gAAAAAElFTkSuQmCC</png>
-    </icon>
-    <icon guid="5c4b5043-fe14-4006-ab82-f5fb9f0d470b" name="5c4b5043-fe14-4006-ab82-f5fb9f0d470b.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAdklEQVR4nO2XsRGAMAwDZY3ndZiDdbJeOFowhiLYjdTl4tProsYBpGZZcjcreCyEh76WDbn7voo8xtgiLivggd9MK/DF8MyXaBYVAKqgWVQAqIJmUQGgCppFBcD7ArlMkS8vZ/srxNNWbMX/ghuTX4b+gkvnCxxazRs0rZZ4nQAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="a409b6d2-2b93-4afc-93fa-840ff45c2667" name="a409b6d2-2b93-4afc-93fa-840ff45c2667.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAdklEQVR4nO2XsRGAMAwDZU2YXZiDXbxhOFowhiLYjdTl4tProsYBpGZZcjcreCyEh76WDbn7voo8xtgiLivggd9MK/DF8MyXaBYVAKqgWVQAqIJmUQGgCppFBcD7ArlMkS8vZ/srxNNWbMX/ghuTX4b+gkvnCxzoFRs04EFVYQAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="eeb9e952-9bd9-429e-abf8-566591ec37a2" name="eeb9e952-9bd9-429e-abf8-566591ec37a2.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAc0lEQVR4nO2XsRKAMAhDQ37ZuZOz34znqogOLSx5a7m8XFlaQDRjyZlX+FgoD3MtG/J9P2aZbYwt8rJCHuR5ugKfLM9yiWaoAtAKmqEKQCtohioAraAZqgC+H5DTiHJ5n1lV4u1VbMX/goeTf4ZWycV1AycpUhs06IbNdQAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="3a882179-2f47-4194-9601-a0229dc36455" name="3a882179-2f47-4194-9601-a0229dc36455.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAc0lEQVR4nO2XsRHAMAgDhVbOAl4gM5NLmxDiwoZG35rT60xjA6IZS868wsdCeZhr2ZD7OFeZzcYReVkhD/I8XYEvlme5RDNUAWgFzVAFoBU0QxWAVtAMVQD/D8hlRLl8zuwq8fUqtuJ/wcvJmaFdcnHfwAVcKxs0PztkawAAAABJRU5ErkJggg==</png>
-    </icon>
-    <icon guid="6dde172c-49a1-4703-8bcb-16fcd1a54775" name="6dde172c-49a1-4703-8bcb-16fcd1a54775.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAeklEQVR4nO2XsRGAMAwDZc3AikzAHEyQFdkhHC0YQ5HYjdTl4tProsYBpGJZcNczeEyEu74WDbUD+yjyumDzuMyAO349rKANhke+RLGoAFAFxaICQBUUiwoAVVAsKgC+F8hh8nx5O9usEG9bsSX/Cx5M/hmaBZeuFzgB7/YWNFrRnD4AAAAASUVORK5CYII=</png>
-    </icon>
-    <icon guid="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3" name="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3.png">
-      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAeklEQVR4nO2XsRGAMAwDZa3DQBmEORiEgZgnHC0YQ5HYjdTl4tProsYBpGJZcNczeEyEu74WDbWjb6PI+2Krx2UG3PHrYQVtMDzyJYpFBYAqKBYVAKqgWFQAqIJiUQHwvUAOk+fL29lmhXjbii35X/Bg8s/QLLh0vcAJMNQbNLIsqeUAAAAASUVORK5CYII=</png>
     </icon>
   </icons>
   <bitmaps>

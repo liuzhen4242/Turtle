@@ -1,0 +1,9 @@
+---
+name: turtle
+version: 1.0.0
+authors:
+- liuzhen4242
+description: Turtle - personal Rhino 8 toolkit (toolbar, aliases, display modes, materials, GH user objects)
+url: https://github.com/liuzhen4242/Turtle
+secret:
+  id: 03AF9AC8-9667-47BF-8630-49E6B6F155D7
