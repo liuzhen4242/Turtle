@@ -4971,7 +4971,7 @@ _SelNone</script>
         <locale_1033>灰 | L100 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,255,255,50
+255,255,255,120
 Enter
 Enter
 _SelNone</script>
@@ -4987,7 +4987,7 @@ _SelNone</script>
         <locale_1033>灰 | L29 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-74,74,74,50
+74,74,74,120
 Enter
 Enter
 _SelNone</script>
@@ -5003,7 +5003,7 @@ _SelNone</script>
         <locale_1033>灰 | L69 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-176,176,176,50
+176,176,176,120
 Enter
 Enter
 _SelNone</script>
@@ -5019,7 +5019,7 @@ _SelNone</script>
         <locale_1033>R-B51-G51 | L100 / A80</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,131,131,80
+255,131,131,120
 Enter
 Enter
 _SelNone</script>
@@ -5035,7 +5035,7 @@ _SelNone</script>
         <locale_1033>R-G100-B50 | L100 / A50</locale_1033>
       </button_text>
       <script>-Properties O C O
-255,255,128,50
+255,255,128,120
 Enter
 Enter
 _SelNone</script>
@@ -5051,7 +5051,7 @@ _SelNone</script>
         <locale_1033>G-R66 | L93 / A55</locale_1033>
       </button_text>
       <script>-Properties O C O
-155,236,0,55
+155,236,0,120
 Enter
 Enter
 _SelNone</script>
@@ -5067,507 +5067,166 @@ _SelNone</script>
         <locale_1033>B-G84-R34 | L100 / A55</locale_1033>
       </button_text>
       <script>-Properties O C O
-87,213,255,55
+87,213,255,120
 Enter
 Enter
 _SelNone</script>
     </macro_item>
-      <macro_item guid="e96a0264-792d-43a4-a01c-98bde93dc661" bitmap_id="d818d82b-8315-4f68-ad57-14fdc3dd4ac1">
-      <text>
-        <locale_1033>255-255-255</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-255-255</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-255-255</locale_1033>
-      </button_text>
       <script>_-Materials
 o
 i
-255-255-255
+Color_255_255_255_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="1a318a90-eddc-4e45-82e6-a8ebb1d199a1" bitmap_id="1a518337-9831-45a3-8016-9147f6dc6851">
-      <text>
-        <locale_1033>192-192-192</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>192-192-192</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>192-192-192</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-192-192-192
+Color_192_192_192_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="b175d13c-5b14-4525-b851-dc44f73ba005" bitmap_id="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb">
-      <text>
-        <locale_1033>128-128-128</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>128-128-128</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>128-128-128</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-128-128-128
+Color_127_127_127_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="d70b48af-0d9a-4e22-a0fc-17b4c10fcd7d" bitmap_id="21b8eff4-b98c-4eff-86a2-37dc5cd4f003">
-      <text>
-        <locale_1033>64-64-64</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>64-64-64</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>64-64-64</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-64-64-64
+Color_64_64_64_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="cacb0814-a8c8-48d2-ad42-41e756ce393e" bitmap_id="08b41939-cbd8-4875-bf9c-2cb6c67af095">
-      <text>
-        <locale_1033>0-0-0</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>0-0-0</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>0-0-0</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-0-0-0
+Color_1_1_1_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="f6423c66-fc91-40e3-a204-6418a216acfd" bitmap_id="d8976973-a54a-434a-aac7-ceb8106976ce">
-      <text>
-        <locale_1033>112-0-15</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>112-0-15</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>112-0-15</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-112-0-15
+Color_112_0_15_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="89d83555-e458-4efc-8929-e29499969c7f" bitmap_id="64981adf-a4b7-4455-929a-7d309bc3502b">
-      <text>
-        <locale_1033>254-42-42</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>254-42-42</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>254-42-42</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-254-42-42
+Color_255_41_41_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="7b9b12e9-d799-4931-9619-6d7a905a6741" bitmap_id="15de458e-87eb-41e0-951e-50567ab1e529">
-      <text>
-        <locale_1033>247-44-92</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>247-44-92</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>247-44-92</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-247-44-92
+Color_247_44_92_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="e1ce3278-4f5a-4a0f-93bf-9e6a76f376bc" bitmap_id="09626706-610f-4b8c-93c4-ed7dac6943fa">
-      <text>
-        <locale_1033>254-116-139</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>254-116-139</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>254-116-139</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-254-116-139
+Color_255_116_139_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="f28e4167-8602-458a-a6d8-299a697ab093" bitmap_id="f0e6a2d5-3751-4b42-90a7-e2cb8544d139">
-      <text>
-        <locale_1033>255-170-128</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-170-128</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-170-128</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-255-170-128
+Color_255_170_128_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="37d78324-a3e5-4a3c-be18-ffeb5a5290ce" bitmap_id="31a1333d-2162-49a3-a6e8-26a9f6bdc386">
-      <text>
-        <locale_1033>255-101-0</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-101-0</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-101-0</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-255-101-0
+Color_255_101_0_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="e721aa96-ee4b-47d4-a90d-e6ab9e339756" bitmap_id="126818c9-1cbb-47be-813c-2f0f8b368714">
-      <text>
-        <locale_1033>255-138-8</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-138-8</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-138-8</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-255-138-8
+Color_255_138_8_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="2f9f245c-7207-4ac0-851f-4020660e7045" bitmap_id="b475c56f-0dd3-43b7-89c9-aa47b9949e14">
-      <text>
-        <locale_1033>255-201-14</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-201-14</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-201-14</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-255-201-14
+Color_255_201_14_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="55f68b8b-3e67-4898-b38f-195189feacf0" bitmap_id="986286bf-dad3-4582-8545-671e5869d9b1">
-      <text>
-        <locale_1033>255-255-128</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-255-128</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-255-128</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-255-255-128
+Color_255_255_128_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="db784c4b-1c37-4476-a20b-58d328b90277" bitmap_id="5eab660c-fe64-47c4-a355-620b356aacc8">
-      <text>
-        <locale_1033>214-239-216</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>214-239-216</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>214-239-216</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-214-239-216
+Color_214_239_216_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="76b30f69-ddc6-4959-ae41-ee71f0436e39" bitmap_id="c222cb24-fe8b-4ee8-b00e-1b2af00efa70">
-      <text>
-        <locale_1033>128-175-129</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>128-175-129</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>128-175-129</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-128-175-129
+Color_128_175_129_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="4e4d3dcb-41ab-4c39-91f6-623ec693af1f" bitmap_id="1a132ad6-b926-4b37-b6d5-97f6ee4890ba">
-      <text>
-        <locale_1033>155-236-0</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>155-236-0</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>155-236-0</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-155-236-0
+Color_155_236_0_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="84d9c005-ce3f-4f82-b140-ec269289343d" bitmap_id="4d49ea8f-4b12-4576-aca3-33013869c22e">
-      <text>
-        <locale_1033>6-208-1</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>6-208-1</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>6-208-1</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-6-208-1
+Color_6_208_1_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="99be31f8-7485-4914-9ff8-0181ea5d70d9" bitmap_id="7972dfa5-9cf9-4ac9-a633-10a427101039">
-      <text>
-        <locale_1033>31-64-41</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>31-64-41</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>31-64-41</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-31-64-41
+Color_31_64_41_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="0573c7c5-9462-481f-8b19-6a0130d8746b" bitmap_id="dbb70c40-b2cc-45c6-b86d-ccbb8a561946">
-      <text>
-        <locale_1033>0-103-105</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>0-103-105</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>0-103-105</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-0-103-105
+Color_0_103_105_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="28d25d37-f71d-4ef7-90a9-49e17d79d169" bitmap_id="31874537-887b-4355-a0b5-14c88228605f">
-      <text>
-        <locale_1033>29-93-155</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>29-93-155</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>29-93-155</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-29-93-155
+Color_29_93_155_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="46b5f112-00e7-4269-96fa-6056d6728da1" bitmap_id="99eeee57-2c9e-4659-8b72-e679476cab72">
-      <text>
-        <locale_1033>0-169-255</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>0-169-255</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>0-169-255</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-0-169-255
+Color_0_169_255_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="d76683d2-9a18-4b0c-84f2-b51e05a3672d" bitmap_id="2d43dd28-3477-41cd-89a7-b2dc5249dee2">
-      <text>
-        <locale_1033>137-207-243</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>137-207-243</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>137-207-243</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-137-207-243
+Color_137_207_243_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="2c6d3c9e-35cc-45f3-b64c-bd44de313733" bitmap_id="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8">
-      <text>
-        <locale_1033>160-233-255</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>160-233-255</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>160-233-255</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-160-233-255
+Color_160_233_255_A0
 enterend</script>
-    </macro_item>
-    <macro_item guid="59581e4e-26bc-462d-8e55-94083dc9da73" bitmap_id="c41fcaa5-e260-4e4d-b509-155eb6e663bd">
-      <text>
-        <locale_1033>250-250-250-97</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>250-250-250-97</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>250-250-250-97</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-250-250-250-97
+Color_255_255_255_A120
 enterend</script>
-    </macro_item>
-    <macro_item guid="55126172-1d3c-43c4-904b-a45a6e53551f" bitmap_id="5c4b5043-fe14-4006-ab82-f5fb9f0d470b">
-      <text>
-        <locale_1033>74-74-74-49</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>74-74-74-49</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>74-74-74-49</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-74-74-74-49
+Color_74_74_74_A120
 enterend</script>
-    </macro_item>
-    <macro_item guid="918a3a57-02bb-441a-a233-720623667f3b" bitmap_id="a409b6d2-2b93-4afc-93fa-840ff45c2667">
-      <text>
-        <locale_1033>176-176-176-56</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>176-176-176-56</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>176-176-176-56</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-176-176-176-56
+Color_176_176_176_A120
 enterend</script>
-    </macro_item>
-    <macro_item guid="278607a9-776d-4cc4-a1ce-ae463584f748" bitmap_id="eeb9e952-9bd9-429e-abf8-566591ec37a2">
-      <text>
-        <locale_1033>255-131-131-44</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-131-131-44</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-131-131-44</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-255-131-131-44
+Color_255_131_131_A120
 enterend</script>
-    </macro_item>
-    <macro_item guid="9ce98c11-b7ed-462d-bcce-7e1c5304e69b" bitmap_id="3a882179-2f47-4194-9601-a0229dc36455">
-      <text>
-        <locale_1033>255-255-128-50</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>255-255-128-50</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>255-255-128-50</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-255-255-128-50
+Color_255_255_128_A120
 enterend</script>
-    </macro_item>
-    <macro_item guid="732e664d-f4e1-4992-b5aa-e58b85c3a264" bitmap_id="6dde172c-49a1-4703-8bcb-16fcd1a54775">
-      <text>
-        <locale_1033>155-236-0-51</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>155-236-0-51</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>155-236-0-51</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-155-236-0-51
+Color_155_236_0_A120
 enterend</script>
-    </macro_item>
-    <macro_item guid="7a531bb1-5aab-4d29-9971-54fa2ac55bfd" bitmap_id="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3">
-      <text>
-        <locale_1033>87-213-255-61</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>87-213-255-61</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>87-213-255-61</locale_1033>
-      </button_text>
-      <script>_-Materials
+    <script>_-Materials
 o
 i
-87-213-255-61
+Color_87_213_255_A120
 enterend</script>
-    </macro_item>
   </macros>
   <icons>
     <icon guid="a15b58ca-8eac-419a-b49a-18ec2ac698c8" name="be6272d0-b977-46bc-a1a4-7e723fb0f5c3.svg">
