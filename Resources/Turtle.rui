@@ -683,6 +683,105 @@
         <left_macro_id>47eadcbc-aea8-489d-b948-d7307566177b</left_macro_id>
       </tool_bar_item>
     </tool_bar>
+      <tool_bar guid="97eb5b7a-db48-4cf8-abe0-c06216ace898">
+      <text>
+        <locale_1033>color-material-turtle</locale_1033>
+        <locale_2052>Color-material-turtle</locale_2052>
+      </text>
+      <tool_bar_item guid="b08dab1f-6ff8-43d2-b314-85e95acf8b31">
+        <left_macro_id>e96a0264-792d-43a4-a01c-98bde93dc661</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9dd92d78-ceaf-4afb-ace5-9652693bd18e">
+        <left_macro_id>1a318a90-eddc-4e45-82e6-a8ebb1d199a1</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="07ee4595-ac97-4009-8cf9-c7e560379787">
+        <left_macro_id>b175d13c-5b14-4525-b851-dc44f73ba005</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="d66d024f-3d93-40c0-a366-3ab277ab9864">
+        <left_macro_id>d70b48af-0d9a-4e22-a0fc-17b4c10fcd7d</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="410d8472-f78f-4da1-805b-2d209e32c359">
+        <left_macro_id>cacb0814-a8c8-48d2-ad42-41e756ce393e</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="b9d103b7-2065-43ef-9d3f-c5bc9032c003">
+        <left_macro_id>f6423c66-fc91-40e3-a204-6418a216acfd</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="ddb49114-b730-40e5-935f-2643d0ff2981">
+        <left_macro_id>89d83555-e458-4efc-8929-e29499969c7f</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9811b2cb-dc03-4f14-b3f6-131dd22742b5">
+        <left_macro_id>7b9b12e9-d799-4931-9619-6d7a905a6741</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="145f425b-9579-48bd-bb50-fa82ca36d89d">
+        <left_macro_id>e1ce3278-4f5a-4a0f-93bf-9e6a76f376bc</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="e0b3ab48-a25d-4169-8a5f-ee5dd07af473">
+        <left_macro_id>f28e4167-8602-458a-a6d8-299a697ab093</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="4c9507a7-93db-4403-b34e-644cd61b1cde">
+        <left_macro_id>37d78324-a3e5-4a3c-be18-ffeb5a5290ce</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="6f1cf143-fea3-4f88-8446-1630b822c7a6">
+        <left_macro_id>e721aa96-ee4b-47d4-a90d-e6ab9e339756</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="84ceebb6-b74d-42f1-b2b3-8a61294da43f">
+        <left_macro_id>2f9f245c-7207-4ac0-851f-4020660e7045</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="20cb79da-c4cf-40bc-820b-651e5cfb7745">
+        <left_macro_id>55f68b8b-3e67-4898-b38f-195189feacf0</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="2c755ac5-64c7-45c7-8a30-819b28d5565a">
+        <left_macro_id>db784c4b-1c37-4476-a20b-58d328b90277</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9d1be1c5-f4ce-4cb4-9ad7-e34e55d9d789">
+        <left_macro_id>76b30f69-ddc6-4959-ae41-ee71f0436e39</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="ee68441d-806b-4106-a25c-30ec9b03ce19">
+        <left_macro_id>4e4d3dcb-41ab-4c39-91f6-623ec693af1f</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="47898f33-898d-40e5-a653-c5c7209f4046">
+        <left_macro_id>84d9c005-ce3f-4f82-b140-ec269289343d</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="4803792a-2dbe-4862-8794-31c196c04246">
+        <left_macro_id>99be31f8-7485-4914-9ff8-0181ea5d70d9</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="b374d7fa-d114-498a-8e2d-0556db58c0df">
+        <left_macro_id>0573c7c5-9462-481f-8b19-6a0130d8746b</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="2200f705-a9a6-43f8-b55d-530396999a62">
+        <left_macro_id>28d25d37-f71d-4ef7-90a9-49e17d79d169</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="b964ee2f-dac5-404b-8454-a2dd06397ade">
+        <left_macro_id>46b5f112-00e7-4269-96fa-6056d6728da1</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="bfe787a9-3c2b-45a2-bf8e-9375d1012b68">
+        <left_macro_id>d76683d2-9a18-4b0c-84f2-b51e05a3672d</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="50c57b9d-651a-41f9-b199-b5888aee86e8">
+        <left_macro_id>2c6d3c9e-35cc-45f3-b64c-bd44de313733</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="d03d0877-f74b-4711-895e-20987de43611">
+        <left_macro_id>59581e4e-26bc-462d-8e55-94083dc9da73</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="58182efe-123c-4aaa-ab76-1fe947864a6f">
+        <left_macro_id>55126172-1d3c-43c4-904b-a45a6e53551f</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="c1a8b1b8-e964-4571-b6ce-4ba801f9f0be">
+        <left_macro_id>918a3a57-02bb-441a-a233-720623667f3b</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="f3c192a4-661f-446f-9b9c-54459159b2ae">
+        <left_macro_id>278607a9-776d-4cc4-a1ce-ae463584f748</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="5895ecc7-ff4f-410d-ac63-1cc45b41dc2c">
+        <left_macro_id>9ce98c11-b7ed-462d-bcce-7e1c5304e69b</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="03c4b586-807d-4b2d-886b-2bf0e61ea08b">
+        <left_macro_id>732e664d-f4e1-4992-b5aa-e58b85c3a264</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="fc047ef8-386d-4e94-808b-a7ba919e07ac">
+        <left_macro_id>7a531bb1-5aab-4d29-9971-54fa2ac55bfd</left_macro_id>
+      </tool_bar_item>
+    </tool_bar>
   </tool_bars>
   <macros>
     <macro_item guid="d32b6e52-3082-4160-95ce-d5b360d61db1" bitmap_id="e8e6c9d1-c715-4ce3-9473-f670f4adcb34">
@@ -2330,12 +2429,12 @@ enter</script>
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-gray3
+灰-L25
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="d0b2302d-3e36-4b59-a834-8ea54513c7fb" bitmap_id="c4914646-bb38-456f-8251-9f1c9001b66f">
       <tooltip>
@@ -2380,12 +2479,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-g-gray1
+灰-L69-A50
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="604f3903-fd0b-4555-b20b-4527558e0baa" bitmap_id="b5848ec2-747e-462f-8ff8-07da3789df94">
       <tooltip>
@@ -2400,12 +2499,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-gray2
+灰-L50
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="eb8b5dbe-f1ca-4ee3-80c6-4f840c430892" bitmap_id="6ec188b6-b8e7-4ca6-9e56-8b5196dc7883">
       <tooltip>
@@ -2435,12 +2534,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-blue2
+B-G66-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="7ca0a665-8498-4d89-8ead-15670ce37445" bitmap_id="3f495785-f654-4288-b7c5-004325edacb4">
       <tooltip>
@@ -2485,12 +2584,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-orenge1
+R-G54-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="34a8ccce-f182-4679-9cc1-5af20a52e2f6" bitmap_id="f3ad1fdc-7248-4562-a017-927adae0c210">
       <tooltip>
@@ -2505,12 +2604,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-C-red
+R-B13-L44
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="d9d748db-6cf5-42fb-b2bc-9d033d24f6b7" bitmap_id="adbc902e-e4ee-41c6-95f9-a0f421f2c154">
       <tooltip>
@@ -2615,12 +2714,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-orenge
+R-G40-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="65549fc4-dd5c-49fe-9b17-6accdd2dbf4f" bitmap_id="42bf8a41-53a2-4922-a85e-9a57f5852d64">
       <tooltip>
@@ -2635,12 +2734,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-blue4
+B-G91-R63-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="00355449-3978-413a-be85-6780df0ae63c" bitmap_id="840cfe9e-b10e-4022-8bbd-15f6c56384b3">
       <tooltip>
@@ -2685,12 +2784,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-g-green1
+G-R66-L93-A55
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="9da8a83c-19ac-41dc-8619-f0c899d4f617" bitmap_id="f2522bad-883b-49e3-9547-2a08f6418784">
       <tooltip>
@@ -2705,12 +2804,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-g-red1
+R-B51-G51-L100-A80
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="5ee27c3f-2856-44e4-a87f-c5d06f66c5b5" bitmap_id="96bef9be-b059-499a-8ce4-d98877441607">
       <tooltip>
@@ -2740,12 +2839,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-g-white
+灰-L100-A50
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="33db23ec-2b45-4f29-b928-6be724a2f5c3" bitmap_id="65ed97cb-6303-4427-90d5-bf3082121322">
       <tooltip>
@@ -2790,12 +2889,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-black
+灰-L0
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="a8bae0e1-3e13-4e49-9640-9697dded1f1e" bitmap_id="2fa0449b-ee92-427d-a73d-2a409d39810e">
       <tooltip>
@@ -2810,12 +2909,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-wite
+灰-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="b68c5dce-e2f1-4d1d-be12-b84dd764a340" bitmap_id="f88403e2-a542-4497-96f7-0f5ed2420849">
       <tooltip>
@@ -2830,12 +2929,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-red4
+R-B55-G45-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="5a2a9bdb-e31f-4c42-bb63-dcfc5442271b" bitmap_id="0a7b3691-b73d-4ec2-afd5-1f0935862c0d">
       <tooltip>
@@ -2865,12 +2964,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-green3
+G-R66-L93
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="cdf08f19-9b32-4028-8bc9-89e2f83a26e7" bitmap_id="ca85c45e-9cbd-424b-a67e-2ae9f675292a">
       <tooltip>
@@ -2885,12 +2984,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-red3
+R-B37-G18-L97
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="f0007c1b-4266-488d-a44d-1edde96991f5" bitmap_id="62742880-8571-4a2b-b486-685c818ef148">
       <tooltip>
@@ -2995,12 +3094,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-gray1
+灰-L75
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="6ab1c552-9a35-4313-b412-f5384e5590f2" bitmap_id="e96ec6ac-1c35-409e-80eb-2279ef99e55e">
       <tooltip>
@@ -3030,12 +3129,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-g-gray2
+灰-L29-A50
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="d37c0933-2989-4abb-a907-4d480d14a9ec" bitmap_id="d6ce9278-0629-425f-ba49-0270adcdb379">
       <tooltip>
@@ -3050,12 +3149,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-green1
+灰-L94
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="b5f63084-c4a5-4dab-8b44-9af717593668" bitmap_id="a4440a93-856d-4eeb-a84e-5a679e410256">
       <tooltip>
@@ -3070,12 +3169,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-yellow
+R-G100-B50-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="21ee6037-b6e6-4206-8f67-8e2c7f3e5130" bitmap_id="b1600817-8bcb-4d3b-9ef5-1b0abc53a107">
       <tooltip>
@@ -3105,12 +3204,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-red5
+R-G67-B50-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="f20bbfcb-6271-49d1-b8f5-55a2749d4233" bitmap_id="3ac852c2-c32e-4b05-ab0c-707e9dd98fdd">
       <tooltip>
@@ -3125,12 +3224,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-g-yellow
+R-G100-B50-L100-A50
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="d3892326-b205-4b3a-b89c-e2ca9a1cca4e" bitmap_id="876f152e-6db0-44ce-a34b-4d6a1cb3a331">
       <tooltip>
@@ -3145,12 +3244,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-green5
+G-B64-R48-L25
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="b7b7767b-664f-4bd5-a872-ae9633156609" bitmap_id="15a7963b-f6c6-4f12-9384-7e66b8b2d52b">
       <tooltip>
@@ -3180,12 +3279,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-green4
+G-L82
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="3db7ee38-8901-480f-97c2-02fdcae37dbb" bitmap_id="d51712b3-050f-4178-a2ce-94ee5f28f4d7">
       <tooltip>
@@ -3215,12 +3314,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-g-blue
+B-G84-R34-L100-A55
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="256e76c6-2f59-4c7c-b935-3ac92b39be4d" bitmap_id="b41e984b-422c-4dff-ba30-85a47661703a">
       <tooltip>
@@ -3250,12 +3349,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-green6
+B-G98-L41
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="ba93fb59-6489-480b-b8e8-2ecbba4c74d1" bitmap_id="f2b3b38a-0b9e-44f3-80cc-eec32df3ad35">
       <tooltip>
@@ -3285,12 +3384,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-C-red2
+R-B16-G16-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="9ca8165a-b1df-458f-af81-b73c26db3373" bitmap_id="2890e796-21fa-4ad0-8ed7-44395831ef85">
       <tooltip>
@@ -3305,12 +3404,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-blue3
+B-G85-R56-L95
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="9a8150ee-8dfb-40fb-aefb-310621fdd3c5" bitmap_id="d40b38c3-0412-4fa5-9063-9bf2223d52b3">
       <tooltip>
@@ -3325,12 +3424,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-green2
+G-B74-R73-L69
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="29567215-904e-4d70-8469-41e0fbf4adb2" bitmap_id="78f576b2-54c8-4eab-b305-677793a62941">
       <tooltip>
@@ -3360,12 +3459,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-blue1
+B-G60-R19-L61
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="ef78e8e1-fee3-4f88-8c1a-63425402b1b8" bitmap_id="5f457d41-b00b-4511-aa88-5731158d0e88">
       <tooltip>
@@ -3380,12 +3479,12 @@ enterend
       <menu_text>
         <locale_1033>巨集 01</locale_1033>
       </menu_text>
-      <script>_-Materials
+      _-Materials
 o
 i
-c-orenge3
+R-G79-L100
 enterend
-</script>
+
     </macro_item>
     <macro_item guid="8b681a19-ffbc-4aeb-aec4-4d2ca47f3143" bitmap_id="8f72926e-26c7-4292-adf7-2a311c9bcc4d">
       <tooltip>
@@ -5096,6 +5195,533 @@ _SelNone</script>
 Enter
 Enter
 _SelNone</script>
+    </macro_item>
+      <macro_item guid="e96a0264-792d-43a4-a01c-98bde93dc661" bitmap_id="d818d82b-8315-4f68-ad57-14fdc3dd4ac1">
+      <text>
+        <locale_1033>灰 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="1a318a90-eddc-4e45-82e6-a8ebb1d199a1" bitmap_id="1a518337-9831-45a3-8016-9147f6dc6851">
+      <text>
+        <locale_1033>灰 | L75</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L75</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L75</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L75
+enterend
+
+    </macro_item>
+    <macro_item guid="b175d13c-5b14-4525-b851-dc44f73ba005" bitmap_id="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb">
+      <text>
+        <locale_1033>灰 | L50</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L50</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L50</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L50
+enterend
+
+    </macro_item>
+    <macro_item guid="d70b48af-0d9a-4e22-a0fc-17b4c10fcd7d" bitmap_id="21b8eff4-b98c-4eff-86a2-37dc5cd4f003">
+      <text>
+        <locale_1033>灰 | L25</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L25</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L25</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L25
+enterend
+
+    </macro_item>
+    <macro_item guid="cacb0814-a8c8-48d2-ad42-41e756ce393e" bitmap_id="08b41939-cbd8-4875-bf9c-2cb6c67af095">
+      <text>
+        <locale_1033>灰 | L0</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L0</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L0</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L0
+enterend
+
+    </macro_item>
+    <macro_item guid="f6423c66-fc91-40e3-a204-6418a216acfd" bitmap_id="d8976973-a54a-434a-aac7-ceb8106976ce">
+      <text>
+        <locale_1033>R-B13 | L44</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-B13 | L44</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-B13 | L44</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-B13-L44
+enterend
+
+    </macro_item>
+    <macro_item guid="89d83555-e458-4efc-8929-e29499969c7f" bitmap_id="64981adf-a4b7-4455-929a-7d309bc3502b">
+      <text>
+        <locale_1033>R-B16-G16 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-B16-G16 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-B16-G16 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-B16-G16-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="7b9b12e9-d799-4931-9619-6d7a905a6741" bitmap_id="15de458e-87eb-41e0-951e-50567ab1e529">
+      <text>
+        <locale_1033>R-B37-G18 | L97</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-B37-G18 | L97</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-B37-G18 | L97</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-B37-G18-L97
+enterend
+
+    </macro_item>
+    <macro_item guid="e1ce3278-4f5a-4a0f-93bf-9e6a76f376bc" bitmap_id="09626706-610f-4b8c-93c4-ed7dac6943fa">
+      <text>
+        <locale_1033>R-B55-G45 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-B55-G45 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-B55-G45 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-B55-G45-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="f28e4167-8602-458a-a6d8-299a697ab093" bitmap_id="f0e6a2d5-3751-4b42-90a7-e2cb8544d139">
+      <text>
+        <locale_1033>R-G67-B50 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-G67-B50 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-G67-B50 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-G67-B50-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="37d78324-a3e5-4a3c-be18-ffeb5a5290ce" bitmap_id="31a1333d-2162-49a3-a6e8-26a9f6bdc386">
+      <text>
+        <locale_1033>R-G40 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-G40 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-G40 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-G40-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="e721aa96-ee4b-47d4-a90d-e6ab9e339756" bitmap_id="126818c9-1cbb-47be-813c-2f0f8b368714">
+      <text>
+        <locale_1033>R-G54 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-G54 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-G54 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-G54-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="2f9f245c-7207-4ac0-851f-4020660e7045" bitmap_id="b475c56f-0dd3-43b7-89c9-aa47b9949e14">
+      <text>
+        <locale_1033>R-G79 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-G79 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-G79 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-G79-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="55f68b8b-3e67-4898-b38f-195189feacf0" bitmap_id="986286bf-dad3-4582-8545-671e5869d9b1">
+      <text>
+        <locale_1033>R-G100-B50 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-G100-B50 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-G100-B50 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-G100-B50-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="db784c4b-1c37-4476-a20b-58d328b90277" bitmap_id="5eab660c-fe64-47c4-a355-620b356aacc8">
+      <text>
+        <locale_1033>灰 | L94</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L94</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L94</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L94
+enterend
+
+    </macro_item>
+    <macro_item guid="76b30f69-ddc6-4959-ae41-ee71f0436e39" bitmap_id="c222cb24-fe8b-4ee8-b00e-1b2af00efa70">
+      <text>
+        <locale_1033>G-B74-R73 | L69</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>G-B74-R73 | L69</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>G-B74-R73 | L69</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+G-B74-R73-L69
+enterend
+
+    </macro_item>
+    <macro_item guid="4e4d3dcb-41ab-4c39-91f6-623ec693af1f" bitmap_id="1a132ad6-b926-4b37-b6d5-97f6ee4890ba">
+      <text>
+        <locale_1033>G-R66 | L93</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>G-R66 | L93</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>G-R66 | L93</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+G-R66-L93
+enterend
+
+    </macro_item>
+    <macro_item guid="84d9c005-ce3f-4f82-b140-ec269289343d" bitmap_id="4d49ea8f-4b12-4576-aca3-33013869c22e">
+      <text>
+        <locale_1033>G | L82</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>G | L82</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>G | L82</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+G-L82
+enterend
+
+    </macro_item>
+    <macro_item guid="99be31f8-7485-4914-9ff8-0181ea5d70d9" bitmap_id="7972dfa5-9cf9-4ac9-a633-10a427101039">
+      <text>
+        <locale_1033>G-B64-R48 | L25</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>G-B64-R48 | L25</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>G-B64-R48 | L25</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+G-B64-R48-L25
+enterend
+
+    </macro_item>
+    <macro_item guid="0573c7c5-9462-481f-8b19-6a0130d8746b" bitmap_id="dbb70c40-b2cc-45c6-b86d-ccbb8a561946">
+      <text>
+        <locale_1033>B-G98 | L41</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>B-G98 | L41</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>B-G98 | L41</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+B-G98-L41
+enterend
+
+    </macro_item>
+    <macro_item guid="28d25d37-f71d-4ef7-90a9-49e17d79d169" bitmap_id="31874537-887b-4355-a0b5-14c88228605f">
+      <text>
+        <locale_1033>B-G60-R19 | L61</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>B-G60-R19 | L61</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>B-G60-R19 | L61</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+B-G60-R19-L61
+enterend
+
+    </macro_item>
+    <macro_item guid="46b5f112-00e7-4269-96fa-6056d6728da1" bitmap_id="99eeee57-2c9e-4659-8b72-e679476cab72">
+      <text>
+        <locale_1033>B-G66 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>B-G66 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>B-G66 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+B-G66-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="d76683d2-9a18-4b0c-84f2-b51e05a3672d" bitmap_id="2d43dd28-3477-41cd-89a7-b2dc5249dee2">
+      <text>
+        <locale_1033>B-G85-R56 | L95</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>B-G85-R56 | L95</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>B-G85-R56 | L95</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+B-G85-R56-L95
+enterend
+
+    </macro_item>
+    <macro_item guid="2c6d3c9e-35cc-45f3-b64c-bd44de313733" bitmap_id="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8">
+      <text>
+        <locale_1033>B-G91-R63 | L100</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>B-G91-R63 | L100</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>B-G91-R63 | L100</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+B-G91-R63-L100
+enterend
+
+    </macro_item>
+    <macro_item guid="59581e4e-26bc-462d-8e55-94083dc9da73" bitmap_id="c41fcaa5-e260-4e4d-b509-155eb6e663bd">
+      <text>
+        <locale_1033>灰 | L100 / A50</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L100 / A50</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L100 / A50</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L100-A50
+enterend
+
+    </macro_item>
+    <macro_item guid="55126172-1d3c-43c4-904b-a45a6e53551f" bitmap_id="5c4b5043-fe14-4006-ab82-f5fb9f0d470b">
+      <text>
+        <locale_1033>灰 | L29 / A50</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L29 / A50</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L29 / A50</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L29-A50
+enterend
+
+    </macro_item>
+    <macro_item guid="918a3a57-02bb-441a-a233-720623667f3b" bitmap_id="a409b6d2-2b93-4afc-93fa-840ff45c2667">
+      <text>
+        <locale_1033>灰 | L69 / A50</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>灰 | L69 / A50</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>灰 | L69 / A50</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+灰-L69-A50
+enterend
+
+    </macro_item>
+    <macro_item guid="278607a9-776d-4cc4-a1ce-ae463584f748" bitmap_id="eeb9e952-9bd9-429e-abf8-566591ec37a2">
+      <text>
+        <locale_1033>R-B51-G51 | L100 / A80</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-B51-G51 | L100 / A80</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-B51-G51 | L100 / A80</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-B51-G51-L100-A80
+enterend
+
+    </macro_item>
+    <macro_item guid="9ce98c11-b7ed-462d-bcce-7e1c5304e69b" bitmap_id="3a882179-2f47-4194-9601-a0229dc36455">
+      <text>
+        <locale_1033>R-G100-B50 | L100 / A50</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>R-G100-B50 | L100 / A50</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>R-G100-B50 | L100 / A50</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+R-G100-B50-L100-A50
+enterend
+
+    </macro_item>
+    <macro_item guid="732e664d-f4e1-4992-b5aa-e58b85c3a264" bitmap_id="6dde172c-49a1-4703-8bcb-16fcd1a54775">
+      <text>
+        <locale_1033>G-R66 | L93 / A55</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>G-R66 | L93 / A55</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>G-R66 | L93 / A55</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+G-R66-L93-A55
+enterend
+
+    </macro_item>
+    <macro_item guid="7a531bb1-5aab-4d29-9971-54fa2ac55bfd" bitmap_id="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3">
+      <text>
+        <locale_1033>B-G84-R34 | L100 / A55</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>B-G84-R34 | L100 / A55</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>B-G84-R34 | L100 / A55</locale_1033>
+      </button_text>
+      _-Materials
+o
+i
+B-G84-R34-L100-A55
+enterend
+
     </macro_item>
   </macros>
   <icons>
@@ -13824,6 +14450,99 @@ PbcqB1At1QAEAH+qF/qNP2431zG1scu/AAAAAElFTkSuQmCC</png>
     </icon>
     <icon guid="abc1eb1b-e71e-49f2-a20d-de92693d80a0" name="abc1eb1b-e71e-49f2-a20d-de92693d80a0.png">
       <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7VdNSFRRFD7z7n1v7n2vZ5NYjZBiWTESZBhYhEER1tDC6GdIiAokSIgojKighQsJpILARAipaNMPRUV/SFa6KCfdZFSuolxUFFELV20qvmkm5h1lHKf3gqAPvsXlnb9777nnnEf0H1NHjIgOS+3cE8pJZog1EbUS0RKu4AeUIWWLYYXfm+70d3PWbBqoPtB+o7at+3KGWJevb3xiRUpGDdP8HDLDbdDjhgpBXGj7bbRu3UD9pcEzW19+PzEZ47dedJXFE/3CUh8M02ziBvOGVPZBt3z+q3wdcyKQ4sXLhkzH7eK2JwWUZq+of8yNFsJ5iV09wnb7874S7Nwv5xku2LbnrnSKznNf4yC03lxUWTXMDfhBbAqb4z6zoZA4uDuu7Ac3Jr+eEsr+SERR7jgFPDVkO1f0k5WJ3b1C2Z3cdwp4v0HtPkOcgmGFvxBRhPtfrktKX3OFIDijquYZETV6vIfM8PG5G3b2ceEguGhv622pnOueAIR2+mqOnr7KhYPgys6bF4TSI94AlB7BBy4cBBsejnaEhBzzBPA3EjCbRPTDE4Cw9JtV53rPcsEgiJcQMoxv3gCUk0Rb5cJBEBvFhr0BWKp74Y5997lwEESyI+k9AaDvo/Vy4SA4q3b1EBE18wAw9YzhfriC35Ta+UREFTwAQo1GreYKfhKjW3p+nBBRdKsgTwEzY87BVWjnWNnaLY+4oh+MNR26I+1pF7nPcZCO21Pd0n6NG/gTospK232e71imILz0SMcVbqgQwnm4eObwhImXAxEMkhUN2x9wg1Phr2NP7XxKzn9DaPskfkaQvdx4LqKqIuHSd57XsedCDE8H7xdFBJUMHS3bIdZwWloXf4qAUdpzZnuBwDE2o4ym2yk6WopYp53uT/8//hv4CWsWTeqzNgwcAAAAAElFTkSuQmCC</png>
+    </icon>
+      <icon guid="d818d82b-8315-4f68-ad57-14fdc3dd4ac1" name="d818d82b-8315-4f68-ad57-14fdc3dd4ac1.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAX0lEQVR4nO2WMQ7AMAgDjf//Z7pWakiWghXJtyJxFl4AjJioBpmZv8siPj5Oyau9nJJX+zkpX3kIMXQAuAIxdAC4AjF0ALgCMXQAuILD397B28PdsFu+DNAZYurCuIoHCaAcNn5MMecAAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="1a518337-9831-45a3-8016-9147f6dc6851" name="1a518337-9831-45a3-8016-9147f6dc6851.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYklEQVR4nO2WQQrAQAgD07zMp/uz9rrQtb1UQyFzFZxgLgJGzFENMvP8WhYRNx+n5NVeTsmr/ZyU7zyEGDoAXIEYOgBcgRg6AFyBGDoAXMHL397B6uHTsFu+DdAZYurC+BUXca4cNsfnSsoAAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb" name="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYElEQVR4nO2WQQqAQAwDY16en+tVcKsX27CQuRY6obkUCGaOaiDp/Fsm6eHjlLzayyl5tZ+T8pWHMMMEQCowwwRAKjDDBEAqMMMEQCr4+Ns7uHv4NuyWLwN0hpi6MLbiAggiHDY3h0MCAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="21b8eff4-b98c-4eff-86a2-37dc5cd4f003" name="21b8eff4-b98c-4eff-86a2-37dc5cd4f003.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYklEQVR4nO2WQQrAQAgD07zMp/uz9rrQtb1UQyFzFZxgLgJGzFENIuL8WpaZNx+n5NVeTsmr/ZyU7zyEGDoAXIEYOgBcgRg6AFyBGDoAXMHL397B6uHTsFu+DdAZYurC+BUXnoccNlad4DYAAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="08b41939-cbd8-4875-bf9c-2cb6c67af095" name="08b41939-cbd8-4875-bf9c-2cb6c67af095.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWUlEQVR4nO2XwQ2AMBDDctl/ZxiAUvGAREj2t1JtNa9KUGY2Z0fC56B8ea+D8uX9DssvHquMCRATlDEBYoIyJkBMUMYEiAme/xPeZHYTTEp+F/BlROqF9R9O/5YHNkaZ9bMAAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="d8976973-a54a-434a-aac7-ceb8106976ce" name="d8976973-a54a-434a-aac7-ceb8106976ce.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZUlEQVR4nO2WsQ2AQAwDDy/AqozCqkwALRIfaD6JkHxtpJwVNwHTzBINNtZztmznePhUJY/2qkoe7VelfOQRzcgBcAXNyAFwBc3IAXAFzcgBcAUff3sGd4/ehtnyYYDMEFUX5ldcI7MVNiJrVEQAAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="64981adf-a4b7-4455-929a-7d309bc3502b" name="64981adf-a4b7-4455-929a-7d309bc3502b.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZElEQVR4nO2WsQ2AQAwDzY3z+8/y4wAtEh9oSCIkXxspZ8VNJNPMFg32MY6vZcx581Elj/ZSJY/2UylfeVAzOIBcQTM4gFxBMziAXEEzOIBcwcvfnsHVw9MwW74MkBmi6sL6FSd5exw2HIH7ywAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="15de458e-87eb-41e0-951e-50567ab1e529" name="15de458e-87eb-41e0-951e-50567ab1e529.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjTt2YSTGYyR2+RJaJD5P84mF5Gsj5ay4CWDELNGgbfs1W7aex8vHKnm0l1XyaD8r5T0PIYYOAFcghg4AVyCGDgBXIIYOAFfw8bdn8PRwNMyWdwNkhqi6MH7FDcI1HDbiVvkEAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="09626706-610f-4b8c-93c4-ed7dac6943fa" name="09626706-610f-4b8c-93c4-ed7dac6943fa.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAY0lEQVR4nO2WQQ6AQAgD67xZX6FvVq8mLnoRiEnnSsI09IJkmpmiwT6vx9cytuXmo0oe7aVKHu2nUj7yoGZwALmCZnAAuYJmcAC5gmZwALmCl789g6uHp2G2fBggM0TVhfUrTieGHDYJdJXuAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="f0e6a2d5-3751-4b42-90a7-e2cb8544d139" name="f0e6a2d5-3751-4b42-90a7-e2cb8544d139.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZElEQVR4nO2WwQnAMAwDVQ3ZeTJPlky/hcbNJ7YI6L4Gn7A+BoyYKxqM3sZ22d0+PlbJo72skkf7WSmfeQgxdAC4AjF0ALgCMXQAuAIxdAC4gsXfnsHbw79htnwaIDNE1YVxFA8qYhw2k5UsVAAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="31a1333d-2162-49a3-a6e8-26a9f6bdc386" name="31a1333d-2162-49a3-a6e8-26a9f6bdc386.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYUlEQVR4nO2WMQrAMAwDFf01r8pjk7XQOF1ii4JuNfiEtRgwYlo0mB3zumy8faySR3tZJY/2s1K+8xBi6ABwBWLoAHAFYugAcAVi6ABwBR9/ewZPD0/DbPk2QGaIqgvjVyyt6xU2mDN6NAAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="126818c9-1cbb-47be-813c-2f0f8b368714" name="126818c9-1cbb-47be-813c-2f0f8b368714.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZUlEQVR4nO2WMQrAMAwDFU19cR+RF2dL10LjZqktCrrV4BPWYsCIadFg9mN+LjvHw8cqebSXVfJoPyvlKw8hhg4AVyCGDgBXIIYOAFcghg4AV7D52zO4e/g2zJYvA2SGqLowfsUFrBwcNkv+FPEAAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="b475c56f-0dd3-43b7-89c9-aa47b9949e14" name="b475c56f-0dd3-43b7-89c9-aa47b9949e14.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZ0lEQVR4nO2WwQ2AMAwDXQ/AOuz/7DpdoHyRaOiHxELyfSPlrPgTwIhp0WD2Y34uO8fDxyp5tJdV8mg/K+UrDyGGDgBXIIYOAFcghg4AVyCGDgBXsPnbM7h7+DbMli8DZIaoujB+xQWCDxw2pawN1wAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="986286bf-dad3-4582-8545-671e5869d9b1" name="986286bf-dad3-4582-8545-671e5869d9b1.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYElEQVR4nO2WMQrAMAwDFb08P3fXQuNmiS0CutXgE9ZiwIgZ2SBixnHZmB8fu+TZXnbJs/3slK88hBg6AFyBGDoAXIEYOgBcgRg6AFzB5m+v4O3h37BavgxQGaLrwriKB15xHDb64ox6AAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="5eab660c-fe64-47c4-a355-620b356aacc8" name="5eab660c-fe64-47c4-a355-620b356aacc8.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WwQ2AMAwDjTdgC8T+syC26AjwRaIpnyYWku8bKWfFnwBGzBINjnZes2X7ur18rJJHe1klj/azUt7zEGLoAHAFYugAcAVi6ABwBWLoAHAFH397Bk8PR8NseTdAZoiqC+NX3NTLHDavtZXBAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="c222cb24-fe8b-4ee8-b00e-1b2af00efa70" name="c222cb24-fe8b-4ee8-b00e-1b2af00efa70.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZklEQVR4nO2WwQ2AMAwDjTfsRJSJGLF8kWjoh8RC8n0j5az4E8CI2aJBP4/xtay3/eFjlTzayyp5tJ+V8pmHEEMHgCsQQweAKxBDB4ArEEMHgCtY/O0Z3D18G2bLpwEyQ1RdGL/iAiKFHDZ6ATUiAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="1a132ad6-b926-4b37-b6d5-97f6ee4890ba" name="1a132ad6-b926-4b37-b6d5-97f6ee4890ba.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZklEQVR4nO2WwQ2AMAwDXc/AikzVFdmh/SLRwKeJheT7RspZ8SeAEdOiQb8wdsvO4+ljlTzayyp5tJ+V8pWHEEMHgCsQQweAKxBDB4ArEEMHgCv4+NszuHv4NsyWLwNkhqi6MH7FBDvbFTZntKPBAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="4d49ea8f-4b12-4576-aca3-33013869c22e" name="4d49ea8f-4b12-4576-aca3-33013869c22e.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZ0lEQVR4nO2WMQrAMAwDFQ19T///ir6nS7oGErdLbFHQrQafsBYDRkyLBsfV+m7ZffbJxyp5tJdV8mg/K+UrDyGGDgBXIIYOAFcghg4AVyCGDgBX8PG3ZzB6+DbMli8DZIaoujB+xQPl0xw2Hc5KhQAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="7972dfa5-9cf9-4ac9-a633-10a427101039" name="7972dfa5-9cf9-4ac9-a633-10a427101039.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjRehZgtGZwvqnwRaJD5P84mF5Gsj5ay4CWDELNFg3bdrtqwd58vHKnm0l1XyaD8r5T0PIYYOAFcghg4AVyCGDgBXIIYOAFfw8bdn8PRwNMyWdwNkhqi6MH7FDVUWHDZZ557NAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="dbb70c40-b2cc-45c6-b86d-ccbb8a561946" name="dbb70c40-b2cc-45c6-b86d-ccbb8a561946.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAY0lEQVR4nO2WMQrAMAwDFX229EWhr03WQuN2iS0KutXgE9ZiwIhp4eQ4x3bb1R8+lsmDvSyTB/tZKl94CDF0ALgCMXQAuAIxdAC4AjF0ALiCj789hZuHb8Ns+TpAZoiqC+NPTDk7FTYyuloVAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="31874537-887b-4355-a0b5-14c88228605f" name="31874537-887b-4355-a0b5-14c88228605f.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjfdgNEqmomS0HwRaJD5P84mF5Gsj5ay4CWDELNFg3Y5rtqyd+8vHKnm0l1XyaD8r5T0PIYYOAFcghg4AVyCGDgBXIIYOAFfw8bdn8PRwNMyWdwNkhqi6MH7FDdKWHDbpyXJnAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="99eeee57-2c9e-4659-8b72-e679476cab72" name="99eeee57-2c9e-4659-8b72-e679476cab72.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYklEQVR4nO2WMQrAMAwDFX2yb+wrkzXQuFlii4BuNfiEtRgwYlo4eXs/bnvax8cyebCXZfJgP0vlCw8hhg4AVyCGDgBXIIYOAFcghg4AV7D521OYPPwbZsvXATJDVF0YNzEAMAAVNmPbqbUAAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="2d43dd28-3477-41cd-89a7-b2dc5249dee2" name="2d43dd28-3477-41cd-89a7-b2dc5249dee2.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR4nO2WsQ2AQAwDjXuGYTpmYDqG+QGgReLzNJ9YSL42Us6KmwBGzBINjrNds2X7tr58rJJHe1klj/azUt7zEGLoAHAFYugAcAVi6ABwBWLoAHAFH397Bk8PR8NseTdAZoiqC+NX3HJlHDZri5npAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8" name="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZ0lEQVR4nO2WwQ2AMAwDXS/BeozGekxRvpXawKeJheT7RspZ8SeAEdOiwXX3vlt2Hm3ysUoe7WWVPNrPSvnKQ4ihA8AViKEDwBWIoQPAFYihA8AVfPztGYwevg2z5csAmSGqLoxf8QAZShw221OSEwAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="c41fcaa5-e260-4e4d-b509-155eb6e663bd" name="c41fcaa5-e260-4e4d-b509-155eb6e663bd.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAdUlEQVR4nO2XMQ6AMAwDHQ/9MO/gw1mKWCEEhpIs9lY18ln1kgJSsyy5mxU8FsJDX8uG3H1fRR5jbBGXFfDAb6YV+GJ45ks0iwoAVdAsKgBUQbOoAFAFzaIC4H2BXKbIl5ez/RXiaSu24n/BjckvQ3/BpfMFDiF5GzR7Rp7gAAAAAElFTkSuQmCC</png>
+    </icon>
+    <icon guid="5c4b5043-fe14-4006-ab82-f5fb9f0d470b" name="5c4b5043-fe14-4006-ab82-f5fb9f0d470b.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAdklEQVR4nO2XsRGAMAwDZY3ndZiDdbJeOFowhiLYjdTl4tProsYBpGZZcjcreCyEh76WDbn7voo8xtgiLivggd9MK/DF8MyXaBYVAKqgWVQAqIJmUQGgCppFBcD7ArlMkS8vZ/srxNNWbMX/ghuTX4b+gkvnCxxazRs0rZZ4nQAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="a409b6d2-2b93-4afc-93fa-840ff45c2667" name="a409b6d2-2b93-4afc-93fa-840ff45c2667.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAdklEQVR4nO2XsRGAMAwDZU2YXZiDXbxhOFowhiLYjdTl4tProsYBpGZZcjcreCyEh76WDbn7voo8xtgiLivggd9MK/DF8MyXaBYVAKqgWVQAqIJmUQGgCppFBcD7ArlMkS8vZ/srxNNWbMX/ghuTX4b+gkvnCxzoFRs04EFVYQAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="eeb9e952-9bd9-429e-abf8-566591ec37a2" name="eeb9e952-9bd9-429e-abf8-566591ec37a2.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAc0lEQVR4nO2XsRKAMAhDQ37ZuZOz34znqogOLSx5a7m8XFlaQDRjyZlX+FgoD3MtG/J9P2aZbYwt8rJCHuR5ugKfLM9yiWaoAtAKmqEKQCtohioAraAZqgC+H5DTiHJ5n1lV4u1VbMX/goeTf4ZWycV1AycpUhs06IbNdQAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="3a882179-2f47-4194-9601-a0229dc36455" name="3a882179-2f47-4194-9601-a0229dc36455.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAc0lEQVR4nO2XsRHAMAgDhVbOAl4gM5NLmxDiwoZG35rT60xjA6IZS868wsdCeZhr2ZD7OFeZzcYReVkhD/I8XYEvlme5RDNUAWgFzVAFoBU0QxWAVtAMVQD/D8hlRLl8zuwq8fUqtuJ/wcvJmaFdcnHfwAVcKxs0PztkawAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="6dde172c-49a1-4703-8bcb-16fcd1a54775" name="6dde172c-49a1-4703-8bcb-16fcd1a54775.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAeklEQVR4nO2XsRGAMAwDZc3AikzAHEyQFdkhHC0YQ5HYjdTl4tProsYBpGJZcNczeEyEu74WDbUD+yjyumDzuMyAO349rKANhke+RLGoAFAFxaICQBUUiwoAVVAsKgC+F8hh8nx5O9usEG9bsSX/Cx5M/hmaBZeuFzgB7/YWNFrRnD4AAAAASUVORK5CYII=</png>
+    </icon>
+    <icon guid="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3" name="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAeklEQVR4nO2XsRGAMAwDZa3DQBmEORiEgZgnHC0YQ5HYjdTl4tProsYBpGJZcNczeEyEu74WDbWjb6PI+2Krx2UG3PHrYQVtMDzyJYpFBYAqKBYVAKqgWFQAqIJiUQHwvUAOk+fL29lmhXjbii35X/Bg8s/QLLh0vcAJMNQbNLIsqeUAAAAASUVORK5CYII=</png>
     </icon>
   </icons>
   <bitmaps>

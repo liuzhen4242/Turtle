@@ -279,12 +279,41 @@ namespace Turtle
                 // 每次启动都导入（幂等），确保即使第一次导入失败的文件也能重试
                 try
                 {
+#if NET48
+                    // RhinoCommon 8.7 只有单参数 ImportFromFile（已存在同名模式时会弹"是否替换"对话框）。
+                    // 先按模式名判断是否已存在：已存在就跳过，避免打扰用户。
+                    string modeName = GetDisplayModeNameFromIni(dest);
+                    if (!string.IsNullOrEmpty(modeName) &&
+                        global::Rhino.Display.DisplayModeDescription.FindByName(modeName) != null)
+                        continue;
+                    global::Rhino.Display.DisplayModeDescription.ImportFromFile(dest);
+#else
                     global::Rhino.Display.DisplayModeDescription.ImportFromFile(dest, false);
+#endif
                 }
                 catch
                 {
                     // 导入失败不影响插件主体功能
                 }
+            }
+        }
+
+        /// <summary>从 Windows 风格显示模式 ini 文件里解析出 Name= 字段（用于 8.7 判断模式是否已存在）。</summary>
+        private static string GetDisplayModeNameFromIni(string iniPath)
+        {
+            try
+            {
+                string text = File.ReadAllText(iniPath, System.Text.Encoding.Unicode);
+                if (text.IndexOf("Name=", StringComparison.OrdinalIgnoreCase) < 0)
+                    text = File.ReadAllText(iniPath, System.Text.Encoding.UTF8);
+                string line = text.Split('\n')
+                    .Select(l => l.Trim())
+                    .FirstOrDefault(l => l.StartsWith("Name=", StringComparison.OrdinalIgnoreCase));
+                return line?.Substring("Name=".Length).Trim();
+            }
+            catch
+            {
+                return null;
             }
         }
 
