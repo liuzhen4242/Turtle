@@ -22,3 +22,6 @@ Turtle-old.3dm
 
 # Affinity Designer lock
 *~lock~
+
+# Windows thumbnail cache
+Thumbs.db
