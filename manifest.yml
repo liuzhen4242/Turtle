@@ -1,6 +1,6 @@
 ---
 name: turtle
-version: 1.0.0
+version: 1.1.0
 authors:
 - liuzhen4242
 description: Turtle - personal Rhino 8 toolkit (toolbar, aliases, display modes, materials, GH user objects)
