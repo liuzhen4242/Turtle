@@ -5,7 +5,55 @@
       <text>
         <locale_1033>color-turtle</locale_1033>
       </text>
-      <tool_bar_group_item>
+  
+<tool_bar guid="0809495b-bb53-4007-82e5-a2a92c27003d">
+      <text>
+        <locale_1033>mouseTurtle</locale_1033>
+      </text>
+      <tool_bar_item guid="b00a74b4-8f9a-4845-aca6-32202ef01c2d">
+        <left_macro_id>e8495ca7-a2d2-4e21-8431-9aeed75ab5f0</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="c628d735-0def-4093-9427-2f1629ec5ab0">
+        <left_macro_id>186fc2c0-1baa-4b97-bf60-6503c2204b8d</left_macro_id>
+        <right_macro_id>8af61479-d87f-4b55-9034-50d98cfd335d</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="822fdbc5-6ca5-4d52-a38f-d9c59864f0b2">
+        <left_macro_id>60c9fb56-9e59-4259-b437-cb32f93513ea</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="cca5961f-9780-45d7-868c-94a338fb7263">
+        <left_macro_id>217e98b9-9b49-46cd-8d4d-3df5d23f7a26</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="18a075dc-107c-451b-afad-7f17acde2cf9">
+        <left_macro_id>e7d902b6-887e-4174-9644-ec60f4137c68</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="92c08d49-231a-4365-b879-53d8a891cfe0">
+        <left_macro_id>a65fad0a-a977-4523-b1bf-60dbeefd9959</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="6a90409b-7a20-4553-830e-7061bed087ce">
+        <left_macro_id>1ce9b75a-f893-4a01-a624-fb47e4e9feb1</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="dd86f0ed-19e8-4eaf-a483-b2bc68b02de4">
+        <left_macro_id>8bb62862-0987-4a0a-a4d9-c00efa0f38d6</left_macro_id>
+        <right_macro_id>6b310690-a711-4603-9e36-9b42e98c830d</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="331f1129-2053-417c-a089-0a2b136462c1">
+        <left_macro_id>6fc37768-04ff-429c-8e59-61c39ddb6c7e</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9bc7c94a-45e0-4c27-9be9-fe8a4f5ad616">
+        <left_macro_id>07e57d56-7699-4dfd-8618-d7c475b7b298</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="90ccfc16-f736-4cc3-9ff2-99d54b91cc26">
+        <left_macro_id>72dacca4-45f8-496e-ba3f-ce7d14ee2e17</left_macro_id>
+        <right_macro_id>acd55212-4327-4820-8018-b5c3ed6b0fd9</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="46c064d9-46d2-4cd8-a652-8a40f5a329de">
+        <left_macro_id>f3ea938d-ee51-43ee-a2be-06767462a7d6</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="19415e15-480c-497f-89f5-dedfa48ff8ea">
+        <left_macro_id>d3571d9c-8643-4843-82ca-27a6873648ae</left_macro_id>
+      </tool_bar_item>
+    </tool_bar>
+    <tool_bar_group_item>
         <tool_bar_reference guid="55f2b50c-4258-4c1b-9bba-133cd6b0f251" />
         <dock_bar_info visible="1" dock_location="top" />
       </tool_bar_group_item>
@@ -2935,6 +2983,261 @@ color_to_material()
       </button_text>
       <script>! _-RunPythonScript "SelectSameMaterial.py"
 </script>
+    </macro_item>
+  <macro_item guid="e8495ca7-a2d2-4e21-8431-9aeed75ab5f0" bitmap_id="3c4071a0-fba6-4106-be05-d6f425c4b75e">
+      <text>
+        <locale_1033>CPlane View</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Set CPlane to view</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>CPlane View</locale_1033>
+      </button_text>
+      <script>'_CPlane _View</script>
+    </macro_item>
+<macro_item guid="186fc2c0-1baa-4b97-bf60-6503c2204b8d" bitmap_id="3a37b34a-aca1-4a50-8001-aba9bf68fa5e">
+      <text>
+        <locale_1033>Select by color</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Select by color</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Select by color</locale_1033>
+      </button_text>
+      <script>'_SelColor</script>
+    </macro_item>
+<macro_item guid="8af61479-d87f-4b55-9034-50d98cfd335d">
+      <text>
+        <locale_1033>8af61479</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>8af61479</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>8af61479</locale_1033>
+      </button_text>
+      <script>_-RunPythonScript (# -*- coding: utf-8 -*-
+import Rhino
+import scriptcontext as sc
+
+def select_by_same_material():
+    doc = sc.doc
+    selected_objs = [obj for obj in doc.Objects.GetSelectedObjects(False, False)]
+    if not selected_objs:
+        Rhino.RhinoApp.WriteLine("未选中任何物件，请先选择一个基准物件。")
+        return
+
+    ref_obj = selected_objs[0]
+    
+    # 获取选中国件的 RenderMaterial 或材质索引
+    ref_render_mat = ref_obj.RenderMaterial
+    ref_mat_idx = ref_obj.Attributes.MaterialIndex
+    ref_from_layer = (ref_obj.Attributes.MaterialSource == Rhino.DocObjects.ObjectMaterialSource.MaterialFromLayer)
+    
+    if ref_from_layer:
+        layer = doc.Layers[ref_obj.Attributes.LayerIndex]
+        ref_render_mat = layer.RenderMaterial
+        ref_mat_idx = layer.RenderMaterialIndex
+
+    matched_ids = []
+    
+    # 遍历场景内所有常规可选取物件
+    for obj in doc.Objects:
+        if obj.IsDeleted or not obj.IsSelectable():
+            continue
+        
+        obj_from_layer = (obj.Attributes.MaterialSource == Rhino.DocObjects.ObjectMaterialSource.MaterialFromLayer)
+        if obj_from_layer:
+            obj_layer = doc.Layers[obj.Attributes.LayerIndex]
+            cur_render_mat = obj_layer.RenderMaterial
+            cur_mat_idx = obj_layer.RenderMaterialIndex
+        else:
+            cur_render_mat = obj.RenderMaterial
+            cur_mat_idx = obj.Attributes.MaterialIndex
+            
+        # 匹配判断：优先按 RenderMaterial 实例对比，兜底按 MaterialIndex 对比
+        is_match = False
+        if ref_render_mat is not None and cur_render_mat is not None:
+            if ref_render_mat.Id == cur_render_mat.Id:
+                is_match = True
+        elif ref_render_mat is None and cur_render_mat is None:
+            if ref_mat_idx == cur_mat_idx:
+                is_match = True
+                
+        if is_match:
+            matched_ids.append(obj.Id)
+
+    if matched_ids:
+        for obj_id in matched_ids:
+            doc.Objects.Select(obj_id)
+        doc.Views.Redraw()
+        Rhino.RhinoApp.WriteLine("已选中 {} 个相同材质的物件。".format(len(matched_ids)))
+    else:
+        Rhino.RhinoApp.WriteLine("未找到其他匹配物件。")
+
+if __name__ == "__main__":
+    select_by_same_material()
+)</script>
+    </macro_item>
+<macro_item guid="60c9fb56-9e59-4259-b437-cb32f93513ea" bitmap_id="04ba084f-36f2-4f66-9134-a1115c411381">
+      <text>
+        <locale_1033>Silhouette</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Silhouette</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Silhouette</locale_1033>
+      </button_text>
+      <script>! _Silhouette</script>
+    </macro_item>
+<macro_item guid="217e98b9-9b49-46cd-8d4d-3df5d23f7a26" bitmap_id="8a135520-80d2-4422-9578-5475968693a0">
+      <text>
+        <locale_1033>Mesh outline</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Mesh outline</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Mesh outline</locale_1033>
+      </button_text>
+      <script>! _MeshOutline</script>
+    </macro_item>
+<macro_item guid="e7d902b6-887e-4174-9644-ec60f4137c68" bitmap_id="3b6ddd12-b403-4fe6-9ffb-d222e57d906c">
+      <text>
+        <locale_1033>Contour</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Contour</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Contour</locale_1033>
+      </button_text>
+      <script>! _Contour</script>
+    </macro_item>
+<macro_item guid="a65fad0a-a977-4523-b1bf-60dbeefd9959" bitmap_id="cb64e7b4-c936-402e-a7cd-ca48fc3d1df0">
+      <text>
+        <locale_1033>Object intersection</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Object intersection</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Object intersection</locale_1033>
+      </button_text>
+      <script>! _Intersect</script>
+    </macro_item>
+<macro_item guid="1ce9b75a-f893-4a01-a624-fb47e4e9feb1" bitmap_id="76f0f94c-09d1-4a08-aa04-fcdd26df35cc">
+      <text>
+        <locale_1033>Duplicate border</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Duplicate border</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Duplicate border</locale_1033>
+      </button_text>
+      <script>! _DupBorder</script>
+    </macro_item>
+<macro_item guid="8bb62862-0987-4a0a-a4d9-c00efa0f38d6" bitmap_id="84c4e12f-9db7-4e72-a544-ca4c67a43462">
+      <text>
+        <locale_1033>Curve Boolean</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Curve Boolean</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Curve Boolean</locale_1033>
+      </button_text>
+      <script>! _CurveBoolean</script>
+    </macro_item>
+<macro_item guid="6b310690-a711-4603-9e36-9b42e98c830d" bitmap_id="e753c626-f69a-41dc-845c-e8c79afba6b3">
+      <text>
+        <locale_1033>Curve Boolean</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Curve Boolean: Delete all inputs</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Curve Boolean</locale_1033>
+      </button_text>
+      <script>! _CurveBoolean _DeleteInput=_All</script>
+    </macro_item>
+<macro_item guid="6fc37768-04ff-429c-8e59-61c39ddb6c7e" bitmap_id="0e5b6e20-39b6-4801-b1ea-9bf88683941c">
+      <text>
+        <locale_1033>PrintDisplay</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Print display</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>PrintDisplay</locale_1033>
+      </button_text>
+      <script>! _PrintDisplay</script>
+    </macro_item>
+<macro_item guid="07e57d56-7699-4dfd-8618-d7c475b7b298" bitmap_id="2777d287-dbb1-4fd0-9112-f583d92e8695">
+      <text>
+        <locale_1033>Annotate dot</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Annotate dot</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Annotate dot</locale_1033>
+      </button_text>
+      <script>! _Dot</script>
+    </macro_item>
+<macro_item guid="72dacca4-45f8-496e-ba3f-ce7d14ee2e17" bitmap_id="ed6850a5-710b-424f-bd7b-2c6b71340d8e">
+      <text>
+        <locale_1033>Set line type</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Set line type</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Set line type</locale_1033>
+      </button_text>
+      <script>! _SetLineType</script>
+    </macro_item>
+<macro_item guid="acd55212-4327-4820-8018-b5c3ed6b0fd9" bitmap_id="03190633-ff87-4a0f-b07e-3f4dcf2bfaad">
+      <text>
+        <locale_1033>Linetype properties</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Document properties page: Linetype </locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Linetype properties</locale_1033>
+      </button_text>
+      <script>! _-DocumentPropertiesPage _LineTypes
+</script>
+    </macro_item>
+<macro_item guid="f3ea938d-ee51-43ee-a2be-06767462a7d6" bitmap_id="21749aba-0c04-43b7-bdf3-e21bf301f670">
+      <text>
+        <locale_1033>Annotation styles</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Annotation styles</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Annotation styles</locale_1033>
+      </button_text>
+      <script>! _DocumentPropertiesPage
+ _AnnotationStyles</script>
+    </macro_item>
+<macro_item guid="d3571d9c-8643-4843-82ca-27a6873648ae" bitmap_id="2fc898a9-8841-4920-9ca4-84fafc261229">
+      <text>
+        <locale_1033>Edit text</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Edit text</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Edit text</locale_1033>
+      </button_text>
+      <script>! _PropertiesPage _Pause _Text</script>
     </macro_item>
   </macros>
   <icons>
