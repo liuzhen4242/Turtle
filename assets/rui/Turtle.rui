@@ -123,8 +123,14 @@
       <tool_bar_item guid="9faf6a16-43e6-4fca-aa7c-897284f4edf3">
         <left_macro_id>eeafd776-f7a2-4548-bae1-bd4e40cf1697</left_macro_id>
       </tool_bar_item>
+      <tool_bar_item guid="0fe9dfbb-212e-4e8a-b5f4-1841f9d4fe7f">
+        <left_macro_id>da3f76a3-f0a6-4375-9674-a3bb2d1d8e10</left_macro_id>
+      </tool_bar_item>
       <tool_bar_item guid="c5f527b5-05da-4d0a-ac1b-4b8f4abbaa1a">
         <left_macro_id>60fb5166-c55e-4631-8a09-1f9e0fb30e5e</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="77c73f6e-ea2c-45d1-b215-07f3197a163f">
+        <left_macro_id>1f5b1e54-cd91-4184-84cf-66cf315e140a</left_macro_id>
       </tool_bar_item>
       <tool_bar_item guid="2f34ed8a-d59b-4a98-8f9e-d29234cfc6e6">
         <left_macro_id>92915d70-87c7-4067-84e2-bd95eef384a5</left_macro_id>
@@ -225,8 +231,14 @@
       <tool_bar_item guid="9d1be1c5-f4ce-4cb4-9ad7-e34e55d9d789">
         <left_macro_id>76b30f69-ddc6-4959-ae41-ee71f0436e39</left_macro_id>
       </tool_bar_item>
+      <tool_bar_item guid="7dd880c0-4266-4002-ae94-d4f88422df61">
+        <left_macro_id>84b4a02b-15b0-4e9a-9972-787aa8fdf7ce</left_macro_id>
+      </tool_bar_item>
       <tool_bar_item guid="ee68441d-806b-4106-a25c-30ec9b03ce19">
         <left_macro_id>4e4d3dcb-41ab-4c39-91f6-623ec693af1f</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="1135ad59-9f14-46bf-95b2-4cf59ba0c0fb">
+        <left_macro_id>2645a02a-7f99-461f-9bf6-37dbf98906e2</left_macro_id>
       </tool_bar_item>
       <tool_bar_item guid="47898f33-898d-40e5-a653-c5c7209f4046">
         <left_macro_id>84d9c005-ce3f-4f82-b140-ec269289343d</left_macro_id>
@@ -2616,6 +2628,70 @@ ni
 Color_0_0_0_A120
 enterend</script>
     </macro_item>
+      <macro_item guid="da3f76a3-f0a6-4375-9674-a3bb2d1d8e10" bitmap_id="6bbf940b-51b7-4f55-a209-0280b679781d">
+      <text>
+        <locale_1033>Macro G-R55-B31 | L80</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>G-R55-B31 | L80</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>G-R55-B31 | L80</locale_1033>
+      </button_text>
+      <script>-Properties O C O
+140,205,80
+Enter
+Enter
+_SelNone</script>
+    </macro_item>
+    <macro_item guid="1f5b1e54-cd91-4184-84cf-66cf315e140a" bitmap_id="6d523f83-4cde-4051-a42b-e80b44c44323">
+      <text>
+        <locale_1033>Macro G-R35-B16 | L86</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>G-R35-B16 | L86</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>G-R35-B16 | L86</locale_1033>
+      </button_text>
+      <script>-Properties O C O
+88,220,40
+Enter
+Enter
+_SelNone</script>
+    </macro_item>
+    <macro_item guid="84b4a02b-15b0-4e9a-9972-787aa8fdf7ce" bitmap_id="c4603816-35b1-47a8-b6a1-8389ecacd26f">
+      <text>
+        <locale_1033>Macro Color_140_205_80_A0</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Color_140_205_80_A0</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Color_140_205_80_A0</locale_1033>
+      </button_text>
+      <script>_-Materials
+o
+ni
+Color_140_205_80_A0
+enterend</script>
+    </macro_item>
+    <macro_item guid="2645a02a-7f99-461f-9bf6-37dbf98906e2" bitmap_id="69c4578b-98d7-4808-b72a-4a4c3219a581">
+      <text>
+        <locale_1033>Macro Color_88_220_40_A0</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Color_88_220_40_A0</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Color_88_220_40_A0</locale_1033>
+      </button_text>
+      <script>_-Materials
+o
+ni
+Color_88_220_40_A0
+enterend</script>
+    </macro_item>
   </macros>
   <icons>
 
@@ -3793,6 +3869,18 @@ PbcqB1At1QAEAH+qF/qNP2431zG1scu/AAAAAElFTkSuQmCC</png>
     </icon>
       <icon guid="73c0dd3a-842f-4872-87c2-3b6cc690e9d9" name="73c0dd3a-842f-4872-87c2-3b6cc690e9d9.png">
       <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAT0lEQVR4nO2XsRHAIAzExF+WzgQZOzShYYCo4NVgKutOlUFmfO9r7Q8y1/a/f9r7rCHIpAI0gUwqQBPIpAI0gUwqQBPIpAKcnmBw+m2IzQR4PQM9ek7J/QAAAABJRU5ErkJggg==</png>
+    </icon>
+      <icon guid="6bbf940b-51b7-4f55-a209-0280b679781d" name="6bbf940b-51b7-4f55-a209-0280b679781d.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABsUlEQVR4nOVXr08DMRh9O4WcRA4HDlIDbg5QFIdkbg5TgyKTJDW48R/MUTdwyJkLk3PMMTk5Sd6ul9zK3bY72hsJL1myXm977/vVfh/w39Go+kMdy2MAzcyjuRJmHEyAjuUegBsA5wAkAK7zYAC8ARgoYeZeBOhYdgE8ANjfVjA9AqAHoK+EWVQSoGNJFw8BnKI6JgAulTDTvM1oDXkLwMcvyYlD/o+OZXtrD+jEcpJThC8wJGdKGHqk2AM6SbahZ3JiGU5rXLEAAF0Pbi9CyyZzfgh0Yv1nyWwvC1bEgRJmxoXrgdvA5ASNvEsXkbN5hXrAg2w1BDpJjq81J5xvHLEiIqde6yJP+ZAVEDr2Llq7FtB0BWy8uTxj4QpY1mWNmLoCJjsVoJKTaVQT+UwJM8o7iNjJ1IHX9EvkbPTT5AiMp1wBKgkDRYSEyTavUc4LjwErgt69zz6I3DesF64DhaKzsSMibIZ2PIvoKWEGZbviNoAXZwApi4W1/Ac5UdgVE0qYd16bHDIqknNIOSkiJxolRzF2MhcbLq65rfNna4D/2VDHkk0rPyuzIYDxNqR/Ct+NKXTeSLYd9AAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="6d523f83-4cde-4051-a42b-e80b44c44323" name="6d523f83-4cde-4051-a42b-e80b44c44323.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrklEQVR4nOVXr1PDMBh9q0JOIsddRHDgwM0BCnCRzM2hUdwkcm78B3HMDRxyjsmI3jHH5OQk99b0rgvtupak445312vTdHvv+5V8Af47WnV/qGJ5AqCdebXUwsyCCVCxPOANwAWAGwAc52EM4A2A1sIsvQhQsewDeARwuKtgegTAAMBIC7OqJUDFki6eADhDfRgAV1qYed5ktIW8A+Djl+SE5P+oWHZ39oBKLCc5RfgCQ3KuhaFHij2gkmSbeCYn1uG0xhULAND34PYidGwy54dAJdZ/Vsz2qmBFHGlhFhy4HrgLTE7QyPt0EDmT12gGXMg2Q6CS5PjassL5xjErInLqtSnylA9ZAaFj76KzbwFtV0DpzuUZK1fAui4bxNwVYPYqQCcr07Qh8oUWZpq3ELGTaQKv6UPkTIzS5AiMYa4AnYSBIkJinG1eo5wPngJWBL37kH0RuV9YL9wGCkWvtCMibIb2PIsYaGF01a64C+DFOYBUxcpa/oOcKOyKCS3MO7dNPtYk5yHltIicaFU8irGTuSzZuJa2zp+tAf7PhiqWbFp5bZwNAcx2If1T+AalFnas5n94hwAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="c4603816-35b1-47a8-b6a1-8389ecacd26f" name="c4603816-35b1-47a8-b6a1-8389ecacd26f.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAN0lEQVR4nO3QQREAMAgDQYpChGGtmspUBZ+Ngcvs6VsvFpebcQcIECBAgAABAgQIECBAgACBLzDkogLo26dT6gAAAABJRU5ErkJggg==</png>
+    </icon>
+    <icon guid="69c4578b-98d7-4808-b72a-4a4c3219a581" name="69c4578b-98d7-4808-b72a-4a4c3219a581.png">
+      <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAN0lEQVR4nO3QQREAMAgDQYoaJCG+XspUBZ+Ngcvs6VsvFpebcQcIECBAgAABAgQIECBAgACBLzALVAKbr2cu4QAAAABJRU5ErkJggg==</png>
     </icon>
   </icons>
   
