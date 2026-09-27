@@ -1,24 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <RhinoUI xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" major_ver="5" minor_ver="0" guid="7338352c-119d-4898-aee3-911514067977">
-  <tool_bar_groups>
+    <tool_bar_groups>
     <tool_bar_group guid="35979507-b33a-4089-ae71-04001694d6f0">
       <text>
         <locale_1033>color-turtle</locale_1033>
       </text>
       <tool_bar_group_item>
-        <dock_bar_info visible="1" dock_location="top" />
-      </tool_bar_group_item>
-      <tool_bar_group_item>
-        <dock_bar_info visible="1" dock_location="top" />
-      </tool_bar_group_item>
-      <tool_bar_group_item>
-        <dock_bar_info visible="1" dock_location="top" />
-      </tool_bar_group_item>
-      <tool_bar_group_item>
         <tool_bar_reference guid="609e6fcc-67d9-4822-b3e2-f9597cf35c1d" />
-        <dock_bar_info visible="1" dock_location="top" />
-      </tool_bar_group_item>
-      <tool_bar_group_item>
         <dock_bar_info visible="1" dock_location="top" />
       </tool_bar_group_item>
       <tool_bar_group_item>
@@ -27,6 +15,10 @@
       </tool_bar_group_item>
       <tool_bar_group_item>
         <tool_bar_reference guid="97eb5b7a-db48-4cf8-abe0-c06216ace898" />
+        <dock_bar_info visible="1" dock_location="top" />
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="3cdefd34-e8e5-4786-96d6-c0ee05e6467a" />
         <dock_bar_info visible="1" dock_location="top" />
       </tool_bar_group_item>
     </tool_bar_group>
