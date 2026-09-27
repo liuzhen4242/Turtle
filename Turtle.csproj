@@ -1,7 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <!-- 平台条件目标框架：
+         Windows Rhino 8.35 = .NET 7 插件模型 → net7.0
+         Mac Rhino 8.7 = .NET Framework 4.8 (Mono) 插件模型 → net48 -->
+    <TargetFramework Condition="'$(OS)' == 'Windows_NT'">net7.0</TargetFramework>
+    <TargetFramework Condition="'$(OS)' != 'Windows_NT'">net48</TargetFramework>
     <RootNamespace>Turtle</RootNamespace>
     <AssemblyName>Turtle</AssemblyName>
     <Nullable>disable</Nullable>
@@ -11,11 +15,30 @@
     <Description>Turtle - personal Rhino 8 toolkit</Description>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- RhinoCommon 8 官方 NuGet 包，restore 时自动下载 -->
+  <!-- Windows: Rhino 8.35 (.NET 7) -->
+  <ItemGroup Condition="'$(OS)' == 'Windows_NT'">
     <PackageReference Include="RhinoCommon" Version="8.*" />
-    <!-- Grasshopper 8 组件库，让插件程序集里可以直接写 GH 组件 -->
     <PackageReference Include="Grasshopper" Version="8.*" />
+  </ItemGroup>
+
+  <!-- Mac: Rhino 8.7 (.NET Framework 4.8 / Mono)。
+       直接引用 Mac Rhino 内置的引用程序集（ref/net48，版本 8.7.24138.15432），
+       与运行时的 RhinoCommon 完全匹配，避免 NuGet 包（15431）与内置（15432）版本不一致导致无法加载。 -->
+  <ItemGroup Condition="'$(OS)' != 'Windows_NT'">
+    <Reference Include="RhinoCommon">
+      <HintPath>/Applications/Rhino 8.app/Contents/Frameworks/RhCore.framework/Versions/A/Resources/ref/net48/RhinoCommon.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <HintPath>/Applications/Rhino 8.app/Contents/Frameworks/RhCore.framework/Versions/A/Resources/ref/net48/Grasshopper.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GH_IO">
+      <HintPath>/Applications/Rhino 8.app/Contents/Frameworks/RhCore.framework/Versions/A/Resources/ref/net48/GH_IO.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- net48 编译需要 reference assemblies -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>

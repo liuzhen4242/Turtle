@@ -1,10 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <RhinoUI major_ver="5" minor_ver="0" guid="7338352c-119d-4898-aee3-911514067977">
   <tool_bar_groups>
     <tool_bar_group guid="35979507-b33a-4089-ae71-04001694d6f0">
       <text>
         <locale_1033>color-turtle</locale_1033>
       </text>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="e242ee91-af6d-407e-af4c-0c8530355102"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="7663ebdc-b81b-49e8-a67f-f83e4e4b5e9f"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="bdffc206-d14b-4148-b797-c342c98591e5"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="609e6fcc-67d9-4822-b3e2-f9597cf35c1d"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="94a312ff-d9e2-49b3-ab87-b83da0034d50"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="c479780d-9ee4-4ab2-8d20-a7a37a356c74"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
+      <tool_bar_group_item>
+        <tool_bar_reference guid="97eb5b7a-db48-4cf8-abe0-c06216ace898"/>
+        <dock_bar_info visible="1" dock_location="top"/>
+      </tool_bar_group_item>
     </tool_bar_group>
   </tool_bar_groups>
   <tool_bars>
@@ -683,7 +711,106 @@
         <left_macro_id>47eadcbc-aea8-489d-b948-d7307566177b</left_macro_id>
       </tool_bar_item>
     </tool_bar>
-  </tool_bars>
+    <tool_bar guid="97eb5b7a-db48-4cf8-abe0-c06216ace898">
+      <text>
+        <locale_1033>color-material-turtle</locale_1033>
+        <locale_2052>Color-material-turtle</locale_2052>
+      </text>
+      <tool_bar_item guid="b08dab1f-6ff8-43d2-b314-85e95acf8b31">
+        <left_macro_id>e96a0264-792d-43a4-a01c-98bde93dc661</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9dd92d78-ceaf-4afb-ace5-9652693bd18e">
+        <left_macro_id>1a318a90-eddc-4e45-82e6-a8ebb1d199a1</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="07ee4595-ac97-4009-8cf9-c7e560379787">
+        <left_macro_id>b175d13c-5b14-4525-b851-dc44f73ba005</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="d66d024f-3d93-40c0-a366-3ab277ab9864">
+        <left_macro_id>d70b48af-0d9a-4e22-a0fc-17b4c10fcd7d</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="410d8472-f78f-4da1-805b-2d209e32c359">
+        <left_macro_id>cacb0814-a8c8-48d2-ad42-41e756ce393e</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="b9d103b7-2065-43ef-9d3f-c5bc9032c003">
+        <left_macro_id>f6423c66-fc91-40e3-a204-6418a216acfd</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="ddb49114-b730-40e5-935f-2643d0ff2981">
+        <left_macro_id>89d83555-e458-4efc-8929-e29499969c7f</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9811b2cb-dc03-4f14-b3f6-131dd22742b5">
+        <left_macro_id>7b9b12e9-d799-4931-9619-6d7a905a6741</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="145f425b-9579-48bd-bb50-fa82ca36d89d">
+        <left_macro_id>e1ce3278-4f5a-4a0f-93bf-9e6a76f376bc</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="e0b3ab48-a25d-4169-8a5f-ee5dd07af473">
+        <left_macro_id>f28e4167-8602-458a-a6d8-299a697ab093</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="4c9507a7-93db-4403-b34e-644cd61b1cde">
+        <left_macro_id>37d78324-a3e5-4a3c-be18-ffeb5a5290ce</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="6f1cf143-fea3-4f88-8446-1630b822c7a6">
+        <left_macro_id>e721aa96-ee4b-47d4-a90d-e6ab9e339756</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="84ceebb6-b74d-42f1-b2b3-8a61294da43f">
+        <left_macro_id>2f9f245c-7207-4ac0-851f-4020660e7045</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="20cb79da-c4cf-40bc-820b-651e5cfb7745">
+        <left_macro_id>55f68b8b-3e67-4898-b38f-195189feacf0</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="2c755ac5-64c7-45c7-8a30-819b28d5565a">
+        <left_macro_id>db784c4b-1c37-4476-a20b-58d328b90277</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9d1be1c5-f4ce-4cb4-9ad7-e34e55d9d789">
+        <left_macro_id>76b30f69-ddc6-4959-ae41-ee71f0436e39</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="ee68441d-806b-4106-a25c-30ec9b03ce19">
+        <left_macro_id>4e4d3dcb-41ab-4c39-91f6-623ec693af1f</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="47898f33-898d-40e5-a653-c5c7209f4046">
+        <left_macro_id>84d9c005-ce3f-4f82-b140-ec269289343d</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="4803792a-2dbe-4862-8794-31c196c04246">
+        <left_macro_id>99be31f8-7485-4914-9ff8-0181ea5d70d9</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="b374d7fa-d114-498a-8e2d-0556db58c0df">
+        <left_macro_id>0573c7c5-9462-481f-8b19-6a0130d8746b</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="2200f705-a9a6-43f8-b55d-530396999a62">
+        <left_macro_id>28d25d37-f71d-4ef7-90a9-49e17d79d169</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="b964ee2f-dac5-404b-8454-a2dd06397ade">
+        <left_macro_id>46b5f112-00e7-4269-96fa-6056d6728da1</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="bfe787a9-3c2b-45a2-bf8e-9375d1012b68">
+        <left_macro_id>d76683d2-9a18-4b0c-84f2-b51e05a3672d</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="50c57b9d-651a-41f9-b199-b5888aee86e8">
+        <left_macro_id>2c6d3c9e-35cc-45f3-b64c-bd44de313733</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="d03d0877-f74b-4711-895e-20987de43611">
+        <left_macro_id>59581e4e-26bc-462d-8e55-94083dc9da73</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="58182efe-123c-4aaa-ab76-1fe947864a6f">
+        <left_macro_id>55126172-1d3c-43c4-904b-a45a6e53551f</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="c1a8b1b8-e964-4571-b6ce-4ba801f9f0be">
+        <left_macro_id>918a3a57-02bb-441a-a233-720623667f3b</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="f3c192a4-661f-446f-9b9c-54459159b2ae">
+        <left_macro_id>278607a9-776d-4cc4-a1ce-ae463584f748</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="5895ecc7-ff4f-410d-ac63-1cc45b41dc2c">
+        <left_macro_id>9ce98c11-b7ed-462d-bcce-7e1c5304e69b</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="03c4b586-807d-4b2d-886b-2bf0e61ea08b">
+        <left_macro_id>732e664d-f4e1-4992-b5aa-e58b85c3a264</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="fc047ef8-386d-4e94-808b-a7ba919e07ac">
+        <left_macro_id>7a531bb1-5aab-4d29-9971-54fa2ac55bfd</left_macro_id>
+      </tool_bar_item>
+    </tool_bar>
+</tool_bars>
   <macros>
     <macro_item guid="d32b6e52-3082-4160-95ce-d5b360d61db1" bitmap_id="e8e6c9d1-c715-4ce3-9473-f670f4adcb34">
       <tooltip>
@@ -5096,6 +5223,722 @@ _SelNone</script>
 Enter
 Enter
 _SelNone</script>
+    </macro_item>
+<macro_item guid="173454db-1c67-4fb2-9f83-a11d21492505" bitmap_id="48902951-c2da-4329-9511-4b5f4b641d27">
+      <text>
+        <locale_1033>Macro colorToMat</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>colorToMat</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>颜色转材质</locale_1033>
+      </button_text>
+      <script>_-RunPythonScript (# -*- coding: utf-8 -*-
+"""
+Rhino 脚本：将对象颜色一键转换为材质（RenderMaterial 版）
+用法：
+  1. 在 Rhino 命令行输入 EditPythonScript (Rhino 6/7) 或 ScriptEditor (Rhino 8)
+  2. 粘贴本脚本并运行 (F5)
+  3. 若有选中的对象，只处理选中对象；若没有选中任何对象，则处理场景中所有对象
+
+功能：
+  - 读取每个对象的"实际显示颜色"（若图层颜色继承，也会正确取到）
+  - 相同颜色的对象自动共用同一个材质，不会重复创建（仅本次运行内合并）
+  - 材质使用 Rhino.Render.RenderMaterial（Basic Material），
+    也就是材质库同款机制：无论从"材质面板"改材质球，
+    还是从"属性面板"改选中物体的材质，其他共用该材质的物体都会联动
+"""
+
+import rhinoscriptsyntax as rs
+import scriptcontext as sc
+import Rhino
+
+
+def color_to_material():
+    doc = sc.doc
+
+    # 优先使用选中对象，没有选中则处理全部对象
+    selected = rs.SelectedObjects()
+    obj_ids = selected if selected else rs.AllObjects()
+
+    if not obj_ids:
+        print("场景中没有找到任何对象。")
+        return
+
+    color_material_map = {}  # {(R,G,B): RenderMaterial}
+    count = 0
+
+    for obj_id in obj_ids:
+        rhobj = rs.coercerhinoobject(obj_id)
+        if rhobj is None:
+            continue
+
+        # 获取对象的实际显示颜色（若按图层显示颜色，会自动取图层颜色）
+        color = rhobj.Attributes.DrawColor(doc)
+        key = (color.R, color.G, color.B)
+
+        if key in color_material_map:
+            mat = color_material_map[key]
+        else:
+            # 创建 Basic Material（材质库同款的 RenderContent 对象）
+            mat = Rhino.Render.RenderContentType.NewContentFromTypeId(
+                Rhino.Render.ContentUuids.BasicMaterialType, doc)
+            mat.BeginChange(Rhino.Render.RenderContent.ChangeContexts.Program)
+            mat.Fields.Set("diffuse", color)
+            mat.EndChange()
+            mat.Name = "Color_{}_{}_{}".format(color.R, color.G, color.B)
+
+            doc.RenderMaterials.Add(mat)
+            color_material_map[key] = mat
+
+        # 赋值给物体（RenderMaterial 属性走的是渲染内容系统，天然支持联动）
+        rhobj.RenderMaterial = mat
+        rhobj.CommitChanges()
+        count += 1
+
+    doc.Views.Redraw()
+    print("完成：共处理 {} 个对象，生成 {} 个材质（相同颜色已合并）。".format(
+        count, len(color_material_map)))
+
+
+color_to_material()
+)</script>
+    </macro_item>
+<macro_item guid="e96a0264-792d-43a4-a01c-98bde93dc661" bitmap_id="d818d82b-8315-4f68-ad57-14fdc3dd4ac1">
+      <tooltip>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_255_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_255_255_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="1a318a90-eddc-4e45-82e6-a8ebb1d199a1" bitmap_id="1a518337-9831-45a3-8016-9147f6dc6851">
+      <tooltip>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_192_192_192_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_192_192_192_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="b175d13c-5b14-4525-b851-dc44f73ba005" bitmap_id="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb">
+      <tooltip>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_127_127_127_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_127_127_127_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="d70b48af-0d9a-4e22-a0fc-17b4c10fcd7d" bitmap_id="21b8eff4-b98c-4eff-86a2-37dc5cd4f003">
+      <tooltip>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_64_64_64_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_64_64_64_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="cacb0814-a8c8-48d2-ad42-41e756ce393e" bitmap_id="08b41939-cbd8-4875-bf9c-2cb6c67af095">
+      <tooltip>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_1_1_1_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_1_1_1_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="f6423c66-fc91-40e3-a204-6418a216acfd" bitmap_id="d8976973-a54a-434a-aac7-ceb8106976ce">
+      <tooltip>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_112_0_15_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_112_0_15_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="89d83555-e458-4efc-8929-e29499969c7f" bitmap_id="64981adf-a4b7-4455-929a-7d309bc3502b">
+      <tooltip>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_41_41_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_41_41_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="7b9b12e9-d799-4931-9619-6d7a905a6741" bitmap_id="15de458e-87eb-41e0-951e-50567ab1e529">
+      <tooltip>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_247_44_92_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_247_44_92_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="e1ce3278-4f5a-4a0f-93bf-9e6a76f376bc" bitmap_id="09626706-610f-4b8c-93c4-ed7dac6943fa">
+      <tooltip>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_116_139_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_116_139_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="f28e4167-8602-458a-a6d8-299a697ab093" bitmap_id="f0e6a2d5-3751-4b42-90a7-e2cb8544d139">
+      <tooltip>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_170_128_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_170_128_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="37d78324-a3e5-4a3c-be18-ffeb5a5290ce" bitmap_id="31a1333d-2162-49a3-a6e8-26a9f6bdc386">
+      <tooltip>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_101_0_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_101_0_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="e721aa96-ee4b-47d4-a90d-e6ab9e339756" bitmap_id="126818c9-1cbb-47be-813c-2f0f8b368714">
+      <tooltip>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_138_8_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_138_8_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="2f9f245c-7207-4ac0-851f-4020660e7045" bitmap_id="b475c56f-0dd3-43b7-89c9-aa47b9949e14">
+      <tooltip>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_201_14_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_201_14_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="55f68b8b-3e67-4898-b38f-195189feacf0" bitmap_id="986286bf-dad3-4582-8545-671e5869d9b1">
+      <tooltip>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_128_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_255_128_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="db784c4b-1c37-4476-a20b-58d328b90277" bitmap_id="5eab660c-fe64-47c4-a355-620b356aacc8">
+      <tooltip>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_214_239_216_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_214_239_216_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="76b30f69-ddc6-4959-ae41-ee71f0436e39" bitmap_id="c222cb24-fe8b-4ee8-b00e-1b2af00efa70">
+      <tooltip>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_128_175_129_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_128_175_129_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="4e4d3dcb-41ab-4c39-91f6-623ec693af1f" bitmap_id="1a132ad6-b926-4b37-b6d5-97f6ee4890ba">
+      <tooltip>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_155_236_0_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_155_236_0_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="84d9c005-ce3f-4f82-b140-ec269289343d" bitmap_id="4d49ea8f-4b12-4576-aca3-33013869c22e">
+      <tooltip>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_6_208_1_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_6_208_1_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="99be31f8-7485-4914-9ff8-0181ea5d70d9" bitmap_id="7972dfa5-9cf9-4ac9-a633-10a427101039">
+      <tooltip>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_31_64_41_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_31_64_41_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="0573c7c5-9462-481f-8b19-6a0130d8746b" bitmap_id="dbb70c40-b2cc-45c6-b86d-ccbb8a561946">
+      <tooltip>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_0_103_105_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_0_103_105_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="28d25d37-f71d-4ef7-90a9-49e17d79d169" bitmap_id="31874537-887b-4355-a0b5-14c88228605f">
+      <tooltip>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_29_93_155_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_29_93_155_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="46b5f112-00e7-4269-96fa-6056d6728da1" bitmap_id="99eeee57-2c9e-4659-8b72-e679476cab72">
+      <tooltip>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_0_169_255_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_0_169_255_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="d76683d2-9a18-4b0c-84f2-b51e05a3672d" bitmap_id="2d43dd28-3477-41cd-89a7-b2dc5249dee2">
+      <tooltip>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_137_207_243_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_137_207_243_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="2c6d3c9e-35cc-45f3-b64c-bd44de313733" bitmap_id="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8">
+      <tooltip>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_160_233_255_A0</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_160_233_255_A0
+enterend
+</script>
+    </macro_item>
+<macro_item guid="59581e4e-26bc-462d-8e55-94083dc9da73" bitmap_id="c41fcaa5-e260-4e4d-b509-155eb6e663bd">
+      <tooltip>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_255_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_255_255_A120
+enterend
+</script>
+    </macro_item>
+<macro_item guid="55126172-1d3c-43c4-904b-a45a6e53551f" bitmap_id="5c4b5043-fe14-4006-ab82-f5fb9f0d470b">
+      <tooltip>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_74_74_74_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_74_74_74_A120
+enterend
+</script>
+    </macro_item>
+<macro_item guid="918a3a57-02bb-441a-a233-720623667f3b" bitmap_id="a409b6d2-2b93-4afc-93fa-840ff45c2667">
+      <tooltip>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_176_176_176_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_176_176_176_A120
+enterend
+</script>
+    </macro_item>
+<macro_item guid="278607a9-776d-4cc4-a1ce-ae463584f748" bitmap_id="eeb9e952-9bd9-429e-abf8-566591ec37a2">
+      <tooltip>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_131_131_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_131_131_A120
+enterend
+</script>
+    </macro_item>
+<macro_item guid="9ce98c11-b7ed-462d-bcce-7e1c5304e69b" bitmap_id="3a882179-2f47-4194-9601-a0229dc36455">
+      <tooltip>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_255_255_128_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_255_255_128_A120
+enterend
+</script>
+    </macro_item>
+<macro_item guid="732e664d-f4e1-4992-b5aa-e58b85c3a264" bitmap_id="6dde172c-49a1-4703-8bcb-16fcd1a54775">
+      <tooltip>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_155_236_0_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_155_236_0_A120
+enterend
+</script>
+    </macro_item>
+<macro_item guid="7a531bb1-5aab-4d29-9971-54fa2ac55bfd" bitmap_id="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3">
+      <tooltip>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Color_87_213_255_A120</locale_1033>
+      </menu_text>
+      <script>_-Materials
+o
+i
+Color_87_213_255_A120
+enterend
+</script>
+    </macro_item>
+<macro_item guid="e97ea14e-f703-420c-8752-3c2bf258e11a" bitmap_id="062c780b-0d8a-4467-9a5c-d7ed49569d4e">
+      <tooltip>
+        <locale_1033>物体下降至地面</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>巨集 03</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>物体下降至地面</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>巨集 03</locale_1033>
+      </menu_text>
+      <script>MoveProjectEach</script>
     </macro_item>
   </macros>
   <icons>
@@ -13827,8 +14670,154 @@ PbcqB1At1QAEAH+qF/qNP2431zG1scu/AAAAAElFTkSuQmCC</png>
     </icon>
   </icons>
   <bitmaps>
-    <small_bitmap item_width="0" item_height="0" />
-    <normal_bitmap item_width="0" item_height="0" />
-    <large_bitmap item_width="0" item_height="0" />
+    <small_bitmap item_width="16" item_height="16">
+      <bitmap_item guid="d818d82b-8315-4f68-ad57-14fdc3dd4ac1" index="0" />
+      <bitmap_item guid="1a518337-9831-45a3-8016-9147f6dc6851" index="1" />
+      <bitmap_item guid="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb" index="2" />
+      <bitmap_item guid="21b8eff4-b98c-4eff-86a2-37dc5cd4f003" index="3" />
+      <bitmap_item guid="08b41939-cbd8-4875-bf9c-2cb6c67af095" index="4" />
+      <bitmap_item guid="d8976973-a54a-434a-aac7-ceb8106976ce" index="5" />
+      <bitmap_item guid="64981adf-a4b7-4455-929a-7d309bc3502b" index="6" />
+      <bitmap_item guid="15de458e-87eb-41e0-951e-50567ab1e529" index="7" />
+      <bitmap_item guid="09626706-610f-4b8c-93c4-ed7dac6943fa" index="8" />
+      <bitmap_item guid="f0e6a2d5-3751-4b42-90a7-e2cb8544d139" index="9" />
+      <bitmap_item guid="31a1333d-2162-49a3-a6e8-26a9f6bdc386" index="10" />
+      <bitmap_item guid="126818c9-1cbb-47be-813c-2f0f8b368714" index="11" />
+      <bitmap_item guid="b475c56f-0dd3-43b7-89c9-aa47b9949e14" index="12" />
+      <bitmap_item guid="986286bf-dad3-4582-8545-671e5869d9b1" index="13" />
+      <bitmap_item guid="5eab660c-fe64-47c4-a355-620b356aacc8" index="14" />
+      <bitmap_item guid="c222cb24-fe8b-4ee8-b00e-1b2af00efa70" index="15" />
+      <bitmap_item guid="1a132ad6-b926-4b37-b6d5-97f6ee4890ba" index="16" />
+      <bitmap_item guid="4d49ea8f-4b12-4576-aca3-33013869c22e" index="17" />
+      <bitmap_item guid="7972dfa5-9cf9-4ac9-a633-10a427101039" index="18" />
+      <bitmap_item guid="dbb70c40-b2cc-45c6-b86d-ccbb8a561946" index="19" />
+      <bitmap_item guid="31874537-887b-4355-a0b5-14c88228605f" index="20" />
+      <bitmap_item guid="99eeee57-2c9e-4659-8b72-e679476cab72" index="21" />
+      <bitmap_item guid="2d43dd28-3477-41cd-89a7-b2dc5249dee2" index="22" />
+      <bitmap_item guid="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8" index="23" />
+      <bitmap_item guid="c41fcaa5-e260-4e4d-b509-155eb6e663bd" index="24" />
+      <bitmap_item guid="5c4b5043-fe14-4006-ab82-f5fb9f0d470b" index="25" />
+      <bitmap_item guid="a409b6d2-2b93-4afc-93fa-840ff45c2667" index="26" />
+      <bitmap_item guid="eeb9e952-9bd9-429e-abf8-566591ec37a2" index="27" />
+      <bitmap_item guid="3a882179-2f47-4194-9601-a0229dc36455" index="28" />
+      <bitmap_item guid="6dde172c-49a1-4703-8bcb-16fcd1a54775" index="29" />
+      <bitmap_item guid="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3" index="30" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAD6AAAAAQCAYAAAAC/YCeAAAB7klEQVR4nO3bvyvEYQDH8e9RukFG
+cjL6uSjqNjGqU1abRbcYyKxYTf4BfwD+Berc33CDWSwGZUAWfeWZb/sMBq/X+NS7Z3ue6dOo67qu
+Av1+P8mrXq9X/eX9aX9YT0T9xVIr6r9G16K+ubUS9VX7I+tvz7J+rpn1G2NZ3z6O8oe33ai/ub+O
++pn106g/eG5E/fTRYtQ/LmxG/eznatQ/be9H/fn8e9RPtcajfm8yyqtOpxP13W436ncGg6ivTr6j
+/PI1e7/uXqLvt7pajnIAAAAAAAAAAAAAAAAAGGpk+DEAAAAAAAAAAAAAAAAAAAD/jQE6AAAAAAAA
+AAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAA
+AAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAA
+AAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAA
+hQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6AAAAAAAAAAAAAAAAAAAAhQE6
+AAAAAAAAAAAAAAAAAAAA1a8f1uMtHOJtyFEAAAAASUVORK5CYII=</bitmap>
+    </small_bitmap>
+    <normal_bitmap item_width="24" item_height="24">
+      <bitmap_item guid="d818d82b-8315-4f68-ad57-14fdc3dd4ac1" index="0" />
+      <bitmap_item guid="1a518337-9831-45a3-8016-9147f6dc6851" index="1" />
+      <bitmap_item guid="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb" index="2" />
+      <bitmap_item guid="21b8eff4-b98c-4eff-86a2-37dc5cd4f003" index="3" />
+      <bitmap_item guid="08b41939-cbd8-4875-bf9c-2cb6c67af095" index="4" />
+      <bitmap_item guid="d8976973-a54a-434a-aac7-ceb8106976ce" index="5" />
+      <bitmap_item guid="64981adf-a4b7-4455-929a-7d309bc3502b" index="6" />
+      <bitmap_item guid="15de458e-87eb-41e0-951e-50567ab1e529" index="7" />
+      <bitmap_item guid="09626706-610f-4b8c-93c4-ed7dac6943fa" index="8" />
+      <bitmap_item guid="f0e6a2d5-3751-4b42-90a7-e2cb8544d139" index="9" />
+      <bitmap_item guid="31a1333d-2162-49a3-a6e8-26a9f6bdc386" index="10" />
+      <bitmap_item guid="126818c9-1cbb-47be-813c-2f0f8b368714" index="11" />
+      <bitmap_item guid="b475c56f-0dd3-43b7-89c9-aa47b9949e14" index="12" />
+      <bitmap_item guid="986286bf-dad3-4582-8545-671e5869d9b1" index="13" />
+      <bitmap_item guid="5eab660c-fe64-47c4-a355-620b356aacc8" index="14" />
+      <bitmap_item guid="c222cb24-fe8b-4ee8-b00e-1b2af00efa70" index="15" />
+      <bitmap_item guid="1a132ad6-b926-4b37-b6d5-97f6ee4890ba" index="16" />
+      <bitmap_item guid="4d49ea8f-4b12-4576-aca3-33013869c22e" index="17" />
+      <bitmap_item guid="7972dfa5-9cf9-4ac9-a633-10a427101039" index="18" />
+      <bitmap_item guid="dbb70c40-b2cc-45c6-b86d-ccbb8a561946" index="19" />
+      <bitmap_item guid="31874537-887b-4355-a0b5-14c88228605f" index="20" />
+      <bitmap_item guid="99eeee57-2c9e-4659-8b72-e679476cab72" index="21" />
+      <bitmap_item guid="2d43dd28-3477-41cd-89a7-b2dc5249dee2" index="22" />
+      <bitmap_item guid="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8" index="23" />
+      <bitmap_item guid="c41fcaa5-e260-4e4d-b509-155eb6e663bd" index="24" />
+      <bitmap_item guid="5c4b5043-fe14-4006-ab82-f5fb9f0d470b" index="25" />
+      <bitmap_item guid="a409b6d2-2b93-4afc-93fa-840ff45c2667" index="26" />
+      <bitmap_item guid="eeb9e952-9bd9-429e-abf8-566591ec37a2" index="27" />
+      <bitmap_item guid="3a882179-2f47-4194-9601-a0229dc36455" index="28" />
+      <bitmap_item guid="6dde172c-49a1-4703-8bcb-16fcd1a54775" index="29" />
+      <bitmap_item guid="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3" index="30" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAF3AAAAAYCAYAAACliqg0AAADQUlEQVR4nO3cPyvFURzH8XMp3UFG
+cmX0d1HU3cSofspqs+guBjIrVpMn4AHgKVDX7zHcwSwWgzIgi34G3/1O30Fer/n07mznTJ9W0zRN
+SVTXdWa+9Pv98pfvn90/bCZS+xdLndT+1+haar+9tZLaL92P3P7tWW5/rp3b3xjL7XePU/MPb7up
+/Zv769T+zPppav/guZXanz5aTO0/Lmym9mc/V1P7T9v7qf3z+ffU/lRnPLW/N5maL1VVpfZ7vV5q
+f2cwSO2Xk+/U/OVr7vt495L6fS5Xy6l5AAAAAAAAAAAAAAAAAAAAAAAAAACGGBl2AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAADgvzDgDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQDLgDAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAQD7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYA7AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAEAw4A4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAy4AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE
+A+4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGAOwAAAAAAAAAAAAAAAAAAAAAAAAAAAABAMOAOAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABAMuAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAPuAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAADBgDsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQDDgDgAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAQDLgDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQD7gAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAwYA7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAw4A4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAy4
+AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA+4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGAOwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAABAMOAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAMuAMAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAlF8/F3wtLG7dO7AAAAAASUVORK5CYII=</bitmap>
+    </normal_bitmap>
+    <large_bitmap item_width="32" item_height="32">
+      <bitmap_item guid="d818d82b-8315-4f68-ad57-14fdc3dd4ac1" index="0" />
+      <bitmap_item guid="1a518337-9831-45a3-8016-9147f6dc6851" index="1" />
+      <bitmap_item guid="83fada1c-cdc6-4532-bc9d-1a0a8f4453cb" index="2" />
+      <bitmap_item guid="21b8eff4-b98c-4eff-86a2-37dc5cd4f003" index="3" />
+      <bitmap_item guid="08b41939-cbd8-4875-bf9c-2cb6c67af095" index="4" />
+      <bitmap_item guid="d8976973-a54a-434a-aac7-ceb8106976ce" index="5" />
+      <bitmap_item guid="64981adf-a4b7-4455-929a-7d309bc3502b" index="6" />
+      <bitmap_item guid="15de458e-87eb-41e0-951e-50567ab1e529" index="7" />
+      <bitmap_item guid="09626706-610f-4b8c-93c4-ed7dac6943fa" index="8" />
+      <bitmap_item guid="f0e6a2d5-3751-4b42-90a7-e2cb8544d139" index="9" />
+      <bitmap_item guid="31a1333d-2162-49a3-a6e8-26a9f6bdc386" index="10" />
+      <bitmap_item guid="126818c9-1cbb-47be-813c-2f0f8b368714" index="11" />
+      <bitmap_item guid="b475c56f-0dd3-43b7-89c9-aa47b9949e14" index="12" />
+      <bitmap_item guid="986286bf-dad3-4582-8545-671e5869d9b1" index="13" />
+      <bitmap_item guid="5eab660c-fe64-47c4-a355-620b356aacc8" index="14" />
+      <bitmap_item guid="c222cb24-fe8b-4ee8-b00e-1b2af00efa70" index="15" />
+      <bitmap_item guid="1a132ad6-b926-4b37-b6d5-97f6ee4890ba" index="16" />
+      <bitmap_item guid="4d49ea8f-4b12-4576-aca3-33013869c22e" index="17" />
+      <bitmap_item guid="7972dfa5-9cf9-4ac9-a633-10a427101039" index="18" />
+      <bitmap_item guid="dbb70c40-b2cc-45c6-b86d-ccbb8a561946" index="19" />
+      <bitmap_item guid="31874537-887b-4355-a0b5-14c88228605f" index="20" />
+      <bitmap_item guid="99eeee57-2c9e-4659-8b72-e679476cab72" index="21" />
+      <bitmap_item guid="2d43dd28-3477-41cd-89a7-b2dc5249dee2" index="22" />
+      <bitmap_item guid="7d706fbb-7bd9-4b1e-8c37-132c88d6c1f8" index="23" />
+      <bitmap_item guid="c41fcaa5-e260-4e4d-b509-155eb6e663bd" index="24" />
+      <bitmap_item guid="5c4b5043-fe14-4006-ab82-f5fb9f0d470b" index="25" />
+      <bitmap_item guid="a409b6d2-2b93-4afc-93fa-840ff45c2667" index="26" />
+      <bitmap_item guid="eeb9e952-9bd9-429e-abf8-566591ec37a2" index="27" />
+      <bitmap_item guid="3a882179-2f47-4194-9601-a0229dc36455" index="28" />
+      <bitmap_item guid="6dde172c-49a1-4703-8bcb-16fcd1a54775" index="29" />
+      <bitmap_item guid="f0f91c60-5dc5-442f-84d2-5aa6cbc18ca3" index="30" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAH0AAAAAgCAYAAACfk06JAAAFBklEQVR4nO3dPyvFURzH8XMp3UFG
+cmX0d1HU3cSofspqs+guBjIrVpMn4AHgKVDX7zHcwSwWgzIgi34m3/lu3+L1mk99Ots507vVNE1T
+EtV1nTlf+v1++c/3z94/bCZS9y+WOqn7X6NrqfvtrZXU/dL9yN2/Pcvdn2vn7m+M5e53j1PnH952
+U/dv7q9T92fWT1P3D55bqfvTR4up+48Lm6n7s5+rqftP2/up++fz76n7U53x1P29ydT5UlVV6n6v
+10vd3xkMUvfLyXfq/OVr7vvr7iX1+1uullPnAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhjYy
+/FEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgrxNABwAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAIIAOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAE0AEAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAIAggA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAXQA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCKADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAQQAdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACALoAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAQBBABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAOgAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAE0AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AIAggA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAXQAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAgCKADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQQAdAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAACALoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBBA
+BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAABAE0AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAggA4AAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAEAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCKADAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQQAdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAACALoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBBABwAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAIIAOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAE0AEAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAggA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE
+AXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCKADAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAA5dcPSxYtPPJzcY0AAAAASUVORK5CYII=</bitmap>
+    </large_bitmap>
   </bitmaps>
 </RhinoUI>
