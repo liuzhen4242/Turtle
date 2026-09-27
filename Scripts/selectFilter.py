@@ -101,12 +101,87 @@ def get_lineweight(obj):
         return -1.0
 
 
-def get_material(obj):
+def get_material(doc, obj):
+
+    # --------------------------------------------------------
+    # Rhino has TWO material systems that can both be in play:
+    #
+    #  1) The modern "Render Material" (PBR / render content,
+    #     assigned via the Materials panel by dragging content
+    #     onto an object or layer). This is the default
+    #     workflow since Rhino 6.
+    #
+    #  2) The legacy "simple material" table, addressed via
+    #     Attributes.MaterialIndex (object) or
+    #     Layer.RenderMaterialIndex (layer).
+    #
+    # If a scene only uses (1), the legacy indices are not
+    # reliable for comparing "is this the same material" -
+    # each object can end up with its own internally-generated
+    # legacy index even when visually sharing one render
+    # material, causing false negatives (never matching except
+    # itself).
+    #
+    # So: prefer the actual RenderMaterial's persistent Id
+    # (shared correctly across every object/layer that
+    # references that same material). Only fall back to the
+    # legacy index if there is no RenderMaterial assigned.
+    #
+    # We return a tagged tuple so a "render" match is never
+    # confused with a "legacy" match even if the underlying
+    # values happen to look similar.
+    # --------------------------------------------------------
 
     try:
-        return obj.Attributes.MaterialIndex
+        source = obj.Attributes.MaterialSource
     except:
-        return -1
+        source = None
+
+    render_material = None
+    legacy_index = -1
+
+    try:
+
+        if source == Rhino.DocObjects.ObjectMaterialSource.MaterialFromLayer:
+
+            layer_index = obj.Attributes.LayerIndex
+
+            if layer_index >= 0:
+
+                layer = doc.Layers[layer_index]
+
+                if layer is not None:
+
+                    try:
+                        render_material = layer.RenderMaterial
+                    except:
+                        render_material = None
+
+                    legacy_index = layer.RenderMaterialIndex
+
+        else:
+
+            # MaterialFromObject, MaterialFromParent, or unknown:
+            # treat as the object's own assignment.
+
+            try:
+                render_material = obj.RenderMaterial
+            except:
+                render_material = None
+
+            legacy_index = obj.Attributes.MaterialIndex
+
+    except:
+        pass
+
+    if render_material is not None:
+
+        try:
+            return ("render", render_material.Id)
+        except:
+            pass
+
+    return ("legacy", legacy_index)
 
 
 # ============================================================
@@ -211,8 +286,8 @@ def object_matches(doc, reference, candidate, filters):
 
     if "Material" in filters:
 
-        ref_material = get_material(reference)
-        obj_material = get_material(candidate)
+        ref_material = get_material(doc, reference)
+        obj_material = get_material(doc, candidate)
 
         if ref_material != obj_material:
             return False
@@ -530,8 +605,8 @@ def FilterSelectV2():
     )
 
     print(
-        "Reference Material Index: {}".format(
-            get_material(reference)
+        "Reference Material: {}".format(
+            get_material(doc, reference)
         )
     )
 
@@ -602,10 +677,27 @@ def FilterSelectV2():
     # Real-time selection
     #
     # Minimum = 1
-    # Maximum = 0 = unlimited
+    # Maximum = -1
+    #
+    # NOTE (per RhinoCommon docs for GetMultiple):
+    #   maximumNumber = 0  -> user must press Enter to finish.
+    #   maximumNumber > 0  -> stops at that many objects, BUT
+    #                         if a window/crossing pick would add
+    #                         MORE than maximumNumber at once,
+    #                         that whole pick attempt is IGNORED.
+    #                         (This is why using 1 here broke
+    #                         window/crossing filtering.)
+    #   maximumNumber = -1 -> selection stops as soon as at least
+    #                         minimumNumber objects are selected,
+    #                         without discarding extra objects
+    #                         picked in the same window/crossing.
+    #
+    # -1 is what we want: one window/crossing select, however
+    # many matching objects it contains, ends the command
+    # immediately with no Enter required.
     # ========================================================
 
-    result = go.GetMultiple(1, 0)
+    result = go.GetMultiple(1, -1)
 
     # ========================================================
     # Check command result
