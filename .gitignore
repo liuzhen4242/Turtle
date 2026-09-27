@@ -19,3 +19,6 @@ yak_build/
 # Rhino backup
 *.3dmbak
 Turtle-old.3dm
+
+# Affinity Designer lock
+*~lock~
