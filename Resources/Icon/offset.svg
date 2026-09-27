@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" fill="none">
+  <!-- 内侧偏移曲线 (Inner Offset) -->
+  <path d="M 10.05 53.46 C 37.95 47.63, 49.65 34.16, 52.03 9.14"
+        stroke="currentColor"
+        stroke-width="2.6"
+        stroke-linecap="round"
+        stroke-dasharray="5 4.5"
+        opacity="0.65" />
+
+  <!-- 基准实线曲线 (Base Original Curve) -->
+  <path d="M 13.00 70.20 C 47.00 64.20, 67.00 42.20, 69.00 10.20"
+        stroke="currentColor"
+        stroke-width="4.2"
+        stroke-linecap="round" />
+
+  <!-- 外侧偏移曲线 (Outer Offset) -->
+  <path d="M 15.95 86.94 C 56.05 80.77, 84.35 50.24, 85.97 11.26"
+        stroke="currentColor"
+        stroke-width="2.6"
+        stroke-linecap="round"
+        stroke-dasharray="5 4.5"
+        opacity="0.65" />
+</svg>

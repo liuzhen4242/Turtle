@@ -4,21 +4,20 @@ ZT '_Zoom _Target
 ZEA '_Zoom _All _Extents
 ZS '_Zoom _Selected
 ZSA '_Zoom _All _Selected
-s _SelectionFilterEdges
+S _SelectionFilterEdges
 O Offset
-PP ! _ExtrudeSrf _Pause _NoEcho _DeleteInput=_Yes _Solid=_Yes _BothSides=_No _Pause _Enter _SelLast _MergeAllFaces
+P ! _PushPull
 M ! _Move
 U ! _DisableClippingPlane
 POn ! _PointsOn
 POff ! _PointsOff
-c ! _Curve
-w '_SetDisplayMode _m _c
+C ! _Curve
+W '_SetDisplayMode _m _c
 COn '_CurvatureGraph
 COff '_CurvatureGraphOff
-插件管理器 ! _OptionsPage _PlugIns
-高级显示 ! _OptionsPage _DisplayModes
 DisplayAttrsMgr ! _OptionsPage _AdvancedSettings
 Break ! _DeleteSubCrv
+PP ! _ExtrudeSrf _Pause _NoEcho _DeleteInput=_Yes _Solid=_Yes _BothSides=_No _Pause _Enter _SelLast _MergeAllFaces
 uu ! _EnableClippingPlane
 rr '_plane
 PlugInManager ! _OptionsPage _PlugIns
@@ -89,7 +88,7 @@ TS ! _Lock
 TY ! _Isolate
 TYY ! _Unisolate
 v2 ! _-ViewportProperties _Projection _TwoPointPerspective _Enter
-ttc -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" r
+ttc ! _-RunPythonScript "vis_watch.py" r
 as _SelectionFilterNone
 xk '_SetDisplayMode _Viewport=_Active _Mode=_Wireframe
 jd '_SetDisplayMode _m _c
@@ -99,7 +98,6 @@ pr _Properties
 g '_CPlane _Object
 sj '_CPlane _World _Top
 op ! _Options
-dd ! _DeleteSubCrv
 by ! _DupEdge
 dg ! _SetPt
 hj ! _BlendCrv
@@ -212,7 +210,6 @@ sw1 '_Sweep1
 sw2 '_Sweep2
 alb _Align _Pause _Bottom
 alt _Align _Pause _Top
-arc ! _ArrayCrv
 tz -Properties t a b  multipause y 1 enterend
 tzz -Properties t s 1 enterend
 sv SelPrev
@@ -256,13 +253,15 @@ dzs -_Properties m o r r pause c c enterend
 czs -_Properties  m o r r pause m o r c c enterend
 ii ! _Unisolate
 po ! _Project
-P ! _PushPull
 gtt ! _HighlightObjectLayers
 maa -_MatchProperties  pause pause Layer=no enter
 ttt ! _Split _Pause _Isocurve
 y ! _Circle
 mz m pause v
 sx -_SetPt -_SetPt Xset=Yes Yset=Yes  Zset=Yes Xset=Yes Yset=No Zset=No
-wa -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" w
-NewAlias -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" s
-stop -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" s
+wa -_RunPythonScript "C:\Users\Liuzhen\AppData\Roaming\Turtle\Scripts\vis_watch.py" w
+NewAlias -_RunPythonScript "C:\Users\Liuzhen\AppData\Roaming\Turtle\Scripts\vis_watch.py" s
+stop -_RunPythonScript "C:\Users\Liuzhen\AppData\Roaming\Turtle\Scripts\vis_watch.py" s
+dd ! _DeleteSubCrv
+ddd Length
+xz ! _-RunPythonScript "selectFilter.py"
