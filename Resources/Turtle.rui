@@ -6,53 +6,7 @@
         <locale_1033>color-turtle</locale_1033>
       </text>
   
-<tool_bar guid="0809495b-bb53-4007-82e5-a2a92c27003d">
-      <text>
-        <locale_1033>mouseTurtle</locale_1033>
-      </text>
-      <tool_bar_item guid="b00a74b4-8f9a-4845-aca6-32202ef01c2d">
-        <left_macro_id>e8495ca7-a2d2-4e21-8431-9aeed75ab5f0</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="c628d735-0def-4093-9427-2f1629ec5ab0">
-        <left_macro_id>186fc2c0-1baa-4b97-bf60-6503c2204b8d</left_macro_id>
-        <right_macro_id>8af61479-d87f-4b55-9034-50d98cfd335d</right_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="822fdbc5-6ca5-4d52-a38f-d9c59864f0b2">
-        <left_macro_id>60c9fb56-9e59-4259-b437-cb32f93513ea</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="cca5961f-9780-45d7-868c-94a338fb7263">
-        <left_macro_id>217e98b9-9b49-46cd-8d4d-3df5d23f7a26</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="18a075dc-107c-451b-afad-7f17acde2cf9">
-        <left_macro_id>e7d902b6-887e-4174-9644-ec60f4137c68</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="92c08d49-231a-4365-b879-53d8a891cfe0">
-        <left_macro_id>a65fad0a-a977-4523-b1bf-60dbeefd9959</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="6a90409b-7a20-4553-830e-7061bed087ce">
-        <left_macro_id>1ce9b75a-f893-4a01-a624-fb47e4e9feb1</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="dd86f0ed-19e8-4eaf-a483-b2bc68b02de4">
-        <left_macro_id>8bb62862-0987-4a0a-a4d9-c00efa0f38d6</left_macro_id>
-        <right_macro_id>6b310690-a711-4603-9e36-9b42e98c830d</right_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="331f1129-2053-417c-a089-0a2b136462c1">
-        <left_macro_id>6fc37768-04ff-429c-8e59-61c39ddb6c7e</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="9bc7c94a-45e0-4c27-9be9-fe8a4f5ad616">
-        <left_macro_id>07e57d56-7699-4dfd-8618-d7c475b7b298</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="90ccfc16-f736-4cc3-9ff2-99d54b91cc26">
-        <left_macro_id>72dacca4-45f8-496e-ba3f-ce7d14ee2e17</left_macro_id>
-        <right_macro_id>acd55212-4327-4820-8018-b5c3ed6b0fd9</right_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="46c064d9-46d2-4cd8-a652-8a40f5a329de">
-        <left_macro_id>f3ea938d-ee51-43ee-a2be-06767462a7d6</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="19415e15-480c-497f-89f5-dedfa48ff8ea">
-        <left_macro_id>d3571d9c-8643-4843-82ca-27a6873648ae</left_macro_id>
-      </tool_bar_item>
-    </tool_bar>
+
     <tool_bar_group_item>
         <tool_bar_reference guid="55f2b50c-4258-4c1b-9bba-133cd6b0f251" />
         <dock_bar_info visible="1" dock_location="top" />
@@ -68,7 +22,11 @@
       <tool_bar_group_item>
         <tool_bar_reference guid="3cdefd34-e8e5-4786-96d6-c0ee05e6467a" />
         <dock_bar_info visible="1" dock_location="top" />
-      </tool_bar_group_item>
+      
+      <tool_bar_group_item>
+        <tool_bar_reference guid="0809495b-bb53-4007-82e5-a2a92c27003d" />
+        <dock_bar_info visible="1" dock_location="top" />
+      </tool_bar_group_item></tool_bar_group_item>
     </tool_bar_group>
   </tool_bar_groups>
   <tool_bars>
@@ -453,7 +411,54 @@
     <left_macro_id>12470a99-f93c-4771-a299-3cc0f882ef31</left_macro_id>
     </tool_bar_item>
     </tool_bar>
-</tool_bars>
+<tool_bar guid="0809495b-bb53-4007-82e5-a2a92c27003d">
+      <text>
+        <locale_1033>mouseTurtle</locale_1033>
+      </text>
+      <tool_bar_item guid="b00a74b4-8f9a-4845-aca6-32202ef01c2d">
+        <left_macro_id>e8495ca7-a2d2-4e21-8431-9aeed75ab5f0</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="c628d735-0def-4093-9427-2f1629ec5ab0">
+        <left_macro_id>186fc2c0-1baa-4b97-bf60-6503c2204b8d</left_macro_id>
+        <right_macro_id>8af61479-d87f-4b55-9034-50d98cfd335d</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="822fdbc5-6ca5-4d52-a38f-d9c59864f0b2">
+        <left_macro_id>60c9fb56-9e59-4259-b437-cb32f93513ea</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="cca5961f-9780-45d7-868c-94a338fb7263">
+        <left_macro_id>217e98b9-9b49-46cd-8d4d-3df5d23f7a26</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="18a075dc-107c-451b-afad-7f17acde2cf9">
+        <left_macro_id>e7d902b6-887e-4174-9644-ec60f4137c68</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="92c08d49-231a-4365-b879-53d8a891cfe0">
+        <left_macro_id>a65fad0a-a977-4523-b1bf-60dbeefd9959</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="6a90409b-7a20-4553-830e-7061bed087ce">
+        <left_macro_id>1ce9b75a-f893-4a01-a624-fb47e4e9feb1</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="dd86f0ed-19e8-4eaf-a483-b2bc68b02de4">
+        <left_macro_id>8bb62862-0987-4a0a-a4d9-c00efa0f38d6</left_macro_id>
+        <right_macro_id>6b310690-a711-4603-9e36-9b42e98c830d</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="331f1129-2053-417c-a089-0a2b136462c1">
+        <left_macro_id>6fc37768-04ff-429c-8e59-61c39ddb6c7e</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="9bc7c94a-45e0-4c27-9be9-fe8a4f5ad616">
+        <left_macro_id>07e57d56-7699-4dfd-8618-d7c475b7b298</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="90ccfc16-f736-4cc3-9ff2-99d54b91cc26">
+        <left_macro_id>72dacca4-45f8-496e-ba3f-ce7d14ee2e17</left_macro_id>
+        <right_macro_id>acd55212-4327-4820-8018-b5c3ed6b0fd9</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="46c064d9-46d2-4cd8-a652-8a40f5a329de">
+        <left_macro_id>f3ea938d-ee51-43ee-a2be-06767462a7d6</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="19415e15-480c-497f-89f5-dedfa48ff8ea">
+        <left_macro_id>d3571d9c-8643-4843-82ca-27a6873648ae</left_macro_id>
+      </tool_bar_item>
+    </tool_bar>
+  </tool_bars>
   <macros>
     
     
