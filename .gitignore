@@ -25,3 +25,6 @@ Turtle-old.3dm
 
 # Windows thumbnail cache
 Thumbs.db
+
+# rui sync backups
+*.bak-*
