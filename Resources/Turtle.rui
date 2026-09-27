@@ -6,7 +6,7 @@
         <locale_1033>color-turtle</locale_1033>
       </text>
       <tool_bar_group_item>
-        <tool_bar_reference guid="609e6fcc-67d9-4822-b3e2-f9597cf35c1d" />
+        <tool_bar_reference guid="55f2b50c-4258-4c1b-9bba-133cd6b0f251" />
         <dock_bar_info visible="1" dock_location="top" />
       </tool_bar_group_item>
       <tool_bar_group_item>
@@ -24,65 +24,65 @@
     </tool_bar_group>
   </tool_bar_groups>
   <tool_bars>
-    <tool_bar guid="609e6fcc-67d9-4822-b3e2-f9597cf35c1d">
+    <tool_bar guid="55f2b50c-4258-4c1b-9bba-133cd6b0f251">
       <text>
-        <locale_1033>Turtle</locale_1033>
+        <locale_1033>turtleMain</locale_1033>
       </text>
-      <tool_bar_item guid="70fa009e-128d-4586-b41a-985a97d802a6">
-        <left_macro_id>7f448bbf-3036-43ed-bb92-67c1a457544e</left_macro_id>
+      <tool_bar_item guid="b429703d-f9ef-4db7-ab8f-df9b1448842c">
+        <left_macro_id>58912547-5b93-434d-a158-66ff0ac73fc9</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="3dc130ff-4234-4f4c-8599-d8819822789a">
-        <left_macro_id>1067b272-659a-4839-a40f-7a2be2ff2447</left_macro_id>
+      <tool_bar_item guid="58a82df9-82e2-4df8-a0fc-7e7d59989f42">
+        <left_macro_id>2569023d-ab76-4e6e-a783-a36f818bb2f2</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="d1f928d8-d86a-4119-acc8-88725e190e9c">
-        <left_macro_id>fafb2d0b-7e02-4663-888c-ca96404987a8</left_macro_id>
+      <tool_bar_item guid="3bdb693d-f77b-4d4b-97a8-c8ad45db8983">
+        <left_macro_id>613713da-bc85-472a-8f3f-4c41fccb1072</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="6dd0efb9-4488-4efb-b4cc-bbdf55ebc700">
-        <left_macro_id>e0f91264-ab79-4082-8855-6d7a7cfe3062</left_macro_id>
+      <tool_bar_item guid="10f56c35-5d6e-4b10-8018-6e090235895d">
+        <left_macro_id>d85150ae-7edd-4566-9f41-9dfa976a5f8c</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="4f64b92f-f940-44b2-a953-f1015ae4f3dd">
-        <left_macro_id>fa02a4d4-055b-4d78-a1d0-fb038360d3a1</left_macro_id>
+      <tool_bar_item guid="3eb20ec8-3b12-4623-939f-d64f1c925aa6">
+        <left_macro_id>6cf36b4d-4d97-44f9-9d52-a286f5e94fb6</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="f6d313c8-792b-42c5-a430-ce54321aed6a">
-        <left_macro_id>6b838e58-716a-4aa7-92d9-77f5a082d1b9</left_macro_id>
+      <tool_bar_item guid="526d9620-480c-4303-bbb8-c4eee3228299">
+        <left_macro_id>7d87890f-a021-4df5-a3d4-006789510551</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="d0258ff8-2038-458f-ab7f-1077dc0f9105">
-        <left_macro_id>2667a015-fb58-4b5a-986c-efa6453268ab</left_macro_id>
+      <tool_bar_item guid="c9c21c95-a88e-483b-a49b-b9c838ba4736">
+        <left_macro_id>7ccb7547-82aa-4825-aeb0-2161d7a22139</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="23c4e4a5-ca6d-4907-a1a1-c98717e1670e">
-        <left_macro_id>3f25ea6a-9cd5-47a3-9ba6-eb9ad1914027</left_macro_id>
+      <tool_bar_item guid="efb60660-e572-4168-b7df-8395064911e3">
+        <left_macro_id>dc0cb273-d6dc-48cb-8b05-4a6ca00c4224</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="6a105e42-ec63-4cf7-80fd-5dcc238b68c9">
-        <left_macro_id>a0e254d3-a7e4-4e8b-82d4-3b402ea76f05</left_macro_id>
+      <tool_bar_item guid="cb292919-6516-42a6-89a3-90fa7caafcd7">
+        <left_macro_id>ec3701b4-2edb-4237-ba1c-7a61725ebb4b</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="76f4b482-d34f-47cc-b488-d5cc51304334">
-        <left_macro_id>da0e0a9c-f750-4558-a1e0-2e4d01774d24</left_macro_id>
+      <tool_bar_item guid="118cd3aa-1ba2-49b9-b545-cbd1ff527464">
+        <left_macro_id>7db29bb0-3d21-49ae-b0fd-307b134352c3</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="22fad5f8-c2fd-493f-9859-3550c0320e20">
-        <left_macro_id>173454db-1c67-4fb2-9f83-a11d21492505</left_macro_id>
+      <tool_bar_item guid="5f27a9c8-776a-4fb6-a39b-940257202743">
+        <left_macro_id>960524c3-1765-481f-b3f2-604d5ef6fcb7</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="ed8c2e6d-6eee-434c-a18e-a0e58b0a0c55">
-        <left_macro_id>2ea9edaf-da64-4cfb-a2f2-504a926be997</left_macro_id>
+      <tool_bar_item guid="16a3b6dc-dd73-4d06-ad25-12b3ca36a709">
+        <left_macro_id>cc8d2ad3-d9a8-4ae6-9e80-357082321037</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="5340b10d-1e58-4500-b6ba-d0f5bd0b3d18">
-        <left_macro_id>aadd5319-7fa3-485c-b28b-0b7808098fce</left_macro_id>
-        <right_macro_id>a49cc89c-4c44-4de8-adf4-e3d9297e45fc</right_macro_id>
+      <tool_bar_item guid="37fb174a-c4dc-46b7-bff7-1cce68f2f5c3">
+        <left_macro_id>4078e1d0-c38e-4353-a01c-c9e652b3abdb</left_macro_id>
+        <right_macro_id>ad171092-cd3e-4ca0-a579-bbc653defcba</right_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="6e013d06-a265-4163-b403-88b7e429352c">
-        <left_macro_id>d4297708-b557-4a53-a2b7-969723c8c9d8</left_macro_id>
+      <tool_bar_item guid="ffc943b9-a871-46e5-bde4-c83f1b2d8a29">
+        <left_macro_id>9c82a072-042a-4168-9550-d2a755c86498</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="71340c78-fb58-4434-af4e-780909d62ee0">
-        <left_macro_id>82e9fe15-b479-4ce2-968b-cdd6d6c0e02f</left_macro_id>
-        <right_macro_id>9f6b154b-d37d-4e64-96b1-a2588b602db8</right_macro_id>
+      <tool_bar_item guid="c9a74a69-cb47-480b-a391-c058057e9cbc">
+        <left_macro_id>3e2855d6-cd63-4e62-ad88-40c05c3e3041</left_macro_id>
+        <right_macro_id>3ff007bc-7d8b-4ba4-a710-686793482e70</right_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="fbd56428-c0ef-47a8-83ff-b4394e7637b7">
-        <left_macro_id>6264dcfa-c131-4633-b8c9-65678ef73d25</left_macro_id>
+      <tool_bar_item guid="d50917c3-fd83-430d-aebd-c1e4772d488b">
+        <left_macro_id>af12646c-7107-4f28-9453-8a900586d22e</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="ddfb6db0-a625-4dc9-9cc2-f304043312ff">
-        <left_macro_id>a8c093bf-7381-4ce2-b6e6-7ecf7fbbeb21</left_macro_id>
+      <tool_bar_item guid="acb828ea-dd6e-41d1-ac3d-83b6c7600e23">
+        <left_macro_id>86aaac86-bcd1-457f-9b88-b91714fcd5d7</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="ff7b6727-3ac6-44ef-975d-63062efe9172">
-        <left_macro_id>f16ef3bc-1f05-4de5-8211-6dd0b67e35ba</left_macro_id>
+      <tool_bar_item guid="7b44a531-c4fa-44d2-8955-bc35d22a41cc">
+        <left_macro_id>de1e9706-6fec-483c-88b6-531417463f5a</left_macro_id>
       </tool_bar_item>
     </tool_bar>
     <tool_bar guid="c479780d-9ee4-4ab2-8d20-a7a37a356c74">
@@ -403,335 +403,20 @@
 </tool_bar>
 </tool_bars>
   <macros>
-    <macro_item guid="7f448bbf-3036-43ed-bb92-67c1a457544e" bitmap_id="01adb08e-ce40-4da0-acc6-80c5bd47bb58">
-      <text>
-        <locale_1033>Macro exportToSu</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>exportToSu</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>导出su</locale_1033>
-      </button_text>
-      <script>! _-RunPythonScript "BlockToSu.py"</script>
-    </macro_item>
-    <macro_item guid="1067b272-659a-4839-a40f-7a2be2ff2447" bitmap_id="607c9136-729e-49ca-9e91-50cad674ff34">
-      <text>
-        <locale_1033>Macro visWatch</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>visWatch</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>显示记录</locale_1033>
-      </button_text>
-      <script>! _-RunPythonScript "vis_watch.py" w</script>
-    </macro_item>
-    <macro_item guid="fafb2d0b-7e02-4663-888c-ca96404987a8" bitmap_id="83e55847-cf8d-4bce-8a57-6ed9e0badc22">
-      <text>
-        <locale_1033>Macro lineSplit</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>lineSplit</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>线分割</locale_1033>
-      </button_text>
-      <script>-wirecut
-pause
-pause
-d
-z
-enter</script>
-    </macro_item>
-    <macro_item guid="e0f91264-ab79-4082-8855-6d7a7cfe3062" bitmap_id="6dfcdc9e-a295-4e65-a8f3-135f6491c056">
-      <text>
-        <locale_1033>Macro outline</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>outline</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>轮廓线</locale_1033>
-      </button_text>
-      <script>_-RunPythonScript (
-# -*- coding: utf-8 -*-
-import rhinoscriptsyntax as rs
-import scriptcontext as sc
-import Rhino
-
-def RunMeshOutlineProcess():
-    target_layer = "outline"
-    linetype_name = "Continuous3"
     
-    # 检查并创建新图层（若不存在），设置颜色为黑色
-    if not rs.IsLayer(target_layer):
-        rs.AddLayer(target_layer, rs.CreateColor(0, 0, 0))
-    else:
-        rs.LayerColor(target_layer, rs.CreateColor(0, 0, 0))
-        
-    # 将图层线型显式设置为 Continuous3
-    try:
-        rs.LayerLinetype(target_layer, linetype_name)
-    except Exception:
-        pass
-        
-    # 设置图层的默认打印线宽为 0.2
-    layer_index = sc.doc.Layers.FindByFullPath(target_layer, -1)
-    if layer_index &gt;= 0:
-        layer = sc.doc.Layers[layer_index]
-        layer.PlotWeight = 0.2
-        layer.CommitChanges()
-        
-    objs = rs.GetObjects('Select objects to create mesh outline', preselect=True)
-    if not objs:
-        return
-        
-    idList = " ".join(["_SelID {}".format(o) for o in objs])
-    rs.Command("_MeshOutline " + idList, echo=False)
-    newCurves = rs.LastCreatedObjects()
-    if not newCurves:
-        return
-        
-    for crv in newCurves:
-        rs.Command("_BringToFront _SelID {}".format(crv), echo=False)
-        rs.ObjectLayer(crv, target_layer)
-        
-        # 核心修复：直接将图元自身的线型指定为 Continuous3，并让线型与线宽来源都跟随图层
-        obj_ref = sc.doc.Objects.Find(crv)
-        if obj_ref:
-            attr = obj_ref.Attributes
-            attr.LinetypeSource = Rhino.DocObjects.ObjectLinetypeSource.LinetypeFromLayer
-            attr.PlotWeightSource = Rhino.DocObjects.ObjectPlotWeightSource.PlotWeightFromLayer
-            attr.PlotWeight = 0.2
-            sc.doc.Objects.ModifyAttributes(obj_ref, attr, True)
-            
-        try:
-            rs.ObjectLinetype(crv, linetype_name)
-        except Exception:
-            pass
-            
-    sc.doc.Views.Redraw()
-
-RunMeshOutlineProcess()
-)</script>
-    </macro_item>
-    <macro_item guid="fa02a4d4-055b-4d78-a1d0-fb038360d3a1" bitmap_id="71f675b6-51be-4f26-ba7d-e8faa617ff11">
-      <text>
-        <locale_1033>Macro whiteLine</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>whiteLine</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>白线</locale_1033>
-      </button_text>
-      <script>! _SetObjectDisplayMode m ArcticWhite</script>
-    </macro_item>
-    <macro_item guid="6b838e58-716a-4aa7-92d9-77f5a082d1b9" bitmap_id="9666b640-bca0-4475-add9-6cb3ab31c02d">
-      <text>
-        <locale_1033>Macro blackLine</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>blackLine</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>黑线</locale_1033>
-      </button_text>
-      <script>! _SetObjectDisplayMode m ArcticBlack</script>
-    </macro_item>
-    <macro_item guid="2667a015-fb58-4b5a-986c-efa6453268ab" bitmap_id="973b0536-9f5f-4609-ada1-2b1e6cbcae43">
-      <text>
-        <locale_1033>Macro originalColor</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>originalColor</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>原色</locale_1033>
-      </button_text>
-      <script>! _SetObjectDisplayMode m u</script>
-    </macro_item>
-    <macro_item guid="3f25ea6a-9cd5-47a3-9ba6-eb9ad1914027" bitmap_id="dbe2f3b3-a4e5-4784-95dc-ec1edb7bae82">
-      <text>
-        <locale_1033>Macro dropToGround</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>dropToGround</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>落地</locale_1033>
-      </button_text>
-      <script>MoveProjectEach</script>
-    </macro_item>
-    <macro_item guid="a0e254d3-a7e4-4e8b-82d4-3b402ea76f05" bitmap_id="f11fd0e0-4e9b-4aa8-a563-63edd6fb7ea5">
-      <text>
-        <locale_1033>Macro intersect</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>intersect</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>交线</locale_1033>
-      </button_text>
-      <script>_-RunPythonScript (
-# -*- coding: utf-8 -*-
-import rhinoscriptsyntax as rs
-import scriptcontext as sc
-
-def RunIntersectAndLayer():
-    layer_name = "intersectionCurve"
     
-    # 1. 检查并创建图层
-    if not rs.IsLayer(layer_name):
-        rs.AddLayer(layer_name)
-        
-    # 2. 在脚本内部调用求交命令（允许用户交互点选）
-    rs.Command("_Intersect", echo=True)
     
-    # 3. 立即捕获刚刚生成的新对象
-    new_objs = rs.LastCreatedObjects()
-    if not new_objs:
-        return
-        
-    # 4. 将新生成的交线放入指定图层
-    for obj in new_objs:
-        rs.ObjectLayer(obj, layer_name)
-        
-    sc.doc.Views.Redraw()
-
-RunIntersectAndLayer()
-)</script>
-    </macro_item>
-    <macro_item guid="da0e0a9c-f750-4558-a1e0-2e4d01774d24" bitmap_id="cd5a9430-202f-4d92-bf1f-01a74568726b">
-      <text>
-        <locale_1033>Macro mapping</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>mapping</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>贴图轴</locale_1033>
-      </button_text>
-      <script>_ApplyBoxMapping`np`npause`npause`npause`npause`ny`nenter`n_MappingWidget`nenter</script>
-    </macro_item>
-    <macro_item guid="173454db-1c67-4fb2-9f83-a11d21492505" bitmap_id="48902951-c2da-4329-9511-4b5f4b641d27">
-      <text>
-        <locale_1033>Macro colorToMat</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>colorToMat</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>颜色转材质</locale_1033>
-      </button_text>
-      <script>_-RunPythonScript (# -*- coding: utf-8 -*-
-"""
-Rhino 脚本：将对象颜色一键转换为材质（RenderMaterial 版）
-用法：
-  1. 在 Rhino 命令行输入 EditPythonScript (Rhino 6/7) 或 ScriptEditor (Rhino 8)
-  2. 粘贴本脚本并运行 (F5)
-  3. 若有选中的对象，只处理选中对象；若没有选中任何对象，则处理场景中所有对象
-
-功能：
-  - 读取每个对象的"实际显示颜色"（若图层颜色继承，也会正确取到）
-  - 相同颜色的对象自动共用同一个材质，不会重复创建（仅本次运行内合并）
-  - 材质使用 Rhino.Render.RenderMaterial（Basic Material），
-    也就是材质库同款机制：无论从"材质面板"改材质球，
-    还是从"属性面板"改选中物体的材质，其他共用该材质的物体都会联动
-"""
-
-import rhinoscriptsyntax as rs
-import scriptcontext as sc
-import Rhino
-
-
-def color_to_material():
-    doc = sc.doc
-
-    # 优先使用选中对象，没有选中则处理全部对象
-    selected = rs.SelectedObjects()
-    obj_ids = selected if selected else rs.AllObjects()
-
-    if not obj_ids:
-        print("场景中没有找到任何对象。")
-        return
-
-    color_material_map = {}  # {(R,G,B): RenderMaterial}
-    count = 0
-
-    for obj_id in obj_ids:
-        rhobj = rs.coercerhinoobject(obj_id)
-        if rhobj is None:
-            continue
-
-        # 获取对象的实际显示颜色（若按图层显示颜色，会自动取图层颜色）
-        color = rhobj.Attributes.DrawColor(doc)
-        key = (color.R, color.G, color.B)
-
-        if key in color_material_map:
-            mat = color_material_map[key]
-        else:
-            # 创建 Basic Material（材质库同款的 RenderContent 对象）
-            mat = Rhino.Render.RenderContentType.NewContentFromTypeId(
-                Rhino.Render.ContentUuids.BasicMaterialType, doc)
-            mat.BeginChange(Rhino.Render.RenderContent.ChangeContexts.Program)
-            mat.Fields.Set("diffuse", color)
-            mat.EndChange()
-            mat.Name = "Color_{}_{}_{}".format(color.R, color.G, color.B)
-
-            doc.RenderMaterials.Add(mat)
-            color_material_map[key] = mat
-
-        # 赋值给物体（RenderMaterial 属性走的是渲染内容系统，天然支持联动）
-        rhobj.RenderMaterial = mat
-        rhobj.CommitChanges()
-        count += 1
-
-    doc.Views.Redraw()
-    print("完成：共处理 {} 个对象，生成 {} 个材质（相同颜色已合并）。".format(
-        count, len(color_material_map)))
-
-
-color_to_material()
-)</script>
-    </macro_item>
-    <macro_item guid="2ea9edaf-da64-4cfb-a2f2-504a926be997" bitmap_id="ef1ed7b3-112a-4856-b5e2-95bc1d445787">
-      <text>
-        <locale_1033>Macro moveLayer</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>moveLayer</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>移动图层</locale_1033>
-      </button_text>
-      <script>! _-RunPythonScript "moveLayer"</script>
-    </macro_item>
-    <macro_item guid="aadd5319-7fa3-485c-b28b-0b7808098fce" bitmap_id="ac7b0eaa-b336-4dde-9ccf-b27b3b98c387">
-      <text>
-        <locale_1033>Macro batchCapture</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>batchCapture</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>批量截图</locale_1033>
-      </button_text>
-      <script>! _-RunPythonScript "batchCapturesLayerStates.py"</script>
-    </macro_item>
-    <macro_item guid="d4297708-b557-4a53-a2b7-969723c8c9d8" bitmap_id="b1f8e87e-9b60-4957-bcb1-3f7bf41adb17">
-      <text>
-        <locale_1033>Macro selectFilter</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>selectFilter</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>选择过滤</locale_1033>
-      </button_text>
-      <script>! _-RunPythonScript "selectFilter.py"</script>
-    </macro_item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <macro_item guid="3ae6c47e-2d43-46dd-8619-6cd170659bea" bitmap_id="837c614b-c763-41b8-98d4-dda7ffd07f3c">
       <text>
         <locale_1033>Macro 灰 | L100</locale_1033>
@@ -1228,87 +913,7 @@ Enter
 Enter
 _SelNone</script>
     </macro_item>
-<macro_item guid="173454db-1c67-4fb2-9f83-a11d21492505" bitmap_id="48902951-c2da-4329-9511-4b5f4b641d27">
-      <text>
-        <locale_1033>Macro colorToMat</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>colorToMat</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>颜色转材质</locale_1033>
-      </button_text>
-      <script>_-RunPythonScript (# -*- coding: utf-8 -*-
-"""
-Rhino 脚本：将对象颜色一键转换为材质（RenderMaterial 版）
-用法：
-  1. 在 Rhino 命令行输入 EditPythonScript (Rhino 6/7) 或 ScriptEditor (Rhino 8)
-  2. 粘贴本脚本并运行 (F5)
-  3. 若有选中的对象，只处理选中对象；若没有选中任何对象，则处理场景中所有对象
 
-功能：
-  - 读取每个对象的"实际显示颜色"（若图层颜色继承，也会正确取到）
-  - 相同颜色的对象自动共用同一个材质，不会重复创建（仅本次运行内合并）
-  - 材质使用 Rhino.Render.RenderMaterial（Basic Material），
-    也就是材质库同款机制：无论从"材质面板"改材质球，
-    还是从"属性面板"改选中物体的材质，其他共用该材质的物体都会联动
-"""
-
-import rhinoscriptsyntax as rs
-import scriptcontext as sc
-import Rhino
-
-
-def color_to_material():
-    doc = sc.doc
-
-    # 优先使用选中对象，没有选中则处理全部对象
-    selected = rs.SelectedObjects()
-    obj_ids = selected if selected else rs.AllObjects()
-
-    if not obj_ids:
-        print("场景中没有找到任何对象。")
-        return
-
-    color_material_map = {}  # {(R,G,B): RenderMaterial}
-    count = 0
-
-    for obj_id in obj_ids:
-        rhobj = rs.coercerhinoobject(obj_id)
-        if rhobj is None:
-            continue
-
-        # 获取对象的实际显示颜色（若按图层显示颜色，会自动取图层颜色）
-        color = rhobj.Attributes.DrawColor(doc)
-        key = (color.R, color.G, color.B)
-
-        if key in color_material_map:
-            mat = color_material_map[key]
-        else:
-            # 创建 Basic Material（材质库同款的 RenderContent 对象）
-            mat = Rhino.Render.RenderContentType.NewContentFromTypeId(
-                Rhino.Render.ContentUuids.BasicMaterialType, doc)
-            mat.BeginChange(Rhino.Render.RenderContent.ChangeContexts.Program)
-            mat.Fields.Set("diffuse", color)
-            mat.EndChange()
-            mat.Name = "Color_{}_{}_{}".format(color.R, color.G, color.B)
-
-            doc.RenderMaterials.Add(mat)
-            color_material_map[key] = mat
-
-        # 赋值给物体（RenderMaterial 属性走的是渲染内容系统，天然支持联动）
-        rhobj.RenderMaterial = mat
-        rhobj.CommitChanges()
-        count += 1
-
-    doc.Views.Redraw()
-    print("完成：共处理 {} 个对象，生成 {} 个材质（相同颜色已合并）。".format(
-        count, len(color_material_map)))
-
-
-color_to_material()
-)</script>
-    </macro_item>
 <macro_item guid="e96a0264-792d-43a4-a01c-98bde93dc661" bitmap_id="d818d82b-8315-4f68-ad57-14fdc3dd4ac1">
       <text>
         <locale_1033>Color_255_255_255_A0</locale_1033>
@@ -2883,19 +2488,366 @@ ni
 Color_88_220_40_A0
 enterend</script>
     </macro_item>
-  <macro_item guid="82e9fe15-b479-4ce2-968b-cdd6d6c0e02f" bitmap_id="c776f544-8e25-44fa-99f0-b1897ad06d95">
+  
+
+
+
+
+
+  <macro_item guid="58912547-5b93-434d-a158-66ff0ac73fc9">
       <text>
-        <locale_1033>align page</locale_1033>
+        <locale_1033>exportToSu</locale_1033>
       </text>
       <tooltip>
-        <locale_1033>align page</locale_1033>
+        <locale_1033>exportToSu</locale_1033>
       </tooltip>
       <button_text>
-        <locale_1033>align page</locale_1033>
+        <locale_1033>exportToSu</locale_1033>
+      </button_text>
+      <script>! _-RunPythonScript "BlockToSu.py"</script>
+    </macro_item>
+<macro_item guid="2569023d-ab76-4e6e-a783-a36f818bb2f2">
+      <text>
+        <locale_1033>visWatch</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>visWatch</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>visWatch</locale_1033>
+      </button_text>
+      <script>! _-RunPythonScript "vis_watch.py" w</script>
+    </macro_item>
+<macro_item guid="613713da-bc85-472a-8f3f-4c41fccb1072">
+      <text>
+        <locale_1033>lineSplit</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>lineSplit</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>lineSplit</locale_1033>
+      </button_text>
+      <script>-wirecut
+pause
+pause
+d
+z
+enter</script>
+    </macro_item>
+<macro_item guid="d85150ae-7edd-4566-9f41-9dfa976a5f8c">
+      <text>
+        <locale_1033>outline</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>outline</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>outline</locale_1033>
+      </button_text>
+      <script>_-RunPythonScript (
+# -*- coding: utf-8 -*-
+import rhinoscriptsyntax as rs
+import scriptcontext as sc
+import Rhino
+
+def RunMeshOutlineProcess():
+    target_layer = "outline"
+    linetype_name = "Continuous3"
+    
+    # 检查并创建新图层（若不存在），设置颜色为黑色
+    if not rs.IsLayer(target_layer):
+        rs.AddLayer(target_layer, rs.CreateColor(0, 0, 0))
+    else:
+        rs.LayerColor(target_layer, rs.CreateColor(0, 0, 0))
+        
+    # 将图层线型显式设置为 Continuous3
+    try:
+        rs.LayerLinetype(target_layer, linetype_name)
+    except Exception:
+        pass
+        
+    # 设置图层的默认打印线宽为 0.2
+    layer_index = sc.doc.Layers.FindByFullPath(target_layer, -1)
+    if layer_index &gt;= 0:
+        layer = sc.doc.Layers[layer_index]
+        layer.PlotWeight = 0.2
+        layer.CommitChanges()
+        
+    objs = rs.GetObjects('Select objects to create mesh outline', preselect=True)
+    if not objs:
+        return
+        
+    idList = " ".join(["_SelID {}".format(o) for o in objs])
+    rs.Command("_MeshOutline " + idList, echo=False)
+    newCurves = rs.LastCreatedObjects()
+    if not newCurves:
+        return
+        
+    for crv in newCurves:
+        rs.Command("_BringToFront _SelID {}".format(crv), echo=False)
+        rs.ObjectLayer(crv, target_layer)
+        
+        # 核心修复：直接将图元自身的线型指定为 Continuous3，并让线型与线宽来源都跟随图层
+        obj_ref = sc.doc.Objects.Find(crv)
+        if obj_ref:
+            attr = obj_ref.Attributes
+            attr.LinetypeSource = Rhino.DocObjects.ObjectLinetypeSource.LinetypeFromLayer
+            attr.PlotWeightSource = Rhino.DocObjects.ObjectPlotWeightSource.PlotWeightFromLayer
+            attr.PlotWeight = 0.2
+            sc.doc.Objects.ModifyAttributes(obj_ref, attr, True)
+            
+        try:
+            rs.ObjectLinetype(crv, linetype_name)
+        except Exception:
+            pass
+            
+    sc.doc.Views.Redraw()
+
+RunMeshOutlineProcess()
+)</script>
+    </macro_item>
+<macro_item guid="6cf36b4d-4d97-44f9-9d52-a286f5e94fb6">
+      <text>
+        <locale_1033>whiteLine</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>whiteLine</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>whiteLine</locale_1033>
+      </button_text>
+      <script>! _SetObjectDisplayMode m ArcticWhite</script>
+    </macro_item>
+<macro_item guid="7d87890f-a021-4df5-a3d4-006789510551">
+      <text>
+        <locale_1033>blackLine</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>blackLine</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>blackLine</locale_1033>
+      </button_text>
+      <script>! _SetObjectDisplayMode m ArcticBlack</script>
+    </macro_item>
+<macro_item guid="7ccb7547-82aa-4825-aeb0-2161d7a22139">
+      <text>
+        <locale_1033>originalColor</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>originalColor</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>originalColor</locale_1033>
+      </button_text>
+      <script>! _SetObjectDisplayMode m u</script>
+    </macro_item>
+<macro_item guid="dc0cb273-d6dc-48cb-8b05-4a6ca00c4224">
+      <text>
+        <locale_1033>dropToGround</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>dropToGround</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>dropToGround</locale_1033>
+      </button_text>
+      <script>MoveProjectEach</script>
+    </macro_item>
+<macro_item guid="ec3701b4-2edb-4237-ba1c-7a61725ebb4b">
+      <text>
+        <locale_1033>intersect</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>intersect</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>intersect</locale_1033>
+      </button_text>
+      <script>_-RunPythonScript (
+# -*- coding: utf-8 -*-
+import rhinoscriptsyntax as rs
+import scriptcontext as sc
+
+def RunIntersectAndLayer():
+    layer_name = "intersectionCurve"
+    
+    # 1. 检查并创建图层
+    if not rs.IsLayer(layer_name):
+        rs.AddLayer(layer_name)
+        
+    # 2. 在脚本内部调用求交命令（允许用户交互点选）
+    rs.Command("_Intersect", echo=True)
+    
+    # 3. 立即捕获刚刚生成的新对象
+    new_objs = rs.LastCreatedObjects()
+    if not new_objs:
+        return
+        
+    # 4. 将新生成的交线放入指定图层
+    for obj in new_objs:
+        rs.ObjectLayer(obj, layer_name)
+        
+    sc.doc.Views.Redraw()
+
+RunIntersectAndLayer()
+)</script>
+    </macro_item>
+<macro_item guid="7db29bb0-3d21-49ae-b0fd-307b134352c3">
+      <text>
+        <locale_1033>mapping</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>mapping</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>mapping</locale_1033>
+      </button_text>
+      <script>_ApplyBoxMapping`np`npause`npause`npause`npause`ny`nenter`n_MappingWidget`nenter</script>
+    </macro_item>
+<macro_item guid="960524c3-1765-481f-b3f2-604d5ef6fcb7">
+      <text>
+        <locale_1033>colorToMat</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>colorToMat</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>colorToMat</locale_1033>
+      </button_text>
+      <script>_-RunPythonScript (# -*- coding: utf-8 -*-
+"""
+Rhino 脚本：将对象颜色一键转换为材质（RenderMaterial 版）
+用法：
+  1. 在 Rhino 命令行输入 EditPythonScript (Rhino 6/7) 或 ScriptEditor (Rhino 8)
+  2. 粘贴本脚本并运行 (F5)
+  3. 若有选中的对象，只处理选中对象；若没有选中任何对象，则处理场景中所有对象
+
+功能：
+  - 读取每个对象的"实际显示颜色"（若图层颜色继承，也会正确取到）
+  - 相同颜色的对象自动共用同一个材质，不会重复创建（仅本次运行内合并）
+  - 材质使用 Rhino.Render.RenderMaterial（Basic Material），
+    也就是材质库同款机制：无论从"材质面板"改材质球，
+    还是从"属性面板"改选中物体的材质，其他共用该材质的物体都会联动
+"""
+
+import rhinoscriptsyntax as rs
+import scriptcontext as sc
+import Rhino
+
+
+def color_to_material():
+    doc = sc.doc
+
+    # 优先使用选中对象，没有选中则处理全部对象
+    selected = rs.SelectedObjects()
+    obj_ids = selected if selected else rs.AllObjects()
+
+    if not obj_ids:
+        print("场景中没有找到任何对象。")
+        return
+
+    color_material_map = {}  # {(R,G,B): RenderMaterial}
+    count = 0
+
+    for obj_id in obj_ids:
+        rhobj = rs.coercerhinoobject(obj_id)
+        if rhobj is None:
+            continue
+
+        # 获取对象的实际显示颜色（若按图层显示颜色，会自动取图层颜色）
+        color = rhobj.Attributes.DrawColor(doc)
+        key = (color.R, color.G, color.B)
+
+        if key in color_material_map:
+            mat = color_material_map[key]
+        else:
+            # 创建 Basic Material（材质库同款的 RenderContent 对象）
+            mat = Rhino.Render.RenderContentType.NewContentFromTypeId(
+                Rhino.Render.ContentUuids.BasicMaterialType, doc)
+            mat.BeginChange(Rhino.Render.RenderContent.ChangeContexts.Program)
+            mat.Fields.Set("diffuse", color)
+            mat.EndChange()
+            mat.Name = "Color_{}_{}_{}".format(color.R, color.G, color.B)
+
+            doc.RenderMaterials.Add(mat)
+            color_material_map[key] = mat
+
+        # 赋值给物体（RenderMaterial 属性走的是渲染内容系统，天然支持联动）
+        rhobj.RenderMaterial = mat
+        rhobj.CommitChanges()
+        count += 1
+
+    doc.Views.Redraw()
+    print("完成：共处理 {} 个对象，生成 {} 个材质（相同颜色已合并）。".format(
+        count, len(color_material_map)))
+
+
+color_to_material()
+)</script>
+    </macro_item>
+<macro_item guid="cc8d2ad3-d9a8-4ae6-9e80-357082321037">
+      <text>
+        <locale_1033>moveLayer</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>moveLayer</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>moveLayer</locale_1033>
+      </button_text>
+      <script>! _-RunPythonScript "moveLayer"</script>
+    </macro_item>
+<macro_item guid="4078e1d0-c38e-4353-a01c-c9e652b3abdb">
+      <text>
+        <locale_1033>batchCapture</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>batchCapture</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>batchCapture</locale_1033>
+      </button_text>
+      <script>! _-RunPythonScript "batchCapturesLayerStates.py"</script>
+    </macro_item>
+<macro_item guid="ad171092-cd3e-4ca0-a579-bbc653defcba">
+      <text>
+        <locale_1033>batchCapturesSnapshots</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>batchCapturesSnapshots</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>batchCapturesSnapshots</locale_1033>
+      </button_text>
+      <script>! _-RunPythonScript "batchCapturesSnapshots.py"</script>
+    </macro_item>
+<macro_item guid="9c82a072-042a-4168-9550-d2a755c86498">
+      <text>
+        <locale_1033>selectFilter</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>selectFilter</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>selectFilter</locale_1033>
+      </button_text>
+      <script>! _-RunPythonScript "selectFilter.py"</script>
+    </macro_item>
+<macro_item guid="3e2855d6-cd63-4e62-ad88-40c05c3e3041">
+      <text>
+        <locale_1033>alignPage</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>alignPage</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>alignPage</locale_1033>
       </button_text>
       <script>! _-RunPythonScript "alignPage.py"</script>
     </macro_item>
-<macro_item guid="9f6b154b-d37d-4e64-96b1-a2588b602db8">
+<macro_item guid="3ff007bc-7d8b-4ba4-a710-686793482e70">
       <text>
         <locale_1033>lineWidthScale</locale_1033>
       </text>
@@ -2907,7 +2859,7 @@ enterend</script>
       </button_text>
       <script>! _-RunPythonScript "lineWidthScale.py"</script>
     </macro_item>
-<macro_item guid="6264dcfa-c131-4633-b8c9-65678ef73d25" bitmap_id="953109ae-5df8-4673-aa55-b0abd2633afe">
+<macro_item guid="af12646c-7107-4f28-9453-8a900586d22e">
       <text>
         <locale_1033>cameraMove</locale_1033>
       </text>
@@ -2919,7 +2871,7 @@ enterend</script>
       </button_text>
       <script>! _-RunPythonScript "cameraMove.py"</script>
     </macro_item>
-<macro_item guid="a8c093bf-7381-4ce2-b6e6-7ecf7fbbeb21" bitmap_id="e0fffabb-ef50-4389-8da2-961a2063dafe">
+<macro_item guid="86aaac86-bcd1-457f-9b88-b91714fcd5d7">
       <text>
         <locale_1033>lineWidthScale</locale_1033>
       </text>
@@ -2931,7 +2883,7 @@ enterend</script>
       </button_text>
       <script>! _-RunPythonScript "lineWidthScale.py"</script>
     </macro_item>
-<macro_item guid="f16ef3bc-1f05-4de5-8211-6dd0b67e35ba" bitmap_id="c5281094-b088-4964-b07a-57fe260ee734">
+<macro_item guid="de1e9706-6fec-483c-88b6-531417463f5a">
       <text>
         <locale_1033>surToHatch</locale_1033>
       </text>
@@ -2941,20 +2893,7 @@ enterend</script>
       <button_text>
         <locale_1033>surToHatch</locale_1033>
       </button_text>
-      <script>! _-RunPythonScript "surToHatch.py"
-</script>
-    </macro_item>
-<macro_item guid="a49cc89c-4c44-4de8-adf4-e3d9297e45fc">
-      <text>
-        <locale_1033>batchCapturesSnapshots</locale_1033>
-      </text>
-      <tooltip>
-        <locale_1033>batchCapturesSnapshots</locale_1033>
-      </tooltip>
-      <button_text>
-        <locale_1033>batchCapturesSnapshots</locale_1033>
-      </button_text>
-      <script>! _-RunPythonScript "batchCapturesSnapshots.py"</script>
+      <script>! _-RunPythonScript "surToHatch.py"</script>
     </macro_item>
   </macros>
   <icons>
@@ -4146,315 +4085,14 @@ PbcqB1At1QAEAH+qF/qNP2431zG1scu/AAAAAElFTkSuQmCC</png>
     <icon guid="69c4578b-98d7-4808-b72a-4a4c3219a581" name="69c4578b-98d7-4808-b72a-4a4c3219a581.png">
       <png>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAN0lEQVR4nO3QQREAMAgDQYoaJCG+XspUBZ+Ngcvs6VsvFpebcQcIECBAgAABAgQIECBAgACBLzALVAKbr2cu4QAAAABJRU5ErkJggg==</png>
     </icon>
-  <icon guid="83e55847-cf8d-4bce-8a57-6ed9e0badc22">
-      <svg_name>e55e855f-3ef7-4603-b9a2-bad86a89092b.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 1306 1306" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-1807.56,-2487.07)"&gt;
-        &lt;g transform="matrix(0.79358,0,0,0.79358,1185.29,1431.52)"&gt;
-            &lt;path d="M2411.99,1571.22L2411.99,2733.55C2411.99,2857.41 2311.43,2957.97 2187.57,2957.97L1025.24,2957.97C901.374,2957.97 800.812,2857.41 800.812,2733.55L800.812,1571.22C800.812,1447.35 901.374,1346.79 1025.24,1346.79L2187.57,1346.79C2311.43,1346.79 2411.99,1447.35 2411.99,1571.22Z" style="fill:none;stroke:black;stroke-width:33.36px;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1.58972,1.16413,-1.34383,1.37713,2614.46,2509.21)"&gt;
-            &lt;path d="M5.69,557.876L200.673,557.876" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:15.1px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(0,-1.80324,2.0816,0,2245.12,4121.72)"&gt;
-            &lt;path d="M563.493,376.169L603.053,376.169" style="fill:none;fill-rule:nonzero;stroke:rgb(116,116,116);stroke-width:13.99px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(-1.82058,0.87428,-1.00924,-1.57712,2724.68,3627.15)"&gt;
-            &lt;path d="M14.188,399.162L246.085,399.162" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:13.22px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(0,-1.80324,2.0816,0,932.668,3795.74)"&gt;
-            &lt;path d="M157.856,601.035L197.416,601.035" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:13.99px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(-1.82058,0.87428,-1.00924,-1.57712,3624.66,2887.23)"&gt;
-            &lt;path d="M359.365,249.91L439.381,249.91" style="fill:none;fill-rule:nonzero;stroke:rgb(116,116,116);stroke-width:13.22px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(-1.58972,-1.16413,1.34383,-1.37713,3287.71,3917.22)"&gt;
-            &lt;path d="M411.327,293.451L606.31,293.451" style="fill:none;fill-rule:nonzero;stroke:rgb(116,116,116);stroke-width:15.1px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1.82058,-0.874281,1.00924,1.57712,1521.52,2949.88)"&gt;
-            &lt;path d="M465.349,426.448L591.161,426.448" style="fill:none;fill-rule:nonzero;stroke:rgb(116,116,116);stroke-width:13.22px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1.82058,-0.874281,1.00924,1.57712,1561.44,2940.94)"&gt;
-            &lt;path d="M465.349,386.888L591.161,386.888" style="fill:none;fill-rule:nonzero;stroke:rgb(116,116,116);stroke-width:13.22px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1.82058,-0.87428,1.00924,1.57712,1356.96,2754.3)"&gt;
-            &lt;path d="M163.096,525.038L394.994,525.038" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:13.22px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1.58972,1.16413,-1.34383,1.37713,2561.3,2492.35)"&gt;
-            &lt;path d="M5.69,518.316L200.673,518.316" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:15.1px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(0,-1.80324,2.0816,0,884.724,3300.24)"&gt;
-            &lt;path d="M8.947,475.158L48.507,475.158" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:13.99px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(0,-1.80324,2.0816,0,1680.52,4213.98)"&gt;
-            &lt;path d="M616.227,202.895L670.301,296.069L541.785,444.587L502.226,444.587L452.085,354.137L297.193,537.37L649.281,537.37L932.021,202.895L616.227,202.895Z" style="fill-rule:nonzero;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1.82058,-0.87428,1.00924,1.57712,1317.04,2763.24)"&gt;
-            &lt;path d="M163.096,564.598L394.994,564.598" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:13.22px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(-1.58972,-1.16413,1.34383,-1.37713,2392,4038.69)"&gt;
-            &lt;path d="M208.508,405.884L403.492,405.884L208.508,405.884Z" style="fill:none;fill-rule:nonzero;stroke:rgb(255,0,0);stroke-width:15.1px;stroke-miterlimit:10;"/&gt;
-        &lt;/g&gt;
-        &lt;path d="M2605.97,3237.01L2605.97,3308.35L2429.64,3395.49" style="fill:none;stroke:rgb(255,0,0);stroke-width:27.25px;"/&gt;
-        &lt;path d="M2113.35,3105.69L2296,3010.02L2113.35,3105.69Z" style="fill:none;stroke:rgb(255,0,0);stroke-width:27.25px;"/&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
-<icon guid="ef1ed7b3-112a-4856-b5e2-95bc1d445787">
-      <svg_name>08958084-7065-428e-b942-839af71ab85f.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 1380 1371" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-1732.98,-2629.79)"&gt;
-        &lt;g&gt;
-            &lt;g transform="matrix(0.79358,0,0,0.79358,1185.29,1639.67)"&gt;
-                &lt;path d="M2411.99,1571.22L2411.99,2733.55C2411.99,2857.41 2311.43,2957.97 2187.57,2957.97L1025.24,2957.97C901.374,2957.97 800.812,2857.41 800.812,2733.55L800.812,1571.22C800.812,1447.35 901.374,1346.79 1025.24,1346.79L2187.57,1346.79C2311.43,1346.79 2411.99,1447.35 2411.99,1571.22Z" style="fill:none;stroke:black;stroke-width:33.36px;"/&gt;
-            &lt;/g&gt;
-            &lt;path d="M2992.5,3465.96L2992.5,3610.1L2469.08,3867.02L2469.08,3722.88L2992.5,3465.96Z" style="stroke:rgb(128,128,128);stroke-width:28.81px;stroke-linecap:butt;stroke-miterlimit:2;"/&gt;
-            &lt;path d="M1927.7,3373.71L2469.08,3722.88L2469.08,3867.02L1927.7,3517.85L1927.7,3373.71Z" style="stroke:rgb(128,128,128);stroke-width:28.81px;stroke-linecap:butt;stroke-miterlimit:2;"/&gt;
-            &lt;path d="M2992.5,3321.82L2469.08,3578.74L2469.08,3434.6L2992.5,3177.68L2992.5,3321.82Z" style="stroke:rgb(128,128,128);stroke-width:28.81px;stroke-linecap:butt;stroke-miterlimit:2;"/&gt;
-            &lt;path d="M1927.7,3229.57L1927.7,3085.43L2469.08,3434.6L2469.08,3578.74L1927.7,3229.57Z" style="stroke:rgb(128,128,128);stroke-width:28.81px;stroke-linecap:butt;stroke-miterlimit:2;"/&gt;
-            &lt;g transform="matrix(-1.54019,-0.993375,1.14661,-1.33436,3186.55,3694.39)"&gt;
-                &lt;path d="M266.549,188.806L618.049,188.806" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:17.26px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(0,-1.66352,1.92013,0,1386.94,3205.28)"&gt;
-                &lt;path d="M-14.597,281.625L72.051,281.625" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(-1.67063,0.820027,-0.94652,-1.44736,2617.57,3054.78)"&gt;
-                &lt;path d="M8.372,161.079L321.68,161.079" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:15.14px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(0,-1.66352,1.92013,0,2178.89,4364.17)"&gt;
-                &lt;path d="M539.949,423.727L626.597,423.727" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(0,-1.66352,1.92013,0,1358.91,4167.62)"&gt;
-                &lt;path d="M267.351,578.172L353.999,578.172" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(0,-1.66352,1.92013,0,1220.57,3349.42)"&gt;
-                &lt;path d="M-14.597,368.273L72.051,368.273" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.92013,0,0,-1.66352,1872.54,4643.97)"&gt;
-                &lt;path d="M583.273,708.143L583.273,621.496L310.675,467.051L310.675,553.699" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.92013,0,0,-1.66352,1872.54,4551.72)"&gt;
-                &lt;path d="M28.727,708.143L28.727,621.496L310.675,411.597" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.67063,-0.820027,0.94652,1.44736,1550.91,3154.46)"&gt;
-                &lt;path d="M290.32,457.626L603.628,457.626" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:15.14px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.67063,-0.820027,0.94652,1.44736,1632.92,3135.73)"&gt;
-                &lt;path d="M290.32,370.978L603.628,370.978" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:15.14px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.54019,0.993375,-1.14661,1.33436,2429.94,2661.94)"&gt;
-                &lt;path d="M-6.049,429.898L345.451,429.898" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:17.26px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.54019,0.993375,-1.14661,1.33436,2330.59,2633.42)"&gt;
-                &lt;path d="M-6.049,343.251L345.451,343.251" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:17.26px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.67063,-0.820027,0.94652,1.44736,1468.9,3173.19)"&gt;
-                &lt;path d="M290.32,544.273L603.628,544.273" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:15.14px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.54019,0.993375,-1.14661,1.33436,2529.29,2690.46)"&gt;
-                &lt;path d="M-6.049,516.546L345.451,516.546" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:17.26px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(0,-1.66352,1.92013,0,2345.26,4220.03)"&gt;
-                &lt;path d="M539.949,337.08L626.597,337.08" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(0,-1.66352,1.92013,0,1525.29,4023.48)"&gt;
-                &lt;path d="M267.351,491.524L353.999,491.524" style="fill:none;fill-rule:nonzero;stroke:rgb(128,128,128);stroke-width:16.04px;stroke-miterlimit:10;"/&gt;
-            &lt;/g&gt;
-            &lt;path d="M2451.12,2828.5L2992.5,3177.68L2469.08,3434.6L1927.7,3085.43L2451.12,2828.5Z" style="stroke:rgb(128,128,128);stroke-width:28.81px;stroke-linecap:butt;stroke-miterlimit:2;"/&gt;
-            &lt;g transform="matrix(1,0,0,1,-30.6336,6.87374)"&gt;
-                &lt;g transform="matrix(1,-0,-0,1,1763.61,2622.92)"&gt;
-                    &lt;use xlink:href="#_Image1" x="588.06" y="370.262" width="173px" height="132px"/&gt;
-                    &lt;clipPath id="_clip2"&gt;
-                        &lt;path d="M215.479,245.411C205.061,248.062 194.451,241.756 191.8,231.339C189.149,220.921 195.454,210.311 205.872,207.66C205.872,207.66 303.188,182.84 412.332,194.174C524.592,205.831 648.427,255.418 697.071,403.942C700.417,414.158 694.839,425.168 684.624,428.514C674.408,431.86 663.398,426.282 660.052,416.067C617.233,285.327 507.126,243.181 408.308,232.919C306.374,222.334 215.479,245.411 215.479,245.411Z"/&gt;
-                    &lt;/clipPath&gt;
-                    &lt;g clip-path="url(#_clip2)"&gt;
-                        &lt;use xlink:href="#_Image3" x="191.195" y="191.209" width="507px" height="239px"/&gt;
-                    &lt;/g&gt;
-                &lt;/g&gt;
-            &lt;/g&gt;
-        &lt;/g&gt;
-    &lt;/g&gt;
-    &lt;defs&gt;
-        &lt;image id="_Image1" width="173px" height="132px" xlink:href="data:image/png;base64,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"/&gt;
-        &lt;image id="_Image3" width="507px" height="239px" xlink:href="data:image/png;base64,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"/&gt;
-    &lt;/defs&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
-<icon guid="ac7b0eaa-b336-4dde-9ccf-b27b3b98c387">
-      <svg_name>bd58fff1-ce0a-4baf-9aff-a7dcc4e9e531.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 1306 1306" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-1807.56,-2548.24)"&gt;
-        &lt;g&gt;
-            &lt;g transform="matrix(0.79358,0,0,0.79358,1185.29,1492.69)"&gt;
-                &lt;path d="M2411.99,1571.22L2411.99,2733.55C2411.99,2857.41 2311.43,2957.97 2187.57,2957.97L1025.24,2957.97C901.374,2957.97 800.812,2857.41 800.812,2733.55L800.812,1571.22C800.812,1447.35 901.374,1346.79 1025.24,1346.79L2187.57,1346.79C2311.43,1346.79 2411.99,1447.35 2411.99,1571.22Z" style="fill:none;stroke:black;stroke-width:33.36px;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.00273,0,0,1.11908,-12.9377,-325.61)"&gt;
-                &lt;path d="M3015.86,3076.59L3015.86,3423.65C3015.86,3519.43 2929.08,3597.19 2822.19,3597.19L2113.4,3597.19C2006.52,3597.19 1919.73,3519.43 1919.73,3423.65L1919.73,3076.59C1919.73,2980.81 2006.52,2903.05 2113.4,2903.05L2822.19,2903.05C2929.08,2903.05 3015.86,2980.81 3015.86,3076.59Z"/&gt;
-            &lt;/g&gt;
-            &lt;path d="M2658.21,2799.21C2712.47,2799.21 2758.96,2838.01 2768.68,2891.38C2784.74,2979.63 2806.55,3099.43 2806.55,3099.43L2118.49,3099.43C2118.49,3099.43 2140.31,2979.63 2156.37,2891.38C2166.09,2838.01 2212.59,2799.21 2266.84,2799.21L2658.21,2799.21Z"/&gt;
-            &lt;g transform="matrix(0.796211,0,0,0.796211,720.988,840.19)"&gt;
-                &lt;circle cx="2187.28" cy="3103.89" r="275.245" style="fill:none;stroke:white;stroke-width:114.1px;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(0.459082,0,0,0.459082,1331.66,1474.04)"&gt;
-                &lt;rect x="2136.45" y="2665.65" width="643.187" height="35.899" style="fill:none;stroke:black;stroke-width:197.9px;"/&gt;
-            &lt;/g&gt;
-        &lt;/g&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
-<icon guid="b1f8e87e-9b60-4957-bcb1-3f7bf41adb17">
-      <svg_name>46892e36-87dd-415a-8d68-606b8aa99879.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 1306 1306" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-1882.35,-2843.49)"&gt;
-        &lt;g&gt;
-            &lt;g transform="matrix(0.79358,0,0,0.79358,1260.08,1787.94)"&gt;
-                &lt;path d="M2411.99,1571.22L2411.99,2733.55C2411.99,2857.41 2311.43,2957.97 2187.57,2957.97L1025.24,2957.97C901.374,2957.97 800.812,2857.41 800.812,2733.55L800.812,1571.22C800.812,1447.35 901.374,1346.79 1025.24,1346.79L2187.57,1346.79C2311.43,1346.79 2411.99,1447.35 2411.99,1571.22Z" style="fill:none;stroke:black;stroke-width:33.36px;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(-1.53982,1.88574e-16,-1.07322e-16,-0.876354,6509.08,6407.17)"&gt;
-                &lt;path d="M2619.32,3139.71L2863.43,3535.35C2881.7,3564.95 2887.17,3609.5 2877.29,3648.2C2867.41,3686.9 2844.13,3712.14 2818.3,3712.14L2313.4,3712.14C2287.57,3712.14 2264.29,3686.9 2254.41,3648.2C2244.53,3609.5 2250,3564.95 2268.27,3535.35L2512.38,3139.71L2512.38,2673.58C2512.38,2661.67 2516.79,2650.91 2523.57,2646.3C2530.34,2641.69 2538.16,2644.12 2543.41,2652.47L2613.86,2764.64C2617.35,2770.2 2619.32,2777.81 2619.32,2785.75L2619.32,3139.71Z"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.34283,0,0,1.34283,-526.594,-1284.39)"&gt;
-                &lt;circle cx="2191.21" cy="3454.54" r="64.683" style="fill:white;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1.34283,0,0,1.34283,-241.977,-1284.39)"&gt;
-                &lt;circle cx="2191.21" cy="3454.54" r="64.683" style="fill:white;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1,0,0,1,69.902,91.1492)"&gt;
-                &lt;path d="M2358.37,3015.03C2386.83,2934.2 2338.12,2934.98 2343.14,2850.18" style="fill:none;stroke:black;stroke-width:54.96px;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1,0,0,1,24.914,81.8006)"&gt;
-                &lt;path d="M2608.45,3024.38C2651.05,2991.16 2624.76,2982.29 2606.62,2931.5C2597.5,2905.97 2658.26,2852.99 2664.4,2847.64" style="fill:none;stroke:black;stroke-width:54.96px;"/&gt;
-            &lt;/g&gt;
-            &lt;g transform="matrix(1,0,0,1,0,35.0574)"&gt;
-                &lt;path d="M2547.27,3018.62C2536.27,2976.37 2524.51,2981.51 2513.44,2939.26C2506.85,2914.08 2545.7,2883.06 2548.21,2880.43" style="fill:none;stroke:black;stroke-width:54.96px;"/&gt;
-            &lt;/g&gt;
-            &lt;path d="M2502.68,3354.46L2613.58,3354.46" style="fill:none;stroke:white;stroke-width:21.79px;"/&gt;
-        &lt;/g&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
-<icon guid="c776f544-8e25-44fa-99f0-b1897ad06d95">
-      <svg_name>bbbb8484-1922-4541-b8a1-d6b3be12b60d.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 611 611" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-1123.992782,-1879.170956)"&gt;
-        &lt;g transform="matrix(0.560837,0,-0,0.560837,-8.014506,1544.112338)"&gt;
-            &lt;path d="M2938.078,616C2978.105,616 3016.493,631.901 3044.796,660.204C3073.099,688.507 3089,726.895 3089,766.922L3089,1517.078C3089,1557.105 3073.099,1595.493 3044.796,1623.796C3016.493,1652.099 2978.105,1668 2938.078,1668L2187.922,1668C2147.895,1668 2109.507,1652.099 2081.204,1623.796C2052.901,1595.493 2037,1557.105 2037,1517.078C2037,1317.218 2037,966.782 2037,766.922C2037,726.895 2052.901,688.507 2081.204,660.204C2109.507,631.901 2147.895,616 2187.922,616L2938.078,616Z" style="fill:white;stroke:black;stroke-width:37.15px;"/&gt;
-        &lt;/g&gt;
-        &lt;rect x="1196" y="1963" width="467" height="443" style="fill:white;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;rect x="1245" y="2021" width="89" height="24" style="fill:white;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;rect x="1245" y="2104" width="301" height="21" style="fill:white;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;rect x="1245" y="2184.5" width="301" height="20.5" style="fill:white;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;rect x="1245" y="2267.717" width="301" height="96.283" style="fill:white;stroke:black;stroke-width:27.08px;"/&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
-<icon guid="953109ae-5df8-4673-aa55-b0abd2633afe">
-      <svg_name>f9199111-46dd-44d5-af0f-ca014326b9f9.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 611 611" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-1986.113741,-1395.583333)"&gt;
-        &lt;g transform="matrix(0.560837,0,-0,0.560837,854.106453,1060.524715)"&gt;
-            &lt;path d="M2938.078,616C2978.105,616 3016.493,631.901 3044.796,660.204C3073.099,688.507 3089,726.895 3089,766.922L3089,1517.078C3089,1557.105 3073.099,1595.493 3044.796,1623.796C3016.493,1652.099 2978.105,1668 2938.078,1668L2187.922,1668C2147.895,1668 2109.507,1652.099 2081.204,1623.796C2052.901,1595.493 2037,1557.105 2037,1517.078L2037,766.922C2037,726.895 2052.901,688.507 2081.204,660.204C2109.507,631.901 2147.895,616 2187.922,616L2938.078,616Z" style="fill:none;stroke:black;stroke-width:37.15px;"/&gt;
-        &lt;/g&gt;
-        &lt;path d="M2319.889,1651.774C2377.285,1737.022 2432.736,1805.698 2307.014,1852.213C2316.656,1862.454 2326.299,1872.695 2335.942,1882.937" style="fill:none;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;path d="M2225.217,1661.782C2249.165,1790.77 2258.517,1805.763 2217.213,1833.833C2141.508,1885.281 2097.653,1879.611 2086.718,1878.197" style="fill:none;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;g transform="matrix(1.216301,0,0,1.305994,-466.760606,-496.291111)"&gt;
-            &lt;path d="M2414.907,1550C2421.562,1550 2427.945,1552.462 2432.65,1556.845C2437.356,1561.227 2440,1567.172 2440,1573.37C2440,1606.444 2440,1666.556 2440,1699.63C2440,1705.828 2437.356,1711.773 2432.65,1716.155C2427.945,1720.538 2421.562,1723 2414.907,1723L2146.093,1723C2139.438,1723 2133.055,1720.538 2128.35,1716.155C2123.644,1711.773 2121,1705.828 2121,1699.63L2121,1573.37C2121,1567.172 2123.644,1561.227 2128.35,1556.845C2133.055,1552.462 2139.438,1550 2146.093,1550C2205.707,1550 2355.293,1550 2414.907,1550Z"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1,0,0,1,-25.985122,-11.531496)"&gt;
-            &lt;circle cx="2294.5" cy="1652.5" r="76.5" style="stroke:white;stroke-width:27.08px;"/&gt;
-        &lt;/g&gt;
-        &lt;path d="M2093.685,1868.497C2089.144,1882.557 2084.603,1896.618 2080.063,1910.678" style="fill:none;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;g transform="matrix(1,0,0,1,39.007439,7)"&gt;
-            &lt;path d="M2352.96,1486C2363.188,1486 2372.952,1490.262 2379.906,1497.761C2394.887,1513.918 2420,1541 2420,1541L2192.015,1541C2192.015,1541 2217.611,1515.403 2233.881,1499.134C2242.29,1490.724 2253.696,1486 2265.589,1486L2352.96,1486Z"/&gt;
-        &lt;/g&gt;
-        &lt;path d="M2466.324,1633.561C2521.994,1620.303 2533.572,1624.439 2543.405,1573.168" style="fill:none;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;path d="M2173.065,1555.799C2151.383,1476.709 2155.324,1451.428 2227.074,1433.757" style="fill:none;stroke:black;stroke-width:27.08px;"/&gt;
-        &lt;path d="M2391.76,1725.011C2398.165,1725.24 2461.784,1727.506 2455.151,1676.017" style="fill:none;stroke:white;stroke-width:27.08px;"/&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
-<icon guid="e0fffabb-ef50-4389-8da2-961a2063dafe">
-      <svg_name>0654ffe9-4912-47f8-8dce-8d6c963f5fe5.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 611 611" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-348.992782,-1879.083333)"&gt;
-        &lt;g transform="matrix(0.560837,0,-0,0.560837,-783.014506,1544.024715)"&gt;
-            &lt;path d="M2938.078,616C2978.105,616 3016.493,631.901 3044.796,660.204C3073.099,688.507 3089,726.895 3089,766.922L3089,1517.078C3089,1557.105 3073.099,1595.493 3044.796,1623.796C3016.493,1652.099 2978.105,1668 2938.078,1668L2187.922,1668C2147.895,1668 2109.507,1652.099 2081.204,1623.796C2052.901,1595.493 2037,1557.105 2037,1517.078L2037,766.922C2037,726.895 2052.901,688.507 2081.204,660.204C2109.507,631.901 2147.895,616 2187.922,616L2938.078,616Z" style="fill:white;stroke:black;stroke-width:37.15px;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1,0,0,1.056738,173.409449,-135.375887)"&gt;
-            &lt;path d="M481,1963L481,2386" style="fill:none;stroke:black;stroke-width:18.23px;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1,0,0,1,40.847552,-8.797135)"&gt;
-            &lt;path d="M466.417,1963C466.417,1954.951 472.951,1948.417 481,1948.417C489.049,1948.417 495.583,1954.951 495.583,1963L495.583,1976.016C495.583,1984.064 489.049,1990.599 481,1990.599C472.951,1990.599 466.417,1984.064 466.417,1976.016L466.417,1963ZM466.417,2034.585C466.417,2026.536 472.951,2020.001 481,2020.001C489.049,2020.001 495.583,2026.536 495.583,2034.585L495.583,2060.615C495.583,2068.664 489.049,2075.198 481,2075.198C472.951,2075.198 466.417,2068.664 466.417,2060.615L466.417,2034.585ZM466.417,2119.184C466.417,2111.135 472.951,2104.601 481,2104.601C489.049,2104.601 495.583,2111.135 495.583,2119.184L495.583,2145.215C495.583,2153.264 489.049,2159.798 481,2159.798C472.951,2159.798 466.417,2153.264 466.417,2145.215L466.417,2119.184ZM466.417,2203.785C466.417,2195.736 472.951,2189.202 481,2189.202C489.049,2189.202 495.583,2195.736 495.583,2203.785L495.583,2229.816C495.583,2237.864 489.049,2244.399 481,2244.399C472.951,2244.399 466.417,2237.864 466.417,2229.816L466.417,2203.785ZM466.417,2288.384C466.417,2280.335 472.951,2273.801 481,2273.801C489.049,2273.801 495.583,2280.335 495.583,2288.384L495.583,2314.415C495.583,2322.464 489.049,2328.998 481,2328.998C472.951,2328.998 466.417,2322.464 466.417,2314.415L466.417,2288.384ZM466.417,2372.984C466.417,2364.936 472.951,2358.401 481,2358.401C489.049,2358.401 495.583,2364.936 495.583,2372.984L495.583,2386C495.583,2394.049 489.049,2400.583 481,2400.583C472.951,2400.583 466.417,2394.049 466.417,2386L466.417,2372.984Z"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1,0,0,1,326.7613,-8.797135)"&gt;
-            &lt;path d="M481,1963L481,2386" style="fill:none;stroke:black;stroke-width:58.33px;"/&gt;
-        &lt;/g&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
-<icon guid="c5281094-b088-4964-b07a-57fe260ee734">
-      <svg_name>27acd934-8a57-47ea-9d9b-fcd8c12345df.svg</svg_name>
-      <light_svg>&lt;svg width="100%" height="100%" viewBox="0 0 611 611" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"&gt;
-    &lt;g transform="matrix(1,0,0,1,-1976.583333,-448.583333)"&gt;
-        &lt;g transform="matrix(0.560837,0,-0,0.560837,844.576046,113.524715)"&gt;
-            &lt;path d="M2938.078,616C2978.105,616 3016.493,631.901 3044.796,660.204C3073.099,688.507 3089,726.895 3089,766.922L3089,1517.078C3089,1557.105 3073.099,1595.493 3044.796,1623.796C3016.493,1652.099 2978.105,1668 2938.078,1668L2187.922,1668C2147.895,1668 2109.507,1652.099 2081.204,1623.796C2052.901,1595.493 2037,1557.105 2037,1517.078L2037,766.922C2037,726.895 2052.901,688.507 2081.204,660.204C2109.507,631.901 2147.895,616 2187.922,616L2938.078,616Z" style="fill:none;stroke:black;stroke-width:37.15px;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(0.962456,-0,-0,0.9825,104.830335,56.3975)"&gt;
-            &lt;path d="M2272,438.272L2272,838.272L2025.204,973.641L2025.204,573.641L2272,438.272Z" style="fill:rgb(167,167,167);stroke:black;stroke-width:21.42px;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(0.962456,-0,-0,0.9825,309.614889,61.621909)"&gt;
-            &lt;path d="M2272,438.272L2272,838.272L2025.204,973.641L2025.204,573.641L2272,438.272Z" style="fill:white;"/&gt;
-            &lt;clipPath id="_clip1"&gt;
-                &lt;path d="M2272,438.272L2272,838.272L2025.204,973.641L2025.204,573.641L2272,438.272Z"/&gt;
-            &lt;/clipPath&gt;
-            &lt;g clip-path="url(#_clip1)"&gt;
-                &lt;path d="M2022.52,853.15L2274.684,558.763" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.746;"/&gt;
-                &lt;path d="M2022.52,823.227L2274.684,528.84" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.906;"/&gt;
-                &lt;path d="M2022.52,793.304L2274.684,498.917" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.124;"/&gt;
-                &lt;path d="M2022.52,763.381L2274.684,468.994" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.284;"/&gt;
-                &lt;path d="M2022.52,733.458L2274.684,439.071" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.444;"/&gt;
-                &lt;path d="M2022.52,703.534L2251.989,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.604;"/&gt;
-                &lt;path d="M2022.52,673.611L2226.357,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.764;"/&gt;
-                &lt;path d="M2022.52,643.688L2200.726,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.925;"/&gt;
-                &lt;path d="M2022.52,613.765L2175.095,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.085;"/&gt;
-                &lt;path d="M2022.52,583.842L2149.463,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:0.698;"/&gt;
-                &lt;path d="M2022.52,553.919L2123.832,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:0.538;"/&gt;
-                &lt;path d="M2022.52,523.995L2098.2,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:0.377;"/&gt;
-                &lt;path d="M2022.52,494.072L2072.569,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:0.217;"/&gt;
-                &lt;path d="M2022.52,464.149L2046.937,435.643" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:0.057;"/&gt;
-                &lt;path d="M2022.52,883.073L2274.684,588.686" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.586;"/&gt;
-                &lt;path d="M2022.52,912.997L2274.684,618.61" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.426;"/&gt;
-                &lt;path d="M2022.52,942.92L2274.684,648.533" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.265;"/&gt;
-                &lt;path d="M2022.52,972.843L2274.684,678.456" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.105;"/&gt;
-                &lt;path d="M2045.215,976.271L2274.684,708.379" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.98;"/&gt;
-                &lt;path d="M2070.847,976.271L2274.684,738.302" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.22;"/&gt;
-                &lt;path d="M2096.478,976.271L2274.684,768.225" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.403;"/&gt;
-                &lt;path d="M2122.109,976.271L2274.684,798.149" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.643;"/&gt;
-                &lt;path d="M2147.741,976.271L2274.684,828.072" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.827;"/&gt;
-                &lt;path d="M2173.372,976.271L2274.684,857.995" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.067;"/&gt;
-                &lt;path d="M2199.004,976.271L2274.684,887.918" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.307;"/&gt;
-                &lt;path d="M2224.635,976.271L2274.684,917.841" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-1.491;"/&gt;
-                &lt;path d="M2250.266,976.271L2274.684,947.764" style="fill:none;stroke:rgb(122,122,122);stroke-width:5.31px;stroke-miterlimit:2;stroke-dasharray:1.943,1.943;stroke-dashoffset:-0.731;"/&gt;
-            &lt;/g&gt;
-            &lt;path d="M2272,438.272L2272,838.272L2025.204,973.641L2025.204,573.641L2272,438.272Z" style="fill:none;stroke:black;stroke-width:21.42px;"/&gt;
-        &lt;/g&gt;
-        &lt;g transform="matrix(1.583959,0.035654,0.035654,1.002177,-1194.025204,-99.164536)"&gt;
-            &lt;g transform="matrix(0.631835,-0.022479,-0.022479,0.998628,1990.990323,475.725313)"&gt;
-                &lt;path d="M357.924,256.727L435.309,322.502L350.496,378.375L357.924,256.727Z"/&gt;
-                &lt;path d="M175.524,306.641C175.524,306.641 293.484,313.843 370.43,318.541" style="fill:none;stroke:black;stroke-width:27.08px;"/&gt;
-            &lt;/g&gt;
-        &lt;/g&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
-</light_svg>
-    </icon>
+  
+
+
+
+
+
+
+
   </icons>
   
 </RhinoUI>
