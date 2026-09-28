@@ -2476,7 +2476,7 @@ _SelNone</script>
       </button_text>
       <script>_-Materials
 o
-ni
+i
 Color_0_0_0_A120
 enterend</script>
     </macro_item>
@@ -2524,7 +2524,7 @@ _SelNone</script>
       </button_text>
       <script>_-Materials
 o
-ni
+i
 Color_140_205_80_A0
 enterend</script>
     </macro_item>
@@ -2540,7 +2540,7 @@ enterend</script>
       </button_text>
       <script>_-Materials
 o
-ni
+i
 Color_88_220_40_A0
 enterend</script>
     </macro_item>
