@@ -16,8 +16,9 @@ import scriptcontext as sc
 
 def get_selected_objects():
     """获取当前选中物件（含预选）。ActiveView 没有 Selection 属性，
-    必须用 Objects.GetSelectedObjects 获取。"""
-    return sc.doc.Objects.GetSelectedObjects(False, False)
+    必须用 Objects.GetSelectedObjects 获取；返回包成 list，
+    IronPython 下原始返回值是 EnumeratorWrapper，不支持 len()。"""
+    return list(sc.doc.Objects.GetSelectedObjects(False, False))
 
 
 def BatchSaveObjectMaterials():
