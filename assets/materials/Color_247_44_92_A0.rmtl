@@ -2,7 +2,7 @@
 	<material type-name="rcm-basic-material" render-engine-id="99999999-9999-9999-9999-999999999999" plug-in-id="16592D58-4A2F-401D-BF5E-3B87741C1B1B" type-id="BA51C000-BA51-C000-BA51-C0BA51C00000" notes="" tags="" hidden="false" reference="false" auto-delete="false">
 		<parameters-v8>
 			<parameter name="version" type="int">2</parameter>
-			<parameter name="diffuse" type="color">1,0.541176,0.031373,1</parameter>
+			<parameter name="diffuse" type="color">0.968627,0.172549,0.360784,1</parameter>
 			<parameter name="specular" type="color">1,1,1,1</parameter>
 			<parameter name="shine" type="double">0</parameter>
 			<parameter name="transparency" type="double">0</parameter>
