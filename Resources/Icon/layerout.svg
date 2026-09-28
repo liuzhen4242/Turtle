@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 337 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-781.512413,-785.747913)">
+        <path d="M1067.754,792.74C1079.175,792.74 1090.128,797.277 1098.203,805.352C1106.279,813.428 1110.816,824.381 1110.816,835.801L1110.816,1071.99C1110.816,1083.41 1106.279,1094.363 1098.203,1102.439C1090.128,1110.514 1079.175,1115.051 1067.754,1115.051L831.566,1115.051C820.145,1115.051 809.192,1110.514 801.117,1102.439C793.041,1094.363 788.504,1083.41 788.504,1071.99L788.504,835.801C788.504,824.381 793.041,813.428 801.117,805.352C809.192,797.277 820.145,792.74 831.566,792.74L1067.754,792.74Z" style="fill:none;stroke:black;stroke-width:13.98px;"/>
+        <g transform="matrix(1,0,0,1,-352.955654,-61.088564)">
+            <rect x="1206.913" y="883.188" width="191.406" height="263.593" style="fill:rgb(128,128,128);fill-opacity:0;"/>
+            <clipPath id="_clip1">
+                <rect x="1206.913" y="883.188" width="191.406" height="263.593"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path d="M1204.83,1112.77L1400.402,917.198" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,1091.056L1400.402,895.484" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,1069.342L1393.067,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,1047.627L1371.353,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,1025.913L1349.638,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,1004.199L1327.924,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,982.484L1306.21,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,960.77L1284.495,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,939.056L1262.781,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,917.342L1241.067,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,895.627L1219.353,881.104" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1204.83,1134.485L1400.402,938.912" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1212.164,1148.864L1400.402,960.627" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1233.879,1148.864L1400.402,982.341" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1255.593,1148.864L1400.402,1004.055" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1277.307,1148.864L1400.402,1025.769" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1299.022,1148.864L1400.402,1047.484" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1320.736,1148.864L1400.402,1069.198" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1342.45,1148.864L1400.402,1090.912" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1364.165,1148.864L1400.402,1112.627" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+                <path d="M1385.879,1148.864L1400.402,1134.341" style="fill:none;stroke:black;stroke-width:4.17px;stroke-miterlimit:2;"/>
+            </g>
+            <rect x="1206.913" y="883.188" width="191.406" height="263.593" style="fill:none;stroke:black;stroke-width:13.98px;"/>
+        </g>
+    </g>
+</svg>
