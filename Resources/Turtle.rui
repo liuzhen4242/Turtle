@@ -38,62 +38,61 @@
         <left_macro_id>58912547-5b93-434d-a158-66ff0ac73fc9</left_macro_id>
         <right_macro_id>c33ce94f-4c82-4cec-8942-2dc389cc3fe2</right_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="f2e26204-cf47-4516-884f-c63a17ba0c5a">
+<tool_bar_item guid="f2e26204-cf47-4516-884f-c63a17ba0c5a">
         <left_macro_id>2569023d-ab76-4e6e-a783-a36f818bb2f2</left_macro_id>
         <right_macro_id>a1ce61c4-75d3-4964-abe6-8864d0f2840b</right_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="2d198d1e-a193-4082-a745-34351a51a16f">
+<tool_bar_item guid="2d198d1e-a193-4082-a745-34351a51a16f">
         <left_macro_id>4078e1d0-c38e-4353-a01c-c9e652b3abdb</left_macro_id>
         <right_macro_id>ad171092-cd3e-4ca0-a579-bbc653defcba</right_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="551e2d95-ce89-47d9-985b-c7b900f95967">
-        <left_macro_id>613713da-bc85-472a-8f3f-4c41fccb1072</left_macro_id>
+<tool_bar_item guid="3dab8b26-b99f-4199-a171-b41b81921b9f">
+        <left_macro_id>af12646c-7107-4f28-9453-8a900586d22e</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="83aa6b81-9fa9-4af4-a441-55da971cbb92">
+<tool_bar_item guid="83aa6b81-9fa9-4af4-a441-55da971cbb92">
         <left_macro_id>d85150ae-7edd-4566-9f41-9dfa976a5f8c</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="d7c3e54c-2c29-49c5-92ca-6a19f0c21c6a">
+<tool_bar_item guid="d7c3e54c-2c29-49c5-92ca-6a19f0c21c6a">
         <left_macro_id>6cf36b4d-4d97-44f9-9d52-a286f5e94fb6</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="69796447-63fb-47a7-b7a9-17fd95aa97e6">
+<tool_bar_item guid="69796447-63fb-47a7-b7a9-17fd95aa97e6">
         <left_macro_id>7d87890f-a021-4df5-a3d4-006789510551</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="91f37d8f-2363-4ce9-8003-6137731e8abd">
+<tool_bar_item guid="91f37d8f-2363-4ce9-8003-6137731e8abd">
         <left_macro_id>7ccb7547-82aa-4825-aeb0-2161d7a22139</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="41176c9e-bd7a-4754-af1e-1ec08a27f8e6">
+<tool_bar_item guid="41176c9e-bd7a-4754-af1e-1ec08a27f8e6">
         <left_macro_id>dc0cb273-d6dc-48cb-8b05-4a6ca00c4224</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="a172cbcb-942b-4fb9-9bde-dce0669cf670">
+<tool_bar_item guid="a172cbcb-942b-4fb9-9bde-dce0669cf670">
         <left_macro_id>ec3701b4-2edb-4237-ba1c-7a61725ebb4b</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="d37edc68-d9db-4f31-a465-4560e7c5baac">
+<tool_bar_item guid="551e2d95-ce89-47d9-985b-c7b900f95967">
+        <left_macro_id>613713da-bc85-472a-8f3f-4c41fccb1072</left_macro_id>
+      </tool_bar_item>
+<tool_bar_item guid="d37edc68-d9db-4f31-a465-4560e7c5baac">
         <left_macro_id>7db29bb0-3d21-49ae-b0fd-307b134352c3</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="72410020-c7f0-4dc2-b1a2-f38e1ef48931">
+<tool_bar_item guid="72410020-c7f0-4dc2-b1a2-f38e1ef48931">
         <left_macro_id>960524c3-1765-481f-b3f2-604d5ef6fcb7</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="43ecb3fd-afc0-4332-8c99-b9c12b91c130">
+<tool_bar_item guid="43ecb3fd-afc0-4332-8c99-b9c12b91c130">
         <left_macro_id>cc8d2ad3-d9a8-4ae6-9e80-357082321037</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="e80296ac-6280-4464-9b68-b5c09f877ddb">
+<tool_bar_item guid="e80296ac-6280-4464-9b68-b5c09f877ddb">
         <left_macro_id>9c82a072-042a-4168-9550-d2a755c86498</left_macro_id>
         <right_macro_id>80b61e05-bb11-422c-9dae-01e902163379</right_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="2214ef48-8f64-4f08-a2df-fe2ac7f48829">
+<tool_bar_item guid="2214ef48-8f64-4f08-a2df-fe2ac7f48829">
         <left_macro_id>3e2855d6-cd63-4e62-ad88-40c05c3e3041</left_macro_id>
         <right_macro_id>3ff007bc-7d8b-4ba4-a710-686793482e70</right_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="3dab8b26-b99f-4199-a171-b41b81921b9f">
-        <left_macro_id>af12646c-7107-4f28-9453-8a900586d22e</left_macro_id>
-      </tool_bar_item>
-      <tool_bar_item guid="e69151ce-b887-40e7-bf66-c94b046026e7">
+<tool_bar_item guid="e69151ce-b887-40e7-bf66-c94b046026e7">
         <left_macro_id>86aaac86-bcd1-457f-9b88-b91714fcd5d7</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="a7e89db3-7b66-417a-b33a-c178989dedc7">
+<tool_bar_item guid="a7e89db3-7b66-417a-b33a-c178989dedc7">
         <left_macro_id>de1e9706-6fec-483c-88b6-531417463f5a</left_macro_id>
       </tool_bar_item>
-      <tool_bar_item guid="2026aff3-789f-40f7-824c-d32cc0424a48" />
     </tool_bar>
     <tool_bar guid="c479780d-9ee4-4ab2-8d20-a7a37a356c74">
       <text>
