@@ -82,12 +82,13 @@ cp "Resources/Materials/<名称>.rmtl" "/Users/zhenliu/Library/Application Suppo
 cp "Resources/Materials/<名称>.rmtl" "assets/materials/<名称>.rmtl"
 cp "Resources/Materials/img/<贴图>.jpg" "assets/materials/img/<贴图>.jpg"   # 先 mkdir -p
 
-# 同步 rui 6 处 + 补当前版本 1.1.0
+# 同步 rui（6 处，含 1.0.0 与 1.1.0）——推荐直接用双向脚本，一步完成 rui+材质：
+python3 "<skill目录>/../../rhino-turtle-sync/scripts/sync_resources.py"
+# 或单独同步 rui（rui_sync.py 已包含 1.1.0，无需再手动 cp）：
 python3 "<skill目录>/../../rhino-toolbar-rui/scripts/rui_sync.py" "Resources/Turtle.rui"
-cp "Resources/Turtle.rui" "/Users/zhenliu/Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.1.0/Turtle.rui"
 ```
 
-`rui_sync.py` 只同步到 1.0.0，**必须手动再 cp 到 1.1.0**（当前实际加载版本）。校验 6 处 md5 一致（含 1.1.0）。
+`rui_sync.py` 已同步到 1.0.0 与 1.1.0（当前实际加载版本）。校验 6 处 md5 一致。
 
 ## Step 5：git 固化
 

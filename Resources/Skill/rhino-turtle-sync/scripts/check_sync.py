@@ -112,7 +112,7 @@ def check_scripts():
 
 
 def check_materials():
-    print("\n=== 3. 材质库（以 Rhino 63 个新命名为准）===")
+    print("\n=== 3. 材质库（以仓库 Resources/Materials 为准，md5 级对比）===")
     repo_mat = os.path.join(REPO, "Resources", "Materials")
     repo_assets = os.path.join(REPO, "assets", "materials")
     rp_files = listdir(repo_mat, ".rmtl")
@@ -121,7 +121,7 @@ def check_materials():
     for d in MATERIAL_DIRS:
         rhino_files = listdir(d, ".rmtl")
         if set(rp_files) == set(rhino_files):
-            print(f"  ✅ {d} 与仓库一致（{len(rhino_files)} 个）")
+            print(f"  ✅ {d} 与仓库文件集合一致（{len(rhino_files)} 个）")
         else:
             ok = False
             only_r = sorted(set(rp_files) - set(rhino_files))
@@ -129,6 +129,14 @@ def check_materials():
             print(f"  ⚠️ {d}: 仓库 {len(rp_files)} vs Rhino {len(rhino_files)}")
             if only_r: print(f"     仓库多余: {only_r[:6]}")
             if only_h: print(f"     仓库缺少: {only_h[:6]}")
+        # 同名文件内容级对比（防同名但内容不同漏检）
+        content_diff = []
+        for f in set(rp_files) & set(rhino_files):
+            if md5(os.path.join(repo_mat, f)) != md5(os.path.join(d, f)):
+                content_diff.append(f)
+        if content_diff:
+            ok = False
+            print(f"  ⚠️ {d}: {len(content_diff)} 个同名文件内容不同: {content_diff[:6]}")
     if set(rp_files) != set(ra_files):
         ok = False
         print(f"  ⚠️ Resources/Materials({len(rp_files)}) 与 assets/materials({len(ra_files)}) 不一致")

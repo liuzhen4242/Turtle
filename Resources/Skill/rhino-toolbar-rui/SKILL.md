@@ -13,17 +13,20 @@ description: Rhino 8 插件工具栏（.rui 文件）图标的创建、修复与
    - Windows：`%APPDATA%\McNeel\Rhinoceros\packages\8.0\Turtle\{ver}\Turtle.rui`（大写）
    - 改 UI / MacPlugIns 目录的 rui，Rhino 根本不读——这是"改了很久没效果"的头号原因。
    - **Windows 上 `8.0\UI\Turtle.rui` 目录不存在**（旧 skill 说法有误，勿再按它找）。
-3. 改完 rui 必须**同步 5 处**并校验 md5 一致（见"一键同步脚本"）。
+3. 改完 rui 必须**同步 6 处**并校验 md5 一致（见"一键同步脚本"）。
 
-## rui 的 5 个位置（Mac）
+## rui 的 6 个位置（Mac）
 
 ```text
 1. ~/Library/Application Support/McNeel/Rhinoceros/8.0/UI/Turtle.rui
 2. ~/Library/Application Support/McNeel/Rhinoceros/8.0/MacPlugIns/Turtle.rhp/Turtle.rui
 3. ~/Library/Application Support/McNeel/Rhinoceros/MacPlugIns/Turtle.rhp/Turtle.rui
 4. <rhinoPluging仓库>/Resources/Turtle.rui            （git 源）
-5. ~/Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.0.0/Turtle.rui   ← 真正加载位！
+5. ~/Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.0.0/Turtle.rui
+6. ~/Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.1.0/Turtle.rui   ← 当前实际加载位！
 ```
+
+> 注：1.1.0 是当前实际加载版本（2026-09-30 核对），1.0.0 保留；两处 packages 都要同步。
 
 Windows 上加载位同样只有 packages 一份（`%APPDATA%\McNeel\Rhinoceros\packages\8.0\Turtle\{ver}\Turtle.rui`），改动直接生效（前提：Rhino 已完全退出）。
 
@@ -84,7 +87,7 @@ Rhino 8 标准 SVG 图标 = 内嵌数据，**不依赖外部文件**：
   3. 同类多序号（grass×6 / brick×4 / tile×4…）用同一贴图 + `ImageEnhance.Brightness/Color` 微调区分
   4. 缺贴图的材质（贴图在 Windows 项目目录）→ 用同类相近贴图替代（如 gr-grass5/6 → Grass Light/Dark Green ±亮度）
 - 替换进 rui：按 `macro_item` 的 `bitmap_id` 定位 `<icon guid="ID" name="ID.png">…<png>旧</png>…</icon>` 块，文本替换 `<png>…</png>`；left = 原图，right = 亮化版。
-- 校验：64 个 icon 的 md5 **应全部唯一**；XML 校验；再同步 5 处。
+- 校验：64 个 icon 的 md5 **应全部唯一**；XML 校验；再同步 6 处。
 - 产物事实：material-turtle = guid `3cdefd34-e8e5-4786-96d6-c0ee05e6467a`，32 按钮；生成脚本 `/tmp/gen_material_turtle.py`，图标数据 `/tmp/mt_real_icons.json`。
 
 ## 颜色宏规范（color-turtle）
@@ -102,7 +105,7 @@ color-turtle（guid `c479780d-9ee4-4ab2-8d20-a7a37a356c74`）31 按钮：索引 
 
 按顺序排查，每步都有明确结论：
 
-1. **确认 Rhino 实际加载的 rui**：对 5 处 rui 跑 md5。若 packages 位与其余不一致 → 它是旧版 → 用新版覆盖（先备份 `.bak-yakold`）。
+1. **确认 Rhino 实际加载的 rui**：对 6 处 rui 跑 md5。若 packages 位与其余不一致 → 它是旧版 → 用新版覆盖（先备份 `.bak-yakold`）。
    - 蓝色 = `bitmap_id` 悬空（图标 guid 在 rui 里不存在）
    - 文字 = 图标 guid 存在但 icon 不被加载（最常见：Rhino 读的是另一份 rui；其次：格式不被渲染）
 2. **决定性测试**：把一个已知能渲染的 icon（如 color-turtle 白圆 837c614b）逐字复制、只换 guid 放进目标按钮。若仍不显示 → 不是图标数据问题，是加载文件/机制层问题。
@@ -113,14 +116,28 @@ color-turtle（guid `c479780d-9ee4-4ab2-8d20-a7a37a356c74`）31 按钮：索引 
 
 ## 一键同步脚本
 
+**日常同步推荐用双向脚本 `sync_resources.py`**（rui + 材质一起，自动以最新者为准、先备份再覆盖、md5 校验，Mac/Win 双平台）：
+
 ```bash
-# 把源 rui 同步到 5 处（含 packages 加载位），并做 XML + md5 校验
+# 同步 rui + 材质（rui 需先完全退出 Rhino，脚本检测到 Rhino 运行会自动跳过 rui）
+python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py"
+# 只检查差异（只读）
+python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py" --check
+# 只同步 rui 或只同步材质
+python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py" --rui
+python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py" --materials
+```
+
+**单独同步 rui**（本 skill 自带脚本）：
+
+```bash
+# 把源 rui 同步到 6 处（含 packages 加载位），并做 XML + md5 校验
 python3 scripts/rui_sync.py <源Turtle.rui路径>
 # 只校验不同步
 python3 scripts/rui_sync.py <源Turtle.rui路径> --verify-only
 ```
 
-脚本先备份每个目标为 `.bak-sync-<时间戳>`，再复制、校验 XML 合法性、输出 5 处 md5。Windows 上目标列表不同，脚本需按平台调整（见脚本内注释）。
+脚本先备份每个目标为 `.bak-sync-<时间戳>`，再复制、校验 XML 合法性、输出各处 md5。Windows 上目标列表不同（`8.0\UI\` 不存在，只有 packages 目录，见脚本内注释）。
 
 ## GUI 验证流程（Mac）
 
@@ -137,7 +154,7 @@ python3 scripts/rui_sync.py <源Turtle.rui路径> --verify-only
 2. **覆盖层残留旧引用**：`settings/Scheme__Default/Turtle_7338352c-….xml` 被 Rhino 重写后仍引用已删工具列（`<tool_bar source_guid=…modified="True">`、deleted_items、已删宏的 right_macro）→ 删覆盖层（备份后）可消除，图标恢复读 rui，dock 可能重置。
 3. **containers.xml 残留旧 dock_bar**：已删工具列的 dock_bar 浮动记录仍在 → 清理引用已删 guid 的 dock_bar 块（备份后）。
 
-**修复（按序）**：备份 → 删覆盖层 → 清理 containers.xml 旧 dock_bar → **重写 rui 的 tool_bar_groups**：清空残留 `<item>`，4 个工具列全部写 `<tool_bar_reference guid="…"><dock_bar_info visible="1" dock_location="top"/></tool_bar_reference>` → 同步 5 处 → 重启验证。
+**修复（按序）**：备份 → 删覆盖层 → 清理 containers.xml 旧 dock_bar → **重写 rui 的 tool_bar_groups**：清空残留 `<item>`，4 个工具列全部写 `<tool_bar_reference guid="…"><dock_bar_info visible="1" dock_location="top"/></tool_bar_reference>` → 同步 6 处 → 重启验证。
 
 **GUI 验证/恢复显示（已验证可用）**：
 - `_-Toolbar` → 选 Library → 输入 `Turtle` → List（确认库加载路径 packages/8.0/turtle/1.0.0/Turtle.rui 且 4 工具列名齐全）→ Toolbar → Show → 输入工具列名 → Yes。

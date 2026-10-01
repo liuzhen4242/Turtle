@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""rui_sync.py —— 同步 Turtle.rui 到 Mac 上全部 5 个位置并校验。
+"""rui_sync.py —— 同步 Turtle.rui 到 Mac 上全部 6 个位置并校验。
 
 用法：
     python3 rui_sync.py <源Turtle.rui路径>            # 同步 + 校验
@@ -12,8 +12,9 @@
     4. --verify-only 时只对比 md5 与 XML，不写任何文件
 
 注意：
-    - Mac 上位置 5（packages/8.0/turtle/1.0.0）是 Rhino 真正的加载位，必须同步。
-    - Windows 目标列表不同：只需 UI 目录（%APPDATA%\\McNeel\\Rhinoceros\\8.0\\UI\\Turtle.rui）。
+    - Mac 上位置 6（packages/8.0/turtle/1.1.0）是 Rhino 当前实际加载位，必须同步（1.0.0 与 1.1.0 都要）。
+    - Windows 目标列表不同：8.0\\UI\\Turtle.rui 目录不存在，只需 packages 目录（%APPDATA%\\McNeel\\Rhinoceros\\packages\\8.0\\Turtle\\{ver}\\Turtle.rui，大写 Turtle）。
+    - 日常 rui+材质双向同步建议用 ../rhino-turtle-sync/scripts/sync_resources.py（自动以最新者为准）。
     - 运行前确保 Rhino 已完全退出（进程名 Rhinoceros，kill <pid>）。
 """
 
@@ -26,18 +27,20 @@ from pathlib import Path
 
 HOME = Path.home()
 
-# Mac 目标列表（顺序即优先级；最后一位是 yak packages 加载位）
+# Mac 目标列表（顺序即优先级；最后两位是 yak packages 加载位，1.1.0 为当前实际加载版本）
 MAC_TARGETS = [
     HOME / "Library/Application Support/McNeel/Rhinoceros/8.0/UI/Turtle.rui",
     HOME / "Library/Application Support/McNeel/Rhinoceros/8.0/MacPlugIns/Turtle.rhp/Turtle.rui",
     HOME / "Library/Application Support/McNeel/Rhinoceros/MacPlugIns/Turtle.rhp/Turtle.rui",
     HOME / "study/coding/rhinoPluging/Resources/Turtle.rui",
-    HOME / "Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.0.0/Turtle.rui",  # 真正加载位！
+    HOME / "Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.0.0/Turtle.rui",
+    HOME / "Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.1.0/Turtle.rui",  # 真正加载位！
 ]
 
-# Windows 目标列表（供 Windows 环境使用，运行平台不同时改这里）
+# Windows 目标列表：8.0\UI\ 目录不存在，加载位只有 packages（大写 Turtle）
 WIN_TARGETS = [
-    Path.home() / "AppData/Roaming/McNeel/Rhinoceros/8.0/UI/Turtle.rui",
+    Path.home() / "AppData/Roaming/McNeel/Rhinoceros/packages/8.0/Turtle/1.0.0/Turtle.rui",
+    Path.home() / "AppData/Roaming/McNeel/Rhinoceros/packages/8.0/Turtle/1.1.0/Turtle.rui",
 ]
 
 
