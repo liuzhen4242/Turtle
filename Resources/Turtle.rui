@@ -443,7 +443,15 @@
       <tool_bar_item guid="19415e15-480c-497f-89f5-dedfa48ff8ea">
         <left_macro_id>d3571d9c-8643-4843-82ca-27a6873648ae</left_macro_id>
       </tool_bar_item>
-    </tool_bar>
+          <tool_bar_item guid="49826fe0-dbfe-45a0-92ca-a612dc93bcb1">
+        <left_macro_id>86457227-6f7e-4eeb-87bf-c297abcfdcec</left_macro_id>
+        <right_macro_id>52de8b18-d30a-463a-8933-ff8aa909e82b</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="6008e4bc-b0a3-4765-badc-f9ca09b36b65">
+        <left_macro_id>40f5d7fa-3db3-41fb-b965-9fdfdd360786</left_macro_id>
+        <right_macro_id>29dac961-3ddb-4178-8768-06aa1ecc4f66</right_macro_id>
+      </tool_bar_item>
+</tool_bar>
   </tool_bars>
   <macros>
     <macro_item guid="3ae6c47e-2d43-46dd-8619-6cd170659bea" bitmap_id="837c614b-c763-41b8-98d4-dda7ffd07f3c">
@@ -2554,6 +2562,54 @@ i
 Color_140_205_80_A0
 enterend</script>
     </macro_item>
+    <macro_item guid="52de8b18-d30a-463a-8933-ff8aa909e82b" bitmap_id="2e271e15-f230-4d7c-a512-021ca62cc323">
+      <text>
+        <locale_1033>Macro Cage</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Create 3-D control cage object</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Create 3-D control cage object</locale_1033>
+      </button_text>
+      <script>! _Cage</script>
+    </macro_item>
+    <macro_item guid="86457227-6f7e-4eeb-87bf-c297abcfdcec" bitmap_id="24ac3c20-cecc-4dfc-9ba9-3af71a049257">
+      <text>
+        <locale_1033>Macro Cage edit</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Cage edit</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Cage edit</locale_1033>
+      </button_text>
+      <script>! _CageEdit</script>
+    </macro_item>
+    <macro_item guid="40f5d7fa-3db3-41fb-b965-9fdfdd360786" bitmap_id="a89cccd5-1a9f-4c72-bf17-cf3569a448e4">
+      <text>
+        <locale_1033>Macro Soft-edit curve</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Soft-edit curve</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Soft-edit curve</locale_1033>
+      </button_text>
+      <script>! _SoftEditCrv</script>
+    </macro_item>
+    <macro_item guid="29dac961-3ddb-4178-8768-06aa1ecc4f66" bitmap_id="a89cccd5-1a9f-4c72-bf17-cf3569a448e4">
+      <text>
+        <locale_1033>Macro Soft-edit surface</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Soft-edit surface</locale_1033>
+      </tooltip>
+      <button_text>
+        <locale_1033>Soft-edit surface</locale_1033>
+      </button_text>
+      <script>! _SoftEditSrf</script>
+    </macro_item>
   </macros>
   <icons>
     <icon guid="6dfcdc9e-a295-4e65-a8f3-135f6491c056" name="6dfcdc9e-a295-4e65-a8f3-135f6491c056.svg">
@@ -4471,6 +4527,16 @@ PbcqB1At1QAEAH+qF/qNP2431zG1scu/AAAAAElFTkSuQmCC</png>
     </g>
 </svg>
 </svg></light>
+    </icon>
+    <icon guid="a89cccd5-1a9f-4c72-bf17-cf3569a448e4" name="a89cccd5-1a9f-4c72-bf17-cf3569a448e4.svg">
+      <light>
+<ns0:svg height="48" viewBox="0 0 48 48" width="48" xmlns:ns0="http://www.w3.org/2000/svg"><ns0:clipPath id="a"><ns0:path clip-rule="evenodd" d="m0 0h36v36h-36z" /></ns0:clipPath><ns0:g clip-path="url(#a)" transform="matrix(1.3333333 0 0 -1.3333333 0 48)"><ns0:path d="m2.25 6.765v2.976c1.985 0 3.343.969 4.467 2.715 1.174 1.824 1.969 4.332 2.723 7.067.724 2.626 1.423 5.521 2.426 7.703 1.006 2.187 2.619 4.265 5.384 4.265 2.775 0 4.384-2.097 5.4-4.253 1.02-2.164 1.776-5.067 2.583-7.669.843-2.717 1.767-5.213 3.123-7.027 1.295-1.734 2.945-2.801 5.394-2.801v-2.976c-3.552 0-6.027 1.651-7.778 3.995-1.692 2.264-2.737 5.206-3.581 7.926-.88 2.836-1.531 5.37-2.433 7.284-.897 1.903-1.722 2.545-2.708 2.545-.972 0-1.801-.621-2.68-2.533-.872-1.896-1.485-4.438-2.261-7.25-.746-2.703-1.638-5.632-3.09-7.886-1.506-2.341-3.699-4.081-6.969-4.081z" /><ns0:path d="m1.5 7.509v1.488h33v-1.488z" fill-opacity=".498039" /><ns0:path d="m29.25 9.753v-4.5h4.5v4.5z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m28.506 4.509v5.988h5.988v-5.988zm4.5 1.488v3.012h-3.012v-3.012z" /><ns0:path d="m2.251 9.753v-4.5h4.5v4.5z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m1.507 4.509v5.988h5.988v-5.988zm4.5 1.488v3.012h-3.012v-3.012z" /><ns0:path d="m16.506 9.003v14.999h1.488v-14.999z" /><ns0:path d="m15 21.009v1.488h4.5v-1.488z" /><ns0:path d="m13.5 19.509v1.488h7.5v-1.488z" /></ns0:g></ns0:svg>
+      </light>
+    </icon>
+    <icon guid="24ac3c20-cecc-4dfc-9ba9-3af71a049257" name="24ac3c20-cecc-4dfc-9ba9-3af71a049257.svg">
+      <light>
+<ns0:svg height="48" viewBox="0 0 48 48" width="48" xmlns:ns0="http://www.w3.org/2000/svg"><ns0:clipPath id="a"><ns0:path clip-rule="evenodd" d="m0 0h36v36h-36z" /></ns0:clipPath><ns0:clipPath id="b"><ns0:path d="m8.057 8.092h21.601v19.489h-21.601z" /></ns0:clipPath><ns0:linearGradient id="c" gradientTransform="matrix(-3.233 8.765 -8.765 -3.233 19.871 12.867)" gradientUnits="userSpaceOnUse" spreadMethod="pad" x1="0" x2="1" y1="0" y2="0"><ns0:stop offset="0" stop-color="#fff" stop-opacity=".827451" /><ns0:stop offset="1" stop-color="#fff" stop-opacity="0" /></ns0:linearGradient><ns0:mask id="d" height="1" maskUnits="userSpaceOnUse" width="1" x="0" y="0"><ns0:g clip-path="url(#b)"><ns0:path d="m8.057 8.092h21.601v19.489h-21.601z" fill="url(#c)" fill-rule="evenodd" /></ns0:g></ns0:mask><ns0:g clip-path="url(#a)" transform="matrix(1.3333333 0 0 -1.3333333 0 48)"><ns0:path d="m12.791 8.042c1.388.541 1.608 2.631 1.607 3.77 0 1.482-.282 2.855-.753 4.248-.47 1.394-1.079 2.657-1.978 3.835-.693.907-2.138 2.436-3.571 2.009 5.079 1.714 10.158 3.427 15.238 5.141 1.442.486 2.909-1.058 3.61-1.971.91-1.186 1.522-2.457 1.996-3.861.474-1.405.757-2.788.751-4.282-.004-1.15-.236-3.269-1.678-3.756-5.074-1.711-10.148-3.423-15.222-5.133z" fill="#becafc" fill-rule="evenodd" /><ns0:path d="m6.362 18.093c0 4.245 2.653 5.229 5.266 1.852 1.658-2.143 2.77-5.429 2.77-8.135 0-4.245-2.653-5.229-5.265-1.853-1.659 2.144-2.771 5.429-2.771 8.136z" fill="#6582fc" fill-rule="evenodd" /><ns0:g style="fill:none;stroke:#000;stroke-width:1.488;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"><ns0:path d="m12.359 7.937c-.933-.1-2.084.543-3.226 2.02-1.659 2.144-2.771 5.429-2.771 8.136 0 2.122.663 3.429 1.653 3.784l.081.027c5.079 1.714 10.158 3.427 15.238 5.141 1.442.486 2.909-1.058 3.61-1.971.91-1.186 1.522-2.457 1.996-3.861.474-1.405.757-2.788.751-4.282-.004-1.15-.236-3.269-1.678-3.756-5.074-1.711-10.148-3.423-15.222-5.133l-.046-.017c-.124-.044-.253-.074-.386-.088z" /><ns0:path d="m33.754 9.287v15.308" stroke-opacity=".498039" /><ns0:path d="m33.754 24.595-21.005-7.346" stroke-opacity=".498039" /><ns0:path d="m12.749 17.249v-15.005" stroke-opacity=".498039" /><ns0:path d="m12.749 2.244 21.005 7.043" stroke-opacity=".498039" /><ns0:path d="m23.252 27.752v4.502" stroke-opacity=".498039" /><ns0:path d="m23.252 32.254-21.007-7.043" stroke-opacity=".498039" /><ns0:path d="m2.245 25.211v-15.309" stroke-opacity=".498039" /><ns0:path d="m2.245 9.902 5.639 1.852" stroke-opacity=".498039" /><ns0:path d="m33.754 9.287-5.24 3.988" stroke-opacity=".498039" /><ns0:path d="m33.754 24.595-10.502 7.659" stroke-opacity=".498039" /><ns0:path d="m12.749 17.249-10.504 7.962" stroke-opacity=".498039" /><ns0:path d="m12.749 2.244-10.504 7.658" stroke-opacity=".498039" /></ns0:g><ns0:path d="m.744 11.247v-3h3.001v3z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m0 7.503v4.488h4.489v-4.488zm3.001 1.488v1.512h-1.513v-1.512z" /><ns0:path d="m.744 26.251v-3h3.001v3z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m0 22.507v4.488h4.489v-4.488zm3.001 1.488v1.512h-1.513v-1.512z" /><ns0:path d="m11.247 3.744v-3h3.001v3z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m10.503 0v4.488h4.489v-4.488zm3.001 1.488v1.512h-1.513v-1.512z" /><ns0:path d="m32.254 11.247v-3h3.001v3z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m31.51 7.503v4.488h4.489v-4.488zm3.001 1.488v1.512h-1.513v-1.512z" /><ns0:path d="m32.254 26.251v-3h3.001v3z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m31.51 22.507v4.488h4.489v-4.488zm3.001 1.488v1.512h-1.513v-1.512z" /><ns0:path d="m21.75 33.754v-3h3.001v3z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m21.006 30.01v4.488h4.489v-4.488zm3.001 1.488v1.512h-1.513v-1.512z" /><ns0:path d="m43.981 15.211-2.422 6.328h-.039c.045-.501.068-1.097.068-1.787v-4.541h-.767v7.138h1.25l2.261-5.888h.039l2.28 5.888h1.241v-7.138h-.831v4.599c0 .528.023 1.101.069 1.719h-.039l-2.442-6.318z" /><ns0:path d="m53.018 15.211-.161.762h-.039c-.267-.336-.533-.563-.798-.681-.266-.119-.597-.179-.994-.179-.53 0-.946.137-1.247.41-.301.274-.452.663-.452 1.167 0 1.081.864 1.648 2.593 1.7l.908.029v.332c0 .42-.09.73-.271.93s-.47.3-.867.3c-.446 0-.95-.136-1.513-.41l-.249.62c.263.144.552.256.866.337.314.082.629.122.945.122.638 0 1.111-.141 1.418-.425.308-.283.462-.737.462-1.362v-3.652zm-1.831.571c.505 0 .901.139 1.189.415.288.277.432.664.432 1.162v.484l-.81-.034c-.645-.023-1.109-.123-1.394-.301-.285-.177-.427-.453-.427-.827 0-.293.088-.516.266-.669.177-.153.425-.23.744-.23z" /><ns0:path d="m57.428 15.113c-.775 0-1.374.239-1.799.716-.425.476-.637 1.151-.637 2.024 0 .895.215 1.586.646 2.075.432.488 1.046.732 1.844.732.257 0 .514-.028.771-.083s.459-.12.606-.195l-.249-.689c-.18.072-.375.131-.586.179-.212.047-.399.07-.562.07-1.087 0-1.631-.693-1.631-2.08 0-.657.133-1.162.398-1.513.266-.352.659-.528 1.179-.528.446 0 .904.096 1.372.288v-.717c-.358-.186-.808-.279-1.352-.279z" /><ns0:g mask="url(#d)"><ns0:path d="m12.752 8.092c1.388.541 1.608 2.631 1.607 3.77 0 1.482-.282 2.855-.753 4.248-.47 1.394-1.079 2.657-1.978 3.835-.693.907-2.138 2.436-3.571 2.009 5.079 1.714 10.158 3.427 15.238 5.141 1.442.486 2.909-1.058 3.61-1.971.91-1.186 1.522-2.457 1.996-3.861.474-1.405.757-2.788.751-4.282-.004-1.15-.236-3.269-1.678-3.756-5.074-1.711-10.148-3.423-15.222-5.133z" fill="#304ab6" fill-rule="evenodd" /></ns0:g><ns0:path d="m12.44 7.964c-.933-.1-2.084.543-3.226 2.02-1.659 2.144-2.771 5.429-2.771 8.136 0 2.122.663 3.429 1.653 3.784l.081.027c5.079 1.714 10.158 3.427 15.238 5.141 1.442.486 2.909-1.058 3.61-1.971.91-1.186 1.522-2.457 1.996-3.861.474-1.405.757-2.788.751-4.282-.004-1.15-.236-3.269-1.678-3.756-5.074-1.711-10.148-3.423-15.222-5.133l-.046-.017c-.124-.044-.253-.074-.386-.088z" style="fill:none;stroke:#000;stroke-width:1.488;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><ns0:path d="m11.248 18.749v-3h3.001v3z" fill="#fff" fill-rule="evenodd" /><ns0:path d="m10.504 15.005v4.488h4.489v-4.488zm3.001 1.488v1.512h-1.513v-1.512z" /></ns0:g></ns0:svg>
+      </light>
     </icon>
   </icons>
   <bitmaps>
