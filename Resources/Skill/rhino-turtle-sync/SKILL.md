@@ -5,7 +5,7 @@ description: Turtle 插件（Rhino 8）的"固化 + 同步 + 版本发布"全流
 
 # Turtle 固化同步流程
 
-Turtle 是自研 Rhino 8 插件（仓库远端 `https://github.com/liuzhen4242/Turtle.git`）。**rui 与材质支持双向同步**：`scripts/sync_resources.py` 一键完成（以最新修改者为准、先备份再覆盖、md5 校验，Mac/Win 双平台），仓库 → Rhino 分发、Rhino → 仓库固化都不用手动复制。快捷键/显示样式/模板等其余资源仍需按下方固化流程人工确认。
+Turtle 是自研 Rhino 8 插件（仓库远端 `https://github.com/liuzhen4242/Turtle.git`）。**同步是单向的**：仓库（源）→ Rhino（分发）自动；Rhino（用户改动）→ 仓库需**手动固化**。本 skill 管理这个固化流程，**覆盖 Mac 与 Windows 双平台**。
 
 ## 核心守则
 
@@ -18,13 +18,19 @@ Turtle 是自研 Rhino 8 插件（仓库远端 `https://github.com/liuzhen4242/T
 4. **写 McNeel 目录需 require_escalated**（沙箱外路径）。
 5. **图标用内嵌数据，不用外部文件引用**：所有按钮图标必须是 rui 内嵌的 `<png>` 或 `<light><svg>` 数据。**禁止 `<svg_name>`（外部 SVG 文件引用）**——Windows Rhino 8 不渲染，且跨平台会因文件缺失/路径不同导致图标丢失。
 
+## 版本治理（用户拍板 2026-10-15）
+
+- **用户明确"以后不用再管 1.0 版本，已经进入 1.1"**：Win 端当前只有 1.0.0（`%APPDATA%\McNeel\Rhinoceros\packages\8.0\Turtle\1.0.0\`），1.1.0 目录不存在；部署目标是 Win 1.1.0（从 Mac 拿 1.1.0 产物）。**做同步/分发时，凡涉及加载位覆盖，必须同时覆盖当前生效版本目录；是否删除旧 1.0.0 目录需用户拍板。**
+- 版本号只有用户明确要求才升，平时固化内容不升版本。
+- **check_sync.py / rui_sync.py 里的版本号/路径已过时**（旧脚本只认 1.0.0 或 UI 目录），跑之前先核对脚本中的版本目录与实际一致，必要时按当前版本修正。
+
 ## 资源清单（7 类，双平台位置）
 
 | # | 类别 | 仓库位置 | Mac Rhino 位置 | Windows Rhino 位置 | 固化方向 |
 |---|---|---|---|---|---|
 | 1 | 工具列 rui | `Resources/Turtle.rui` | packages/8.0/turtle/{ver}/Turtle.rui（小写） | packages/8.0/Turtle/{ver}/Turtle.rui（大写） | 覆盖层 → 仓库 → 同步加载位，md5 校验 |
 | 2 | Python 脚本 | `Scripts/*.py`（12 个） | `8.0/Scripts/` | `8.0/scripts/`（小写） | 双向，md5 校验 |
-| 3 | 材质 rmtl | `Resources/Materials/` + `assets/materials/` | `8.0/Render Content/en_US/Turtle/` | `8.0/Localization/en-US|zh-CN/Render Content/Turtle/`（两语种） | **以仓库 `Resources/Materials` 文件集合为准**（当前 65 个，含 29 贴图 + 34 颜色 + earth/stoneConcrete 等新增）；双向同步以最新者覆盖，多余文件提示人工确认（脚本不自动删除） |
+| 3 | 材质 rmtl | `Resources/Materials/` + `assets/materials/` | `8.0/Render Content/en_US/Turtle/` | `8.0/Localization/en-US|zh-CN/Render Content/Turtle/`（两语种） | **以仓库 63 个为准**（构成：29 贴图 + 34 Color）；**Rhino 里多余旧材质必须删除** |
 | 4 | 快捷键 | `Resources/KeyTurtle.txt` | `8.0/settings/aliases`（可自动比对） | **Windows 无 aliases 文件**，只能 GUI「工具→选项→键盘→导入」 | **以最新为准**，只保留一份，两边同步都带最新 |
 | 5 | 显示样式 ini | `Resources/DisplayStyles/`（13 个） | `8.0/settings/displaymodes/` | `8.0/DisplayModes/` | 以最后更新为准 |
 | 6 | 模板 3dm | `Resources/Turtle.3dm` | `Rhinoceros/Template Files/Turtle.3dm` | `8.0/Localization/en-US|zh-CN/Template Files/`（两语种） | 以最后更新为准 |
@@ -32,37 +38,27 @@ Turtle 是自研 Rhino 8 插件（仓库远端 `https://github.com/liuzhen4242/T
 
 ## 固化流程（每次发布/同步）
 
-### Step 0：rui + 材质 + 脚本 + 模板快速双向同步（日常首选）
-```bash
-python3 "<skill目录>/scripts/sync_resources.py" [--check] [--rui | --materials | --scripts | --templates]
-```
-- **同一份脚本，双平台通用**：脚本按运行平台自动切换路径——Mac 上同步 `rhinoPluging`（`/Users/zhenliu/study/coding/rhinoPluging`）与其 Rhino；Windows 上同步 `D:\00-素材\SoftTemple\Rhino\Turtle` 与其 Rhino。把脚本复制到两台机器各自运行即可，无需改代码。
-- 不带参数：同步 rui（6 处）+ 材质（3 处 rmtl + Mac 贴图子目录）+ Python 脚本（仓库 `Scripts/` ↔ Rhino `scripts/`）+ 模板（Mac: `Rhinoceros/Template Files/` ↔ 仓库；Win: `Localization/en-US|zh-CN/Template Files/` ↔ 仓库），以最新修改者为准，覆盖前备份为 `.bak-sync-<时间戳>`；缺失的位置自动补齐；
-- `--check`：只读检查差异清单，不写文件；`--rui` / `--materials` / `--scripts` / `--templates`：只处理其中一类；
-- **脚本同步排除 Rhino 系统自带启动脚本**：`RhinoStartup.py` / `RhinoWorkspaceStartup.py` / `workspace_startup.py`（非 Turtle 内容，不会进仓库）；
-- **防呆校验**：仓库路径不存在时直接报错退出（提示正确路径），防止在错误机器/路径下静默误跑；
-- **改 rui 前必须退出 Rhino**：脚本检测到 Rhinoceros 进程运行会自动跳过 rui 并提示。
-
 ### Step 1：跑检查清单（双平台）
 ```bash
 python3 "<skill目录>/scripts/check_sync.py" [--repo <仓库路径>]
 ```
-脚本按当前系统自动检测 Mac/Windows 路径。输出 7 类资源对比：✅ 一致 / ⚠️ 差异（含明细：缺哪些、多哪些、值不同）。材质为 **md5 级**对比（同名文件内容不同也会报出）。
+脚本按当前系统自动检测 Mac/Windows 路径。输出 7 类资源对比：✅ 一致 / ⚠️ 差异（含明细：缺哪些、多哪些、值不同）。
 
 ### Step 2：逐条向用户确认
 把清单逐条列出，明确"哪些更新了、哪些没更新"，让用户确认固化方向。用户裁决优先：
 - **快捷键**：以 Rhino 最新 aliases 覆盖仓库 `Resources/KeyTurtle.txt`（Windows 上用户 GUI 导入后无法比对，提示即可）
-- **材质**：日常用 Step 0 的 `sync_resources.py` 自动处理；若需清理（删除多余旧材质），以仓库 `Resources/Materials` 文件集合为准，先备份再删
+- **材质**：删仓库旧/重复，换成 63 个新命名（`assets/materials` + `Resources/Materials` 两处）；**同步时若 Rhino 目录有多余旧材质，先备份再删除**
 - **显示样式/模板**：哪边最后更新以哪边为准
 
 ### Step 3：固化（Rhino → 仓库）
-- **rui / 材质**：日常用 `sync_resources.py` 自动处理（以最新者为准 + 备份）
 - **快捷键（Mac）**：`cp "8.0/settings/aliases" Resources/KeyTurtle.txt`
+- **材质**：`cp Rhino材质目录/*.rmtl` → `assets/materials/` + `Resources/Materials/`（先备份旧文件为 `.bak-<时间戳>`，gitignore 已忽略 `*.bak-*`）
 - **显示样式/模板**：按用户裁决复制
 
 ### Step 4：同步分发（仓库 → Rhino）
-- **rui / 材质**：日常用 `sync_resources.py` 自动处理（Mac/Win 各自的 packages 位、材质目录均覆盖）
+- **rui**：`copy 仓库Resources/Turtle.rui → packages/{ver}/Turtle.rui`（Mac/Win 各自的 packages 位），md5 校验。**先确认 Rhino 已完全退出**。
 - **脚本**：`Scripts/*.py` → 各自 Scripts/scripts 目录，md5 校验
+- **材质**：仓库两处 → Rhino 材质目录（Mac 一语种 / Windows 两语种）；**多余旧材质备份后删除**
 - **显示样式**：`Resources/DisplayStyles/*.ini` → 各自目录
 - **模板**：`Resources/Turtle.3dm` → 各自 Template Files（Windows 两语种）
 
@@ -81,9 +77,9 @@ cd <仓库> && git add -A && git commit -m "描述固化内容" && git push orig
 
 - 仓库：Mac `/Users/zhenliu/study/coding/rhinoPluging`；Windows `D:\00-素材\SoftTemple\Rhino\Turtle`
 - 5 个工具列：turtleMain、color-turtle、color-material-turtle、material-turtle、mouseTurtle（guid 见 rhino-toolbar-rui skill）
-- **材质库 65 个的构成（2026-09-30 核对）**：29 个贴图材质（b-blacktop、bo-board×4、br-brick×4、co-concrate×4、gr-grass×6、m-aluminum、r-roofing×3、t-tile×4、x-line8、x-line12）+ 34 个 `Color_{R}_{G}_{B}_A{A}` 颜色材质（A0=非透明 / A120=透明）+ earth、stoneConcrete 等新增材质。
+- **材质库 63 个的准确构成（2026-09-28 核对）**：29 个贴图材质（b-blacktop、bo-board×4、br-brick×4、co-concrate×4、gr-grass×6、m-aluminum、r-roofing×3、t-tile×4、x-line8、x-line12）+ 34 个 `Color_{R}_{G}_{B}_A{A}` 颜色材质（A0=非透明 / A120=透明）。
   - **⚠️ 清理 Rhino 材质目录时禁止只按 `^Color_` 保留**——否则会误删 29 个贴图材质（material-turtle 按钮引用它们）。正确做法：以仓库 `Resources/Materials` 的文件集合为准，对比后删多余。
-- 材质命名规则：`Color_{R}_{G}_{B}_A{A}.rmtl`（A0=非透明 / A120=透明），当前共 65 个
+- 材质命名规则：`Color_{R}_{G}_{B}_A{A}.rmtl`（A0=非透明 / A120=透明），当前共 63 个
 - 显示样式 13 个：Arctic(×3)、CAD、OnlyShadow、OutLine(×3)、RaytraceHardeShadow、Shaded、ShadowLine、Sketchup、Wireframe
 - KeyTurtle 当前 271 条，格式 `别名=宏`（Rhino aliases 格式）
 - **⚠️ 跨平台 md5 差异是行尾导致（正常现象，勿误判）**：Windows 仓库/分发文件为 CRLF、Mac 为 LF（git autocrlf 差异），同一 commit 在两台的 md5 不同（如 rui：Win `3ef222…` vs Mac `97de9b…`）。**同平台内 md5 必须一致**；跨平台比对应先把两文件行尾归一化再比，或直接以文件集合/内容语义为准。
@@ -92,3 +88,26 @@ cd <仓库> && git add -A && git commit -m "描述固化内容" && git push orig
   - turtleMain 图标曾用非标准 `<svg_name>`+`<light_svg>` 结构 → Windows 上全部图标丢失；改为标准 `<light><svg>` 内嵌后恢复（详见 rhino-toolbar-rui skill）
   - Rhino 退出会写回状态：改 rui 前确认进程已完全结束；改完重启前可再核对 packages rui 的 md5 未被覆盖
 - rhino-toolbar-rui skill（图标/覆盖层/颜色宏规范）与 rhino-turtle-sync 配合使用：前者管 rui 细节，后者管固化同步总流程
+
+## 双端取最新合并 + 覆盖层独有内容固化（2026-10-15 实证）
+
+**核心问题**：Win 与 Mac 两端工具列各自有独有修改，仓库 rui 是唯一权威。用户在某台机器 Rhino 里手动追加的按钮（如 Win mouseTurtle 的 Cage/CageEdit/SoftEdit）**只存在该机的覆盖层里，仓库 rui 没有**——这是"另一台机器看不到新按钮"的根因。
+
+**规则**：
+1. **覆盖层是独有修改的唯一来源**：Win `%APPDATA%\McNeel\Rhinoceros\8.0\settings\Scheme__Default\Turtle_7338352c-….xml` / Mac `OpenLink_7338352c-….xml`。先备份到 `Resources\.bak-scheme-*`。
+2. **合并方向**：覆盖层独有的宏/图标 → 合并进仓库 rui（转标准格式，见 rhino-toolbar-rui skill）→ git push → 另一端 pull 后同步加载位。**双端都取最新合并**。
+3. **覆盖层独有内容必须固化，否则丢失**：重启或加载位被覆盖层旧版覆盖后，未固化的独有按钮会消失。
+4. **合并产物**：mouseTurtle 新增 2 按钮（4宏+2图标）已并入仓库（commit `735c17f`）。
+
+## git 推送验证方法（Win，2026-10-15 实证）
+
+- **`git status -sb` 的 `[ahead N]` 不可靠**：它是本地 `origin/main` tracking 引用的状态，`git push <url>` 用完整 URL 推送后 tracking 不一定会刷新，仍显示 `[ahead 1]`——**不能据此判断推送是否成功**。
+- **正确验证**：用带代理 `ls-remote` 对比远程 main 与本地 HEAD 的完整哈希是否一致：
+  ```powershell
+  git -C <仓库> -c http.proxy=http://127.0.0.1:7890 ls-remote https://github.com/liuzhen4242/Turtle.git main
+  git -C <仓库> rev-parse HEAD
+  ```
+  两者 40 位哈希一致 = 推送成功。
+- **PowerShell 会把 git stderr 当 NativeCommandError 显示**：`git push` 输出 "Everything up-to-date" 且 `$LASTEXITCODE=0` 即为成功，红色 RemoteException 是误报，不要当作失败。
+- **PowerShell stdout 被吞的坑**：`git … 2>&1 | Out-String` 有时不显示输出；改用 `$x = git … 2>&1; Write-Output $x` 捕获。
+- **推送命令**：`git -C <仓库> -c http.proxy=http://127.0.0.1:7890 push https://github.com/liuzhen4242/Turtle.git main`（SSH remote 不通、https 直连被 reset，必须带代理）。

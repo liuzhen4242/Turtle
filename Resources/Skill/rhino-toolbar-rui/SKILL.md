@@ -13,20 +13,17 @@ description: Rhino 8 插件工具栏（.rui 文件）图标的创建、修复与
    - Windows：`%APPDATA%\McNeel\Rhinoceros\packages\8.0\Turtle\{ver}\Turtle.rui`（大写）
    - 改 UI / MacPlugIns 目录的 rui，Rhino 根本不读——这是"改了很久没效果"的头号原因。
    - **Windows 上 `8.0\UI\Turtle.rui` 目录不存在**（旧 skill 说法有误，勿再按它找）。
-3. 改完 rui 必须**同步 6 处**并校验 md5 一致（见"一键同步脚本"）。
+3. 改完 rui 必须**同步 5 处**并校验 md5 一致（见"一键同步脚本"）。
 
-## rui 的 6 个位置（Mac）
+## rui 的 5 个位置（Mac）
 
 ```text
 1. ~/Library/Application Support/McNeel/Rhinoceros/8.0/UI/Turtle.rui
 2. ~/Library/Application Support/McNeel/Rhinoceros/8.0/MacPlugIns/Turtle.rhp/Turtle.rui
 3. ~/Library/Application Support/McNeel/Rhinoceros/MacPlugIns/Turtle.rhp/Turtle.rui
 4. <rhinoPluging仓库>/Resources/Turtle.rui            （git 源）
-5. ~/Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.0.0/Turtle.rui
-6. ~/Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.1.0/Turtle.rui   ← 当前实际加载位！
+5. ~/Library/Application Support/McNeel/Rhinoceros/packages/8.0/turtle/1.0.0/Turtle.rui   ← 真正加载位！
 ```
-
-> 注：1.1.0 是当前实际加载版本（2026-09-30 核对），1.0.0 保留；两处 packages 都要同步。
 
 Windows 上加载位同样只有 packages 一份（`%APPDATA%\McNeel\Rhinoceros\packages\8.0\Turtle\{ver}\Turtle.rui`），改动直接生效（前提：Rhino 已完全退出）。
 
@@ -87,7 +84,7 @@ Rhino 8 标准 SVG 图标 = 内嵌数据，**不依赖外部文件**：
   3. 同类多序号（grass×6 / brick×4 / tile×4…）用同一贴图 + `ImageEnhance.Brightness/Color` 微调区分
   4. 缺贴图的材质（贴图在 Windows 项目目录）→ 用同类相近贴图替代（如 gr-grass5/6 → Grass Light/Dark Green ±亮度）
 - 替换进 rui：按 `macro_item` 的 `bitmap_id` 定位 `<icon guid="ID" name="ID.png">…<png>旧</png>…</icon>` 块，文本替换 `<png>…</png>`；left = 原图，right = 亮化版。
-- 校验：64 个 icon 的 md5 **应全部唯一**；XML 校验；再同步 6 处。
+- 校验：64 个 icon 的 md5 **应全部唯一**；XML 校验；再同步 5 处。
 - 产物事实：material-turtle = guid `3cdefd34-e8e5-4786-96d6-c0ee05e6467a`，32 按钮；生成脚本 `/tmp/gen_material_turtle.py`，图标数据 `/tmp/mt_real_icons.json`。
 
 ## 颜色宏规范（color-turtle）
@@ -105,7 +102,7 @@ color-turtle（guid `c479780d-9ee4-4ab2-8d20-a7a37a356c74`）31 按钮：索引 
 
 按顺序排查，每步都有明确结论：
 
-1. **确认 Rhino 实际加载的 rui**：对 6 处 rui 跑 md5。若 packages 位与其余不一致 → 它是旧版 → 用新版覆盖（先备份 `.bak-yakold`）。
+1. **确认 Rhino 实际加载的 rui**：对 5 处 rui 跑 md5。若 packages 位与其余不一致 → 它是旧版 → 用新版覆盖（先备份 `.bak-yakold`）。
    - 蓝色 = `bitmap_id` 悬空（图标 guid 在 rui 里不存在）
    - 文字 = 图标 guid 存在但 icon 不被加载（最常见：Rhino 读的是另一份 rui；其次：格式不被渲染）
 2. **决定性测试**：把一个已知能渲染的 icon（如 color-turtle 白圆 837c614b）逐字复制、只换 guid 放进目标按钮。若仍不显示 → 不是图标数据问题，是加载文件/机制层问题。
@@ -114,30 +111,68 @@ color-turtle（guid `c479780d-9ee4-4ab2-8d20-a7a37a356c74`）31 按钮：索引 
 5. **Windows 覆盖层闪崩（2026-09-28 实证）**：`%APPDATA%\McNeel\Rhinoceros\8.0\settings\Scheme__Default\` 下残留旧版 Turtle 覆盖层 `Turtle_7338352c-….xml`（内含**已被 Mac 重做换掉的旧按钮 guid** 引用，如 `609e6fcc…`），而新版 rui 库 guid 仍为 `7338352c-119d-4898-aee3-911514067977` → 导入/加载工具列时 Rhino 合并覆盖层遇到不存在的按钮引用 → **闪崩**。处理：备份到 `Resources\.bak-scheme-*` 后删除覆盖层（Mac/Win 同法）。
 6. **Windows turtleMain 图标全丢（2026-09-28 已修复）**：18 个 icon 全为非标准 `<svg_name>+<light_svg>`（无 `<png>`）→ Windows 不渲染。已全部重建为标准 `<light><svg>`（见上"SVG 图标标准结构"）。**教训：新做工具列时图标一律内嵌 `<png>` 或标准 `<light><svg>`，禁止 `<svg_name>` 外部引用。**
 
-## 一键同步脚本
+## 双端取最新合并流程（2026-10-15 实证）
 
-**日常同步推荐用双向脚本 `sync_resources.py`**（rui + 材质一起，自动以最新者为准、先备份再覆盖、md5 校验，Mac/Win 双平台）：
+**场景**：Win 与 Mac 两边的 Turtle 工具列都有各自独有修改，需要"以最新为准"合并进仓库 rui，让两端都有。
 
-```bash
-# 同步 rui + 材质（rui 需先完全退出 Rhino，脚本检测到 Rhino 运行会自动跳过 rui）
-python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py"
-# 只检查差异（只读）
-python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py" --check
-# 只同步 rui 或只同步材质
-python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py" --rui
-python3 "<skill目录>/../rhino-turtle-sync/scripts/sync_resources.py" --materials
+**Win 侧独有内容的唯一来源是覆盖层**：`%APPDATA%\McNeel\Rhinoceros\8.0\settings\Scheme__Default\Turtle_7338352c-….xml`（Mac 端对应 `OpenLink_7338352c-….xml`）。用户在当前机器 Rhino 里手动追加的按钮只存在覆盖层里，仓库 rui 没有。**若不同步覆盖层→仓库，重启或加载位覆盖后这些独有按钮就丢了。**
+
+**合并步骤**（仓库 `Resources/Turtle.rui` 为唯一权威，major_ver=5）：
+1. 备份仓库 rui 为 `.bak-merge-<时间戳>`（写仓库目录需 require_escalated）
+2. 读覆盖层全文，找出用户新增的宏与图标：覆盖层里是 `<macro guid=… bitmap_guid=…>`（非仓库的 `<macro_item bitmap_id=…>`）+ `<icon guid=…><light_svg>…</light_svg>`（转义文本）
+3. 判断是全新工具列还是既有工具列追加按钮：
+   - 全新工具列 → 整体搬运 tool_bar + 全部宏/图标
+   - **既有工具列追加**（最常见，如 mouseTurtle）→ 只把新增的 macro_item + icon 加进仓库，并在对应工具列 `<tool_bar guid=…>` 末尾追加 `tool_bar_item`（`<left_macro_id>`/`<right_macro_id>` 引用宏 guid）
+4. 宏转标准：仓库宏格式 `<macro_item guid="…" bitmap_id="…"><text><locale_1033>…</locale_1033></text><tooltip>…</tooltip><button_text>…</button_text><script>! _命令</script></macro_item>`
+5. 图标转标准：见下"覆盖层 light_svg → 标准 light/ns0 转换"
+6. 插入位置：仓库 rui 的 `<macros>` 末尾（`</macros>` 前）、`<icons>` 末尾（`</icons>` 前）、工具列 `<tool_bar>` 末尾（最后一个 `tool_bar_item` 之后）
+7. 校验：`ET.parse` 合法、新 guid 出现次数符合预期（宏 guid=2 处、icon guid=3~4 处含 name 引用）、XML 结构完整
+8. 同步加载位（Mac/Win 各自 packages，md5 一致）→ git add/commit/push
+
+**关键判断：bitmap 引用 Rhino 内置图标是正常现象**。仓库 rui 里有 16 个 `macro_item` 的 `bitmap_id` 无对应 `<icon>` 定义（03190633/04ba084f/2e271e15/2fc898a9… 等），这些是引用 Rhino 内置图标（如 `2e271e15`=Cage），Rhino 自动解析，**无需新增 icon，不算悬空 bitmap**。只有非内置的新图标才需要加 `<icon>` 定义。
+
+### 覆盖层 light_svg → 标准 light/ns0 转换（2026-10-15 实证）
+
+覆盖层图标是 `<icon guid=…><light_svg>&lt;svg…&gt;&lt;/svg&gt;</light_svg></icon>`（转义文本）。转成仓库标准 `<icon guid="…" name="…svg"><light><ns0:svg …>…</ns0:svg></light></icon>`：
+
+```python
+import re, xml.etree.ElementTree as ET
+SVG_NS = "http://www.w3.org/2000/svg"
+
+def extract_light_svg(overlay_text, guid):
+    m = re.search(r'<icon guid="' + re.escape(guid) + r'".*?</icon>', overlay_text, re.S)
+    lm = re.search(r"<light_svg>(.*?)</light_svg>", m.group(0), re.S)
+    txt = lm.group(1)
+    # 反转义（&lt; &gt; &amp; &quot; &apos; &#10; &#13;）
+    txt = txt.replace("&#10;", "\n").replace("&#13;", "\r")
+    txt = txt.replace("&lt;", "<").replace("&gt;", ">")
+    txt = txt.replace("&quot;", '"').replace("&apos;", "'").replace("&amp;", "&")
+    return txt
+
+def ns0fy(el):
+    if isinstance(el.tag, str) and el.tag.startswith("{" + SVG_NS + "}"):
+        el.tag = "ns0:" + el.tag[len(SVG_NS)+2:]
+    for c in el:
+        ns0fy(c)
+
+root = ET.fromstring(extract_light_svg(overlay, "a89cccd5-…"))
+ns0fy(root)
+root.set("xmlns:ns0", SVG_NS)          # 手动加声明！嵌入 <light> 后不会自动补
+svg_xml = ET.tostring(root, encoding="unicode")   # 输出 <ns0:svg ...>
 ```
 
-**单独同步 rui**（本 skill 自带脚本）：
+**⚠️ 坑（2026-10-15 实证）**：`ET.register_namespace("ns0", SVG_NS)` 会报 `ValueError: Prefix format reserved for internal use`——`ns0` 是 Python 保留前缀。**不要调用 register_namespace**，因为 ns0fy 已经把元素 tag 改成了字面量 `ns0:` 前缀，`ET.tostring` 序列化时自动保留字面量前缀，无需注册。同时**必须给根 svg 手动 `root.set("xmlns:ns0", SVG_NS)`**，否则嵌入 `<light>` 后序列化不带命名空间声明，Rhino 解析报错。
+
+## 一键同步脚本
 
 ```bash
-# 把源 rui 同步到 6 处（含 packages 加载位），并做 XML + md5 校验
+# 把源 rui 同步到 5 处（含 packages 加载位），并做 XML + md5 校验
 python3 scripts/rui_sync.py <源Turtle.rui路径>
 # 只校验不同步
 python3 scripts/rui_sync.py <源Turtle.rui路径> --verify-only
 ```
 
-脚本先备份每个目标为 `.bak-sync-<时间戳>`，再复制、校验 XML 合法性、输出各处 md5。Windows 上目标列表不同（`8.0\UI\` 不存在，只有 packages 目录，见脚本内注释）。
+脚本先备份每个目标为 `.bak-sync-<时间戳>`，再复制、校验 XML 合法性、输出 5 处 md5。Windows 上目标列表不同，脚本需按平台调整（见脚本内注释）。
 
 ## GUI 验证流程（Mac）
 
@@ -154,7 +189,7 @@ python3 scripts/rui_sync.py <源Turtle.rui路径> --verify-only
 2. **覆盖层残留旧引用**：`settings/Scheme__Default/Turtle_7338352c-….xml` 被 Rhino 重写后仍引用已删工具列（`<tool_bar source_guid=…modified="True">`、deleted_items、已删宏的 right_macro）→ 删覆盖层（备份后）可消除，图标恢复读 rui，dock 可能重置。
 3. **containers.xml 残留旧 dock_bar**：已删工具列的 dock_bar 浮动记录仍在 → 清理引用已删 guid 的 dock_bar 块（备份后）。
 
-**修复（按序）**：备份 → 删覆盖层 → 清理 containers.xml 旧 dock_bar → **重写 rui 的 tool_bar_groups**：清空残留 `<item>`，4 个工具列全部写 `<tool_bar_reference guid="…"><dock_bar_info visible="1" dock_location="top"/></tool_bar_reference>` → 同步 6 处 → 重启验证。
+**修复（按序）**：备份 → 删覆盖层 → 清理 containers.xml 旧 dock_bar → **重写 rui 的 tool_bar_groups**：清空残留 `<item>`，4 个工具列全部写 `<tool_bar_reference guid="…"><dock_bar_info visible="1" dock_location="top"/></tool_bar_reference>` → 同步 5 处 → 重启验证。
 
 **GUI 验证/恢复显示（已验证可用）**：
 - `_-Toolbar` → 选 Library → 输入 `Turtle` → List（确认库加载路径 packages/8.0/turtle/1.0.0/Turtle.rui 且 4 工具列名齐全）→ Toolbar → Show → 输入工具列名 → Yes。
@@ -167,4 +202,11 @@ python3 scripts/rui_sync.py <源Turtle.rui路径> --verify-only
 - color-turtle 能渲染的白圆：guid `837c614b-c763-41b8-98d4-dda7ffd07f3c`，单张 32x32 PNG（base64 624 字符，头 `iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0`）。
 - color-material-turtle 31 色映射：索引 0–30，24–30 为 A120 半透明 + 黑描边。
 - **turtleMain（guid `55f2b50c-4258-4c1b-9bba-133cd6b0f251`，18 按钮）图标 guid**（2026-09-28 已全部重建为 `<light><svg>`）：085a64d7(exportToSu)、44d0f4e8(visWatch)、6b6047cb(batchCapture)、d366577d(cameraMove)、a6a2748a(outline)、db370ed7(whiteLine)、932f3250(blackLine)、cdd2c994(originalColor)、d3f790ae(dropToGround)、b9f49354(intersect)、4c4d52a5(lineSplit)、625988a0(mapping)、76d4dfac(colorToMat)、148f3971(moveLayer)、2e986a61(selectFilter)、c502c50c(alignPage)、b33e09ce(lineWidthScale)、ec35e7f9(surToHatch)。
-- 7 个工具栏 guid 见 `Resources/Turtle.rui` `<tool_bars>` 节；color-material-turtle = `97eb5b7a-db48-4cf8-abe0-c06216ace898`；color-turtle = `c479780d-9ee4-4ab2-8d20-a7a37a356c74`；material-ma = `bdffc206-d14b-4148-b797-c342c98591e5`；material-turtle = `3cdefd34-e8e5-4786-96d6-c0ee05e6467a`（32 按钮、64 宏+图标全新建、图标为真实贴图缩略）。
+- 7 个工具栏 guid 见 `Resources/Turtle.rui` `<tool_bars>` 节；color-material-turtle = `97eb5b7a-db48-4cf8-abe0-c06216ace898`；color-turtle = `c479780d-9ee4-4ab2-8d20-a7a37a356c74`；material-ma = `bdffc206-d14b-4148-b797-c342c98591e5`；material-turtle = `3cdefd34-e8e5-4786-96d6-c0ee05e6467a`（32 按钮、64 宏+图标全新建、图标为真实贴图缩略）；mouseTurtle = `0809495b-bb53-4007-82e5-a2a92c27003d`。
+- **mouseTurtle 新增的 4 个变形/软编辑宏（2026-10-15 从 Win 覆盖层合并）**：
+  - `52de8b18-d30a-463a-8933-ff8aa909e82b` → `! _Cage`，bitmap `2e271e15`（**引用 Rhino 内置 Cage 图标，无 icon 定义，正常**）
+  - `86457227-6f7e-4eeb-87bf-c297abcfdcec` → `! _CageEdit`，bitmap `24ac3c20-cecc-4dfc-9ba9-3af71a049257`（新增 icon）
+  - `40f5d7fa-3db3-41fb-b965-9fdfdd360786` → `! _SoftEditCrv`，bitmap `a89cccd5-1a9f-4c72-bf17-cf3569a448e4`（新增 icon）
+  - `29dac961-3ddb-4178-8768-06aa1ecc4f66` → `! _SoftEditSrf`，bitmap `a89cccd5-1a9f-4c72-bf17-cf3569a448e4`（新增 icon）
+  - 追加的 2 个按钮：`49826fe0-dbfe-45a0-92ca-a612dc93bcb1`（left=CageEdit right=Cage）、`6008e4bc-b0a3-4765-badc-f9ca09b36b65`（left=SoftEditCrv right=SoftEditSrf）
+  - 合并后仓库 rui 4547 行，md5（Win）`4E4C4584F3E97BEE2358204C63723E5D`；合并脚本 `merge_win_toolbar.py`
