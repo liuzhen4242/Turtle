@@ -111,3 +111,21 @@ cd <仓库> && git add -A && git commit -m "描述固化内容" && git push orig
 - **PowerShell 会把 git stderr 当 NativeCommandError 显示**：`git push` 输出 "Everything up-to-date" 且 `$LASTEXITCODE=0` 即为成功，红色 RemoteException 是误报，不要当作失败。
 - **PowerShell stdout 被吞的坑**：`git … 2>&1 | Out-String` 有时不显示输出；改用 `$x = git … 2>&1; Write-Output $x` 捕获。
 - **推送命令**：`git -C <仓库> -c http.proxy=http://127.0.0.1:7890 push https://github.com/liuzhen4242/Turtle.git main`（SSH remote 不通、https 直连被 reset，必须带代理）。
+
+## 双端工具列"取最新合并"的完整闭环（2026-10-15 实证，含覆盖层）
+
+**用户手动加在 Rhino UI 里的按钮，落在覆盖层 `settings/Scheme__Default/Turtle_7338352c-….xml`，不写进加载位 rui，也不随 git 分发** —— 这是"Mac 有某按钮、Win 没有"（或反之）的根因。完整固化闭环：
+
+1. **发现**：比对加载位 rui 与覆盖层的 `tool_bar_items`，找出覆盖层独有/新增按钮。详见 rhino-toolbar-rui skill"覆盖层独有按钮的固化"。
+2. **合并**：把覆盖层的 `<macro>+<svg_name>/<light_svg>` 转成仓库 rui 的 `<macro_item>+<png>` 跨平台格式，合入仓库 rui（脚本操作，XML 校验）。
+3. **同步 Mac 加载位**：`packages/8.0/turtle/1.1.0/Turtle.rui`（写 McNeel 目录需提权）。
+4. **git push**（Mac 也需代理）：`git -c http.proxy=http://127.0.0.1:7890 push origin main`。
+5. **同步 Win 加载位**：在 Win 端 `git pull` 后，覆盖 `packages/8.0/Turtle/1.1.0/Turtle.rui`（先备份）。
+6. **版本治理**：1.0.0 已废弃（2026-10-15 从 Mac/Win packages 删除），**只维护 1.1.0**，勿再碰 1.0。
+
+**校验推送是否成功的通用法**（Mac/Win 一致）：
+```bash
+git -c http.proxy=http://127.0.0.1:7890 fetch origin main && \
+git rev-parse HEAD && git rev-parse origin/main
+# 两个 40 位哈希一致 = 已推送成功
+```

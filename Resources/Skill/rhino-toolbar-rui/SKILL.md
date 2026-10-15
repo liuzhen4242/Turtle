@@ -210,3 +210,26 @@ python3 scripts/rui_sync.py <源Turtle.rui路径> --verify-only
   - `29dac961-3ddb-4178-8768-06aa1ecc4f66` → `! _SoftEditSrf`，bitmap `a89cccd5-1a9f-4c72-bf17-cf3569a448e4`（新增 icon）
   - 追加的 2 个按钮：`49826fe0-dbfe-45a0-92ca-a612dc93bcb1`（left=CageEdit right=Cage）、`6008e4bc-b0a3-4765-badc-f9ca09b36b65`（left=SoftEditCrv right=SoftEditSrf）
   - 合并后仓库 rui 4547 行，md5（Win）`4E4C4584F3E97BEE2358204C63723E5D`；合并脚本 `merge_win_toolbar.py`
+
+## 覆盖层独有按钮的固化（Mac/Win 双端取最新合并，2026-10-15 实证）
+
+**核心洞察**：Rhino 用户在 UI 里手动加的按钮，**并不写进加载位 rui**，而是写入**覆盖层** `settings/Scheme__Default/Turtle_7338352c-….xml`。这导致"Mac 有、Win 没有"（或反之）——因为覆盖层各机独立，不随 git 分发。
+
+**发现方法（本案例 turtleMain）**：
+1. 比对**加载位 rui**（packages）与**覆盖层**同一工具列的 `tool_bar_items`，找出覆盖层**新增/独有**的 `tool_bar_item guid`（覆盖层里 `<tool_bar source_guid=工具列guid modified="True">` 块下、且无 `source_guid=` 的那些 item 是新增）。
+2. 覆盖层新增按钮的宏是 `<macro guid="…" modified="True" bitmap_guid="…">`（非仓库的 `<macro_item bitmap_id="…">`），图标是 `<icon><svg_name>…<light_svg>&lt;svg…&gt;</light_svg>`（Mac 专用非标准结构）。
+
+**固化步骤**（覆盖层 → 仓库 rui，格式转换）：
+1. **按钮**：覆盖层 `<tool_bar_item guid="X"><left_macro guid="A"/><right_macro guid="B"/></tool_bar_item>` → 仓库 `<tool_bar_item guid="X"><left_macro_id>A</left_macro_id><right_macro_id>B</right_macro_id></tool_bar_item>`。插到工具列对应位置（末尾按钮之后）。
+2. **宏**：覆盖层 `<macro guid="A" bitmap_guid="I">` → 仓库 `<macro_item guid="A" bitmap_id="I"><text><locale_1033>名</locale_1033></text><script>宏</script></macro_item>`。右宏可无 `bitmap_id`（用按钮图标）；空右宏（覆盖层只引用无定义）在仓库建一个空 `<macro_item>`。
+3. **图标**：覆盖层 `<svg_name>+<light_svg>`（Mac 专用）→ 必须转成**跨平台格式** `<icon name="guid.png"><png>base64</png></icon>`（单 PNG，Mac/Win 都渲染，最稳）或 `<light><ns0:svg>` + `<png>` 双格式。
+   - **SVG→PNG 方案（macOS，无需装库）**：`qlmanage -t -s 32 -o <目录> icon.svg` → 生成 `icon.svg.png`（32×32）→ base64。已验证可用（2fc0af97、8fb6477a）。
+   - 校验 PNG 合法性：前 8 字节 `\x89PNG\r\n\x1a\n`，尺寸在 IHDR（字节16-24）。
+4. **给既有按钮加右宏**（如 scriptFile 加 EditPythonScript）：在仓库该按钮 `<tool_bar_item>` 内补 `<right_macro_id>`，并在 macros 段补对应 `<macro_item>`。
+
+**本案例（Mac turtleMain，commit 30a65d2）**：
+- 新增按钮 `4e151488`（left=layeroutView `d9166d88`→`! _-RunPythonScript "layeroutView.py"`，bitmap `8fb6477a`；right=空宏 `0d9ec789`）
+- 新增按钮 `1f8d7972`（left=saveMaterial `2db52414`→`! _-RunPythonScript "saveMaterial.py"`，bitmap `2fc0af97`；right=`d8fb38ca`→`! _-RunPythonScript "imgToRmtl.py"`）
+- scriptFile `251b1d8e` 加右宏 `1fe68e7a`→`EditPythonScript`
+- 新增 2 图标：`8fb6477a`、`2fc0af97`（单 PNG base64，qlmanage 生成）
+- 合并后 turtleMain = **22 按钮**；仓库 rui md5（Mac）`4259e88a…`，已 push。
