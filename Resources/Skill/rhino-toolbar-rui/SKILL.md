@@ -233,3 +233,34 @@ python3 scripts/rui_sync.py <源Turtle.rui路径> --verify-only
 - scriptFile `251b1d8e` 加右宏 `1fe68e7a`→`EditPythonScript`
 - 新增 2 图标：`8fb6477a`、`2fc0af97`（单 PNG base64，qlmanage 生成）
 - 合并后 turtleMain = **22 按钮**；仓库 rui md5（Mac）`4259e88a…`，已 push。
+
+## 按钮右键缺失真相：右宏从未固化，Win 从无（2026-10-15 实证）
+
+**症状**：用户反馈"部分按钮右键功能丢失"（如 cameraMove），Win Rhino 里右键 Tooltip/Command 全空。
+
+**真相（已用 git 历史 + 全部备份 rui 逐一核验）**：
+- **cameraMove（按钮 `3dab8b26`）在所有 rui 历史版本里都只有 `<left_macro_id>`（左键 `af12646c`=cameraMove.py），从未有 `<right_macro_id>`**。包括：git 最早提交（`2f6ad41` 1.1.0 固化）、`Turtle.rui.bak-icon-test`（9/28）、两次合并备份、当前 22 按钮版。
+- **Win 覆盖层 `Turtle_7338352c.xml` 也不含 cameraMove**（覆盖层只有 CPlane Top、Grasshopper 两个 Rhino 内置命令 macro）。
+- **结论**：这些按钮的右键功能**从未固化进仓库/加载位 rui**。最可能来源是用户在 **Mac Rhino 界面**手动加的右键（存在 Mac 覆盖层，不随 git 分发），Win 端从没有过。**不是本次合并丢失的**。
+
+**处理**：用户在 Win 端自行重写右键即可（Rhino 里右键按钮 → 编辑 → 设置右键命令）。若要让右键跨平台生效，需在 Mac 覆盖层提取右键宏 → 固化进仓库 rui（转标准 `<macro_item>`+`<right_macro_id>`）→ 同步双端。
+
+**排查方法**（判断某按钮右键是否曾存在）：
+```python
+import re
+text = open('Turtle.rui', encoding='utf-8-sig').read()
+tb = re.search(r'<tool_bar guid="55f2b50c-4258-4c1b-9bba-133cd6b0f251".*?</tool_bar>', text, re.S).group(0)
+for it in re.finditer(r'<tool_bar_item guid="3dab8b26[^"]*".*?</tool_bar_item>', tb, re.S):
+    print(re.sub(r'\s+',' ', it.group(0)))  # 只有 left_macro_id = 无右键
+```
+- 覆盖层含某按钮 = 该按钮的修改在覆盖层里（不随 git 分发）。覆盖层按钮需固化进仓库才能跨平台同步。
+
+## packages 残留旧版备份目录 → "Error loading Turtle.rhp"（2026-10-15 实证）
+
+**症状**：Win Rhino 启动弹 "Loaded - Turtle.rhp / Error loading - Turtle.rhp" 同时出现。
+
+**根因**：Rhino 包扫描器把 `packages\8.0\` 下**所有以 `Turtle` 开头**的目录都当 Turtle 包扫描加载。当存在 `Turtle.bak-before110-…`（含 `1.0.0\Turtle.rhp`）时，会同时加载 1.1.0（成功）和备份 1.0.0（失败）→ 矛盾弹窗。
+
+**处理**：把 `packages\8.0\Turtle.bak-*` 目录**移出 packages**（移到仓库 `Resources\.bak-packages-*` 保留），而非删除。移出后重启弹窗消失。
+
+**教训**：升级/备份时**不要把旧版包以 `Turtle.bak-*` 形式留在 packages 目录**，应移出到 Rhino 不扫描的位置。
