@@ -32,13 +32,13 @@ Turtle 是自研 Rhino 8 插件（仓库远端 `https://github.com/liuzhen4242/T
 
 ## 固化流程（每次发布/同步）
 
-### Step 0：rui + 材质 + 脚本快速双向同步（日常首选）
+### Step 0：rui + 材质 + 脚本 + 模板快速双向同步（日常首选）
 ```bash
-python3 "<skill目录>/scripts/sync_resources.py" [--check] [--rui | --materials | --scripts]
+python3 "<skill目录>/scripts/sync_resources.py" [--check] [--rui | --materials | --scripts | --templates]
 ```
 - **同一份脚本，双平台通用**：脚本按运行平台自动切换路径——Mac 上同步 `rhinoPluging`（`/Users/zhenliu/study/coding/rhinoPluging`）与其 Rhino；Windows 上同步 `D:\00-素材\SoftTemple\Rhino\Turtle` 与其 Rhino。把脚本复制到两台机器各自运行即可，无需改代码。
-- 不带参数：同步 rui（6 处）+ 材质（3 处 rmtl + Mac 贴图子目录）+ Python 脚本（仓库 `Scripts/` ↔ Rhino `scripts/`），以最新修改者为准，覆盖前备份为 `.bak-sync-<时间戳>`；缺失的位置自动补齐；
-- `--check`：只读检查差异清单，不写文件；`--rui` / `--materials` / `--scripts`：只处理其中一类；
+- 不带参数：同步 rui（6 处）+ 材质（3 处 rmtl + Mac 贴图子目录）+ Python 脚本（仓库 `Scripts/` ↔ Rhino `scripts/`）+ 模板（Mac: `Rhinoceros/Template Files/` ↔ 仓库；Win: `Localization/en-US|zh-CN/Template Files/` ↔ 仓库），以最新修改者为准，覆盖前备份为 `.bak-sync-<时间戳>`；缺失的位置自动补齐；
+- `--check`：只读检查差异清单，不写文件；`--rui` / `--materials` / `--scripts` / `--templates`：只处理其中一类；
 - **脚本同步排除 Rhino 系统自带启动脚本**：`RhinoStartup.py` / `RhinoWorkspaceStartup.py` / `workspace_startup.py`（非 Turtle 内容，不会进仓库）；
 - **防呆校验**：仓库路径不存在时直接报错退出（提示正确路径），防止在错误机器/路径下静默误跑；
 - **改 rui 前必须退出 Rhino**：脚本检测到 Rhinoceros 进程运行会自动跳过 rui 并提示。

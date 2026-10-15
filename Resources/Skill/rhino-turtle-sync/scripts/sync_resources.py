@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-sync_resources.py —— Turtle 插件「rui + 材质 + 脚本」双向同步（Mac / Windows）
+sync_resources.py —— Turtle 插件「rui + 材质 + 脚本 + 模板」双向同步（Mac / Windows）
 
 原则（简化版）：
     · 以“修改时间最新”的文件为准，覆盖其它位置；
@@ -10,11 +10,12 @@ sync_resources.py —— Turtle 插件「rui + 材质 + 脚本」双向同步（
     · 材质贴图子目录（Mac: Rhino pic/ ↔ 仓库 img/）按“内容去重”补缺，不删除。
 
 用法：
-    python3 sync_resources.py                    # 同步 rui + 材质 + 脚本
+    python3 sync_resources.py                    # 同步 rui + 材质 + 脚本 + 模板
     python3 sync_resources.py --check            # 只检查差异，不写任何文件
     python3 sync_resources.py --rui              # 只同步 rui
     python3 sync_resources.py --materials        # 只同步材质
     python3 sync_resources.py --scripts          # 只同步 Python 脚本
+    python3 sync_resources.py --templates        # 只同步模板
 
 注意：改 rui 前必须完全退出 Rhino（检测到 Rhinoceros 进程运行时自动跳过 rui 并提示）。
 """
@@ -50,6 +51,11 @@ if IS_WIN:
         APPDATA / "McNeel" / "Rhinoceros" / "8.0" / "scripts",   # 注意小写 scripts
         REPO / "Scripts",
     ]
+    TEMPLATE_LOCATIONS = [
+        APPDATA / "McNeel" / "Rhinoceros" / "8.0" / "Localization" / "en-US" / "Template Files" / "Turtle.3dm",
+        APPDATA / "McNeel" / "Rhinoceros" / "8.0" / "Localization" / "zh-CN" / "Template Files" / "Turtle.3dm",
+        REPO / "Resources" / "Turtle.3dm",
+    ]
     TEXTURE_PAIRS = []   # Windows 材质子目录结构未确认，暂不同步贴图
 else:
     REPO = Path("/Users/zhenliu/study/coding/rhinoPluging")
@@ -72,6 +78,10 @@ else:
     SCRIPTS_LOCATIONS = [
         R8 / "scripts",          # 注意小写 scripts
         REPO / "Scripts",
+    ]
+    TEMPLATE_LOCATIONS = [
+        RHINO_BASE / "Template Files" / "Turtle.3dm",
+        REPO / "Resources" / "Turtle.3dm",
     ]
     TEXTURE_PAIRS = [
         (R8 / "Render Content" / "en_US" / "Turtle" / "pic", REPO / "Resources" / "Materials" / "img"),
@@ -208,13 +218,15 @@ def main() -> int:
     ap.add_argument("--rui", action="store_true", help="只处理 rui")
     ap.add_argument("--materials", action="store_true", help="只处理材质")
     ap.add_argument("--scripts", action="store_true", help="只处理 Python 脚本")
+    ap.add_argument("--templates", action="store_true", help="只处理模板")
     args = ap.parse_args()
     ts = time.strftime("%Y%m%d-%H%M%S")
 
-    only = args.rui or args.materials or args.scripts
+    only = args.rui or args.materials or args.scripts or args.templates
     do_rui = args.rui or not only
     do_mat = args.materials or not only
     do_scripts = args.scripts or not only
+    do_templates = args.templates or not only
     mode = "检查（只读）" if args.check else "同步"
     print(f"平台: {PLATFORM} | 模式: {mode} | 仓库: {REPO}")
 
@@ -244,6 +256,9 @@ def main() -> int:
     if do_scripts:
         print("\n=== 4. Python 脚本（.py）===")
         n += sync_files(SCRIPTS_LOCATIONS, ".py", "脚本", args.check, ts, exclude=EXCLUDE_SCRIPTS)
+    if do_templates:
+        print("\n=== 5. 模板（Turtle.3dm）===")
+        n += sync_group(TEMPLATE_LOCATIONS, "模板 Turtle.3dm", args.check, ts)
 
     print("\n" + "=" * 50)
     if n:

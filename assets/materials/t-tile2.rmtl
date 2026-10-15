@@ -84,7 +84,7 @@
 			<clarity-amount type="double">1</clarity-amount>
 			<reflection type="color">1,1,1,1</reflection>
 			<transparent type="color">1,1,1,1</transparent>
-			<Texture-1-filename type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\Tile_Hexagon_White.jpg</Texture-1-filename>
+			<Texture-1-filename type="string">Tile_Hexagon_White.jpg</Texture-1-filename>
 			<Texture-1-on type="bool">true</Texture-1-on>
 			<Texture-1-amount type="double">1</Texture-1-amount>
 			<Texture-1-filter type="int">1</Texture-1-filter>
@@ -123,7 +123,7 @@
 				<parameter name="rdk-texture-adjust-gamma" type="double">1</parameter>
 				<parameter name="rdk-texture-adjust-saturation" type="double">1</parameter>
 				<parameter name="rdk-texture-adjust-hue-shift" type="double">0</parameter>
-				<parameter name="filename" type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\Tile_Hexagon_White.jpg</parameter>
+				<parameter name="filename" type="string">Tile_Hexagon_White.jpg</parameter>
 				<parameter name="has-transparent-color" type="bool">false</parameter>
 				<parameter name="use-alpha-channel" type="bool">true</parameter>
 				<parameter name="transparent-color" type="color">0,0,0,1</parameter>
@@ -159,7 +159,7 @@
 				<rdk-texture-adjust-gamma type="double">1</rdk-texture-adjust-gamma>
 				<rdk-texture-adjust-saturation type="double">1</rdk-texture-adjust-saturation>
 				<rdk-texture-adjust-hue-shift type="double">0</rdk-texture-adjust-hue-shift>
-				<filename type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\Tile_Hexagon_White.jpg</filename>
+				<filename type="string">Tile_Hexagon_White.jpg</filename>
 				<has-transparent-color type="bool">false</has-transparent-color>
 				<use-alpha-channel type="bool">true</use-alpha-channel>
 				<transparent-color type="color">0,0,0,1</transparent-color>
@@ -169,7 +169,7 @@
 				<treat-as-linear type="bool">false</treat-as-linear>
 			</parameters>
 			<simulation>
-				<filename type="string">D:\00-素材\Temple-模版\Rhino\Temple\2025-01-08-OpenLink_embedded_files\Tile_Hexagon_White.jpg</filename>
+				<filename type="string">Tile_Hexagon_White.jpg</filename>
 				<offset type="vector2d">0,0</offset>
 				<repeat type="vector2d">1,1</repeat>
 				<rotation type="double">0</rotation>
