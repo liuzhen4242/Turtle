@@ -63,13 +63,20 @@ namespace Turtle
 
         /// <summary>
         /// 把嵌入在 .rhp 里的 .py 脚本解压到本地缓存目录。
+        /// 双路径释放：Rhino 的 scripts 搜索目录（按钮宏相对名 "xxx.py" 能找到）
+        /// 与 Turtle 专属目录（别名宏 {RHINO_SCRIPTS} 引用）。
         /// 每次加载都覆盖写 —— 保证安装/升级后脚本始终与插件内嵌版本一致。
         /// 注意：这会覆盖用户手动编辑过的脚本，如需保留手改请勿直接改此处。
         /// </summary>
         private static void ExtractEmbeddedScripts()
         {
             string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            // 目标 1：Rhino 的 scripts 搜索目录 —— 按钮宏用相对文件名 ("layerout.py") 时 Rhino 在此查找
+            string rhinoScriptDir = Path.Combine(appData, "McNeel", "Rhinoceros", "8.0", "scripts");
+            // 目标 2：Turtle 专属目录 —— 别名宏 {RHINO_SCRIPTS} 占位符引用
             ScriptDir = Path.Combine(appData, "Turtle", "Scripts");
+            Directory.CreateDirectory(rhinoScriptDir);
             Directory.CreateDirectory(ScriptDir);
 
             var asm = Assembly.GetExecutingAssembly();
@@ -81,18 +88,23 @@ namespace Turtle
                 string rel = resName.Substring(prefix.Length).Replace('.', Path.DirectorySeparatorChar);
                 // 修正扩展名：上面的 Replace 会把 ".py" 的点开锅，改回来
                 rel = rel.Substring(0, rel.Length - 3) + ".py";
-                // 去掉开头的 "Scripts/" 前缀，让脚本平铺在缓存目录下，
-                // 命令类直接用 Path.Combine(ScriptDir, "xxx.py") 定位
+                // 去掉开头的 "Scripts/" 前缀，让脚本平铺在目录下
                 if (rel.StartsWith("Scripts" + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase))
                     rel = rel.Substring(("Scripts" + Path.DirectorySeparatorChar).Length);
 
-                string path = Path.Combine(ScriptDir, rel);
-                Directory.CreateDirectory(Path.GetDirectoryName(path));
+                // 双路径各写一份
+                string pathRhino = Path.Combine(rhinoScriptDir, rel);
+                string pathTurtle = Path.Combine(ScriptDir, rel);
+                Directory.CreateDirectory(Path.GetDirectoryName(pathRhino));
+                Directory.CreateDirectory(Path.GetDirectoryName(pathTurtle));
 
                 using (Stream stream = asm.GetManifestResourceStream(resName))
-                using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
                 {
-                    stream.CopyTo(fs);
+                    using (FileStream fs = new FileStream(pathRhino, FileMode.Create, FileAccess.Write))
+                        stream.CopyTo(fs);
+                    stream.Position = 0;
+                    using (FileStream fs = new FileStream(pathTurtle, FileMode.Create, FileAccess.Write))
+                        stream.CopyTo(fs);
                 }
             }
         }

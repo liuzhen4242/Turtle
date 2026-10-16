@@ -259,9 +259,9 @@ ttt ! _Split _Pause _Isocurve
 y ! _Circle
 mz m pause v
 sx -_SetPt -_SetPt Xset=Yes Yset=Yes  Zset=Yes Xset=Yes Yset=No Zset=No
-wa -_RunPythonScript "C:\Users\Liuzhen\AppData\Roaming\Turtle\Scripts\vis_watch.py" w
-NewAlias -_RunPythonScript "C:\Users\Liuzhen\AppData\Roaming\Turtle\Scripts\vis_watch.py" s
-stop -_RunPythonScript "C:\Users\Liuzhen\AppData\Roaming\Turtle\Scripts\vis_watch.py" s
+wa -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" w
+NewAlias -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" s
+stop -_RunPythonScript "{RHINO_SCRIPTS}\vis_watch.py" s
 dd ! _DeleteSubCrv
 ddd Length
 xz ! _-RunPythonScript "selectFilter.py"
