@@ -67,6 +67,24 @@ Turtle 是自研 Rhino 8 插件（仓库远端 `https://github.com/liuzhen4242/T
 4. 同步 Mac 加载位 → git push → 另一端 pull 后同步加载位。**双端都取最新合并**。
 5. 版本治理：1.0 已废弃，只维护 1.1.0。
 
+## 脚本搜索路径一致性（2026-10-16 实证：同事装后"按钮功能都不能用"）
+
+**症状**：同事 Win11+Rhino8 装 yak 后，**toolbar 有了、但大量按钮功能不可用**（脚本找不到）。
+
+**根因（两个坑叠加）**：
+1. **释放路径 ≠ Rhino 搜索路径**：工具列按钮宏用**相对文件名**（`! _-RunPythonScript "layerout.py"`），Rhino 只在自己的 scripts 搜索目录 `%APPDATA%\McNeel\Rhinoceros\8.0\scripts` 找相对名。但插件旧版把脚本释放到 `%AppData%\Turtle\Scripts`——**两处不一致**，同事机器没有脚本进 Rhino scripts 目录 → 按钮全部找不到脚本。自己机器能用，是因为**曾手动把脚本也放进过 Rhino scripts 目录**（不是插件放的）。
+2. **宏写死用户名路径**：`KeyTurtle.txt` 里 `wa/NewAlias/stop` 3 条曾写死 `C:\Users\Liuzhen\...\vis_watch.py`，换机器（用户名 `scl`）必失效。
+
+**修复（已完成，commit a9957f4）**：
+- `TurtlePlugin.cs` 的 `ExtractEmbeddedScripts()` 改为**双路径释放**：脚本同时写到
+  `%AppData%\McNeel\Rhinoceros\8.0\scripts`（按钮宏相对名能找到）+ `%AppData%\Turtle\Scripts`（别名宏 `{RHINO_SCRIPTS}` 用）。
+- `KeyTurtle.txt` 写死的 3 条改 `{RHINO_SCRIPTS}\vis_watch.py` 占位符（插件注册时替换成实际路径，跨机器通用）。
+
+**排查要点**：
+- 检查按钮宏形态：相对名 `"xxx.py"` = 依赖 Rhino scripts 搜索路径；绝对路径 = 依赖写死路径。**rui 里不应有任何写死的 `C:\Users\...` 或 `D:\...` 路径**（用 Grep 搜 `Users\\|:[A-Za-z]:\\` 验证）。
+- 检查 `KeyTurtle.txt` 是否有写死用户名路径的条目（应全用 `{RHINO_SCRIPTS}` 占位符）。
+- 装新版后应看到 `...\Rhinoceros\8.0\scripts` 出现插件的 26 个 py（alignPage、layerout、surToHatch 等）。
+
 ## git 推送验证（Win，2026-10-15 实证）
 
 - **`git status -sb` 的 `[ahead N]` 不可靠**：`git push <url>` 用完整 URL 推送后 tracking 不刷新，仍显示 `[ahead 1]`——**不能据此判断推送是否成功**。
