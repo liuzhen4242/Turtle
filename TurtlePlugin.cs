@@ -63,8 +63,8 @@ namespace Turtle
 
         /// <summary>
         /// 把嵌入在 .rhp 里的 .py 脚本解压到本地缓存目录。
-        /// 已存在的文件跳过 —— 方便你手动编辑脚本做调试。
-        /// 想强制还原：删掉该目录后重启 Rhino。
+        /// 每次加载都覆盖写 —— 保证安装/升级后脚本始终与插件内嵌版本一致。
+        /// 注意：这会覆盖用户手动编辑过的脚本，如需保留手改请勿直接改此处。
         /// </summary>
         private static void ExtractEmbeddedScripts()
         {
@@ -88,9 +88,6 @@ namespace Turtle
 
                 string path = Path.Combine(ScriptDir, rel);
                 Directory.CreateDirectory(Path.GetDirectoryName(path));
-
-                if (File.Exists(path))
-                    continue;   // 保留用户本地修改
 
                 using (Stream stream = asm.GetManifestResourceStream(resName))
                 using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
