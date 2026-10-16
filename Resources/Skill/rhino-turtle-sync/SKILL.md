@@ -17,6 +17,7 @@ Turtle 是自研 Rhino 8 插件（仓库远端 `https://github.com/liuzhen4242/T
    - **Win 上 `8.0\UI\Turtle.rui` 目录不存在**；Mac 的 UI/MacPlugIns 目录 Rhino 根本不读——"改了很久没效果"的头号原因。
 4. **写 McNeel 目录需 require_escalated**（沙箱外路径）。
 5. **图标用 rui 内嵌数据（`<png>` 或 `<light><svg>`），禁止 `<svg_name>` 外部引用**——Win 不渲染、跨平台丢图标。详见 rhino-toolbar-rui skill。
+6. **更新 skill 必须同步查冗余**：每次向任何 skill 写入新内容时，先确认与现有内容、其它 skill（尤其 rhino-toolbar-rui / rhino-turtle-sync / rhino-material-*）不重复；精简到要点、去除赘述后再写入，避免 skill 臃肿。无新增必要则不写（靠 skill 清单维护即可）。
 
 ## 版本治理（用户拍板 2026-10-15）
 
